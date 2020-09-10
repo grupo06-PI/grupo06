@@ -1,0 +1,19 @@
+#Tecnologias Utilizadas
+Descrever aqui todas as tecnologias Utilizadas
+
+#Usuários
+Grupo 1 - Admin: 
+Usuário: grupo01
+Senha:abcBolinhas
+
+Grupo 2 - Atendimento de Balcão: 
+Usuário: grupo02
+Senha: abcBolinhas
+
+Grupo 3 - Cliente
+Usuário: grupo03
+Senha: abcBolinhas
+
+#Nome e local do Arquivo das credenciais DB
+
+#Observações Gerais
