@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>{% block title %}  {% endblock %} - grupo06 </title>
+
+    <style>
+        
+        body {
+            padding-top: 5rem;
+        }
+ 
+      </style>
+
+    <!-- Importando o bootstrap static-->
+    <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-4.5.2-dist/css/bootstrap.min.css') }}">
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        {% block content %}  {% endblock %}
+        <a class="navbar-brand" href="{{url_for('home.formHome')}}">Home</a>
+        
+      
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+          <ul class="navbar-nav mr-auto">
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{{url_for('funcionario.formFuncionario')}}">Funcionários</a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{{url_for('cliente.formCliente')}}">Clientes</span></a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{{url_for('produto.formProduto')}}">Produtos</a>
+            </li>
+
+            <li class="nav-item active">
+                <a class="nav-link" href="{{url_for('comanda.formComanda')}}">Comandas</a>
+            </li>
+          </ul>
+          
+        </div>
+      </nav>
+      
+      
+
+
+
+    <!-- Importando o JS static-->
+    <script src="{{ url_for('static', filename='bootstrap-4.5.2-dist/js/bootstrap.min.js') }}"></script>
+</body>
+</html>
