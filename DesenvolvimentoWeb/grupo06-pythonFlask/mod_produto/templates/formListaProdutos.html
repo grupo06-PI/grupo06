@@ -1,0 +1,60 @@
+{% extends "modelo.html" %}
+
+{% block title %} ListaProdutos {% endblock %}
+
+{% block style %} 
+{{super()}}
+
+<style>
+  #btnCad{
+    text-decoration: none;
+    padding: 10px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    border-radius: 4px;
+    color: white;
+    
+  }
+  
+  .listaClientes{ 
+  width: 40%;
+  resize: both;
+  text-align: center;
+  
+  }
+  
+</style>
+{% endblock %}   
+
+
+    
+{% block content %} 
+    {{ super() }}
+    
+<div class="listaClientes">
+    <table border=1 cellspacing=0 cellpadding=2 bordercolor="#009688" class="table">
+        <thead class="thead-dark">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Valor R$</th>
+            <th scope="col">Descrição</th>
+            <th scope="col">Imagem</th>                    
+          </tr>
+        </thead>
+        <tbody>
+          
+          <tr>
+            <td>1</td>
+            <td>Coxinha</td>
+            <td>5,00</td>
+            <td>Coxinha de Frango c/ Requeijão</td>
+            <td>x</td>                                 
+            </tr> 
+
+        </tbody>
+      </table>
+</div>
+   
+<button type="button" class="btn btn-dark"><a id="btnCad" href="{{url_for('produto.CadProduto')}}"><i class="fa fa-fw fa-plus"></i>Novo Produto</a></button>
+{% endblock %}
