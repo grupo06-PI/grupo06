@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    
+    <!-- Utilizando jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <title>{% block title %}  {% endblock %} - grupo06 </title>
 
@@ -22,6 +24,7 @@
 
     <!-- Importando o bootstrap static-->
     <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-4.5.2-dist/css/bootstrap.min.css') }}">
+    
 </head>
 <body>
 
@@ -33,8 +36,12 @@
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav mr-auto">
 
-            <li class="nav-item active">
-              <a class="nav-link" href="#">Dashboard</a>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dashboard</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown03">
+                <a class="dropdown-item" href="{{url_for('dashboard.ComandasAbertas')}}">Comandas Abertas</a>
+                <a class="dropdown-item" href="{{url_for('dashboard.RegistroFiados')}}">Registro de Fiados</a>
+              </div>
             </li>
 
             <li class="nav-item active">
@@ -49,8 +56,11 @@
                 <a class="nav-link" href="{{url_for('produto.ListaProdutos')}}">Produtos</a>
             </li>
 
-            <li class="nav-item active">
-                <a class="nav-link" href="{{url_for('comanda.formComanda')}}">Comandas</a>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="dropdown03" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Comandas</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown03">
+                <a class="dropdown-item" href="{{url_for('comanda.AbrirComanda')}}">Abrir Comanda</a>
+              </div>
             </li>
 
             <li class="nav-item active">
@@ -60,16 +70,17 @@
             <li class="nav-item active">
               <a class="nav-link" href="###">Sair</a>
             </li>
+
           </ul>
           
         </div>
       </nav>
-      
-      
+        
     {% block content %} {% endblock %}
 
 
     <!-- Importando o JS static-->
     <script src="{{ url_for('static', filename='bootstrap-4.5.2-dist/js/bootstrap.min.js') }}"></script>
+
 </body>
 </html>
