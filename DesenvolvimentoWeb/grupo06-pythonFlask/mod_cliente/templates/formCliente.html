@@ -18,67 +18,77 @@
         <h2>Cadastro de Clientes</h2> 
     </div>
     <hr>
-    <form name="cliente" method="POST" action="">
+
+    {% if cliente.id_cliente == 0 %}
+
+    <h1>Novo Cliente</h1>
+    <form name="cliente" method="POST" action="{{ url_for('cliente.addCliente') }}">
+
+    {% else %}
+
+    <h1>Editar Cliente: {{ cliente.id_cliente }}</h1>
+    <form name="cliente" method="POST" action="{{ url_for('cliente.editCliente') }}">
+
+    {% endif %}
 
         <div class="row">
             <div class="col-md-1 mb-2">
-                <label for="">ID:</label>
-                <input readonly value="" type="text" name=""  id="" 
+                <label for="id">ID:</label>
+                <input readonly value="{{ cliente.id_cliente }}" type="text" name="id_cliente"  id="id_cliente" 
                 class="form-control" placeholder="ID"  required>  
             </div>
 
             <div class="col-md-6 mb-2">
                 <label for="nome">Nome:</label>
-                <input  value="" type="text" name=""  id="" autofocus  
-                class="form-control" placeholder="Insira o nome do cliente"  required>           
+                <input  value="{{ cliente.nome }}" type="text" name="nome"  id="nome" autofocus  
+                class="form-control" placeholder="Insira o nome do cliente" maxlength="100" >           
             </div>
         </div> 
         <br>
         <div class="row">
             <div class="col-md-3 mb-2">
-                <label for="">Telefone:</label>
-                <input value="" type="text" name=""  id="" 
-                class="form-control" placeholder=""  required>  
+                <label for="cpf">Cpf:</label>
+                <input value="{{ cliente.cpf }}" type="text" name="cpf"  id="cpf" 
+                class="form-control" placeholder="" maxlength="11" >  
             </div>
         </div> 
         <br>
         <div class="row">
             <div class="col-md-3 mb-2">
-                <label for="">CPF:</label>
-                <input value="" type="text" name=""  id="" 
-                class="form-control" placeholder=""  required>  
+                <label for="telefone">Telefone:</label>
+                <input value="{{ cliente.telefone }}" type="text" name="telefone"  id="telefone" 
+                class="form-control" placeholder="" maxlength="11"  >  
             </div>
         </div>
         <br>
         <div class="row">
             <div class="col-md-3 mb-2">
-                <label for="">Dia do Pagamento:</label>
-                <input value="" type="text" name=""  id="" 
-                class="form-control" placeholder=""  required>  
+                <label for="compra_fiado">compra_fiado:</label>
+                <input value="{{ cliente.compra_fiado }}" type="text" name="compra_fiado"  id="compra_fiado" 
+                class="form-control" placeholder="" maxlength="2"  >  
             </div>
         </div>
         <br>
         <div class="row">
             <div class="col-md-3 mb-2">
-                <label for="">Senha:</label>
-                <input value="" type="text" name=""  id="" 
-                class="form-control" placeholder=""  required>  
+                <label for="dia_fiado">dia_fiado:</label>
+                <input value="{{ cliente.dia_fiado }}" type="text" name="dia_fiado"  id="dia_fiado" 
+                class="form-control" placeholder="" maxlength="8" >  
             </div>
         </div>
         <br>
         <div class="row">
             <div class="col-md-3 mb-2">
-                <label for="">Cliente Mensalista:</label>
-                <select name="" id="" class="form-control">
-                    <option selected>Sim</option>
-                    <option>Não</option>
-                </select> 
+                <label for="senha">senha:</label>
+                <input value="{{ cliente.senha }}" type="text" name="senha"  id="senha" 
+                class="form-control" placeholder="" maxlength="30" >
             </div>
         </div>
         <hr>
-        <button  type='submit' name='' id='' class="btn btn-dark"><i class=""></i>Salvar</a></button>
-        <button  type='submit' name='' id='' class="btn btn-dark"><i class=""></i>Editar</a></button>
-        <button  type='submit' name='' id='' class="btn btn-dark"><i class=""></i>Excluir</a></button>
+
+        <button  type='submit' name='salvaInsereUsuarioDB' id='salvaInsereUsuarioDB' class="btn btn-dark">Salvar</a></button>
+        <button  type='submit' name='salvaEditaUsuarioDB' id='salvaEditaUsuarioDB' class="btn btn-dark">Editar</a></button>
+        <button  type='submit' name='salvaExcluiUsuarioDB' id='salvaExcluiUsuarioDB' class="btn btn-dark">Excluir</a></button>
     </form>
 </div>
 
