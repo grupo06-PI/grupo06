@@ -27,7 +27,6 @@
 {% endblock %}   
 
 {% block content %} 
-    {{ super() }}
     
 <div class="listaClientes">
     <table border=1 cellspacing=0 cellpadding=2 bordercolor="#009688" class="table">
@@ -37,22 +36,35 @@
             <th scope="col">Nome</th>
             <th scope="col">CPF</th>
             <th scope="col">Telefone</th>
-            <th scope="col">Senha</th>
-            <th scope="col">Dia de Pagamento</th>
-            <th scope="col">Mensalista</th>           
+            <th scope="col">compra_fiado</th>
+            <th scope="col">dia_fiado</th>
+            <th scope="col">senha</th>           
           </tr>
         </thead>
+
         <tbody>
-          
+
+          {% if result %}
+          {% for row in result %}
+
           <tr>
-            <td>1</td>
-            <td>Nicolas Adams</td>
-            <td>012.064.147-12</td>
-            <td>(49)9 9841-6584</td>
-            <td>********</td>
-            <td>15/10</td>
-            <td>SIM</td>                        
-            </tr> 
+            <td scope='row'> {{ row[0] }}</th>
+            <td> {{ row[1] }}</td>
+            <td> {{ row[2] }}</td>
+            <td> {{ row[3] }}</td>
+            <td> {{ row[4] }}</td>
+            <td> {{ row[5] }}</td>
+            <td> {{ row[6] }}</td> 
+            <td>
+              <form action='{{ url_for('cliente.formEditCliente') }}' method='POST' name='editUsuario'>
+                <input type='hidden' name='id_cliente' value='{{ row[0] }}'>
+                <button type='submit' name='formEditCliente'></button>
+              </form>
+            </td>                      
+          </tr> 
+
+          {% endfor %}
+          {% endif %}
 
         </tbody>
       </table>
