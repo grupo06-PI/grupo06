@@ -1,0 +1,92 @@
+1- Qual a sua Idade?
+Até 18 anos
+18 à 24 anos
+25 à 30 anos
+31 à 44 anos
+45 à 54 anos
+Mais de 55 anos
+
+2- Com qual gênero se identifica?
+Masculino
+Feminino
+Outro (Por favor especifique)
+Prefiro não dizer
+
+3- Qual cidade mora?
+
+4- Qual bairro?
+
+5- Você possui alguma restrição alimentar?
+- Alergia a lactose /Intolerância a lactose
+- Doença Celíaca (Intolerância ao Glúten)
+- Diabetes
+- Outras
+
+6- Quais lanches você costuma consumir?
+- Cachorro-quente
+- Pastel
+- Pizza
+- X-Burger
+- Outros
+
+7- Quanto a escolha do cardápio, você prefere pratos prontos, por exemplo: pastel de carne e queijo, x-especial ou cachorro-quente simples ou você prefere montar seu lanche com seus ingredientes preferidos?
+- Indiferente
+- Prefiro montar meu lanche
+- Prefiro lanches prontos
+
+8- Com qual frequência você costuma sair para comer lanches?
+- Diariamente
+- Pelo menos 1x na semana
+- 2x na semana
+- Mais de 3x na semana
+- Não como lanche
+
+9- Com qual frequência você costuma pedir lanches por delivery?
+- Diariamente
+- Pelo menos 1x na semana
+- 2x na semana
+- Mais de 3x na semana
+- Não como lanche
+
+10- Você costuma sair para comer:
+- Com amigos
+- Com a família
+- Com namorada (o)
+- Sozinho
+- Não saio para comer fora
+
+11- Qual o meio de delivery você mais utiliza?
+- Club Food
+- Delivery Much
+- Entro em contato direto com o estabelecimento (telefone/whatsapp)
+- Ifood
+- ODelivery
+- Outros
+
+12- Qual o meio de pagamento mais utilizado para pagar por seus lanches?
+- Cartão (Débito ou crédito)
+- Dinheiro
+- Mensalista (Marcar fiado e pagar no final/início do mês)
+- Vale Alimentação / Programa de pontos
+
+13- Quais destes motivos te fariam sair de casa e para ir a uma lanchonete com mais frequência?
+- Comida boa 
+- Comida barata
+- Múltiplas opções de pagamento
+- Música ao vivo
+- Localização/ Proximidade (mesmo bairro)
+- Transmissão de jogos do meu time
+
+14- Quanto você costuma gastar por mês com lanches?
+- Até R$30,00
+- de R$30,00 à R$50,00
+- de R$50,00 à R$100,00
+- de R$100,00 à R$200,00
+- Mais de R$200,00 
+- Não sei 
+
+15- Se sua lanchonete preferida aderisse ao sistema de pagamentos mensais (anotando os consumos do mês para efetuar o pagamento somente ao final dos 30 dias) você adotaria essa forma de pagamento?
+
+16- Pensando no sistema de pagamento mensal, acha interessante a possibilidade de incluir dependentes em sua "conta"?
+
+17- Quais vantagens ou desvantagens você para usar ou não essa forma de pagamento?
