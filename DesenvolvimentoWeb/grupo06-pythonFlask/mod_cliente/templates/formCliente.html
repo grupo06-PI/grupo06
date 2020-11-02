@@ -14,21 +14,17 @@
 
 <div class="container"> 
 
-    <div class="row">
-        <h2>Cadastro de Clientes</h2> 
-    </div>
-    <hr>
 
     {% if cliente.id_cliente == 0 %}
 
     <h1>Novo Cliente</h1>
-    <form name="cliente" method="POST" action="{{ url_for('cliente.addCliente') }}">
-
+    <form id="addCliente" name="addCliente" method="POST" enctype="multipart/form-data" >
+    <hr>
     {% else %}
 
     <h1>Editar Cliente: {{ cliente.id_cliente }}</h1>
-    <form name="cliente" method="POST" action="{{ url_for('cliente.editCliente') }}">
-
+    <form id="editCliente" name="editCliente" method="POST" enctype="multipart/form-data">
+    <hr>
     {% endif %}
 
         <div class="row">
@@ -86,10 +82,103 @@
         </div>
         <hr>
 
-        <button  type='submit' name='salvaInsereUsuarioDB' id='salvaInsereUsuarioDB' class="btn btn-dark">Salvar</a></button>
-        <button  type='submit' name='salvaEditaUsuarioDB' id='salvaEditaUsuarioDB' class="btn btn-dark">Editar</a></button>
-        <button  type='submit' name='salvaExcluiUsuarioDB' id='salvaExcluiUsuarioDB' class="btn btn-dark">Excluir</a></button>
+        <button type='submit' name='salvaProdutoDB' id='salvaProdutoDB' class="btn btn-dark"><i
+            class=""></i>Salvar</a></button>
+        
     </form>
 </div>
 
+{% endblock %}
+
+{% block js %}
+<script>
+    $SCRIPT_ROOT = {{request.script_root | tojson | safe}}; // pega a url da barra de endereço
+
+    $('#addCliente').submit(function (e) {
+        e.preventDefault(); // parar o envio para poder fazer manualmente
+        var form = $('#addCliente')[0]; // captura o form
+        var data = new FormData(form); // cria o FormData {Object}
+
+        $.ajax({
+            type: "POST",
+            enctype: 'multipart/form-data',
+            url: "{{url_for('cliente.addCliente')}}",
+            data: data,
+            processData: false,
+            contentType: false,
+            cache: false,
+            timeout: 600000,
+
+            // manipular o retorno da requisição
+            success: function (data) {
+                if (!data.erro) {
+                    swal({
+                            title: "",
+                            text: data.mensagem,
+                            type: "success",
+                            confirmButtonClass: "btn-success",
+                            confirmButtonText: "Ok",
+                            closeOnConfirm: false,
+                            closeOnCancel: false
+                        },
+                        function (isConfirm) {
+                            if (isConfirm) {
+                                window.location.replace($SCRIPT_ROOT +
+                                    "{{ url_for('cliente.ListaClientes') }}");
+                            }
+                        });
+                } else {
+                    swal("", data.mensagem + '\n' + data.mensagem_exception, "error");
+                }
+            },
+            error: function (e) {
+                console.log(e);
+            }
+        })
+    })
+
+    // incluir aqui a opção para editar
+    $('#editCliente').submit(function (e) {
+        e.preventDefault(); // parar o envio para poder fazer manualmente
+        var form = $('#editCliente')[0]; // captura o form
+        var data = new FormData(form); // cria o FormData {Object}
+
+        $.ajax({
+            type: "POST",
+            enctype: 'multipart/form-data',
+            url: "{{url_for('cliente.editCliente')}}",
+            data: data,
+            processData: false, // impedir que o jQuery tranforma a "data" em querystring
+            contentType: false, // desabilitar o cabeçalho "Content-Type"
+            cache: false, // desabilitar o "cache"
+            timeout: 600000, // definir um tempo limite (opcional)
+            // manipular o retorno da requisição
+            success: function (data) {
+                if (!data.erro) {
+                    swal({
+                            title: "",
+                            text: data.mensagem,
+                            type: "success",
+                            confirmButtonClass: "btn-success",
+                            confirmButtonText: "Ok",
+                            closeOnConfirm: false,
+                            closeOnCancel: false
+                        },
+                        function (isConfirm) {
+                            if (isConfirm) {
+                                window.location.replace($SCRIPT_ROOT +
+                                    "{{ url_for('cliente.ListaClientes') }}");
+                            }
+                        });
+                } else {
+                    swal("", data.mensagem + '\n' + data.mensagem_exception, "error");
+                    console.log(data.mensagem_exception);
+                }
+            },
+            error: function (e) {
+                console.log(e);
+            }
+        })
+    })    
+</script>
 {% endblock %}

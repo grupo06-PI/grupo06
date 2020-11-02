@@ -123,7 +123,6 @@ class Produtos(object):
             return "Produto atualizado com sucesso!"
 
         except Exception as e:
-
             raise Exception("Erro ao editar produto!", str(e))
 
         finally:
