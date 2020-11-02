@@ -2,59 +2,127 @@
 
 {% block title %} ListaProdutos {% endblock %}
 
-{% block style %} 
+{% block style %}
 {{super()}}
 
 <style>
-  #btnCad{
+  #btnCad {
     text-decoration: none;
     padding: 10px;
     padding-bottom: 4px;
     padding-top: 4px;
     border-radius: 4px;
     color: white;
-    
+
   }
-  
-  .listaClientes{ 
-  width: 40%;
-  resize: both;
-  text-align: center;
-  
+
+  .listaClientes {
+    width: 40%;
+    resize: both;
+    text-align: center;
+
   }
-  
 </style>
-{% endblock %}   
+{% endblock %}
 
 
-    
-{% block content %} 
-    {{ super() }}
-    
+
+{% block content %}
+{{ super() }}
+
 <div class="listaClientes">
-    <table border=1 cellspacing=0 cellpadding=2 bordercolor="#009688" class="table">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Nome</th>
-            <th scope="col">Valor R$</th>
-            <th scope="col">Descrição</th>
-            <th scope="col">Imagem</th>                    
-          </tr>
-        </thead>
-        <tbody>
-          
-          <tr>
-            <td>1</td>
-            <td>Coxinha</td>
-            <td>5,00</td>
-            <td>Coxinha de Frango c/ Requeijão</td>
-            <td>x</td>                                 
-            </tr> 
+  <table border=1 cellspacing=0 cellpadding=2 bordercolor="#009688" class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Descrição</th>
+        <th scope="col">Valor R$</th>
+        <th scope="col">Imagem</th>
+      </tr>
+    </thead>
 
-        </tbody>
-      </table>
+
+    <tbody>
+      {% if result %}
+      {% for row in result %}
+      <tr>
+        <th scope='row'> {{ row[0] }}</th>
+        <td> {{ row[1] }}</td>
+        <td> {{ row[2] }}</td>
+        <td> {{ row[3] }}</td>
+        <td><img src='{{ row[4] }}' width='100'></td>
+        <td>
+
+          <form action='{{ url_for('produto.formEditProduto') }}' method='POST' name='editProduto'>
+            <input type='hidden' name='id_produto' value='{{ row[0] }}'>
+            <button type='submit' name='formEditProduto'><i class='fa fa-fw fa-edit'></i></button>
+          </form>
+
+          <form method='POST' name='deleteProduto' id='deleteProduto'>
+            <input type='hidden' name='id_produto' value='{{ row[0] }}'>
+            <button type='submit' name='formDeleteProduto'><i class='fa fa-fw fa-trash'></i></button>
+          </form>
+
+        </td>
+      </tr>
+      {% endfor %}
+      {% endif %}
+
+    </tbody>
+  </table>
 </div>
-   
-<button type="button" class="btn btn-dark"><a id="btnCad" href="{{url_for('produto.CadProduto')}}"><i class="fa fa-fw fa-plus"></i>Novo Produto</a></button>
+
+<button type="button" class="btn btn-dark"><a id="btnCad" href="{{url_for('produto.CadProduto')}}"><i
+      class="fa fa-fw fa-plus"></i>Novo Produto</a></button>
+{% endblock %}
+
+{% block js %}
+
+<script>
+  $SCRIPT_ROOT = {{request.script_root | tojson | safe}}; // pega a url da barra de endereço
+
+  $("form[name='deleteProduto']").submit(function (e) {
+    e.preventDefault(); // parar o envio para poder fazer manualmente
+    swal({ // abre um popup pedindo a confirmação do usuário
+        title: "",
+        text: "Deseja realmente excluir o produto" + $(e.target)[0][0].value,
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonClass: "btn-danger",
+        confirmButtonText: "Sim",
+        cancelButtonText: 'Cancelar',
+        closeOnConfirm: false
+      },
+      function () {
+        deletarProduto($(e.target)[0][0].value); // Retorna o valor que está no id do produto escolhido);
+      });
+  })
+
+  function deletarProduto(idProduto) {
+    $.post($SCRIPT_ROOT + "{{ url_for('produto.deleteProduto') }}", {
+      id_produto: idProduto
+    }, function (data) {
+      if (!data.erro) {
+        swal({
+            title: "",
+            text: data.mensagem,
+            type: "success",
+            confirmButtonClass: "btn-success",
+            confirmButtonText: "Ok",
+            closeOnConfirm: false,
+            closeOnCancel: false
+          },
+          function (isConfirm) {
+            if (isConfirm) {
+              window.location.replace($SCRIPT_ROOT + "{{ url_for('produto.ListaProdutos') }}");
+            }
+          });
+      } else {
+        swal("", data.mensagem + '\n' + data.mensagem_exception, "error");
+      }
+    })
+  }
+</script>
+
 {% endblock %}
