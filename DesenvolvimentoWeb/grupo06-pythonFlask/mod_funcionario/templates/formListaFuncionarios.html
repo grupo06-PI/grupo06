@@ -4,63 +4,130 @@
 
 
 
-{% block style %} 
+{% block style %}
 {{super()}}
 
 <style>
-  #btnCad{
+  #btnCad {
     text-decoration: none;
     padding: 10px;
     padding-bottom: 4px;
     padding-top: 4px;
     border-radius: 4px;
     color: white;
-    
+
   }
-  
-  .listaClientes{ 
-  width: 50%;
-  resize: both;
-  text-align: center;
-  
+
+  .listaClientes {
+    width: 50%;
+    resize: both;
+    text-align: center;
+
   }
-  
 </style>
-{% endblock %}   
+{% endblock %}
 
 
-    
-{% block content %} 
-    {{ super() }}
-    
+
+{% block content %}
+{{ super() }}
+
 <div class="listaClientes">
-    <table border=1 cellspacing=0 cellpadding=2 bordercolor="#009688" class="table">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Nome</th>
-            <th scope="col">CPF</th>
-            <th scope="col">Matrícula</th>
-            <th scope="col">Telefone</th>
-            <th scope="col">Senha</th>
-            <th scope="col">Permissão</th>           
-          </tr>
-        </thead>
-        <tbody>
-          
-          <tr>
-            <td>1</td>
-            <td>Nicolas Adams</td>
-            <td>012.064.147-12</td>
-            <td>142310</td>
-            <td>(49)9 9841-6584</td>
-            <td>*******</td>
-            <td>ADMIN</td>                        
-            </tr> 
+  <table border=1 cellspacing=0 cellpadding=2 bordercolor="#009688" class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">Matrícula</th>
+        <th scope="col">CPF</th>
+        <th scope="col">Telefone</th>
+        <th scope="col">Grupo</th>
+        <th scope="col">Senha</th>
+      </tr>
+    </thead>
+    <tbody>
 
-        </tbody>
-      </table>
+      {% if result %}
+      {% for row in result %}
+
+      <tr>
+        <td scope='row'> {{ row[0] }}</th>
+        <td> {{ row[1] }}</td>
+        <td> {{ row[2] }}</td>
+        <td> {{ row[3] }}</td>
+        <td> {{ row[4] }}</td>
+        <td> {{ row[5] }}</td>
+        <td> {{ row[6] }}</td>
+        </td>
+        <td>
+
+          <form action='{{ url_for('funcionario.formEditFuncionario') }}' method='POST' name='editFuncionario'>
+            <input type='hidden' name='id_funcionario' value='{{ row[0] }}'>
+            <button type='submit' name='formEditFuncionario'><i class='fa fa-fw fa-edit'></i></button>
+          </form>
+
+          <form method='POST' name='deleteFuncionario' id='deleteFuncionario'>
+            <input type='hidden' name='id_funcionario' value='{{ row[0] }}'>
+            <button type='submit' name='formDeleteFuncionario'><i class='fa fa-fw fa-trash'></i></button>
+          </form>
+        </td>
+      </tr>
+
+
+      {% endfor %}
+      {% endif %}
+    </tbody>
+  </table>
 </div>
-   
-<button type="button" class="btn btn-dark"><a id="btnCad" href="{{url_for('funcionario.CadFuncionario')}}"><i class="fa fa-fw fa-plus"></i>Novo Funcionário</a></button>
+
+<button type="button" class="btn btn-dark"><a id="btnCad" href="{{url_for('funcionario.CadFuncionario')}}"><i
+      class="fa fa-fw fa-plus"></i>Novo Funcionário</a></button>
+{% endblock %}
+
+{% block js %}
+<script>
+  $SCRIPT_ROOT = {{request.script_root | tojson | safe}}; // pega a url da barra de endereço
+
+  $("form[name='deleteFuncionario']").submit(function (e) {
+    e.preventDefault(); // parar o envio para poder fazer manualmente
+    swal({ // abre um popup pedindo a confirmação do usuário
+        title: "",
+        text: "Deseja realmente excluir o funcionário" + $(e.target)[0][0].value,
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonClass: "btn-danger",
+        confirmButtonText: "Sim",
+        cancelButtonText: 'Cancelar',
+        closeOnConfirm: false
+      },
+      function () {
+        deletarFuncionario($(e.target)[0][0].value); // Retorna o valor que está no id do produto escolhido);
+      });
+  })
+
+  function deletarFuncionario(idfuncionario) {
+    $.post($SCRIPT_ROOT + "{{ url_for('funcionario.deleteFuncionario') }}", {
+      id_funcionario: idfuncionario
+    }, function (data) {
+      if (!data.erro) {
+        swal({
+            title: "",
+            text: data.mensagem,
+            type: "success",
+            confirmButtonClass: "btn-success",
+            confirmButtonText: "Ok",
+            closeOnConfirm: false,
+            closeOnCancel: false
+          },
+          function (isConfirm) {
+            if (isConfirm) {
+              window.location.replace($SCRIPT_ROOT + "{{ url_for('funcionario.ListaFuncionarios') }}");
+            }
+          });
+      } else {
+        swal("", data.mensagem + '\n' + data.mensagem_exception, "error");
+      }
+    })
+  }
+</script>
 {% endblock %}
