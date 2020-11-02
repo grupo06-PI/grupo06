@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, redirect, url_for, flash
+from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify
 
 from mod_cliente.clienteBD import Clientes
 
@@ -30,39 +30,63 @@ def formEditCliente():
 
 @bp_cliente.route('/addCliente', methods=['GET','POST'])
 def addCliente():
+    _msg = ""
 
-    cliente=Clientes()
+    try:
+        cliente=Clientes()
 
-    cliente.id_cliente = request.form['id_cliente']
-    cliente.nome = request.form['nome']
-    cliente.cpf = request.form['cpf']
-    cliente.telefone = request.form['telefone']
-    cliente.compra_fiado = request.form['compra_fiado']
-    cliente.dia_fiado = request.form['dia_fiado']
-    cliente.senha = request.form['senha']   
+        cliente.id_cliente = request.form['id_cliente']
+        cliente.nome = request.form['nome']
+        cliente.cpf = request.form['cpf']
+        cliente.telefone = request.form['telefone']
+        cliente.compra_fiado = request.form['compra_fiado']
+        cliente.dia_fiado = request.form['dia_fiado']
+        cliente.senha = request.form['senha']   
 
-    cliente.insert()
+        _msg = cliente.insert()
+        return jsonify(erro=False, mensagem=_msg)
 
-    return redirect(url_for('cliente.ListaClientes'))
+    except Exception as e:
+        _msg, _msg_excpetion = e.args
+        return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_excpetion)
+    
 
 @bp_cliente.route('/editCliente', methods=['POST'])
 def editCliente():
+    _msg = ""
 
-    cliente=Clientes()
+    try:
 
-    cliente.id_cliente = request.form['id_cliente']
-    cliente.nome = request.form['nome']
-    cliente.cpf = request.form['cpf']
-    cliente.telefone = request.form['telefone']
-    cliente.compra_fiado = request.form['compra_fiado']
-    cliente.dia_fiado = request.form['dia_fiado']
-    cliente.senha = request.form['senha']   
+        cliente=Clientes()
+
+        cliente.id_cliente = request.form['id_cliente']
+        cliente.nome = request.form['nome']
+        cliente.cpf = request.form['cpf']
+        cliente.telefone = request.form['telefone']
+        cliente.compra_fiado = request.form['compra_fiado']
+        cliente.dia_fiado = request.form['dia_fiado']
+        cliente.senha = request.form['senha']   
+
+        _msg = cliente.update()
+        return jsonify(erro=False, mensagem=_msg)
+
+    except Exception as e:
+        _msg, _msg_exception = e.args
+        return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_exception)
+
+@bp_cliente.route('/deleteCliente', methods=['POST'])
+def deleteCliente():
+    _msg = ""
+    try:
+
+        cliente = Clientes()
+        cliente.id_cliente = request.form['id_cliente']
+
+        _msg = cliente.delete()
+
+        return jsonify(erro=False, mensagem=_msg)
+
+    except Exception as e:
+        _msg, _msg_exception = e.args
+        return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_exception)
     
-
-    if 'salvaEditaUsuarioDB' in request.form:
-        cliente.update()
-
-    elif 'salvaExcluiUsuarioDB' in request.form:
-        cliente.delete()
-
-    return redirect(url_for('cliente.ListaClientes'))

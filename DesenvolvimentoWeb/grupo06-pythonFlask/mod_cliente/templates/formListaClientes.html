@@ -2,73 +2,131 @@
 
 {% block title %} ListaClientes {% endblock %}
 
-{% block style %} 
+{% block style %}
 {{super()}}
 
 <style>
-  #btnCad{
+  #btnCad {
     text-decoration: none;
     padding: 10px;
     padding-bottom: 4px;
     padding-top: 4px;
     border-radius: 4px;
     color: white;
-    
+
   }
-  
-  .listaClientes{ 
-  width: 50%;
-  resize: both;
-  text-align: center;
-  
+
+  .listaClientes {
+    width: 50%;
+    resize: both;
+    text-align: center;
+
   }
-  
 </style>
-{% endblock %}   
+{% endblock %}
 
-{% block content %} 
-    
+{% block content %}
+
 <div class="listaClientes">
-    <table border=1 cellspacing=0 cellpadding=2 bordercolor="#009688" class="table">
-        <thead class="thead-dark">
-          <tr>
-            <th scope="col">#</th>
-            <th scope="col">Nome</th>
-            <th scope="col">CPF</th>
-            <th scope="col">Telefone</th>
-            <th scope="col">compra_fiado</th>
-            <th scope="col">dia_fiado</th>
-            <th scope="col">senha</th>           
-          </tr>
-        </thead>
+  <table border=1 cellspacing=0 cellpadding=2 bordercolor="#009688" class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nome</th>
+        <th scope="col">CPF</th>
+        <th scope="col">Telefone</th>
+        <th scope="col">compra_fiado</th>
+        <th scope="col">dia_fiado</th>
+        <th scope="col">senha</th>
+      </tr>
+    </thead>
 
-        <tbody>
+    <tbody>
 
-          {% if result %}
-          {% for row in result %}
+      {% if result %}
+      {% for row in result %}
 
-          <tr>
-            <td scope='row'> {{ row[0] }}</th>
-            <td> {{ row[1] }}</td>
-            <td> {{ row[2] }}</td>
-            <td> {{ row[3] }}</td>
-            <td> {{ row[4] }}</td>
-            <td> {{ row[5] }}</td>
-            <td> {{ row[6] }}</td> 
-            <td>
-              <form action='{{ url_for('cliente.formEditCliente') }}' method='POST' name='editUsuario'>
-                <input type='hidden' name='id_cliente' value='{{ row[0] }}'>
-                <button type='submit' name='formEditCliente'></button>
-              </form>
-            </td>                      
-          </tr> 
+      <tr>
+        <td scope='row'> {{ row[0] }}</th>
+        <td> {{ row[1] }}</td>
+        <td> {{ row[2] }}</td>
+        <td> {{ row[3] }}</td>
+        <td> {{ row[4] }}</td>
+        <td> {{ row[5] }}</td>
+        <td> {{ row[6] }}</td>
+        <td>
 
-          {% endfor %}
-          {% endif %}
+          <form action='{{ url_for('cliente.formEditCliente') }}' method='POST' name='editCliente'>
+            <input type='hidden' name='id_cliente' value='{{ row[0] }}'>
+            <button type='submit' name='formEditCliente'><i class='fa fa-fw fa-edit'></i></button>
+          </form>
 
-        </tbody>
-      </table>
+          <form method='POST' name='deleteCliente' id='deleteCliente'>
+            <input type='hidden' name='id_cliente' value='{{ row[0] }}'>
+            <button type='submit' name='formDeleteCliente'><i class='fa fa-fw fa-trash'></i></button>
+          </form>
+
+        </td>
+      </tr>
+
+      {% endfor %}
+      {% endif %}
+
+    </tbody>
+  </table>
 </div>
-   
-<button type="button" class="btn btn-dark"><a id="btnCad" href="{{url_for('cliente.CadCliente')}}"><i class="fa fa-fw fa-plus"></i>Novo Cliente</a></button>
+
+<button type="button" class="btn btn-dark"><a id="btnCad" href="{{url_for('cliente.CadCliente')}}"><i
+      class="fa fa-fw fa-plus"></i>Novo Cliente</a></button>
+{% endblock %}
+
+{% block js %}
+
+<script>
+  $SCRIPT_ROOT = {{request.script_root | tojson | safe}}; // pega a url da barra de endereço
+
+  $("form[name='deleteCliente']").submit(function (e) {
+    e.preventDefault(); // parar o envio para poder fazer manualmente
+    swal({ // abre um popup pedindo a confirmação do usuário
+        title: "",
+        text: "Deseja realmente excluir o cliente" + $(e.target)[0][0].value,
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonClass: "btn-danger",
+        confirmButtonText: "Sim",
+        cancelButtonText: 'Cancelar',
+        closeOnConfirm: false
+      },
+      function () {
+        deletarCliente($(e.target)[0][0].value); // Retorna o valor que está no id do produto escolhido);
+      });
+  })
+
+  function deletarCliente(idcliente) {
+    $.post($SCRIPT_ROOT + "{{ url_for('cliente.deleteCliente') }}", {
+      id_cliente: idcliente
+    }, function (data) {
+      if (!data.erro) {
+        swal({
+            title: "",
+            text: data.mensagem,
+            type: "success",
+            confirmButtonClass: "btn-success",
+            confirmButtonText: "Ok",
+            closeOnConfirm: false,
+            closeOnCancel: false
+          },
+          function (isConfirm) {
+            if (isConfirm) {
+              window.location.replace($SCRIPT_ROOT + "{{ url_for('cliente.ListaClientes') }}");
+            }
+          });
+      } else {
+        swal("", data.mensagem + '\n' + data.mensagem_exception, "error");
+      }
+    })
+  }
+</script>
+
+
 {% endblock %}
