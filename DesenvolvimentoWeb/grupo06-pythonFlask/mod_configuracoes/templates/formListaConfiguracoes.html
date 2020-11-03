@@ -1,0 +1,62 @@
+{% extends "modelo.html" %}
+
+{% block title %} ListaProdutos {% endblock %}
+
+{% block style %}
+{{super()}}
+
+<style>
+    #btnCad {
+        text-decoration: none;
+        padding: 10px;
+        padding-bottom: 4px;
+        padding-top: 4px;
+        border-radius: 4px;
+        color: white;
+
+    }
+
+    .listaClientes {
+        width: 40%;
+        resize: both;
+        text-align: center;
+
+    }
+</style>
+{% endblock %}
+
+
+
+{% block content %}
+{{ super() }}
+
+<div class="listaClientes">
+    <table border=1 cellspacing=0 cellpadding=2 bordercolor="#009688" class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Percentual de Juros</th>
+                <th scope="col">Multas por Atraso</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            {% if result %}
+            {% for row in result %}
+            <tr>
+                <td scope='row'> {{ row[0] }}</td>
+                <td> {{ row[1] }}</td>
+                <td>
+                    <form action='{{ url_for('configuracoes.formEditConfiguracoes') }}' method='POST' name='editConfiguracoes'>
+                        <input type='hidden' name='taxa_multa_diario' value='{{ row[0] }}'>
+                        <button type='submit' name='formEditConfiguracoes'><i class='fa fa-fw fa-edit'></i></button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+            {% endif %}
+        </tbody>
+    </table>
+</div>
+
+{% endblock %}
