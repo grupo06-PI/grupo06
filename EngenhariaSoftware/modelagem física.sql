@@ -28,8 +28,8 @@ CREATE TABLE IF NOT EXISTS `pastelaria_db`.`tb_produto` (
   `id_produto` INT(11) NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(100) NOT NULL,
   `descricao` VARCHAR(200) NULL DEFAULT NULL,
-  `foto` MEDIUMBLOB NULL DEFAULT NULL,
   `valor_unitario` DECIMAL(11,2) NOT NULL,
+  `foto` MEDIUMBLOB NULL DEFAULT NULL,
   PRIMARY KEY (`id_produto`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
