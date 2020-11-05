@@ -2,16 +2,20 @@ from flask import Blueprint, render_template, request, redirect, url_for, flash,
 
 from mod_funcionario.funcionarioBD import Funcionarios
 
+from mod_login.login import validaSessao
+
 bp_funcionario = Blueprint('funcionario', __name__, template_folder='templates', url_prefix="/funcionarios")
 
 
 @bp_funcionario.route("/cadFuncionario", methods=['GET', 'POST'])
+@validaSessao
 def CadFuncionario():
     funcionario = Funcionarios()
     return render_template("formFuncionario.html", funcionario=funcionario, content_type='application/json')
 
 
 @bp_funcionario.route("/listaFuncionarios", methods=['GET', 'POST'])
+@validaSessao
 def ListaFuncionarios():
     funcionario = Funcionarios()
     res = funcionario.selectALL()
@@ -19,6 +23,7 @@ def ListaFuncionarios():
 
 
 @bp_funcionario.route("/formEditFuncionario", methods=['POST'])
+@validaSessao
 def formEditFuncionario():
 
     funcionario = Funcionarios()
@@ -30,6 +35,7 @@ def formEditFuncionario():
 
 
 @bp_funcionario.route("/addFuncionario", methods=['GET','POST'])
+@validaSessao
 def addFuncionario():
     _msg = ""
 
@@ -52,6 +58,7 @@ def addFuncionario():
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_excpetion)
 
 @bp_funcionario.route("/editFuncionario", methods=['POST'])
+@validaSessao
 def editFuncionario():
         _msg = ""
 
@@ -75,6 +82,7 @@ def editFuncionario():
 
 
 @bp_funcionario.route("/deleteFuncionario", methods=['POST'])
+@validaSessao
 def deleteFuncionario():
     _msg = ""
     try:

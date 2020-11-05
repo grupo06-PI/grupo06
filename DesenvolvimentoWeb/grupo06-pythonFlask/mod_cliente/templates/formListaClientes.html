@@ -38,6 +38,8 @@
         <th scope="col">compra_fiado</th>
         <th scope="col">dia_fiado</th>
         <th scope="col">senha</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Excluir</th>
       </tr>
     </thead>
 
@@ -55,18 +57,18 @@
         <td> {{ row[5] }}</td>
         <td> {{ row[6] }}</td>
         <td>
-
           <form action='{{ url_for('cliente.formEditCliente') }}' method='POST' name='editCliente'>
             <input type='hidden' name='id_cliente' value='{{ row[0] }}'>
             <button type='submit' name='formEditCliente'><i class='fa fa-fw fa-edit'></i></button>
           </form>
-
+        </td>
+        <td>
           <form method='POST' name='deleteCliente' id='deleteCliente'>
             <input type='hidden' name='id_cliente' value='{{ row[0] }}'>
             <button type='submit' name='formDeleteCliente'><i class='fa fa-fw fa-trash'></i></button>
           </form>
-
         </td>
+        
       </tr>
 
       {% endfor %}

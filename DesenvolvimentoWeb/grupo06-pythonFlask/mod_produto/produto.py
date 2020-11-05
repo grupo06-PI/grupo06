@@ -3,21 +3,26 @@ import base64
 
 from mod_produto.produtoBD import Produtos
 
+from mod_login.login import validaSessao
+
 bp_produto = Blueprint('produto', __name__, template_folder='templates', url_prefix='/produtos')
 
 @bp_produto.route("/cadProduto", methods=['GET','POST'])
+@validaSessao
 def CadProduto():
     produto = Produtos()
     return render_template('formProduto.html', produto=produto, content_type='application/json')
 
 
 @bp_produto.route("/listaProdutos", methods=['GET','POST'])
+@validaSessao
 def ListaProdutos():
     produto = Produtos()
     res = produto.selectALL()
     return render_template('formListaProdutos.html', result=res, content_type='application/json')
 
 @bp_produto.route('/formEditProduto', methods=['POST'])
+@validaSessao
 def formEditProduto():
     produto = Produtos()
     produto.id_produto = request.form['id_produto']
@@ -25,6 +30,7 @@ def formEditProduto():
     return render_template('formProduto.html', produto=produto, content_type='application/json')
 
 @bp_produto.route('/addProduto', methods=['POST'])
+@validaSessao
 def addProduto():
     _msg = ""
     try:
@@ -43,6 +49,7 @@ def addProduto():
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_exception)
 
 @bp_produto.route('/editProduto', methods=['POST'])
+@validaSessao
 def editProduto():
     _msg = ""
     try:
@@ -62,6 +69,7 @@ def editProduto():
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_exception)
 
 @bp_produto.route('/deleteProduto', methods=['POST'])
+@validaSessao
 def deleteProduto():
     _msg = ""
     try:

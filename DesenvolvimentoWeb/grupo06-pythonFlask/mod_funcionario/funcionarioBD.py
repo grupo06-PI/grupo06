@@ -160,3 +160,29 @@ class Funcionarios(object):
                 c.close()
             if banco:
                 banco.conexao.close()
+
+    #criação de método para ver se o cpf e senha existe no bd
+    def selectLogin(self):
+        banco = Banco()
+
+        try:
+            c = banco.conexao.cursor()
+
+            c.execute("select id_funcionario, nome, matricula, cpf, telefone, grupo, senha from tb_funcionario where cpf = %s and senha = %s", (self.cpf, self.senha))
+
+            for linha in c:
+                self.id_funcionario = linha[0]
+                self.nome = linha[1]
+                self.matricula = linha[2]
+                self.cpf = linha[3]
+                self.telefone = linha[4]
+                self.grupo = linha[5]
+                self.senha = linha[6]
+                
+
+            c.close()
+
+            return "Busca feita com sucesso!"
+
+        except:
+            return "Ocorreu um erro na busca do usuário."

@@ -2,9 +2,12 @@ from flask import Blueprint, render_template, request, redirect, url_for, flash,
 
 from mod_cliente.clienteBD import Clientes
 
+from mod_login.login import validaSessao
+
 bp_cliente = Blueprint('cliente', __name__, template_folder='templates', url_prefix='/clientes')
 
 @bp_cliente.route("/cadCliente", methods=['GET','POST'])
+@validaSessao
 def CadCliente():
 
     cliente=Clientes()
@@ -12,6 +15,7 @@ def CadCliente():
 
 
 @bp_cliente.route("/listaClientes", methods=['GET','POST'])
+@validaSessao
 def ListaClientes():
 
     cliente=Clientes()
@@ -20,6 +24,7 @@ def ListaClientes():
 
 
 @bp_cliente.route("/formEditCliente", methods=['POST'])
+@validaSessao
 def formEditCliente():
 
     cliente=Clientes()
@@ -29,6 +34,7 @@ def formEditCliente():
 
 
 @bp_cliente.route('/addCliente', methods=['GET','POST'])
+@validaSessao
 def addCliente():
     _msg = ""
 
@@ -52,6 +58,7 @@ def addCliente():
     
 
 @bp_cliente.route('/editCliente', methods=['POST'])
+@validaSessao
 def editCliente():
     _msg = ""
 
@@ -75,6 +82,7 @@ def editCliente():
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_exception)
 
 @bp_cliente.route('/deleteCliente', methods=['POST'])
+@validaSessao
 def deleteCliente():
     _msg = ""
     try:

@@ -1,4 +1,12 @@
 from flask import Flask
+from flask import send_from_directory
+from flask import session
+
+#encerrar sessão por inatividade
+from datetime import timedelta
+
+#gerador randomico de chave
+import os
 
 #importando Blueprints
 from mod_home.home import bp_home
@@ -8,9 +16,13 @@ from mod_produto.produto import bp_produto
 from mod_comanda.comanda import bp_comanda
 from mod_configuracoes.configuracoes import bp_configuracoes
 from mod_dashboard.dashboard import bp_dashboard
+from mod_login.login import bp_login
 
 
 app = Flask(__name__)
+
+#gerador randÔmico de chaves para a session
+app.secret_key = os.urandom(12).hex()
 
 #mod_home
 app.register_blueprint(bp_home)
@@ -32,6 +44,15 @@ app.register_blueprint(bp_configuracoes)
 
 #mod_dashboard
 app.register_blueprint(bp_dashboard)
+
+#mod_login
+app.register_blueprint(bp_login)
+
+#encerrando a sessao por inatividade
+@app.before_request
+def before_request():
+    session.permanent = True
+    app.permanent_session_lifetime = timedelta(minutes=30)
 
 if __name__ == "__main__":
     app.run()
