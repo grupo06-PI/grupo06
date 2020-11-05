@@ -43,6 +43,8 @@
         <th scope="col">Telefone</th>
         <th scope="col">Grupo</th>
         <th scope="col">Senha</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Excluir</th>
       </tr>
     </thead>
     <tbody>
@@ -60,12 +62,12 @@
         <td> {{ row[6] }}</td>
         </td>
         <td>
-
           <form action='{{ url_for('funcionario.formEditFuncionario') }}' method='POST' name='editFuncionario'>
             <input type='hidden' name='id_funcionario' value='{{ row[0] }}'>
             <button type='submit' name='formEditFuncionario'><i class='fa fa-fw fa-edit'></i></button>
           </form>
-
+        </td>
+        <td>
           <form method='POST' name='deleteFuncionario' id='deleteFuncionario'>
             <input type='hidden' name='id_funcionario' value='{{ row[0] }}'>
             <button type='submit' name='formDeleteFuncionario'><i class='fa fa-fw fa-trash'></i></button>

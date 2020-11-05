@@ -17,7 +17,7 @@
   }
 
   .listaClientes {
-    width: 40%;
+    width: 70%;
     resize: both;
     text-align: center;
 
@@ -39,6 +39,8 @@
         <th scope="col">Descrição</th>
         <th scope="col">Valor R$</th>
         <th scope="col">Imagem</th>
+        <th scope="col">Editar</th>
+        <th scope="col">Excluir</th>
       </tr>
     </thead>
 
@@ -53,18 +55,18 @@
         <td> {{ row[3] }}</td>
         <td><img src='{{ row[4] }}' width='100'></td>
         <td>
-
           <form action='{{ url_for('produto.formEditProduto') }}' method='POST' name='editProduto'>
             <input type='hidden' name='id_produto' value='{{ row[0] }}'>
             <button type='submit' name='formEditProduto'><i class='fa fa-fw fa-edit'></i></button>
           </form>
-
+        </td>
+        <td>
           <form method='POST' name='deleteProduto' id='deleteProduto'>
             <input type='hidden' name='id_produto' value='{{ row[0] }}'>
             <button type='submit' name='formDeleteProduto'><i class='fa fa-fw fa-trash'></i></button>
           </form>
-
         </td>
+        
       </tr>
       {% endfor %}
       {% endif %}
