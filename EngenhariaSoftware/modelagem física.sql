@@ -1,7 +1,7 @@
 -- MySQL Workbench Synchronization
--- Generated: 2020-10-18 19:46
+-- Generated: 2020-11-06 23:57
 -- Model: Pastelaria do Zé
--- Version: 1.0
+-- Version: 1.2
 -- Project: Projeto Integrador - Grupo 06
 -- Author: Eliza Muniz de Souza
 
@@ -28,8 +28,8 @@ CREATE TABLE IF NOT EXISTS `pastelaria_db`.`tb_produto` (
   `id_produto` INT(11) NOT NULL AUTO_INCREMENT,
   `nome` VARCHAR(100) NOT NULL,
   `descricao` VARCHAR(200) NULL DEFAULT NULL,
-  `valor_unitario` DECIMAL(11,2) NOT NULL,
   `foto` MEDIUMBLOB NULL DEFAULT NULL,
+  `valor_unitario` DECIMAL(11,2) NOT NULL,
   PRIMARY KEY (`id_produto`))
 ENGINE = InnoDB
 DEFAULT CHARACTER SET = utf8;
@@ -42,12 +42,12 @@ DEFAULT CHARACTER SET = utf8;
 
 CREATE TABLE IF NOT EXISTS `pastelaria_db`.`tb_comanda` (
   `id_comanda` INT(11) NOT NULL AUTO_INCREMENT,
-  `comanda` VARCHAR(100) NOT NULL,
-  `data_hota` DATETIME NOT NULL,
+  `numero_comanda` VARCHAR(100) NOT NULL,
+  `data_hora` DATETIME NOT NULL,
   `status_comanda` TINYINT(4) NULL DEFAULT NULL,
   `status_pagamento` TINYINT(4) NULL DEFAULT NULL,
   `funcionario_id` INT(11) NOT NULL,
-  `cliente_id` INT(11) NOT NULL,
+  `cliente_id` INT(11),
   PRIMARY KEY (`id_comanda`),
   INDEX `funcionario_id_idx` (`funcionario_id` ASC),
   INDEX `cliente_id_idx` (`cliente_id` ASC),
