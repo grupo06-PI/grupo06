@@ -1,0 +1,122 @@
+{% extends "modelo.html" %}
+
+{% block title %} ListaComandas {% endblock %}
+
+{% block style %}
+{{super()}}
+
+<style>
+  #btnCad {
+    text-decoration: none;
+    padding: 10px;
+    padding-bottom: 4px;
+    padding-top: 4px;
+    border-radius: 4px;
+    color: white;
+
+  }
+
+  .listaClientes {
+    width: 70%;
+    resize: both;
+    text-align: center;
+
+  }
+</style>
+{% endblock %}
+
+
+{% block content %}
+{{ super() }}
+
+<div class="listaClientes">
+  <table border=1 cellspacing=0 cellpadding=2 bordercolor="#009688" class="table">
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">comanda</th>
+        <th scope="col">data_hora</th>
+        <th scope="col">status_comanda</th>
+        <th scope="col">status_pagamento</th>
+        <th scope="col">funcionario_id</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% if result %}
+      {% for row in result %}
+
+      <tr>
+        <td scope='row'> {{ row[0] }}</th>
+        <td> {{ row[1] }}</td>
+        <td> {{ row[2] }}</td>
+        <td> {{ row[3] }}</td>
+        <td> {{ row[4] }}</td>
+        <td> {{ row[5] }}</td>
+        <td>
+          <form method='POST' name='deleteComanda' id='deleteComanda'>
+            <input type='hidden' name='id_comanda' value='{{ row[0] }}'>
+            <button type='submit' name='formDeleteComanda'><i class='fa fa-fw fa-trash'></i></button>
+          </form>
+        </td>
+      </tr>
+
+      {% endfor %}
+      {% endif %}
+    </tbody>
+  </table>
+</div>
+
+
+{% endblock %}
+
+{% block js %}
+
+<script>
+  $SCRIPT_ROOT = {{request.script_root | tojson | safe}}; // pega a url da barra de endereço
+
+  $("form[name='deleteComanda']").submit(function (e) {
+    e.preventDefault(); // parar o envio para poder fazer manualmente
+    swal({ // abre um popup pedindo a confirmação do usuário
+        title: "",
+        text: "Deseja realmente excluir a Comanda" + $(e.target)[0][0].value,
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonClass: "btn-danger",
+        confirmButtonText: "Sim",
+        cancelButtonText: 'Cancelar',
+        closeOnConfirm: false
+      },
+      function () {
+        deletarComanda($(e.target)[0][0].value); // Retorna o valor que está no id do produto escolhido);
+      });
+  })
+
+  function deletarComanda(idcomanda) {
+    $.post($SCRIPT_ROOT + "{{ url_for('comanda.deleteComanda') }}", {
+      id_comanda: idcomanda
+    }, function (data) {
+      if (!data.erro) {
+        swal({
+            title: "",
+            text: data.mensagem,
+            type: "success",
+            confirmButtonClass: "btn-success",
+            confirmButtonText: "Ok",
+            closeOnConfirm: false,
+            closeOnCancel: false
+          },
+          function (isConfirm) {
+            if (isConfirm) {
+              window.location.replace($SCRIPT_ROOT + "{{ url_for('comanda.ListaComandas') }}");
+            }
+          });
+      } else {
+        swal("", data.mensagem + '\n' + data.mensagem_exception, "error");
+      }
+    })
+  }
+</script>
+
+
+{% endblock %}

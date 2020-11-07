@@ -2,8 +2,116 @@
 
 {% block title %} CadComanda {% endblock %}
 
-{% block content %}  
+{% block content %}
 
-<h2>Abrir comandas</h2>
 
+
+{% block style %}
+{{super()}}
+
+<style>
+
+</style>
+{% endblock %}
+
+<div class="container">
+    <h1>Nova Comanda</h1>
+    <form id="abrirComanda" name="abrirComanda" method="POST" enctype="multipart/form-data">
+        <hr>
+
+        <div class="row">
+            <div class="col-md-1 mb-2">
+                <label for="id_comanda">ID:</label>
+                <input readonly value="{{ comanda.id_comanda }}" type="text" name="id_comanda" id="id_comanda"
+                    class="form-control" placeholder="ID" required>
+            </div>
+
+            <div class="col-md-6 mb-2">
+                <label for="numero_comanda">Número Comanda:</label>
+                <input value="{{ comanda.numero_comanda }}" type="text" name="numero_comanda" id="numero_comanda"
+                    autofocus class="form-control" placeholder="Insira o número da comanda">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-3 mb-2">
+                <label for="status_comanda">status_comanda:</label>
+                <input value="{{ comanda.status_comanda }}" type="text" name="status_comanda" id="status_comanda"
+                    class="form-control" placeholder="">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-3 mb-2">
+                <label for="status_pagamento">status_pagamento:</label>
+                <input value="{{ comanda.status_pagamento }}" type="text" name="status_pagamento" id="status_pagamento"
+                    class="form-control" placeholder="">
+            </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-3 mb-2">
+                <label for="funcionario_id">funcionario_id:</label>
+                <input value="{{ comanda.funcionario_id }}" type="text" name="funcionario_id" id="funcionario_id"
+                    class="form-control" placeholder="">
+            </div>
+        </div>
+        <br>
+        <hr>
+
+        <button type='submit' name='salvaComandaDB' id='salvaComandaDB' class="btn btn-dark"><i
+                class=""></i>Salvar</a></button>
+
+    </form>
+</div>
+
+{% endblock %}
+
+{% block js %}
+<script>
+    $SCRIPT_ROOT = {{request.script_root | tojson | safe}}; // pega a url da barra de endereço
+
+    $('#abrirComanda').submit(function (e) {
+        e.preventDefault(); // parar o envio para poder fazer manualmente
+        var form = $('#abrirComanda')[0]; // captura o form
+        var data = new FormData(form); // cria o FormData {Object}
+
+        $.ajax({
+            type: "POST",
+            enctype: 'multipart/form-data',
+            url: "{{url_for('comanda.abrirComanda')}}",
+            data: data,
+            processData: false,
+            contentType: false,
+            cache: false,
+            timeout: 600000,
+
+            // manipular o retorno da requisição
+            success: function (data) {
+                if (!data.erro) {
+                    swal({
+                            title: "",
+                            text: data.mensagem,
+                            type: "success",
+                            confirmButtonClass: "btn-success",
+                            confirmButtonText: "Ok",
+                            closeOnConfirm: false,
+                            closeOnCancel: false
+                        },
+                        function (isConfirm) {
+                            if (isConfirm) {
+                                window.location.replace($SCRIPT_ROOT +
+                                    "{{ url_for('comanda.ListaComandas') }}");
+                            }
+                        });
+                } else {
+                    swal("", data.mensagem + '\n' + data.mensagem_exception, "error");
+                }
+            },
+            error: function (e) {
+                console.log(e);
+            }
+        })
+    })
+</script>
 {% endblock %}
