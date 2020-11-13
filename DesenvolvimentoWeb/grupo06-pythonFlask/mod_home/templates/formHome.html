@@ -5,16 +5,5 @@
 {% block content %}  
 
 
-<!-- info user sidebar-->
-{% if 'usuario' in session %}
-<div class="sidebar-user">
-  {% if 'usuario' in session %}
-  <b>{{  session['cpf'] }}</b>
-  <br>
-  <label for=""> Grupo: </label><b>{{ session['grupo'] }}</b>
-  {% endif %}
-</div>
-{% endif %}
-
 {% endblock %}
 

@@ -2,14 +2,60 @@
 
 {% block title %} Configurações {% endblock %}
 
+{% block style %}
+{{super()}}
+
+<style>
+    form {
+        border: 2px solid #1d1d40;
+        padding: 20px;
+        background-color: #30305c;
+        width: 90%;
+    }
+
+    .buttonsCfg {
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+        border-radius: 0px;
+        border: 1px solid white;
+        font-weight: bold;
+        background-color: #30305c;
+
+        font-family: Snell Roundhand, sans-serif;
+        font-variant: small-caps;
+    }
+
+    .buttonsCfg:hover {
+        color: white;
+        padding: 12px;
+        background-color: #30305c;
+    }
+
+    label {
+        color: white;
+        font-size: 14px;
+        font-family: Snell Roundhand, sans-serif;
+        font-variant: small-caps;
+        font-style: italic;
+
+    }
+
+    .titleForm {
+        color: white;
+        font-size: 30px;
+
+        font-family: Snell Roundhand, sans-serif;
+        font-variant: small-caps;
+    }
+</style>
+{% endblock %}
+
 {% block content %}
 
-<div class="container">
-
-    <div class="row">
-        <h2>Configurações</h2>
-    </div>
-    <hr>
+    <label for="" class="titleForm">Configurações</label>
     <form id="editConfiguracoes" name="editConfiguracoes" method="POST" enctype="multipart/form-data">
 
         <div class="row">
@@ -28,12 +74,11 @@
             </div>
         </div>
         <br>
-        <hr>
 
-        <button type='submit' name='editaConfiguracoesDB' id='editaConfiguracoesDB' class="btn btn-dark"><i
+
+        <button type='submit' name='editaConfiguracoesDB' id='editaConfiguracoesDB' class="buttonsCfg"><i
                 class=""></i>Editar</a></button>
     </form>
-</div>
 
 
 {% endblock %}

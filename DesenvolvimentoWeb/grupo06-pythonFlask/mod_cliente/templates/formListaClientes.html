@@ -6,21 +6,73 @@
 {{super()}}
 
 <style>
-  #btnCad {
-    text-decoration: none;
+  .buttonsCfg {
     padding: 10px;
-    padding-bottom: 4px;
-    padding-top: 4px;
-    border-radius: 4px;
+    text-decoration: none;
     color: white;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 0px;
+    border: 1px solid white;
+    font-weight: bold;
+    background-color: #30305c;
 
+    font-family: Snell Roundhand, sans-serif;
+    font-variant: small-caps;
+  }
+
+  .buttonsCfg:hover {
+    text-decoration: none;
+    color: white;
+    padding: 12px;
+    background-color: #30305c;
   }
 
   .listaClientes {
-    width: 50%;
-    resize: both;
+    padding-bottom: 10px;
     text-align: center;
 
+    font-family: Snell Roundhand, sans-serif;
+    font-variant: small-caps;
+
+  }
+
+  .titleForm {
+    color: white;
+    font-size: 30px;
+
+    font-family: Snell Roundhand, sans-serif;
+    font-variant: small-caps;
+    font-style: italic;
+  }
+
+  tr {
+    border-bottom: 7px solid #1d1d40;
+  }
+
+  td {
+    background-color: #30305c;
+    color: white;
+  }
+
+  th {
+    background-color: #30305c;
+
+  }
+
+  thead {
+    border-top: 2px solid #30305c;
+    color: white;
+    font-style: italic;
+  }
+
+  button {
+   background-color:#30305c;
+  }
+
+  i{
+    color: white;
+    
   }
 </style>
 {% endblock %}
@@ -28,8 +80,8 @@
 {% block content %}
 
 <div class="listaClientes">
-  <table border=1 cellspacing=0 cellpadding=2 bordercolor="#009688" class="table">
-    <thead class="thead-dark">
+  <table class="table table-striped table-primary">
+    <thead class="">
       <tr>
         <th scope="col">#</th>
         <th scope="col">Nome</th>
@@ -78,8 +130,8 @@
   </table>
 </div>
 
-<button type="button" class="btn btn-dark"><a id="btnCad" href="{{url_for('cliente.CadCliente')}}"><i
-      class="fa fa-fw fa-plus"></i>Novo Cliente</a></button>
+<a class="buttonsCfg" href="{{url_for('cliente.CadCliente')}}"><i class="fa fa-fw fa-plus"></i>Novo Cliente</a>
+
 {% endblock %}
 
 {% block js %}

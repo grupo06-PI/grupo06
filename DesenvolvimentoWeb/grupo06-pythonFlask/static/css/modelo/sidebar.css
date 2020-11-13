@@ -1,0 +1,117 @@
+div.flex-dashboard {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+sidebar {
+    display: block;
+    height: 100%;
+    width: 300px;
+    background-color: #1c1829;
+
+}
+
+
+sidebar .sidebar-title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    height: 90px;
+    border-bottom: 1px solid #141414;
+    border-right: 1px solid rgba(0, 0, 0, .0625);
+}
+
+sidebar .sidebar-title img {
+    height: 40px;
+    width: 40px;
+}
+
+sidebar .sidebar-title h2 {
+    font-size: 18px;
+    margin-top: 5px;
+    color: #ffffff;
+
+    font-family: Arial;
+    font-weight: bold;
+    font-variant: small-caps;
+
+}
+
+
+div.menu {
+    border-right: 1px solid rgba(0, 0, 0, .0625);
+}
+
+div.menu ul {
+    list-style-type: none;
+    padding: 0px;
+
+
+}
+
+div.menu ul li {
+    padding: 15px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-bottom: 1px solid rgba(0, 0, 0, .0625);
+    border-left: 0px;
+
+}
+
+div.menu ul li i {
+    color: #363636;
+    font-size: 18px;
+}
+
+div.menu ul li a {
+    color: #ffffff;
+    margin-left: 30px;
+    text-decoration: none;
+
+    font-family: Snell Roundhand, sans-serif;
+    font-variant: small-caps;
+    font-size: 15px;
+}
+
+div.menu ul li:hover {
+    color: #363c40;
+    text-decoration: none;
+    background-color: #3a9ec2;
+    border-radius: 1px;
+    padding: 15px 20px;
+}
+
+.sidebar-user {
+    color: white;
+    border: 1px solid #51c96d;
+    margin: 15px;
+    height: 100px;
+    padding: 20px;
+}
+
+.sidebar-user b {
+    font-size: 15px;
+    font-family: Arial;
+    font-style: italic;
+
+    padding-left: 4px;
+
+}
+
+.sidebar-user label {
+
+    font-family: Snell Roundhand, sans-serif;
+    font-variant: small-caps;
+    font-size: 15px;
+}
+
+.sidebar-user img {
+    padding-bottom: 5px;
+}

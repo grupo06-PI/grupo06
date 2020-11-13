@@ -5,19 +5,63 @@
 {% block style %}
 
 
+<style>
+    form {
+        border: 2px solid #1d1d40;
+        padding: 20px;
+        background-color: #30305c;
+        width: 90%;
+    }
+
+    .buttonsCfg {
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+        border-radius: 0px;
+        border: 1px solid white;
+        font-weight: bold;
+        background-color: #30305c;
+
+        font-family: Snell Roundhand, sans-serif;
+        font-variant: small-caps;
+    }
+
+    .buttonsCfg:hover {
+        color: white;
+        padding: 12px;
+        background-color: #30305c;
+    }
+
+    label {
+        color: white;
+        font-size: 14px;
+        font-family: Snell Roundhand, sans-serif;
+        font-variant: small-caps;
+        font-style: italic;
+
+    }
+
+    .titleForm {
+        color: white;
+        font-size: 30px;
+
+        font-family: Snell Roundhand, sans-serif;
+        font-variant: small-caps;
+    }
+</style>
+
 {% endblock %}
 
 {% block content %}
-
-<div class="container">
-
-    
+ 
     {% if produto.id_produto == 0: %}
-    <h1>Novo Produto</h1>
+    <label for="" class="titleForm">Novo Produto</label>
     <form id="addProduto" name="addProduto" method="POST" enctype="multipart/form-data">
 
         {% else: %}
-        <h1>Editar Produto: {{ produto.id_produto }}</h1>
+        <label class="titleForm">Editar Produto: {{ produto.id_produto }}</label>
         <form id="editProduto" name="editProduto" method="POST" enctype="multipart/form-data">
 
             {% endif %}
@@ -60,11 +104,10 @@
                     <img src='{{ produto.foto }}' width='300'>
                 </div>
             </div>
-            <hr>
-            <button type='submit' name='salvaProdutoDB' id='salvaProdutoDB' class="btn btn-dark"><i
+            
+            <button type='submit' name='salvaProdutoDB' id='salvaProdutoDB' class="buttonsCfg"><i
                     class=""></i>Salvar</a></button>
         </form>
-</div>
 
 {% endblock %}
 

@@ -4,24 +4,67 @@
 
 {% block style %}
 {{super()}}
-
 <style>
+    form {
+        border: 2px solid #1d1d40;
+        padding: 20px;
+        background-color: #30305c;
+        width: 90%;
+    }
 
+    .buttonsCfg {
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+        border-radius: 0px;
+        border: 1px solid white;
+        font-weight: bold;
+        background-color: #30305c;
+
+        font-family: Snell Roundhand, sans-serif;
+        font-variant: small-caps;
+    }
+
+    .buttonsCfg:hover {
+        color: white;
+        padding: 12px;
+        background-color: #30305c;
+    }
+
+    label {
+        color: white;
+        font-size: 14px;
+        font-family: Snell Roundhand, sans-serif;
+        font-variant: small-caps;
+        font-style: italic;
+
+    }
+
+    .titleForm {
+        color: white;
+        font-size: 30px;
+
+        font-family: Snell Roundhand, sans-serif;
+        font-variant: small-caps;
+    }
 </style>
+
 {% endblock %}
 
 {% block content %}
 <br>
-<div class="container">
+
 
     {% if funcionario.id_funcionario == 0 %}
 
-    <h1>Novo Funcionario</h1>
+    <label for="" class="titleForm">Novo Funcionário</label>
     <form id="addFuncionario" name="addFuncionario" method="POST" enctype="multipart/form-data">
         
         {% else %}
 
-        <h1>Editar Funcionario: {{ funcionario.id_funcionario }}</h1>
+        <label class="titleForm">Editar Funcionario: {{ funcionario.id_funcionario }}</label>
         <form id="editFuncionario" name="editFuncionario" method="POST" enctype="multipart/form-data">
             <hr>
             {% endif %}
@@ -82,12 +125,11 @@
                         <input value="{{ funcionario.senha }}" type="text" name="senha" id="senha" class="form-control"
                             placeholder="" maxlength="200" required>
                     </div>
-                </div>
-                <hr>
-                <button type='submit' name='salvaFuncionarioDB' id='salvaFuncionarioDB' class="btn btn-dark"><i
+                </div><br>
+                <button type='submit' name='salvaFuncionarioDB' id='salvaFuncionarioDB' class="buttonsCfg"><i
                         class=""></i>Salvar</a></button>
             </form>
-</div>
+
 
 {% endblock %}
 

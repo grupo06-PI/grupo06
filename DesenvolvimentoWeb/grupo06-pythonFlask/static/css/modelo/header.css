@@ -1,0 +1,37 @@
+.flex-dashboard header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    background-color: #201c2e;
+    padding: 10px 30px;
+    
+
+
+}
+
+.flex-dashboard header a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    padding: 7px;
+    border: 1px solid white;
+    font-family: Snell Roundhand, sans-serif;
+    font-variant: small-caps;
+
+}
+
+.flex-dashboard header a > svg {
+   color: white;
+   margin: 5px;
+   font-size: 20px;
+
+}
+
+.flex-dashboard header a:hover {
+    text-decoration: none;
+    border: 1px solid #9fdef5;
+    background-color: #5ebee0;
+
+}
