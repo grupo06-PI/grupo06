@@ -8,16 +8,57 @@
 
 {% block style %}
 {{super()}}
-
 <style>
+    form {
+        border: 2px solid #1d1d40;
+        padding: 20px;
+        background-color: #30305c;
+        width: 90%;
+    }
 
+    .buttonsCfg {
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+        border-radius: 0px;
+        border: 1px solid white;
+        font-weight: bold;
+        background-color: #30305c;
+
+        font-family: Snell Roundhand, sans-serif;
+        font-variant: small-caps;
+    }
+
+    .buttonsCfg:hover {
+        color: white;
+        padding: 12px;
+        background-color: #30305c;
+    }
+
+    label {
+        color: white;
+        font-size: 14px;
+        font-family: Snell Roundhand, sans-serif;
+        font-variant: small-caps;
+        font-style: italic;
+
+    }
+
+    .titleForm {
+        color: white;
+        font-size: 30px;
+
+        font-family: Snell Roundhand, sans-serif;
+        font-variant: small-caps;
+    }
 </style>
 {% endblock %}
 
-<div class="container">
-    <h1>Nova Comanda</h1>
+
+    <label for="" class="titleForm">Nova Comanda</label>
     <form id="abrirComanda" name="abrirComanda" method="POST" enctype="multipart/form-data">
-        <hr>
 
         <div class="row">
             <div class="col-md-1 mb-2">
@@ -57,13 +98,10 @@
             </div>
         </div>
         <br>
-        <hr>
-
-        <button type='submit' name='salvaComandaDB' id='salvaComandaDB' class="btn btn-dark"><i
+    
+        <button type='submit' name='salvaComandaDB' id='salvaComandaDB' class="buttonsCfg"><i
                 class=""></i>Salvar</a></button>
-
     </form>
-</div>
 
 {% endblock %}
 

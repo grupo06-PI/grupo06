@@ -6,25 +6,64 @@
     {{super()}}
 
     <style>
-
+        form {
+            border: 2px solid #1d1d40;
+            padding: 20px;
+            background-color: #30305c;
+            width: 90%;
+        }
+    
+        .buttonsCfg {
+            padding: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
+            text-align: center;
+            border-radius: 0px;
+            border: 1px solid white;
+            font-weight: bold;
+            background-color: #30305c;
+    
+            font-family: Snell Roundhand, sans-serif;
+            font-variant: small-caps;
+        }
+    
+        .buttonsCfg:hover {
+            color: white;
+            padding: 12px;
+            background-color: #30305c;
+        }
+    
+        label {
+            color: white;
+            font-size: 14px;
+            font-family: Snell Roundhand, sans-serif;
+            font-variant: small-caps;
+            font-style: italic;
+    
+        }
+    
+        .titleForm {
+            color: white;
+            font-size: 30px;
+    
+            font-family: Snell Roundhand, sans-serif;
+            font-variant: small-caps;
+        }
     </style>
 {% endblock %} 
 
 {% block content %} 
 
-<div class="container"> 
-
 
     {% if cliente.id_cliente == 0 %}
 
-    <h1>Novo Cliente</h1>
+    <label for="" class="titleForm">Novo Cliente</label>
     <form id="addCliente" name="addCliente" method="POST" enctype="multipart/form-data" >
-    <hr>
     {% else %}
 
-    <h1>Editar Cliente: {{ cliente.id_cliente }}</h1>
+    <label class="titleForm">Editar Cliente: {{ cliente.id_cliente }}</label>
     <form id="editCliente" name="editCliente" method="POST" enctype="multipart/form-data">
-    <hr>
     {% endif %}
 
         <div class="row">
@@ -80,10 +119,10 @@
                 class="form-control" placeholder="" maxlength="200" >
             </div>
         </div>
-        <hr>
+        <br>
 
-        <button type='submit' name='salvaProdutoDB' id='salvaProdutoDB' class="btn btn-dark"><i
-            class=""></i>Salvar</a></button>
+    <button type='submit' name='salvaUsuarioDB' id='salvaUsuarioDB' class="buttonsCfg"><i
+                class="fa fa-fw fa-save"></i>Salvar</button>
         
     </form>
 </div>

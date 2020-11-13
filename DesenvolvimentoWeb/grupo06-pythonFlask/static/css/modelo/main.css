@@ -1,0 +1,16 @@
+main {
+    display: block;
+    height: 100%;
+    background-color: #1d1d40;
+    width: calc(100% - 300px);
+    
+}
+
+main .main-content {
+    padding: 30px;
+    width: 100%;
+    height: calc(100% - 90px);
+    overflow-y: auto;
+    overflow-x: auto;
+    
+}
