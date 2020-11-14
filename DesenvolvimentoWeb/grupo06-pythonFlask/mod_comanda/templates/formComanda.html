@@ -12,7 +12,7 @@
     form {
         border: 2px solid #1d1d40;
         padding: 20px;
-        background-color: #30305c;
+        background-color: rgb(11, 7, 31);
         width: 90%;
     }
 
@@ -25,7 +25,7 @@
         border-radius: 0px;
         border: 1px solid white;
         font-weight: bold;
-        background-color: #30305c;
+        background-color: rgb(11, 7, 31);
 
         font-family: Snell Roundhand, sans-serif;
         font-variant: small-caps;
@@ -53,61 +53,65 @@
         font-family: Snell Roundhand, sans-serif;
         font-variant: small-caps;
     }
+
+    #linkComandas a:visited {
+        color: rgb(172, 34, 108);
+    }
 </style>
 {% endblock %}
 
 
-    <label for="" class="titleForm">Nova Comanda</label>
-    <form id="abrirComanda" name="abrirComanda" method="POST" enctype="multipart/form-data">
+<label for="" class="titleForm">Nova Comanda</label>
+<form id="abrirComanda" name="abrirComanda" method="POST" enctype="multipart/form-data">
 
-        <div class="row">
-            <div class="col-md-1 mb-2">
-                <label for="id_comanda">ID:</label>
-                <input readonly value="{{ comanda.id_comanda }}" type="text" name="id_comanda" id="id_comanda"
-                    class="form-control" placeholder="ID" required>
-            </div>
+    <div class="row">
+        <div class="col-md-1 mb-2">
+            <label for="id_comanda">ID:</label>
+            <input readonly value="{{ comanda.id_comanda }}" type="text" name="id_comanda" id="id_comanda"
+                class="form-control" placeholder="ID" required>
+        </div>
 
-            <div class="col-md-6 mb-2">
-                <label for="numero_comanda">Número Comanda:</label>
-                <input value="{{ comanda.numero_comanda }}" type="text" name="numero_comanda" id="numero_comanda"
-                    autofocus class="form-control" placeholder="Insira o número da comanda">
-            </div>
+        <div class="col-md-6 mb-2">
+            <label for="numero_comanda">Número Comanda:</label>
+            <input value="{{ comanda.numero_comanda }}" type="text" name="numero_comanda" id="numero_comanda" autofocus
+                class="form-control" placeholder="Insira o número da comanda">
         </div>
-        <br>
-        <div class="row">
-            <div class="col-md-3 mb-2">
-                <label for="status_comanda">status_comanda:</label>
-                <input value="{{ comanda.status_comanda }}" type="text" name="status_comanda" id="status_comanda"
-                    class="form-control" placeholder="">
-            </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-3 mb-2">
+            <label for="status_comanda">status_comanda:</label>
+            <input value="{{ comanda.status_comanda }}" type="text" name="status_comanda" id="status_comanda"
+                class="form-control" placeholder="">
         </div>
-        <br>
-        <div class="row">
-            <div class="col-md-3 mb-2">
-                <label for="status_pagamento">status_pagamento:</label>
-                <input value="{{ comanda.status_pagamento }}" type="text" name="status_pagamento" id="status_pagamento"
-                    class="form-control" placeholder="">
-            </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-3 mb-2">
+            <label for="status_pagamento">status_pagamento:</label>
+            <input value="{{ comanda.status_pagamento }}" type="text" name="status_pagamento" id="status_pagamento"
+                class="form-control" placeholder="">
         </div>
-        <br>
-        <div class="row">
-            <div class="col-md-3 mb-2">
-                <label for="funcionario_id">funcionario_id:</label>
-                <input value="{{ comanda.funcionario_id }}" type="text" name="funcionario_id" id="funcionario_id"
-                    class="form-control" placeholder="">
-            </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-3 mb-2">
+            <label for="funcionario_id">funcionario_id:</label>
+            <input value="{{ comanda.funcionario_id }}" type="text" name="funcionario_id" id="funcionario_id"
+                class="form-control" placeholder="">
         </div>
-        <br>
-    
-        <button type='submit' name='salvaComandaDB' id='salvaComandaDB' class="buttonsCfg"><i
-                class=""></i>Salvar</a></button>
-    </form>
+    </div>
+    <br>
+
+    <button type='submit' name='salvaComandaDB' id='salvaComandaDB' class="buttonsCfg"><i
+            class=""></i>Salvar</a></button>
+</form>
 
 {% endblock %}
 
 {% block js %}
 <script>
-    $SCRIPT_ROOT = {{request.script_root | tojson | safe}}; // pega a url da barra de endereço
+    $SCRIPT_ROOT = {{ request.script_root | tojson | safe }}; // pega a url da barra de endereço
 
     $('#abrirComanda').submit(function (e) {
         e.preventDefault(); // parar o envio para poder fazer manualmente
@@ -128,14 +132,14 @@
             success: function (data) {
                 if (!data.erro) {
                     swal({
-                            title: "",
-                            text: data.mensagem,
-                            type: "success",
-                            confirmButtonClass: "btn-success",
-                            confirmButtonText: "Ok",
-                            closeOnConfirm: false,
-                            closeOnCancel: false
-                        },
+                        title: "",
+                        text: data.mensagem,
+                        type: "success",
+                        confirmButtonClass: "btn-success",
+                        confirmButtonText: "Ok",
+                        closeOnConfirm: false,
+                        closeOnCancel: false
+                    },
                         function (isConfirm) {
                             if (isConfirm) {
                                 window.location.replace($SCRIPT_ROOT +

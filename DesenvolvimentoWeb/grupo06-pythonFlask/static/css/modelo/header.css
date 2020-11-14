@@ -4,22 +4,23 @@
     align-items: center;
     justify-content: space-between;
     height: 90px;
-    background-color: #201c2e;
+    background-color:rgb(11, 7, 31);
     padding: 10px 30px;
-    
-
-
 }
 
 .flex-dashboard header a {
     text-decoration: none;
     color: white;
-    font-size: 13px;
+    font-size: 15px;
     padding: 7px;
-    border: 1px solid white;
+    border: 1px solid rgba(0, 0, 0, .0625);
     font-family: Snell Roundhand, sans-serif;
     font-variant: small-caps;
-
+    border-radius: 4px;
+}
+.flex-dashboard header i {
+    color: #ffffff;
+    font-size: 19px;
 }
 
 .flex-dashboard header a > svg {
@@ -30,8 +31,7 @@
 }
 
 .flex-dashboard header a:hover {
+    background-color: #3a9ec2;
+    color: rgb(11, 7, 31);
     text-decoration: none;
-    border: 1px solid #9fdef5;
-    background-color: #5ebee0;
-
 }

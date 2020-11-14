@@ -15,7 +15,7 @@
     border-radius: 0px;
     border: 1px solid white;
     font-weight: bold;
-    background-color: #30305c;
+    background-color: rgb(11, 7, 31);
 
     font-family: Snell Roundhand, sans-serif;
     font-variant: small-caps;
@@ -25,7 +25,7 @@
     text-decoration: none;
     color: white;
     padding: 12px;
-    background-color: #30305c;
+    background-color: rgb(11, 7, 31);
   }
 
   .listaClientes {
@@ -44,6 +44,10 @@
     font-family: Snell Roundhand, sans-serif;
     font-variant: small-caps;
     font-style: italic;
+  }
+
+  #linkClient a:visited {
+    color: rgb(172, 34, 108);
   }
 
   tr {
@@ -67,12 +71,12 @@
   }
 
   button {
-   background-color:#30305c;
+    background-color: #30305c;
   }
 
-  i{
+  i {
     color: white;
-    
+
   }
 </style>
 {% endblock %}
@@ -120,7 +124,7 @@
             <button type='submit' name='formDeleteCliente'><i class='fa fa-fw fa-trash'></i></button>
           </form>
         </td>
-        
+
       </tr>
 
       {% endfor %}
@@ -137,20 +141,20 @@
 {% block js %}
 
 <script>
-  $SCRIPT_ROOT = {{request.script_root | tojson | safe}}; // pega a url da barra de endereço
+  $SCRIPT_ROOT = {{ request.script_root | tojson | safe }}; // pega a url da barra de endereço
 
   $("form[name='deleteCliente']").submit(function (e) {
     e.preventDefault(); // parar o envio para poder fazer manualmente
     swal({ // abre um popup pedindo a confirmação do usuário
-        title: "",
-        text: "Deseja realmente excluir o cliente" + $(e.target)[0][0].value,
-        type: "warning",
-        showCancelButton: true,
-        confirmButtonClass: "btn-danger",
-        confirmButtonText: "Sim",
-        cancelButtonText: 'Cancelar',
-        closeOnConfirm: false
-      },
+      title: "",
+      text: "Deseja realmente excluir o cliente" + $(e.target)[0][0].value,
+      type: "warning",
+      showCancelButton: true,
+      confirmButtonClass: "btn-danger",
+      confirmButtonText: "Sim",
+      cancelButtonText: 'Cancelar',
+      closeOnConfirm: false
+    },
       function () {
         deletarCliente($(e.target)[0][0].value); // Retorna o valor que está no id do produto escolhido);
       });
@@ -162,14 +166,14 @@
     }, function (data) {
       if (!data.erro) {
         swal({
-            title: "",
-            text: data.mensagem,
-            type: "success",
-            confirmButtonClass: "btn-success",
-            confirmButtonText: "Ok",
-            closeOnConfirm: false,
-            closeOnCancel: false
-          },
+          title: "",
+          text: data.mensagem,
+          type: "success",
+          confirmButtonClass: "btn-success",
+          confirmButtonText: "Ok",
+          closeOnConfirm: false,
+          closeOnCancel: false
+        },
           function (isConfirm) {
             if (isConfirm) {
               window.location.replace($SCRIPT_ROOT + "{{ url_for('cliente.ListaClientes') }}");

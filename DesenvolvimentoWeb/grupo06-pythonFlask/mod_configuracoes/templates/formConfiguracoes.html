@@ -50,42 +50,46 @@
         font-family: Snell Roundhand, sans-serif;
         font-variant: small-caps;
     }
+
+    #linkSettings a:visited {
+        color: rgb(172, 34, 108);
+    }
 </style>
 {% endblock %}
 
 {% block content %}
 
-    <label for="" class="titleForm">Configurações</label>
-    <form id="editConfiguracoes" name="editConfiguracoes" method="POST" enctype="multipart/form-data">
+<label for="" class="titleForm">Configurações</label>
+<form id="editConfiguracoes" name="editConfiguracoes" method="POST" enctype="multipart/form-data">
 
-        <div class="row">
-            <div class="col-md-4 mb-2">
-                <label for="taxa_juro_diario">Percentual de Juros:</label>
-                <input value="{{ configuracoes.taxa_juro_diario }}" type="text" name="taxa_juro_diario"
-                    id="taxa_juro_diario" autofocus class="form-control" placeholder="" required>
-            </div>
+    <div class="row">
+        <div class="col-md-4 mb-2">
+            <label for="taxa_juro_diario">Percentual de Juros:</label>
+            <input value="{{ configuracoes.taxa_juro_diario }}" type="text" name="taxa_juro_diario"
+                id="taxa_juro_diario" autofocus class="form-control" placeholder="" required>
         </div>
-        <br>
-        <div class="row">
-            <div class="col-md-4 mb-2">
-                <label for="multa_atraso">Multas por Atraso:</label>
-                <input value="{{ configuracoes.multa_atraso }}" type="text" name="multa_atraso" id="multa_atraso"
-                    class="form-control" placeholder="" required>
-            </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-4 mb-2">
+            <label for="multa_atraso">Multas por Atraso:</label>
+            <input value="{{ configuracoes.multa_atraso }}" type="text" name="multa_atraso" id="multa_atraso"
+                class="form-control" placeholder="" required>
         </div>
-        <br>
+    </div>
+    <br>
 
 
-        <button type='submit' name='editaConfiguracoesDB' id='editaConfiguracoesDB' class="buttonsCfg"><i
-                class=""></i>Editar</a></button>
-    </form>
+    <button type='submit' name='editaConfiguracoesDB' id='editaConfiguracoesDB' class="buttonsCfg"><i
+            class=""></i>Editar</a></button>
+</form>
 
 
 {% endblock %}
 
 {% block js %}
 <script>
-    $SCRIPT_ROOT = {{request.script_root | tojson | safe}}; // pega a url da barra de endereço
+    $SCRIPT_ROOT = {{ request.script_root | tojson | safe }}; // pega a url da barra de endereço
 
     $('#editConfiguracoes').submit(function (e) {
         e.preventDefault(); // parar o envio para poder fazer manualmente
@@ -105,14 +109,14 @@
             success: function (data) {
                 if (!data.erro) {
                     swal({
-                            title: "",
-                            text: data.mensagem,
-                            type: "success",
-                            confirmButtonClass: "btn-success",
-                            confirmButtonText: "Ok",
-                            closeOnConfirm: false,
-                            closeOnCancel: false
-                        },
+                        title: "",
+                        text: data.mensagem,
+                        type: "success",
+                        confirmButtonClass: "btn-success",
+                        confirmButtonText: "Ok",
+                        closeOnConfirm: false,
+                        closeOnCancel: false
+                    },
                         function (isConfirm) {
                             if (isConfirm) {
                                 window.location.replace($SCRIPT_ROOT +

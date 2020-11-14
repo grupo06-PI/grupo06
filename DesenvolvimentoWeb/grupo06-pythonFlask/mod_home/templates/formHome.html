@@ -2,8 +2,16 @@
 
 {% block title %} home {% endblock %}
 
-{% block content %}  
+{% block style %}
+{{super()}}
 
-
+<style>
+    #linkHome a:visited {
+        color: rgb(172, 34, 108);
+    }
+</style>
 {% endblock %}
 
+{% block content %}
+
+{% endblock %}
