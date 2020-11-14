@@ -83,7 +83,8 @@
         <div class="sidebar-user">
           {% if 'usuario' in session %}
           <img class="teste" src="{{ url_for('static', filename='images/modelo/user.png') }}" alt="">
-          <b>{{ session['usuario'] }}</b>
+          <br>
+          <label for=""> Usuário: </label><b>{{ session['usuario'] }}</b>
           <br>
           <label for=""> Grupo: </label><b>{{ session['grupo'] }}</b>
           {% endif %}

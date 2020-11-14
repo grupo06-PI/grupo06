@@ -10,10 +10,10 @@
 {{super()}}
 <style>
     form {
-        border: 2px solid #1d1d40;
+        border: 2px solid rgb(11, 7, 31);
         padding: 20px;
         background-color: rgb(11, 7, 31);
-        width: 90%;
+        width: 100%;
     }
 
     .buttonsCfg {
@@ -22,7 +22,7 @@
         color: white;
         font-size: 15px;
         text-align: center;
-        border-radius: 0px;
+        border-radius: 4px;
         border: 1px solid white;
         font-weight: bold;
         background-color: rgb(11, 7, 31);
@@ -32,18 +32,20 @@
     }
 
     .buttonsCfg:hover {
-        color: white;
+        color: rgb(11, 7, 31);
         padding: 12px;
-        background-color: #30305c;
+        background-color: #3a9ec2;
     }
+
+    #IconLista{
+    font-size: 19px;
+  }
 
     label {
         color: white;
         font-size: 14px;
         font-family: Snell Roundhand, sans-serif;
         font-variant: small-caps;
-        font-style: italic;
-
     }
 
     .titleForm {
@@ -80,7 +82,7 @@
     <br>
     <div class="row">
         <div class="col-md-3 mb-2">
-            <label for="status_comanda">status_comanda:</label>
+            <label for="status_comanda">Status da Comanda:</label>
             <input value="{{ comanda.status_comanda }}" type="text" name="status_comanda" id="status_comanda"
                 class="form-control" placeholder="">
         </div>
@@ -88,7 +90,7 @@
     <br>
     <div class="row">
         <div class="col-md-3 mb-2">
-            <label for="status_pagamento">status_pagamento:</label>
+            <label for="status_pagamento">Status do Pagamento:</label>
             <input value="{{ comanda.status_pagamento }}" type="text" name="status_pagamento" id="status_pagamento"
                 class="form-control" placeholder="">
         </div>
@@ -96,7 +98,7 @@
     <br>
     <div class="row">
         <div class="col-md-3 mb-2">
-            <label for="funcionario_id">funcionario_id:</label>
+            <label for="funcionario_id">ID Funcionário:</label>
             <input value="{{ comanda.funcionario_id }}" type="text" name="funcionario_id" id="funcionario_id"
                 class="form-control" placeholder="">
         </div>
@@ -104,7 +106,7 @@
     <br>
 
     <button type='submit' name='salvaComandaDB' id='salvaComandaDB' class="buttonsCfg"><i
-            class=""></i>Salvar</a></button>
+        class="fa fa-fw fa-save" id="IconLista"></i> Salvar</a></button>
 </form>
 
 {% endblock %}

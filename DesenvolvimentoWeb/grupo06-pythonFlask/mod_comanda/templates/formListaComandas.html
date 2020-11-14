@@ -12,7 +12,7 @@
     color: white;
     font-size: 15px;
     text-align: center;
-    border-radius: 0px;
+    border-radius: 4px;
     border: 1px solid white;
     font-weight: bold;
     background-color: rgb(11, 7, 31);
@@ -23,9 +23,9 @@
 
   .buttonsCfg:hover {
     text-decoration: none;
-    color: white;
+    color: rgb(11, 7, 31);
     padding: 12px;
-    background-color: #30305c;
+    background-color: #3a9ec2;
   }
 
   .listaClientes {
@@ -51,27 +51,31 @@
   }
 
   tr {
+    color: rgb(255, 255, 255);
     border-bottom: 7px solid #1d1d40;
   }
 
   td {
-    background-color: #30305c;
+    background-color: rgb(11, 7, 31);
     color: white;
   }
 
   th {
-    background-color: #30305c;
-
+    background-color: rgb(11, 7, 31);
   }
 
   thead {
-    border-top: 2px solid #30305c;
+    border-top: 7px solid #1d1d40;
     color: white;
-    font-style: italic;
   }
 
   button {
-    background-color: #30305c;
+    background-color:  rgb(11, 7, 31);
+    border: 1px solid rgb(11, 7, 31);
+  }
+
+  #IconLista{
+    font-size: 19px;
   }
 
   i {
@@ -89,11 +93,11 @@
     <thead class="">
       <tr>
         <th scope="col">#</th>
-        <th scope="col">comanda</th>
-        <th scope="col">data_hora</th>
-        <th scope="col">status_comanda</th>
-        <th scope="col">status_pagamento</th>
-        <th scope="col">funcionario_id</th>
+        <th scope="col">Comanda</th>
+        <th scope="col">Data e Hora</th>
+        <th scope="col">Status da Comanda</th>
+        <th scope="col">Status do Pagamento</th>
+        <th scope="col">ID Funcionário</th>
         <th scope="col">Excluir</th>
       </tr>
     </thead>
@@ -112,7 +116,7 @@
         <td>
           <form method='POST' name='deleteComanda' id='deleteComanda'>
             <input type='hidden' name='id_comanda' value='{{ row[0] }}'>
-            <button type='submit' name='formDeleteComanda'><i class='fa fa-fw fa-trash'></i></button>
+            <button type='submit' name='formDeleteComanda'><i class='fa fa-fw fa-trash' id="IconLista"></i></button>
           </form>
         </td>
       </tr>
@@ -123,7 +127,7 @@
   </table>
 </div>
 
-<a class="buttonsCfg" href="{{url_for('comanda.AbrirComanda')}}"><i class="fa fa-fw fa-plus"></i>Abrir Comanda</a>
+<a class="buttonsCfg" href="{{url_for('comanda.AbrirComanda')}}"><i class="fa fa-fw fa-plus" id="IconLista"></i> Abrir Comanda</a>
 
 {% endblock %}
 

@@ -6,10 +6,10 @@
 {{super()}}
 <style>
     form {
-        border: 2px solid #1d1d40;
+        border: 2px solid rgb(11, 7, 31);
         padding: 20px;
-        background-color: #30305c;
-        width: 90%;
+        background-color: rgb(11, 7, 31);
+        width: 100%;
     }
 
     .buttonsCfg {
@@ -18,28 +18,30 @@
         color: white;
         font-size: 15px;
         text-align: center;
-        border-radius: 0px;
+        border-radius: 4px;
         border: 1px solid white;
         font-weight: bold;
-        background-color: #30305c;
+        background-color: rgb(11, 7, 31);
 
         font-family: Snell Roundhand, sans-serif;
         font-variant: small-caps;
     }
 
     .buttonsCfg:hover {
-        color: white;
+        color: rgb(11, 7, 31);
         padding: 12px;
-        background-color: #30305c;
+        background-color: #3a9ec2;
     }
+
+    #IconLista{
+    font-size: 19px;
+  }
 
     label {
         color: white;
         font-size: 14px;
         font-family: Snell Roundhand, sans-serif;
         font-variant: small-caps;
-        font-style: italic;
-
     }
 
     .titleForm {
@@ -68,7 +70,7 @@
 
     {% else %}
 
-    <label class="titleForm">Editar Funcionario: {{ funcionario.id_funcionario }}</label>
+    <label class="titleForm">Editar Funcionário: {{ funcionario.id_funcionario }}</label>
     <form id="editFuncionario" name="editFuncionario" method="POST" enctype="multipart/form-data">
         <hr>
         {% endif %}
@@ -91,7 +93,7 @@
             <br>
             <div class="row">
                 <div class="col-md-3 mb-2">
-                    <label for="matricula">Matricula:</label>
+                    <label for="matricula">Matrícula:</label>
                     <input value="{{ funcionario.matricula }}" type="text" name="matricula" id="matricula"
                         class="form-control" placeholder="" maxlength="10" required>
                 </div>
@@ -131,7 +133,7 @@
                 </div>
             </div><br>
             <button type='submit' name='salvaFuncionarioDB' id='salvaFuncionarioDB' class="buttonsCfg"><i
-                    class=""></i>Salvar</a></button>
+                class="fa fa-fw fa-save" id="IconLista"></i> Salvar</a></button>
         </form>
 
 
