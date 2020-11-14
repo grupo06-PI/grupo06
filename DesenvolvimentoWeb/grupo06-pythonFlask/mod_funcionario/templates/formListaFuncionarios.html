@@ -14,10 +14,10 @@
     color: white;
     font-size: 15px;
     text-align: center;
-    border-radius: 0px;
+    border-radius: 4px;
     border: 1px solid white;
     font-weight: bold;
-    background-color: #30305c;
+    background-color: rgb(11, 7, 31);
 
     font-family: Snell Roundhand, sans-serif;
     font-variant: small-caps;
@@ -25,9 +25,9 @@
 
   .buttonsCfg:hover {
     text-decoration: none;
-    color: white;
+    color: rgb(11, 7, 31);
     padding: 12px;
-    background-color: #30305c;
+    background-color: #3a9ec2;
   }
 
   .listaClientes {
@@ -53,32 +53,35 @@
   }
 
   tr {
+    color: rgb(255, 255, 255);
     border-bottom: 7px solid #1d1d40;
   }
 
   td {
-    background-color: #30305c;
+    background-color: rgb(11, 7, 31);
     color: white;
   }
 
   th {
-    background-color: #30305c;
-
+    background-color: rgb(11, 7, 31);
   }
 
   thead {
-    border-top: 2px solid #30305c;
+    border-top: 7px solid #1d1d40;
     color: white;
-    font-style: italic;
   }
 
   button {
-    background-color: #30305c;
+    background-color:  rgb(11, 7, 31);
+    border: 1px solid rgb(11, 7, 31);
+  }
+
+  #IconLista{
+    font-size: 19px;
   }
 
   i {
     color: white;
-
   }
 </style>
 {% endblock %}
@@ -120,13 +123,13 @@
         <td>
           <form action='{{ url_for('funcionario.formEditFuncionario') }}' method='POST' name='editFuncionario'>
             <input type='hidden' name='id_funcionario' value='{{ row[0] }}'>
-            <button type='submit' name='formEditFuncionario'><i class='fa fa-fw fa-edit'></i></button>
+            <button type='submit' name='formEditFuncionario'><i class='fa fa-fw fa-edit' id="IconLista"></i></button>
           </form>
         </td>
         <td>
           <form method='POST' name='deleteFuncionario' id='deleteFuncionario'>
             <input type='hidden' name='id_funcionario' value='{{ row[0] }}'>
-            <button type='submit' name='formDeleteFuncionario'><i class='fa fa-fw fa-trash'></i></button>
+            <button type='submit' name='formDeleteFuncionario'><i class='fa fa-fw fa-trash' id="IconLista"></i></button>
           </form>
         </td>
       </tr>
@@ -138,7 +141,7 @@
   </table>
 </div>
 
-<a class="buttonsCfg" href="{{url_for('funcionario.CadFuncionario')}}"><i class="fa fa-fw fa-plus"></i>Novo
+<a class="buttonsCfg" href="{{url_for('funcionario.CadFuncionario')}}"><i class="fa fa-fw fa-plus" id="IconLista"></i> Novo
   Funcionário</a>
 {% endblock %}
 
