@@ -10,7 +10,7 @@ sidebar {
     display: block;
     height: 100%;
     width: 300px;
-    background-color: #1c1829;
+    background-color: rgb(11, 7, 31);
 
 }
 
@@ -22,7 +22,7 @@ sidebar .sidebar-title {
     align-items: center;
     padding: 10px 30px;
     height: 90px;
-    border-bottom: 1px solid #141414;
+    border-bottom: 1px solid rgba(0, 0, 0, .0625);
     border-right: 1px solid rgba(0, 0, 0, .0625);
 }
 
@@ -42,16 +42,9 @@ sidebar .sidebar-title h2 {
 
 }
 
-
-div.menu {
-    border-right: 1px solid rgba(0, 0, 0, .0625);
-}
-
 div.menu ul {
     list-style-type: none;
     padding: 0px;
-
-
 }
 
 div.menu ul li {
@@ -66,8 +59,8 @@ div.menu ul li {
 }
 
 div.menu ul li i {
-    color: #363636;
-    font-size: 18px;
+    color: #ffffff;
+    font-size: 19px;
 }
 
 div.menu ul li a {
@@ -81,10 +74,9 @@ div.menu ul li a {
 }
 
 div.menu ul li:hover {
-    color: #363c40;
-    text-decoration: none;
     background-color: #3a9ec2;
-    border-radius: 1px;
+    color: #09394b;
+    text-decoration: none;
     padding: 15px 20px;
 }
 

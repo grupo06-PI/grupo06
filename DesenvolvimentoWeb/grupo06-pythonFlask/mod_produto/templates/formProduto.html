@@ -50,90 +50,94 @@
         font-family: Snell Roundhand, sans-serif;
         font-variant: small-caps;
     }
+
+    #linkProduct a:visited {
+        color: rgb(172, 34, 108);
+    }
 </style>
 
 {% endblock %}
 
 {% block content %}
- 
-    {% if produto.id_produto == 0: %}
-    <label for="" class="titleForm">Novo Produto</label>
-    <form id="addProduto" name="addProduto" method="POST" enctype="multipart/form-data">
 
-        {% else: %}
-        <label class="titleForm">Editar Produto: {{ produto.id_produto }}</label>
-        <form id="editProduto" name="editProduto" method="POST" enctype="multipart/form-data">
+{% if produto.id_produto == 0: %}
+<label for="" class="titleForm">Novo Produto</label>
+<form id="addProduto" name="addProduto" method="POST" enctype="multipart/form-data">
 
-            {% endif %}
+    {% else: %}
+    <label class="titleForm">Editar Produto: {{ produto.id_produto }}</label>
+    <form id="editProduto" name="editProduto" method="POST" enctype="multipart/form-data">
 
-            <div class="row">
-                <div class="col-md-1 mb-2">
-                    <label for="id_produto">ID:</label>
-                    <input readonly value="{{ produto.id_produto }}" type="text" name="id_produto" id="id_produto"
-                        class="form-control" placeholder="ID" required>
-                </div>
+        {% endif %}
 
-                <div class="col-md-6 mb-2">
-                    <label for="nome">Nome:</label>
-                    <input value="{{ produto.nome }}" type="text" name="nome" id="nome" autofocus class="form-control"
-                        placeholder="Insira o nome do Produto" maxlength="100" required>
-                </div>
+        <div class="row">
+            <div class="col-md-1 mb-2">
+                <label for="id_produto">ID:</label>
+                <input readonly value="{{ produto.id_produto }}" type="text" name="id_produto" id="id_produto"
+                    class="form-control" placeholder="ID" required>
             </div>
-            <br>
-            <div class="row">
-                <div class="col-md-7 mb-2">
-                    <label for="descricao">Descrição:</label>
-                    <input value="{{ produto.descricao }}" type="text" name="descricao" id="descricao"
-                        class="form-control" placeholder="" maxlength="200">
-                </div>
+
+            <div class="col-md-6 mb-2">
+                <label for="nome">Nome:</label>
+                <input value="{{ produto.nome }}" type="text" name="nome" id="nome" autofocus class="form-control"
+                    placeholder="Insira o nome do Produto" maxlength="100" required>
             </div>
-            <br>
-            <div class="row">
-                <div class="col-md-3 mb-2">
-                    <label for="valor_unitario">Valor:</label>
-                    <input value="{{ produto.valor_unitario }}" type="text" name="valor_unitario" id="valor_unitario"
-                        class="form-control" placeholder="" required>
-                </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-7 mb-2">
+                <label for="descricao">Descrição:</label>
+                <input value="{{ produto.descricao }}" type="text" name="descricao" id="descricao" class="form-control"
+                    placeholder="" maxlength="200">
             </div>
-            <br>
-            <div class="row">
-                <div class="col-md-7 mb-2">
-                    <label for="foto">Foto:</label>
-                    <input type="file" name="foto" accept="foto/*" id="foto" class="form-control" autofocus>
-                    <br>
-                    <img src='{{ produto.foto }}' width='300'>
-                </div>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-3 mb-2">
+                <label for="valor_unitario">Valor:</label>
+                <input value="{{ produto.valor_unitario }}" type="text" name="valor_unitario" id="valor_unitario"
+                    class="form-control" placeholder="" required>
             </div>
-            
-            <button type='submit' name='salvaProdutoDB' id='salvaProdutoDB' class="buttonsCfg"><i
-                    class=""></i>Salvar</a></button>
-        </form>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-md-7 mb-2">
+                <label for="foto">Foto:</label>
+                <input type="file" name="foto" accept="foto/*" id="foto" class="form-control" autofocus>
+                <br>
+                <img src='{{ produto.foto }}' width='300'>
+            </div>
+        </div>
 
-{% endblock %}
+        <button type='submit' name='salvaProdutoDB' id='salvaProdutoDB' class="buttonsCfg"><i
+                class=""></i>Salvar</a></button>
+    </form>
 
-{% block js %}
-<script>
-    $SCRIPT_ROOT = {{request.script_root | tojson | safe}}; // pega a url da barra de endereço
+    {% endblock %}
 
-    $('#addProduto').submit(function (e) {
-        e.preventDefault(); // parar o envio para poder fazer manualmente
-        var form = $('#addProduto')[0]; // captura o form
-        var data = new FormData(form); // cria o FormData {Object}
+    {% block js %}
+    <script>
+        $SCRIPT_ROOT = {{ request.script_root | tojson | safe }}; // pega a url da barra de endereço
 
-        $.ajax({
-            type: "POST",
-            enctype: 'multipart/form-data',
-            url: "{{url_for('produto.addProduto')}}",
-            data: data,
-            processData: false,
-            contentType: false,
-            cache: false,
-            timeout: 600000,
+        $('#addProduto').submit(function (e) {
+            e.preventDefault(); // parar o envio para poder fazer manualmente
+            var form = $('#addProduto')[0]; // captura o form
+            var data = new FormData(form); // cria o FormData {Object}
 
-            // manipular o retorno da requisição
-            success: function (data) {
-                if (!data.erro) {
-                    swal({
+            $.ajax({
+                type: "POST",
+                enctype: 'multipart/form-data',
+                url: "{{url_for('produto.addProduto')}}",
+                data: data,
+                processData: false,
+                contentType: false,
+                cache: false,
+                timeout: 600000,
+
+                // manipular o retorno da requisição
+                success: function (data) {
+                    if (!data.erro) {
+                        swal({
                             title: "",
                             text: data.mensagem,
                             type: "success",
@@ -142,41 +146,41 @@
                             closeOnConfirm: false,
                             closeOnCancel: false
                         },
-                        function (isConfirm) {
-                            if (isConfirm) {
-                                window.location.replace($SCRIPT_ROOT +
-                                    "{{ url_for('produto.ListaProdutos') }}");
-                            }
-                        });
-                } else {
-                    swal("", data.mensagem + '\n' + data.mensagem_exception, "error");
+                            function (isConfirm) {
+                                if (isConfirm) {
+                                    window.location.replace($SCRIPT_ROOT +
+                                        "{{ url_for('produto.ListaProdutos') }}");
+                                }
+                            });
+                    } else {
+                        swal("", data.mensagem + '\n' + data.mensagem_exception, "error");
+                    }
+                },
+                error: function (e) {
+                    console.log(e);
                 }
-            },
-            error: function (e) {
-                console.log(e);
-            }
+            })
         })
-    })
 
-    // incluir aqui a opção para editar
-    $('#editProduto').submit(function (e) {
-        e.preventDefault(); // parar o envio para poder fazer manualmente
-        var form = $('#editProduto')[0]; // captura o form
-        var data = new FormData(form); // cria o FormData {Object}
+        // incluir aqui a opção para editar
+        $('#editProduto').submit(function (e) {
+            e.preventDefault(); // parar o envio para poder fazer manualmente
+            var form = $('#editProduto')[0]; // captura o form
+            var data = new FormData(form); // cria o FormData {Object}
 
-        $.ajax({
-            type: "POST",
-            enctype: 'multipart/form-data',
-            url: "{{url_for('produto.editProduto')}}",
-            data: data,
-            processData: false, // impedir que o jQuery tranforma a "data" em querystring
-            contentType: false, // desabilitar o cabeçalho "Content-Type"
-            cache: false, // desabilitar o "cache"
-            timeout: 600000, // definir um tempo limite (opcional)
-            // manipular o retorno da requisição
-            success: function (data) {
-                if (!data.erro) {
-                    swal({
+            $.ajax({
+                type: "POST",
+                enctype: 'multipart/form-data',
+                url: "{{url_for('produto.editProduto')}}",
+                data: data,
+                processData: false, // impedir que o jQuery tranforma a "data" em querystring
+                contentType: false, // desabilitar o cabeçalho "Content-Type"
+                cache: false, // desabilitar o "cache"
+                timeout: 600000, // definir um tempo limite (opcional)
+                // manipular o retorno da requisição
+                success: function (data) {
+                    if (!data.erro) {
+                        swal({
                             title: "",
                             text: data.mensagem,
                             type: "success",
@@ -185,22 +189,22 @@
                             closeOnConfirm: false,
                             closeOnCancel: false
                         },
-                        function (isConfirm) {
-                            if (isConfirm) {
-                                window.location.replace($SCRIPT_ROOT +
-                                    "{{ url_for('produto.ListaProdutos') }}");
-                            }
-                        });
-                } else {
-                    swal("", data.mensagem + '\n' + data.mensagem_exception, "error");
-                    console.log(data.mensagem_exception);
+                            function (isConfirm) {
+                                if (isConfirm) {
+                                    window.location.replace($SCRIPT_ROOT +
+                                        "{{ url_for('produto.ListaProdutos') }}");
+                                }
+                            });
+                    } else {
+                        swal("", data.mensagem + '\n' + data.mensagem_exception, "error");
+                        console.log(data.mensagem_exception);
+                    }
+                },
+                error: function (e) {
+                    console.log(e);
                 }
-            },
-            error: function (e) {
-                console.log(e);
-            }
+            })
         })
-    })    
 
-</script>
-{% endblock %}
+    </script>
+    {% endblock %}

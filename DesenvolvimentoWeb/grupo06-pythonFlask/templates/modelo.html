@@ -22,73 +22,85 @@
   <!--Biblioteca de icones-->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <!--FivIcon-->
+  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
 </head>
 
 <body>
+  <div class="img">
 
+    <div class="flex-dashboard">
 
-  <div class="flex-dashboard">
+      {% block menu %} {% endblock %}
+      <sidebar>
+        <div class="sidebar-title">
+          <img src="{{ url_for('static', filename='images/modelo/logoPastry.png') }}" alt="">
+          <h2>Pastelaria do Zé</h2>
+        </div>
+        <div class="menu">
+          <ul>
+            <li id="linkHome">
+              <i class="fa fa-fw fa-home"></i>
+              <a href="{{url_for('home.formHome')}}">Home</a>
+            </li>
 
-    {% block menu %} {% endblock %}
-    <sidebar>
-      <div class="sidebar-title">
-        <img src="{{ url_for('static', filename='images/modelo/logo.png') }}" alt="">
-        <h2>Delivery</h2>
-      </div>
-      <div class="menu">
-        <ul>
-          <li>
-            <i class="fa fa-fw fa-home"></i>
-            <a href="{{url_for('home.formHome')}}">Home</a>
-          </li>
-          <li>
-            <i class="fa fa-fw fa-user"></i>
-            <a href="{{url_for('funcionario.ListaFuncionarios')}}">Funcionários</a>
-          </li>
-          <li>
-            <i class="fa fa-fw fa-group"></i>
-            <a href="{{url_for('cliente.ListaClientes')}}">Clientes</a>
-          </li>
-          <li>
-            <i class="fa fa-fw fa-cubes"></i>
-            <a href="{{url_for('produto.ListaProdutos')}}">Produtos</a>
-          </li>
-          <li>
-            <i class="fa fa-fw fa-drivers-license-o"></i>
-            <a href="{{url_for('comanda.ListaComandas')}}">Comandas</a>
-          </li>
-          <li>
-            <i class="fa fa-fw fa-cogs"></i>
-            <a href="{{url_for('configuracoes.ListaConfiguracoes')}}">Configurações</a>
-          </li>
-        </ul>
-      </div>
-      <br><br>
+            <li id="linkDashboard">
+              <i class="fa fa-bar-chart"></i>
+              <a href="{{url_for('dashboard.ComandasAbertas')}}">Dashboard</a>
+            </li>
 
-      <!-- info user sidebar-->
-      {% if 'usuario' in session %}
-      <div class="sidebar-user">
+            <li id="linkEmployee">
+              <i class="fa fa-fw fa-user"></i>
+              <a href="{{url_for('funcionario.ListaFuncionarios')}}">Funcionários</a>
+            </li>
+
+            <li id="linkClient">
+              <i class="fa fa-fw fa-group"></i>
+              <a href="{{url_for('cliente.ListaClientes')}}">Clientes</a>
+            </li>
+
+            <li id="linkProduct">
+              <i class="fa fa-fw fa-cubes"></i>
+              <a href="{{url_for('produto.ListaProdutos')}}">Produtos</a>
+            </li>
+
+            <li id="linkComandas">
+              <i class="fa fa-fw fa-drivers-license-o"></i>
+              <a href="{{url_for('comanda.ListaComandas')}}">Comandas</a>
+            </li>
+
+            <li id="linkSettings">
+              <i class="fa fa-fw fa-cogs"></i>
+              <a href="{{url_for('configuracoes.ListaConfiguracoes')}}">Configurações</a>
+            </li>
+          </ul>
+        </div>
+        <br><br>
+
+        <!-- info user sidebar-->
         {% if 'usuario' in session %}
-        <img class="teste" src="{{ url_for('static', filename='images/modelo/user.png') }}" alt="">
-        <b>{{ session['usuario'] }}</b>
-        <br>
-        <label for=""> Grupo: </label><b>{{ session['grupo'] }}</b>
+        <div class="sidebar-user">
+          {% if 'usuario' in session %}
+          <img class="teste" src="{{ url_for('static', filename='images/modelo/user.png') }}" alt="">
+          <b>{{ session['usuario'] }}</b>
+          <br>
+          <label for=""> Grupo: </label><b>{{ session['grupo'] }}</b>
+          {% endif %}
+        </div>
         {% endif %}
-      </div>
-      {% endif %}
 
-    </sidebar>
-    <main>
-      <header>
-        <a href="{{url_for('dashboard.ComandasAbertas')}}"><i class="fa fa-bar-chart"></i>Dashboard</a>
-        <a href="{{url_for('login.logout')}}"><i class="fa fa-fw fa-sign-out"></i>Logout</a>
-      </header>
-      <div class="main-content">
-        {% block content %} {% endblock %}
-      </div>
-    </main>
+      </sidebar>
+      <main>
+        <header>
+              <a href="{{url_for('login.logout')}}"><i class="fa fa-fw fa-sign-out"></i>Logout</a>
+        </header>
+        <div class="main-content">
+          {% block content %} {% endblock %}
+        </div>
+      </main>
+    </div>
   </div>
-
 
   <script src="{{ url_for('static', filename='js/jquery-3.5.1.min.js') }}"></script>
 
@@ -96,12 +108,12 @@
 
   <script src="{{ url_for('static', filename='bootstrap-4.5.2-dist/js/bootstrap.min.js') }}"></script>
 
-  <script src="{{ url_for('static', filename='sweetalert/sweetalert.min.js') }}"></script> 
+  <script src="{{ url_for('static', filename='sweetalert/sweetalert.min.js') }}"></script>
 
-{% block js %}
+  {% block js %}
 
-{% endblock %}
-  
+  {% endblock %}
+
 
 </body>
 
