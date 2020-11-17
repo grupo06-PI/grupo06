@@ -1,6 +1,16 @@
 {% extends "modelo.html" %}
 
-{% block title %} ComandasAbertas {% endblock %}
+{% block title %} Comandas Abertas {% endblock %}
+
+{% block style %}
+{{super()}}
+<style>
+    #linkDashboard a:visited {
+        color: rgb(172, 34, 108);
+    }
+</style>
+
+{% endblock %}
 
 {% block content %} 
 

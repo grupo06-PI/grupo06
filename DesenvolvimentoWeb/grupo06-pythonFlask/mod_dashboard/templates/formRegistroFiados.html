@@ -1,9 +1,18 @@
 {% extends "modelo.html" %}
 
-{% block title %} RegistroFiados {% endblock %}
+{% block title %} Registro de Fiados {% endblock %}
 
-{% block content %}  
+{% block style %}
+{{super()}}
+<style>
+    #linkDashboard a:visited {
+        color: rgb(172, 34, 108);
+    }
+</style>
 
+{% endblock %}
+
+{% block content %}
 
 <h2>Vai ter um campo para buscar um cliente por nome</h2>
 

@@ -82,18 +82,19 @@ div.menu ul li:hover {
 
 .sidebar-user {
     color: white;
-    border: 1px solid rgb(172, 34, 108);
-    margin: 15px;
-    height: 130px;
-    padding: 20px;
+    border: 2px solid rgb(172, 34, 108);
+    margin: 3px;
+    height: 110px;
+    padding: 10px;
     text-align: center;
 }
 
 .sidebar-user b {
+    font-family: Snell Roundhand, sans-serif;
+    font-variant: small-caps;
     font-size: 15px;
-    font-family: Arial;
 
-    padding-left: 4px;
+    padding-left: 5px;
 }
 
 .sidebar-user label {
