@@ -1,0 +1,176 @@
+{% extends "modelo.html" %}
+
+{% block title %} CadComanda {% endblock %}
+
+
+
+
+
+{% block style %}
+{{super()}}
+<style>
+    form {
+        border: 2px solid rgb(11, 7, 31);
+        padding: 20px;
+        background-color: rgb(11, 7, 31);
+        width: 100%;
+    }
+
+    .buttonsCfg {
+        padding: 10px;
+        text-decoration: none;
+        color: white;
+        font-size: 15px;
+        text-align: center;
+        border-radius: 4px;
+        border: 1px solid white;
+        font-weight: bold;
+        background-color: rgb(11, 7, 31);
+
+        font-family: Snell Roundhand, sans-serif;
+        font-variant: small-caps;
+    }
+
+    .buttonsCfg:hover {
+        color: rgb(11, 7, 31);
+        padding: 12px;
+        background-color: #3a9ec2;
+    }
+
+    #IconLista{
+    font-size: 19px;
+  }
+
+    label {
+        color: white;
+        font-size: 14px;
+        font-family: Snell Roundhand, sans-serif;
+        font-variant: small-caps;
+    }
+
+    .titleForm {
+        color: white;
+        font-size: 30px;
+
+        font-family: Snell Roundhand, sans-serif;
+        font-variant: small-caps;
+    }
+
+    #linkComandas a:visited {
+        color: rgb(172, 34, 108);
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+
+<label for="" class="titleForm">Adicionar Produtos</label>
+<form id="addProdutoComanda" name="addProdutoComanda" method="POST" enctype="multipart/form-data">
+
+    <div class="row">
+        <div class="col-md-2 mb-2">
+            <label for="comanda_id">Comanda ID:</label>
+            <input value="{{ comanda.id_comanda }}" type="text" name="comanda_id" id="comanda_id"
+                class="form-control" placeholder="" >
+        </div>
+
+        <div class="col-md-2 mb-2">
+            <label for="">Funcionário ID:</label>
+            <input value="{{ comanda.funcionario_id }}" type="text" name="funcionario_id" id="funcionario_id"
+                class="form-control" placeholder="">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-4 mb-2">
+            <label for="nome">Nome Produto:</label>
+            <input value="{{ comanda.nome }}" type="text" name="nome" id="nome"
+                class="form-control" placeholder=""autofocus >
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-4 mb-2">
+            <label for="">Valor Unitário:</label>
+            <input value="{{ comanda.valor_unitario }}" type="text" name="valor_unitario" id="valor_unitario"
+                class="form-control" placeholder="">
+        </div>
+    </div>
+    <br>
+    <div class="row">
+        <div class="col-md-4 mb-2">
+            <label for="">Quantidade:</label>
+            <input value="{{ comanda.quantidade }}" type="number" name="quantidade" id="quantidade"
+                class="form-control" placeholder="">
+        </div>
+    </div>
+    <br>
+
+    <button type='submit' name='salvaComandaDB' id='salvaComandaDB' class="buttonsCfg"><i
+        class="fa fa-fw fa-save" id="IconLista"></i> Salvar</a></button>
+</form>
+
+{% endblock %}
+
+{% block js %}
+<script>
+
+$SCRIPT_ROOT = {{ request.script_root | tojson | safe }}; // pega a url da barra de endereço
+
+$('#addProdutoComanda').submit(function (e) {
+    e.preventDefault(); // parar o envio para poder fazer manualmente
+    var form = $('#addProdutoComanda')[0]; // captura o form
+    var data = new FormData(form); // cria o FormData {Object}
+
+    $.ajax({
+        type: "POST",
+        enctype: 'multipart/form-data',
+        url: "{{url_for('dashboard.addProdutoComanda')}}",
+        data: data,
+        processData: false,
+        contentType: false,
+        cache: false,
+        timeout: 600000,
+
+        // manipular o retorno da requisição
+        success: function (data) {
+            if (!data.erro) {
+                swal({
+                    title: "",
+                    text: data.mensagem,
+                    type: "success",
+                    confirmButtonClass: "btn-success",
+                    confirmButtonText: "Ok",
+                    closeOnConfirm: false,
+                    closeOnCancel: false
+                },
+                    function (isConfirm) {
+                        if (isConfirm) {
+                            window.location.replace($SCRIPT_ROOT +
+                                "{{ url_for('dashboard.ComandasAbertas') }}");
+                        }
+                    });
+            } else {
+                swal("", data.mensagem + '\n' + data.mensagem_exception, "error");
+            }
+        },
+        error: function (e) {
+            console.log(e);
+        }
+    })
+})
+
+
+$(document).ready(function () {
+            //Verifica se o login existe ou não
+            
+            $('#nome').keyup(function (e) {
+                    $.post($SCRIPT_ROOT + "{{ url_for('dashboard.listaProdutos') }}", {
+                        nome: $('#nome').val(),
+                        valor_unitario: $('#valor_unitario').val()
+                    })
+
+            })
+        })
+</script>
+{% endblock %}
