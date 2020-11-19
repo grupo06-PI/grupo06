@@ -74,27 +74,26 @@
               <i class="fa fa-fw fa-cogs"></i>
               <a href="{{url_for('configuracoes.ListaConfiguracoes')}}">Configurações</a>
             </li>
+
+            <!-- info user sidebar-->
+            {% if 'usuario' in session %}
+            <div class="sidebar-user">
+              {% if 'usuario' in session %}
+              <img class="teste" src="{{ url_for('static', filename='images/modelo/user.png') }}" alt="">
+              <br>
+              <label for=""> Usuário: </label><b>{{ session['usuario'] }}</b>
+              <br>
+              <label for=""> Grupo: </label><b>{{ session['grupo'] }}</b>
+              {% endif %}
+            </div>
+            {% endif %}
           </ul>
         </div>
-        <br><br>
-
-        <!-- info user sidebar-->
-        {% if 'usuario' in session %}
-        <div class="sidebar-user">
-          {% if 'usuario' in session %}
-          <img class="teste" src="{{ url_for('static', filename='images/modelo/user.png') }}" alt="">
-          <br>
-          <label for=""> Usuário: </label><b>{{ session['usuario'] }}</b>
-          <br>
-          <label for=""> Grupo: </label><b>{{ session['grupo'] }}</b>
-          {% endif %}
-        </div>
-        {% endif %}
 
       </sidebar>
       <main>
         <header>
-              <a href="{{url_for('login.logout')}}"><i class="fa fa-fw fa-sign-out"></i>Logout</a>
+          <a href="{{url_for('login.logout')}}"><i class="fa fa-fw fa-sign-out"></i>Logout</a>
         </header>
         <div class="main-content">
           {% block content %} {% endblock %}

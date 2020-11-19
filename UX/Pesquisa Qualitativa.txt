@@ -1,0 +1,26 @@
+Roteiro de Perguntas - Pesquisa Qualitativa
+
+1. O que o levou a querer adaptar sua forma de trabalho para um sistema web em seu estabelecimento?
+
+2. Você já utilizou algum sistema de gerenciamento no seu negócio?
+
+3. Você costuma usar o computador no seu dia a dia? Para que?
+
+4. Qual a familiariadade dos seus funcionários com computadores?
+
+5. Quais as suas expectativas para o Sistema Web que está sendo desenvolvido?
+
+6. Acredita que com a implantação do sistema em seu estabelecimento irá melhorar as questões de organização e controle ?
+
+7. Qual o maior problema de fluxo que você encontra hoje no seu estabelecimento?
+
+8. Como é feito o controle de fiado atualmente no seu negócio?
+
+9. Quais formas de pagamento são utilizadas no seu estabelecimento?
+
+10. Como é feito o controle de consumo atualmente e de que forma o sistema pode agilizar e deixar esse processo de controle mais seguro?
+
+11. Como é feito o controle de fluxo finaceiro dos recebimentos da pastelaria?
+
+
+
