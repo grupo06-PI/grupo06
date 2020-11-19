@@ -1,17 +1,61 @@
 {% extends "modelo.html" %}
 
-{% block title %} ComandasAbertas {% endblock %}
+{% block title %} ListaComandas {% endblock %}
 
-{% block content %} 
+{% block style %}
+{{super()}}
+<style>
+    .comandas {
+        padding: 15px;
+    }
+</style>
+{% endblock %}
 
-<h2>Vai ter um dashboard de todas as comadas abertas</h2>
 
-<p>
-    Podendo selecionar uma e dai adicionar consumo ou finalizar ela <br><br>
 
-    A vista: Apenas fazer o insert <br><br>
+{% block content %}
+{{ super() }}
 
-    Fiado: Solicitar a senha do cliente
-</p>
+{% if result %}
+{% for row in result %}
+<div class="comandas">
+    <table>
 
+        <tr class="teste11">
+            <td widht=250 bgcolor=white>ID_COMANDA</td>
+            <td scope='row' bgcolor=red> {{ row[0] }}</th>
+        </tr>
+
+        <tr>
+            <td widht=250 bgcolor=white>NUMERO_COMANDA</td>
+            <td scope='row' bgcolor=red> {{ row[1] }}</th>
+        </tr>
+        <tr>
+            <td widht=250 bgcolor=white>DATA_HORA</td>
+            <td scope='row' bgcolor=red> {{ row[2] }}</th>
+        </tr>
+        <tr>
+            <td widht=250 bgcolor=white>FUNCIONARIO_ID</td>
+            <td scope='row' bgcolor=red> {{ row[5] }}</th>
+        </tr>
+        <tr>
+            <td>
+                <form action='{{ url_for('dashboard.formEditComanda') }}' method='POST' name='editComanda'>
+                    <input type='hidden' name='id_comanda' value='{{ row[0] }}'>
+                    <button type='submit' name='formEditComanda'><i class='fa fa-fw fa-edit' id="IconLista"></i></button>
+                </form>
+            </td>
+        </tr>
+
+    </table>
+</div>
+{% endfor %}
+{% endif %}
+
+{% endblock %}
+
+{% block js %}
+<script>
+
+</script>
 {% endblock %}

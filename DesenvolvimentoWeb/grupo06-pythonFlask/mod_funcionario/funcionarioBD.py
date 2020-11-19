@@ -21,7 +21,7 @@ class Funcionarios(object):
 
             c = banco.conexao.cursor()
 
-            _sql = "select id_funcionario, nome, matricula, cpf, telefone, grupo, senha from tb_funcionario"
+            _sql = "select id_funcionario, nome, matricula, cpf, telefone, if(grupo =1,'Admin','Atendente'), senha from tb_funcionario"
 
             _sql_data = ()
 
@@ -168,7 +168,7 @@ class Funcionarios(object):
         try:
             c = banco.conexao.cursor()
 
-            c.execute("select id_funcionario, nome, matricula, cpf, telefone, grupo, senha from tb_funcionario where cpf = %s and senha = %s", (self.cpf, self.senha))
+            c.execute("select id_funcionario, nome, matricula, cpf, telefone, if(grupo =1,'Admin','Atendente'), senha from tb_funcionario where cpf = %s and senha = %s", (self.cpf, self.senha))
 
             for linha in c:
                 self.id_funcionario = linha[0]

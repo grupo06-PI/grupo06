@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify
+from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify, session
 
 from mod_comanda.comandaBD import Comandas
 
@@ -38,7 +38,7 @@ def abrirComanda():
         comanda.data_hora = datetime.datetime.now()
         comanda.status_comanda = request.form['status_comanda']
         comanda.status_pagamento = request.form['status_pagamento']
-        comanda.funcionario_id = request.form['funcionario_id']
+        comanda.funcionario_id = session['id_funcionario']
 
         _msg = comanda.insert()
         return jsonify(erro=False, mensagem=_msg)

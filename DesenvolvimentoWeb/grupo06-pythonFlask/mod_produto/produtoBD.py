@@ -158,3 +158,31 @@ class Produtos(object):
                 c.close()
             if banco:
                 banco.conexao.close()
+
+    
+    def listaProdutos(self):
+        banco = None
+        c = None
+
+        try:
+            banco = Banco()
+
+            c = banco.conexao.cursor()
+
+            _sql = "SELECT nome,valor_unitario from tb_produto where nome like '%%'"
+
+            _sql_data = (self.nome,self.valor_unitario)
+
+            c.execute(_sql)
+
+            result = c.fetchall()
+
+            return result
+            
+        except Exception as e:
+            raise Exception(str(e))
+        finally:
+            if c:
+                c.close()
+            if banco:
+                banco.conexao.close()

@@ -18,7 +18,7 @@ def CadFuncionario():
 @validaSessao
 def ListaFuncionarios():
     funcionario = Funcionarios()
-    res = funcionario.selectALL()
+    res = funcionario.selectALL() 
     return render_template("formListaFuncionarios.html", funcionario=funcionario, result=res, content_type='application/json')
 
 

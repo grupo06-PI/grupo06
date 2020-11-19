@@ -37,6 +37,7 @@ def validaLogin():
         session['usuario'] = funcionario.nome
         session['cpf'] = funcionario.cpf
         session['grupo'] = funcionario.grupo
+        session['id_funcionario'] = funcionario.id_funcionario
 
         #abre a aplicação na tela home
         return redirect(url_for('home.formHome'))
