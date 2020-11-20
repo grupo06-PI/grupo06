@@ -28,7 +28,7 @@ class Comandas(object):
             c.execute(_sql,_sql_data)
 
             for linha in c:
-                self.id_coamnda = linha[0]
+                self.id_comanda = linha[0]
                 self.numero_comanda = linha[1]
                 self.data_hora = linha[2]
                 self.status_comanda = linha[3]
@@ -191,6 +191,41 @@ class ComandaAddProd(object):
         except Exception as e:
             raise Exception("Erro ao adicionar produto!", str(e))
 
+        finally:
+            if c:
+                c.close()
+            if banco:
+                banco.conexao.close()
+
+
+    def selectONE(self):
+        banco = None
+        c = None
+
+        try:
+            banco = Banco()
+
+            c = banco.conexao.cursor()
+
+            _sql = "select id_comanda, numero_comanda, data_hora, status_comanda, status_pagamento, funcionario_id, cliente_id from tb_comanda where id_comanda = %s"
+
+            _sql_data = (self.id_comanda,)
+
+            c.execute(_sql,_sql_data)
+
+            for linha in c:
+                self.id_comanda = linha[0]
+                self.numero_comanda = linha[1]
+                self.data_hora = linha[2]
+                self.status_comanda = linha[3]
+                self.status_pagamento = linha[4]
+                self.funcionario_id = linha[5]
+                self.cliente_id = linha[6]
+                
+            return "Busca feita com sucesso!"
+        except:
+            return "Ocorreu um erro na busca do produto"
+            
         finally:
             if c:
                 c.close()
