@@ -41,9 +41,9 @@
         </tr>
         <tr>
             <td>
-                <form action='{{ url_for('dashboard.formEditComanda') }}' method='POST' name='editComanda'>
-                    <input type='hidden' name='id_comanda' value='{{ row[0] }}'>
-                    <button type='submit' name='formEditComanda'><i class='fa fa-fw fa-edit' id="IconLista"></i></button>
+                <form action='{{ url_for('dashboard.AdicionarProdutos') }}' method='POST' name='addProd'>
+                    <input type='hidden' name='comanda_id' value='{{ row[0] }}'>
+                    <button type='submit' name='AdicionarProdutos'><i class='fa fa-fw fa-edit' id="IconLista"></i></button>
                 </form>
             </td>
         </tr>

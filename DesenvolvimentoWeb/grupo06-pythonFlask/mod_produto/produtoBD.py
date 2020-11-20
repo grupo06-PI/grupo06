@@ -1,5 +1,7 @@
 from BancoBD import Banco
 
+import json
+
 class Produtos(object):
 
     def __init__(self, id_produto=0, nome="", descricao="", valor_unitario=0, foto=""):
@@ -49,7 +51,7 @@ class Produtos(object):
 
             c = banco.conexao.cursor()
 
-            _sql = "select id_produto, nome, descricao, valor_unitario, CONVERT(foto USING utf8) from tb_produto where id_produto = %s"
+            _sql = "select id_produto, nome, descricao, CONVERT(valor_unitario,CHAR), CONVERT(foto USING utf8) from tb_produto where id_produto = %s"
 
             _sql_data = (self.id_produto,)
 
@@ -159,30 +161,7 @@ class Produtos(object):
             if banco:
                 banco.conexao.close()
 
+    def toJSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True, indent=4)
+
     
-    def listaProdutos(self):
-        banco = None
-        c = None
-
-        try:
-            banco = Banco()
-
-            c = banco.conexao.cursor()
-
-            _sql = "SELECT nome,valor_unitario from tb_produto where nome like '%%'"
-
-            _sql_data = (self.nome,self.valor_unitario)
-
-            c.execute(_sql)
-
-            result = c.fetchall()
-
-            return result
-            
-        except Exception as e:
-            raise Exception(str(e))
-        finally:
-            if c:
-                c.close()
-            if banco:
-                banco.conexao.close()
