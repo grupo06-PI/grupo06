@@ -23,6 +23,7 @@ def ListaComandas():
     comanda=Comandas()
     res = comanda.selectALL()
     return render_template("formListaComandas.html", result=res, content_type='application/json')
+    
 
 
 @bp_comanda.route("/abrirComanda", methods=['GET','POST'])

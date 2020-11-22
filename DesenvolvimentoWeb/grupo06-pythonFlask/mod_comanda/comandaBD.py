@@ -75,6 +75,34 @@ class Comandas(object):
             if banco:
                 banco.conexao.close()
 
+    def selectALLDashboard(self):
+        banco = None
+        c = None
+
+        try:
+            banco = Banco()
+
+            c = banco.conexao.cursor()
+
+            _sql = "SELECT TBC.ID_COMANDA, TBC.NUMERO_COMANDA, TBC.DATA_HORA, TBC.STATUS_COMANDA, TBC.STATUS_PAGAMENTO, TBC.FUNCIONARIO_ID, TBF.NOME, TBC.CLIENTE_ID FROM TB_COMANDA TBC INNER JOIN TB_FUNCIONARIO TBF ON TBF.ID_FUNCIONARIO = TBC.FUNCIONARIO_ID"
+
+            _sql_data = ()
+
+            c.execute(_sql, _sql_data)
+
+            result = c.fetchall()
+
+            return result
+
+        except Exception as e:
+            return "Ocorreu um erro na busca das Comandas"
+
+        finally:
+            if c:
+                c.close()
+            if banco:
+                banco.conexao.close()
+
     def insert(self):
         banco = None
         c = None
