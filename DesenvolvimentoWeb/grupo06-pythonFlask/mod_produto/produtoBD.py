@@ -164,4 +164,65 @@ class Produtos(object):
     def toJSON(self):
         return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True, indent=4)
 
-    
+
+class ProdutosComandas(object):
+
+    def __init__(self, id_comanda_produto=0, quantidade="", valor_unitario="", comanda_id="", produto_id="", funcionario_id=""):
+
+        self.id_comanda_produto = id_comanda_produto
+        self.quantidade = quantidade
+        self.valor_unitario = valor_unitario
+        self.comanda_id = comanda_id
+        self.produto_id = produto_id
+        self.funcionario_id = funcionario_id
+        
+    def selectALL(self):
+        banco = None
+        c = None
+
+        try:
+            banco = Banco()
+
+            c = banco.conexao.cursor()
+
+            _sql = "SELECT TBCP.ID_COMANDA_PRODUTO, TBCP.COMANDA_ID, TBP.NOME, TBCP.QUANTIDADE, TBP.VALOR_UNITARIO FROM TB_PRODUTO TBP INNER JOIN TB_COMANDA_PRODUTO TBCP ON TBP.ID_PRODUTO = TBCP.PRODUTO_ID where comanda_id = %s"
+
+            _sql_data = (self.comanda_id,)
+
+            c.execute(_sql,_sql_data)
+
+            resultProd = c.fetchall()
+
+            return resultProd
+
+        except Exception as e:
+            return "Ocorreu um erro na busca do produto"
+
+
+    def deleteProdComanda(self):
+        banco = None
+        c = None
+
+        try:
+            banco = Banco()
+
+            c = banco.conexao.cursor()
+
+            _sql = "delete from tb_comanda_produto where id_comanda_produto = %s"
+
+            _sql_data = (self.id_comanda_produto,)
+
+            c.execute(_sql,_sql_data)
+
+            banco.conexao.commit()
+
+            return "Produto excluído com sucesso!"
+
+        except Exception as e:
+            raise Exception("Erro ao tentar excluir produto!", str(e))
+        
+        finally:
+            if c:
+                c.close()
+            if banco:
+                banco.conexao.close()

@@ -1,0 +1,173 @@
+{% extends "modelo.html" %}
+
+{% block title %} Lista de Produtos {% endblock %}
+
+{% block style %}
+{{super()}}
+<style>
+  .buttonsCfg {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 4px;
+    border: 1px solid white;
+    font-weight: bold;
+    background-color: rgb(11, 7, 31);
+
+    font-family: Snell Roundhand, sans-serif;
+    font-variant: small-caps;
+  }
+
+  .buttonsCfg:hover {
+    text-decoration: none;
+    color: rgb(11, 7, 31);
+    padding: 12px;
+    background-color: #3a9ec2;
+  }
+
+  .listaClientes {
+    padding-bottom: 10px;
+    text-align: center;
+
+    font-family: Snell Roundhand, sans-serif;
+    font-variant: small-caps;
+
+  }
+
+  .titleForm {
+    color: white;
+    font-size: 30px;
+
+    font-family: Snell Roundhand, sans-serif;
+    font-variant: small-caps;
+    font-style: italic;
+  }
+
+  #linkProduct a:visited {
+    color: rgb(172, 34, 108);
+  }
+
+  tr {
+    color: rgb(255, 255, 255);
+    border-bottom: 7px solid #1d1d40;
+    border-left: solid 3px #1d1d40;
+    border-right: solid 3px #1d1d40;
+  }
+
+  td {
+    background-color: rgb(11, 7, 31);
+    color: white;
+  }
+
+  th {
+    background-color: rgb(11, 7, 31);
+  }
+
+  thead {
+    border-top: 7px solid #1d1d40;
+    color: white;
+  }
+
+  button {
+    background-color: rgb(11, 7, 31);
+    border: 1px solid rgb(11, 7, 31);
+  }
+
+  #IconLista {
+    font-size: 19px;
+  }
+
+  i {
+    color: white;
+  }
+</style>
+{% endblock %}
+
+
+
+{% block content %}
+{{ super() }}
+
+<div class="listaClientes">
+  <table class="table table-striped table-primary">
+    <thead class="">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">produto_id</th>
+        <th scope="col">quantidade</th>
+        <th scope="col">valor_unitario</th>
+        <th scope="col">Excluir</th>
+      </tr>
+    </thead>
+
+
+    <tbody>
+      {% for produtosComandas in listaProdComandas: %}
+      <tr>
+        <td scope='produtosComandas'> {{ produtosComandas[1] }}</td>
+        <td> {{ produtosComandas[2] }}</td>
+        <td> {{ produtosComandas[3] }}</td>
+        <td> {{ produtosComandas[4] }}</td>
+        <td>
+          <form method='POST' name='deleteProdComanda' id='deleteProdComanda'>
+            <input type='hidden' name='id_comanda_produto' value='{{ produtosComandas[0] }}'>
+            <button type='submit' name='formDeleteProduto'><i class='fa fa-fw fa-trash' id="IconLista"></i></button>
+          </form>
+        </td>
+      </tr>
+      {% endfor %}
+
+    </tbody>
+  </table>
+</div>
+{% endblock %}
+
+{% block js %}
+<script>
+  $SCRIPT_ROOT = {{ request.script_root | tojson | safe }}; // pega a url da barra de endereço
+
+  $("form[name='deleteProdComanda']").submit(function (e) {
+    e.preventDefault(); // parar o envio para poder fazer manualmente
+    swal({ // abre um popup pedindo a confirmação do usuário
+        title: "",
+        text: "Deseja realmente excluir o produto" + $(e.target)[0][0].value,
+        type: "warning",
+        showCancelButton: true,
+        confirmButtonClass: "btn-danger",
+        confirmButtonText: "Sim",
+        cancelButtonText: 'Cancelar',
+        closeOnConfirm: false
+      },
+      function () {
+        deleteProd($(e.target)[0][0].value); // Retorna o valor que está no id do produto escolhido);
+      });
+  })
+
+  function deleteProd(idComandaProduto) {
+    $.post($SCRIPT_ROOT + "{{ url_for('dashboard.deleteProdComanda') }}", {
+      id_comanda_produto: idComandaProduto
+    }, function (data) {
+      if (!data.erro) {
+        swal({
+            title: "",
+            text: data.mensagem,
+            type: "success",
+            confirmButtonClass: "btn-success",
+            confirmButtonText: "Ok",
+            closeOnConfirm: false,
+            closeOnCancel: false
+          },
+          function (isConfirm) {
+            if (isConfirm) {
+              window.location.replace($SCRIPT_ROOT + "{{ url_for('dashboard.ComandasAbertas') }}");
+            }
+          });
+      } else {
+        swal("", data.mensagem + '\n' + data.mensagem_exception, "error");
+      }
+    })
+  }
+</script>
+{% endblock %}

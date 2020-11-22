@@ -3,6 +3,7 @@ from flask import Blueprint, render_template, request, redirect, url_for, flash,
 from mod_comanda.comandaBD import Comandas
 from mod_comanda.comandaBD import ComandaAddProd
 from mod_produto.produtoBD import Produtos
+from mod_produto.produtoBD import ProdutosComandas
 
 from mod_login.login import validaSessao
 
@@ -67,3 +68,30 @@ def buscaProduto():
 
     except Exception as e:
         return jsonify(erro=True, mensagem_exception = str(e))
+
+@bp_dashboard.route('/listaProdComanda', methods = ['POST'])
+@validaSessao
+def listaProdComanda():
+    produtosComandas=ProdutosComandas()
+    produtosComandas.comanda_id = request.values['comanda_id']
+    listaProdComandas = produtosComandas.selectALL()
+    return render_template("formListaProdComanda.html", produtosComandas=ProdutosComandas, listaProdComandas=listaProdComandas, content_type='application/json')
+
+
+
+@bp_dashboard.route('/deleteProdComanda', methods=['POST'])
+@validaSessao
+def deleteProdComanda():
+    _msg = ""
+    try:
+
+        produtosComandas=ProdutosComandas()
+        produtosComandas.id_comanda_produto = request.form['id_comanda_produto']
+
+        _msg = produtosComandas.deleteProdComanda()
+
+        return jsonify(erro=False, mensagem=_msg)
+
+    except Exception as e:
+        _msg, _msg_exception = e.args
+        return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_exception)
