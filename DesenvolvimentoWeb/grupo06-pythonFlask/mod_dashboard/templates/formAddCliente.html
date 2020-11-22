@@ -1,16 +1,15 @@
 {% extends "modelo.html" %}
 
-{% block title %} Adicionar Produtos {% endblock %}
+{% block title %} CadComanda {% endblock %}
 
 {% block style %}
 {{super()}}
 <style>
     form {
-        border: 3px solid  #1d1d40;
+        border: 2px solid rgb(11, 7, 31);
         padding: 20px;
         background-color: rgb(11, 7, 31);
         width: 100%;
-        border-top: solid 7px #1d1d40;
     }
 
     .buttonsCfg {
@@ -34,9 +33,9 @@
         background-color: #3a9ec2;
     }
 
-    #IconLista{
-    font-size: 19px;
-  }
+    #IconLista {
+        font-size: 19px;
+    }
 
     label {
         color: white;
@@ -53,7 +52,7 @@
         font-variant: small-caps;
     }
 
-    #linkDashboard a:visited {
+    #linkComandas a:visited {
         color: rgb(172, 34, 108);
     }
 </style>
@@ -61,46 +60,41 @@
 
 {% block content %}
 
-<label for="" class="titleForm">Adicionar Produtos</label>
-<form id="addProdutoComanda" name="addProdutoComanda" method="POST" enctype="multipart/form-data">
+<label for="" class="titleForm">Adicionar Cliente na Comanda</label>
+<form id="addClienteComanda" name="addClienteComanda" method="POST" enctype="multipart/form-data">
 
     <div class="row">
         <div class="col-md-2 mb-2">
-            <label for="comanda_id">Comanda ID:</label>
-            <input value="{{ comandaAddProd.comanda_id }}" type="text" name="comanda_id" id="comanda_id" class="form-control" placeholder="" readonly>
+            <label for="id_comanda">Comanda ID:</label>
+            <input value="{{ comandaAddCliente.id_comanda }}" type="text" name="id_comanda" id="id_comanda"
+                class="form-control" placeholder="" >
         </div>
     </div>
     <br>
     <div class="row">
-
+ <!--
+            <div class="col-md-2 mb-2">
+                <label for="id_cliente">id cliente:</label>
+                <input value="{{ comandaAddCliente.id_cliente }}" type="text" name="id_cliente" id="id_cliente"
+                    class="form-control" placeholder="" >
+            </div>
+    -->
+          
         <div class="col-md-4 mb-2">
-            <label for="nome">Nome Produto:</label>
-            <select name="id_produto" id="id_produto" class="form-control">
+            <label for="nome">Nome Cliente:</label>
+            <select name="id_cliente" id="id_cliente" class="form-control">
                 <option value=""></option>
-                {% for produto in listaProd: %}
-                <option value="{{ produto[0] }}">{{ produto[1] }}</option>
+                {% for cliente in listaClientes: %}
+                <option value="{{ cliente[0] }}" name>{{ cliente[1] }}</option>
                 {% endfor %}
             </select>
         </div>
-
-    </div>
-    <br>
-    <div class="row">
-        <div class="col-md-4 mb-2">
-            <label for="">Valor Unitário:</label>
-            <input value="{{ comandaAddProd.valor_unitario}}" type="text" name="valor_unitario" id="valor_unitario" class="form-control" readonly>
-        </div>
-    </div>
-    <br>
-    <div class="row">
-        <div class="col-md-4 mb-2">
-            <label for="">Quantidade:</label>
-            <input value="{{ comandaAddProd.quantidade}}" type="number" name="quantidade" id="quantidade" class="form-control" placeholder="">
-        </div>
+    
     </div>
     <br>
 
-    <button type='submit' name='salvaComandaDB' id='salvaComandaDB' class="buttonsCfg"><i class="fa fa-fw fa-save"
+
+    <button type='submit' name='salvaClienteDB' id='salvaClienteDB' class="buttonsCfg"><i class="fa fa-fw fa-save"
             id="IconLista"></i> Salvar</a></button>
 </form>
 
@@ -112,15 +106,15 @@
 <script>
     $SCRIPT_ROOT = {{ request.script_root | tojson | safe }}; // pega a url da barra de endereço
 
-    $('#addProdutoComanda').submit(function (e) {
+    $('#addClienteComanda').submit(function (e) {
         e.preventDefault(); // parar o envio para poder fazer manualmente
-        var form = $('#addProdutoComanda')[0]; // captura o form
+        var form = $('#addClienteComanda')[0]; // captura o form
         var data = new FormData(form); // cria o FormData {Object}
 
         $.ajax({
             type: "POST",
             enctype: 'multipart/form-data',
-            url: "{{url_for('dashboard.addProdutoComanda')}}",
+            url: "{{url_for('dashboard.addClienteComanda')}}",
             data: data,
             processData: false,
             contentType: false,
@@ -154,23 +148,5 @@
             }
         })
     })
-
-    //parte de listagem de produtos
-    $(document).ready(function() {
-
-
-        $('#id_produto').change(function (e) {
-            $.post($SCRIPT_ROOT + "{{ url_for('dashboard.buscaProduto') }}",
-
-                {id_produto: e.target.value},
-                 function (data) {
-                    let produto = $.parseJSON(data.produto);
-                    $('#valor_unitario').val(produto.valor_unitario);
-                })
-        })
-
-
-    })
-
 </script>
 {% endblock %}
