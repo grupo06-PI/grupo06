@@ -80,13 +80,13 @@
                 <div class="col-md-1 mb-2">
                     <label for="id_funcionario">ID:</label>
                     <input readonly value="{{ funcionario.id_funcionario }}" type="text" name="id_funcionario"
-                        id="id_funcionario" class="form-control" placeholder="ID" required>
+                        id="id_funcionario" class="form-control" placeholder="ID do Funcionário" required>
                 </div>
 
                 <div class="col-md-6 mb-2">
                     <label for="nome">Nome:</label>
                     <input value="{{ funcionario.nome }}" type="text" name="nome" id="nome" autofocus
-                        class="form-control" placeholder="Insira o nome do funcionário" maxlength="100" required>
+                        class="form-control" placeholder="Insira o nome do Funcionário" maxlength="100" required>
                 </div>
             </div>
             <br>
@@ -94,7 +94,7 @@
                 <div class="col-md-3 mb-2">
                     <label for="matricula">Matrícula:</label>
                     <input value="{{ funcionario.matricula }}" type="text" name="matricula" id="matricula"
-                        class="form-control" placeholder="" maxlength="10" required>
+                        class="form-control" placeholder="0000000000" maxlength="10" required>
                 </div>
             </div>
             <br>
@@ -102,7 +102,7 @@
                 <div class="col-md-3 mb-2">
                     <label for="cpf">CPF:</label>
                     <input value="{{ funcionario.cpf }}" type="text" name="cpf" id="cpf" class="form-control"
-                        placeholder="" maxlength="11" required>
+                        placeholder="000-000-000-00" maxlength="11" required>
                 </div>
             </div>
             <br>
@@ -110,7 +110,7 @@
                 <div class="col-md-3 mb-2">
                     <label for="telefone">Telefone:</label>
                     <input value="{{ funcionario.telefone }}" type="text" name="telefone" id="telefone"
-                        class="form-control" placeholder="" maxlength="11" required>
+                        class="form-control" placeholder="(99) 99999-9999" maxlength="11" required>
                 </div>
             </div>
             <br>
@@ -128,7 +128,7 @@
                 <div class="col-md-3 mb-2">
                     <label for="senha">Senha:</label>
                     <input value="{{ funcionario.senha }}" type="text" name="senha" id="senha" class="form-control"
-                        placeholder="" maxlength="200" required>
+                        placeholder="********" maxlength="200" required>
                 </div>
             </div><br>
             <button type='submit' name='salvaFuncionarioDB' id='salvaFuncionarioDB' class="buttonsCfg"><i
