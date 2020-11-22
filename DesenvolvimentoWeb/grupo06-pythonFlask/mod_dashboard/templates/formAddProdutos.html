@@ -1,19 +1,16 @@
 {% extends "modelo.html" %}
 
-{% block title %} CadComanda {% endblock %}
-
-
-
-
+{% block title %} Adicionar Produtos {% endblock %}
 
 {% block style %}
 {{super()}}
 <style>
     form {
-        border: 2px solid rgb(11, 7, 31);
+        border: 3px solid  #1d1d40;
         padding: 20px;
         background-color: rgb(11, 7, 31);
         width: 100%;
+        border-top: solid 7px #1d1d40;
     }
 
     .buttonsCfg {
@@ -37,9 +34,9 @@
         background-color: #3a9ec2;
     }
 
-    #IconLista {
-        font-size: 19px;
-    }
+    #IconLista{
+    font-size: 19px;
+  }
 
     label {
         color: white;
@@ -56,11 +53,9 @@
         font-variant: small-caps;
     }
 
-    #linkComandas a:visited {
+    #linkDashboard a:visited {
         color: rgb(172, 34, 108);
     }
-
-
 </style>
 {% endblock %}
 
@@ -71,7 +66,7 @@
 
     <div class="row">
         <div class="col-md-2 mb-2">
-            <label for="comanda_id">Comanda ID:</label>
+            <label for="comanda_id">ID Comanda:</label>
             <input value="{{ comandaAddProd.comanda_id }}" type="text" name="comanda_id" id="comanda_id" class="form-control" placeholder="">
         </div>
     </div>
@@ -79,7 +74,7 @@
     <div class="row">
 
         <div class="col-md-4 mb-2">
-            <label for="nome">Nome Produto:</label>
+            <label for="nome">Nome do Produto:</label>
             <select name="id_produto" id="id_produto" class="form-control">
                 <option value=""></option>
                 {% for produto in listaProd: %}

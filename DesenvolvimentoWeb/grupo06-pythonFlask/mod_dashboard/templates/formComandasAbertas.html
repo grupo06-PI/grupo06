@@ -1,18 +1,54 @@
 {% extends "modelo.html" %}
 
-
-              
+{% block title %} Comandas Abertas {% endblock %}
 
 {% block style %}
 {{super()}}
 <style>
+    table {
+        border-top: solid 8px rgb(172, 34, 108);
+    }
+
     .comandas {
         padding: 15px;
     }
+
+    .Comanda {
+        border-left: solid 5px black;
+        border-right: solid 5px black;
+    }
+    tr{
+        background-color: rgb(172, 34, 108);
+    }
+
+    .texttd{
+        color: white;
+    }
+
+    #linkDashboard a:visited {
+        color: rgb(172, 34, 108);
+    }
+
+    button {
+        width: 150px;
+        height: 30px;
+        border: solid 1px rgb(172, 34, 108);
+        background-color: rgb(172, 34, 108);
+        color: white;
+    }
+
+    #IconLista {
+        font-size: 19px;
+    }
+
+    i {
+        color: white;
+    }
+    i:hover{
+        color: black;
+    }
 </style>
 {% endblock %}
-
-
 
 {% block content %}
 {{ super() }}
@@ -22,34 +58,38 @@
 <div class="comandas">
     <table>
 
-        <tr class="teste11">
-            <td widht=250 bgcolor=white>ID_COMANDA</td>
-            <td scope='row' bgcolor=red> {{ row[0] }}</th>
-                <td>
-                    <form action='{{ url_for('dashboard.AdicionarProdutos') }}' method='POST' name='addProd'>
-                        <input type='hidden' name='comanda_id' value='{{ row[0] }}'>
-                        <button type='submit' name='AdicionarProdutos'><i class='fa fa-fw fa-edit' id="IconLista"></i></button>
-                    </form>
-                </td>
+        <tr class="Comanda">
+            <td bgcolor=white>ID Comanda:</td>
+            <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[0] }}</th>
         </tr>
 
-        <tr>
-            <td widht=250 bgcolor=white>NUMERO_COMANDA</td>
-            <td scope='row' bgcolor=red> {{ row[1] }}</th>
-                <td>
-                    <form action='{{ url_for('dashboard.listaProdComanda') }}' method='POST' name='addProd'>
-                        <input type='hidden' name='comanda_id' value='{{ row[0] }}'>
-                        <button type='submit' name='AdicionarProdutos'><i class='fa fa-fw fa-cubes' id="IconLista"></i></button>
-                    </form>
-                </td>
+        <tr class="Comanda">
+            <td bgcolor=white>Número Comanda:</td>
+            <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[1] }}</th>
+        </tr>
+        <tr class="Comanda">
+            <td bgcolor=white>Data e Hora:</td>
+            <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[2] }}</th>
+        </tr>
+        <tr class="Comanda">
+            <td bgcolor=white>Nome Funcionário:</td>
+            <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[6] }}</th>
         </tr>
         <tr>
-            <td widht=250 bgcolor=white>DATA_HORA</td>
-            <td scope='row' bgcolor=red> {{ row[2] }}</th>
-        </tr>
-        <tr>
-            <td widht=250 bgcolor=white>NOME_FUNCIONARIO</td>
-            <td scope='row' bgcolor=red> {{ row[6] }}</th>
+            <td>
+                <form action='{{ url_for('dashboard.AdicionarProdutos') }}' method='POST' name='addProd'>
+                    <input type='hidden' name='comanda_id' value='{{ row[0] }}'>
+                    <button type='submit' name='AdicionarProdutos'><i class='fa fa-fw fa-edit'
+                            id="IconLista"></i></button>
+                </form>
+            </td>
+            <td>
+                <form action='{{ url_for('dashboard.listaProdComanda') }}' method='POST' name='addProd'>
+                    <input type='hidden' name='comanda_id' value='{{ row[0] }}'>
+                    <button type='submit' name='AdicionarProdutos'><i class='fa fa-fw fa-cubes'
+                            id="IconLista"></i></button>
+                </form>
+            </td>
         </tr>
     </table>
 </div>
