@@ -13,7 +13,7 @@ bp_dashboard = Blueprint('dashboard', __name__, template_folder='templates', url
 @validaSessao
 def ComandasAbertas():
     comanda=Comandas()
-    res = comanda.selectALL()
+    res = comanda.selectALLDashboard()
     return render_template("formComandasAbertas.html", result=res, content_type='application/json')
 
 @bp_dashboard.route("/RegistroFiados", methods=['GET'])
