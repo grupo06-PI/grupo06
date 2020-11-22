@@ -1,4 +1,5 @@
 from BancoBD import Banco
+import json
 
 
 class Clientes(object):
@@ -22,7 +23,35 @@ class Clientes(object):
 
             c = banco.conexao.cursor()
 
-            _sql = "select id_cliente,nome,cpf,telefone,compra_fiado,dia_fiado,senha from tb_cliente"
+            _sql = "select id_cliente,nome,cpf,telefone,compra_fiado,dia_fiado,senha from tb_cliente where id_cliente != 1"
+
+            _sql_data = ()
+
+            c.execute(_sql, _sql_data)
+
+            result = c.fetchall()
+
+            return result
+
+        except Exception as e:
+            return "Ocorreu um erro na busca do cliente"
+
+        finally:
+            if c:
+                c.close()
+            if banco:
+                banco.conexao.close()
+
+    def selectALLClientes(self):
+        banco = None
+        c = None
+
+        try:
+            banco = Banco()
+
+            c = banco.conexao.cursor()
+
+            _sql = "select id_cliente,nome,cpf,telefone,compra_fiado,dia_fiado,senha from tb_cliente where id_cliente"
 
             _sql_data = ()
 
@@ -160,3 +189,6 @@ class Clientes(object):
                 c.close()
             if banco:
                 banco.conexao.close()
+
+    def toJSON(self):
+        return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True, indent=4)

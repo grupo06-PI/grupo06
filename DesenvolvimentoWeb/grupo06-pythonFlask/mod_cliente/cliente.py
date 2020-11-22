@@ -47,7 +47,7 @@ def addCliente():
         cliente.telefone = request.form['telefone']
         cliente.compra_fiado = request.form['compra_fiado']
         cliente.dia_fiado = request.form['dia_fiado']
-        cliente.senha = request.form['senha']   
+        cliente.senha = request.form['senha']
 
         _msg = cliente.insert()
         return jsonify(erro=False, mensagem=_msg)
