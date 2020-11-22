@@ -1,16 +1,15 @@
 {% extends "modelo.html" %}
 
-{% block title %} Cadastro de Comandas {% endblock %}
+{% block title %} CadComanda {% endblock %}
 
 {% block style %}
 {{super()}}
 <style>
     form {
-        border: 3px solid  #1d1d40;
+        border: 2px solid rgb(11, 7, 31);
         padding: 20px;
         background-color: rgb(11, 7, 31);
         width: 100%;
-        border-top: solid 7px #1d1d40;
     }
 
     .buttonsCfg {
@@ -34,9 +33,9 @@
         background-color: #3a9ec2;
     }
 
-    #IconLista{
-    font-size: 19px;
-  }
+    #IconLista {
+        font-size: 19px;
+    }
 
     label {
         color: white;
@@ -61,43 +60,45 @@
 
 {% block content %}
 
-<label for="" class="titleForm">Nova Comanda</label>
-<form id="abrirComanda" name="abrirComanda" method="POST" enctype="multipart/form-data">
+<label for="" class="titleForm">Adicionar Cliente na Comanda</label>
+<form id="addClienteComanda" name="addClienteComanda" method="POST" enctype="multipart/form-data">
 
     <div class="row">
-        <div class="col-md-1 mb-2">
-            <label for="id_comanda">ID:</label>
-            <input readonly value="{{ comanda.id_comanda }}" type="text" name="id_comanda" id="id_comanda"
-                class="form-control" placeholder="ID" required>
-        </div>
-
-        <div class="col-md-6 mb-2">
-            <label for="numero_comanda">Número Comanda:</label>
-            <input value="{{ comanda.numero_comanda }}" type="text" name="numero_comanda" id="numero_comanda" autofocus
-                class="form-control" placeholder="Insira o número da comanda">
+        <div class="col-md-2 mb-2">
+            <label for="id_comanda">Comanda ID:</label>
+            <input value="{{ comandaAddCliente.id_comanda }}" type="text" name="id_comanda" id="id_comanda"
+                class="form-control" placeholder="" >
         </div>
     </div>
     <br>
     <div class="row">
-        <div class="col-md-3 mb-2">
-            <label for="status_comanda">Status da Comanda:</label>
-            <input value="{{ comanda.status_comanda }}" type="text" name="status_comanda" id="status_comanda"
-                class="form-control" placeholder="" readonly>
+ <!--
+            <div class="col-md-2 mb-2">
+                <label for="id_cliente">id cliente:</label>
+                <input value="{{ comandaAddCliente.id_cliente }}" type="text" name="id_cliente" id="id_cliente"
+                    class="form-control" placeholder="" >
+            </div>
+    -->
+          
+        <div class="col-md-4 mb-2">
+            <label for="nome">Nome Cliente:</label>
+            <select name="id_cliente" id="id_cliente" class="form-control">
+                <option value=""></option>
+                {% for cliente in listaClientes: %}
+                <option value="{{ cliente[0] }}" name>{{ cliente[1] }}</option>
+                {% endfor %}
+            </select>
         </div>
-    </div>
-    <br>
-    <div class="row">
-        <div class="col-md-3 mb-2">
-            <label for="status_pagamento">Status do Pagamento:</label>
-            <input value="{{ comanda.status_pagamento }}" type="text" name="status_pagamento" id="status_pagamento"
-                class="form-control" placeholder="" readonly>
-        </div>
+    
     </div>
     <br>
 
-    <button type='submit' name='salvaComandaDB' id='salvaComandaDB' class="buttonsCfg"><i
-        class="fa fa-fw fa-save" id="IconLista"></i> Salvar</a></button>
+
+    <button type='submit' name='salvaClienteDB' id='salvaClienteDB' class="buttonsCfg"><i class="fa fa-fw fa-save"
+            id="IconLista"></i> Salvar</a></button>
 </form>
+
+<br><br>
 
 {% endblock %}
 
@@ -105,15 +106,15 @@
 <script>
     $SCRIPT_ROOT = {{ request.script_root | tojson | safe }}; // pega a url da barra de endereço
 
-    $('#abrirComanda').submit(function (e) {
+    $('#addClienteComanda').submit(function (e) {
         e.preventDefault(); // parar o envio para poder fazer manualmente
-        var form = $('#abrirComanda')[0]; // captura o form
+        var form = $('#addClienteComanda')[0]; // captura o form
         var data = new FormData(form); // cria o FormData {Object}
 
         $.ajax({
             type: "POST",
             enctype: 'multipart/form-data',
-            url: "{{url_for('comanda.abrirComanda')}}",
+            url: "{{url_for('dashboard.addClienteComanda')}}",
             data: data,
             processData: false,
             contentType: false,
@@ -124,18 +125,18 @@
             success: function (data) {
                 if (!data.erro) {
                     swal({
-                        title: "",
-                        text: data.mensagem,
-                        type: "success",
-                        confirmButtonClass: "btn-success",
-                        confirmButtonText: "Ok",
-                        closeOnConfirm: false,
-                        closeOnCancel: false
-                    },
+                            title: "",
+                            text: data.mensagem,
+                            type: "success",
+                            confirmButtonClass: "btn-success",
+                            confirmButtonText: "Ok",
+                            closeOnConfirm: false,
+                            closeOnCancel: false
+                        },
                         function (isConfirm) {
                             if (isConfirm) {
                                 window.location.replace($SCRIPT_ROOT +
-                                    "{{ url_for('comanda.ListaComandas') }}");
+                                    "{{ url_for('dashboard.ComandasAbertas') }}");
                             }
                         });
                 } else {

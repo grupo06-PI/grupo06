@@ -2,7 +2,7 @@ from BancoBD import Banco
 
 class Comandas(object):
 
-    def __init__(self, id_comanda=0, numero_comanda="", data_hora="", status_comanda="", status_pagamento="", funcionario_id="", cliente_id=""):
+    def __init__(self, id_comanda=0, numero_comanda="", data_hora="", status_comanda=1, status_pagamento=1, funcionario_id="", cliente_id=""):
 
         self.id_comanda = id_comanda
         self.numero_comanda = numero_comanda
@@ -56,7 +56,35 @@ class Comandas(object):
 
             c = banco.conexao.cursor()
 
-            _sql = "select id_comanda, numero_comanda, data_hora, status_comanda, status_pagamento, funcionario_id, cliente_id from tb_comanda"
+            _sql = "select id_comanda, numero_comanda, data_hora, if(status_comanda =1,'Aberta','Fechada'), if(status_pagamento =1,'Em Aberto','Fechada'), funcionario_id, cliente_id from tb_comanda"
+
+            _sql_data = ()
+
+            c.execute(_sql, _sql_data)
+
+            result = c.fetchall()
+
+            return result
+
+        except Exception as e:
+            return "Ocorreu um erro na busca das Comandas"
+
+        finally:
+            if c:
+                c.close()
+            if banco:
+                banco.conexao.close()
+
+    def selectALLDashboard(self):
+        banco = None
+        c = None
+
+        try:
+            banco = Banco()
+
+            c = banco.conexao.cursor()
+
+            _sql = "SELECT TBC.ID_COMANDA, TBC.NUMERO_COMANDA, TBC.DATA_HORA, TBC.STATUS_COMANDA, TBC.STATUS_PAGAMENTO, TBC.FUNCIONARIO_ID, TBF.NOME, TBC.CLIENTE_ID, TBCLI.NOME FROM TB_COMANDA TBC INNER JOIN TB_FUNCIONARIO TBF ON TBF.ID_FUNCIONARIO = TBC.FUNCIONARIO_ID INNER JOIN TB_CLIENTE TBCLI ON TBCLI.ID_CLIENTE = TBC.CLIENTE_ID"
 
             _sql_data = ()
 
@@ -84,10 +112,10 @@ class Comandas(object):
 
             c = banco.conexao.cursor()
 
-            _sql = "insert into tb_comanda(numero_comanda,data_hora,status_comanda,status_pagamento,funcionario_id) values (%s,%s,%s,%s,%s)"
+            _sql = "insert into tb_comanda(numero_comanda,data_hora,status_comanda,status_pagamento,funcionario_id,cliente_id) values (%s,%s,%s,%s,%s,%s)"
 
             _sql_data = (self.numero_comanda, self.data_hora, self.status_comanda,
-                         self.status_pagamento, self.funcionario_id,)
+                         self.status_pagamento, self.funcionario_id, self.cliente_id)
 
             c.execute(_sql, _sql_data)
 
@@ -231,3 +259,46 @@ class ComandaAddProd(object):
                 c.close()
             if banco:
                 banco.conexao.close()
+
+class ComandaAddCliente(object):
+
+    def __init__(self, id_comanda=0, numero_comanda="", data_hora="", status_comanda=1, status_pagamento=1, funcionario_id="", cliente_id=""):
+
+        self.id_comanda = id_comanda
+        self.numero_comanda = numero_comanda
+        self.data_hora = data_hora
+        self.status_comanda = status_comanda
+        self.status_pagamento = status_pagamento
+        self.funcionario_id = funcionario_id
+        self.cliente_id = cliente_id
+
+                
+
+    def update(self):
+        banco = None
+        c = None
+
+        try:
+            banco = Banco()
+            
+            c = banco.conexao.cursor()
+
+            _sql = "update tb_comanda set cliente_id=%s where id_comanda = %s"
+
+            _sql_data = (self.cliente_id, self.id_comanda,)
+
+            c.execute(_sql,_sql_data)
+
+            banco.conexao.commit()
+
+            return "Cliente vinculado com Sucesso!"
+
+        except Exception as e:
+            raise Exception("Erro ao vincular Cliente!", str(e))
+
+        finally:
+            if c:
+                c.close()
+            if banco:
+                banco.conexao.close()
+    

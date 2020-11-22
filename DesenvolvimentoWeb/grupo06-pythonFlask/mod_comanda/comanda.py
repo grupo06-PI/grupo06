@@ -23,6 +23,7 @@ def ListaComandas():
     comanda=Comandas()
     res = comanda.selectALL()
     return render_template("formListaComandas.html", result=res, content_type='application/json')
+    
 
 
 @bp_comanda.route("/abrirComanda", methods=['GET','POST'])
@@ -39,6 +40,7 @@ def abrirComanda():
         comanda.status_comanda = request.form['status_comanda']
         comanda.status_pagamento = request.form['status_pagamento']
         comanda.funcionario_id = session['id_funcionario']
+        comanda.cliente_id = 1
 
         _msg = comanda.insert()
         return jsonify(erro=False, mensagem=_msg)

@@ -2,7 +2,11 @@ from flask import Blueprint, render_template, request, redirect, url_for, flash,
 
 from mod_comanda.comandaBD import Comandas
 from mod_comanda.comandaBD import ComandaAddProd
+from mod_comanda.comandaBD import ComandaAddCliente
 from mod_produto.produtoBD import Produtos
+from mod_produto.produtoBD import ProdutosComandas
+from mod_cliente.clienteBD import Clientes
+
 
 from mod_login.login import validaSessao
 
@@ -12,7 +16,7 @@ bp_dashboard = Blueprint('dashboard', __name__, template_folder='templates', url
 @validaSessao
 def ComandasAbertas():
     comanda=Comandas()
-    res = comanda.selectALL()
+    res = comanda.selectALLDashboard()
     return render_template("formComandasAbertas.html", result=res, content_type='application/json')
 
 @bp_dashboard.route("/RegistroFiados", methods=['GET'])
@@ -67,3 +71,58 @@ def buscaProduto():
 
     except Exception as e:
         return jsonify(erro=True, mensagem_exception = str(e))
+
+@bp_dashboard.route('/listaProdComanda', methods = ['POST'])
+@validaSessao
+def listaProdComanda():
+    produtosComandas=ProdutosComandas()
+    produtosComandas.comanda_id = request.values['comanda_id']
+    listaProdComandas = produtosComandas.selectALL()
+    return render_template("formListaProdComanda.html", produtosComandas=ProdutosComandas, listaProdComandas=listaProdComandas, content_type='application/json')
+
+@bp_dashboard.route('/deleteProdComanda', methods=['POST'])
+@validaSessao
+def deleteProdComanda():
+    _msg = ""
+    try:
+
+        produtosComandas=ProdutosComandas()
+        produtosComandas.id_comanda_produto = request.form['id_comanda_produto']
+
+        _msg = produtosComandas.deleteProdComanda()
+
+        return jsonify(erro=False, mensagem=_msg)
+
+    except Exception as e:
+        _msg, _msg_exception = e.args
+        return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_exception)
+
+
+@bp_dashboard.route("/AdicionarCliente", methods=['GET','POST'])
+@validaSessao
+def AdicionarCliente():
+    clientes=Clientes()
+    comandaAddCliente=ComandaAddCliente()
+    comandaAddCliente.id_comanda = request.form['id_comanda']
+    listaClientes = clientes.selectALLClientes()
+    return render_template("formAddCliente.html", comandaAddCliente=comandaAddCliente, listaClientes=listaClientes, content_type='application/json')
+
+
+@bp_dashboard.route('/addClienteComanda', methods=['GET','POST'])
+@validaSessao
+def addClienteComanda():
+    _msg = ""
+    
+    try:   
+        comandaAddCliente = ComandaAddCliente()
+        comandaAddCliente.cliente_id = request.form['id_cliente']
+        comandaAddCliente.id_comanda = request.form['id_comanda']
+
+        _msg = comandaAddCliente.update()
+        return jsonify(erro=False, mensagem=_msg)
+
+    except Exception as e:
+        _msg, _msg_excpetion = e.args
+        return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_excpetion)
+
+
