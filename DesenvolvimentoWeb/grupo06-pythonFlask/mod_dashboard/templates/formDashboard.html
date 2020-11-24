@@ -1,0 +1,43 @@
+{% extends "modelo.html" %}
+
+{% block title %} Dashboard {% endblock %}
+
+{% block style %}
+{{super()}}
+<style>
+   
+</style>
+{% endblock %}
+
+{% block content %}
+{{ super() }}
+
+<div class="menu">
+    <ul>
+      <li id="linkComandasAbertas">
+        <i class="fa fa-fw fa-drivers-license-o"></i>
+        <a href="{{url_for('dashboard.ComandasAbertas')}}">Comandas Abertas</a>
+      </li>
+
+      <li id="linkClientesInadimplentes">
+        <i class="fa fa-fw fa-user"></i>
+        <a href="{{url_for('dashboard.ComandasAtrasadas')}}">Clientes Inadimplentes</a>
+      </li>
+
+      <li id="linkPagamentoFiado">
+        <i class="fa fa-fw fa-hand-holding-usd"></i>
+        <a href="{{url_for('dashboard.ComandasAbertas')}}">Pagamento Fiado</a>
+      </li>
+
+      <li id="linkPagamentoAVista">
+        <i class="fa fa-fw fa-dollar-sign"></i>
+        <a href="{{url_for('dashboard.ComandasAbertas')}}">Pagamento a Vista</a>
+      </li>
+    </ul>
+</div>
+{% endblock %}
+{% block js %}
+<script>
+
+</script>
+{% endblock %}

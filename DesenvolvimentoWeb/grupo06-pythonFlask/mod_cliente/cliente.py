@@ -4,6 +4,8 @@ from mod_cliente.clienteBD import Clientes
 
 from mod_login.login import validaSessao
 
+from funcoes import Funcoes
+
 bp_cliente = Blueprint('cliente', __name__, template_folder='templates', url_prefix='/clientes')
 
 @bp_cliente.route("/cadCliente", methods=['GET','POST'])
@@ -37,7 +39,7 @@ def formEditCliente():
 @validaSessao
 def addCliente():
     _msg = ""
-
+    funcoes = Funcoes()
     try:
         cliente=Clientes()
 
@@ -50,10 +52,20 @@ def addCliente():
         cliente.senha = request.form['senha']
 
         _msg = cliente.insert()
+
+        #log
+        log = _msg  +"|CPF:"+ request.form['cpf'] +"|Usuário:" + session['usuario'] + "|"
+        funcoes.logInfo(log)
+        
         return jsonify(erro=False, mensagem=_msg)
 
     except Exception as e:
         _msg, _msg_excpetion = e.args
+
+        #log
+        log = _msg  +"|Usuário:" + session['usuario'] + "|"
+        funcoes.logError(log)
+
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_excpetion)
     
 
@@ -61,7 +73,7 @@ def addCliente():
 @validaSessao
 def editCliente():
     _msg = ""
-
+    funcoes = Funcoes()
     try:
 
         cliente=Clientes()
@@ -75,16 +87,27 @@ def editCliente():
         cliente.senha = request.form['senha']   
 
         _msg = cliente.update()
+
+        #log
+        log = _msg  +"|ID:"+ request.form['id_cliente'] + session['usuario'] + "|"
+        funcoes.logInfo(log)
+
         return jsonify(erro=False, mensagem=_msg)
 
     except Exception as e:
         _msg, _msg_exception = e.args
+
+        #log
+        log = _msg  +"|Usuário:" + session['usuario'] + "|"
+        funcoes.logError(log)
+
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_exception)
 
 @bp_cliente.route('/deleteCliente', methods=['POST'])
 @validaSessao
 def deleteCliente():
     _msg = ""
+    funcoes = Funcoes()
     try:
 
         cliente = Clientes()
@@ -92,9 +115,18 @@ def deleteCliente():
 
         _msg = cliente.delete()
 
+        #log
+        log = _msg  +"|ID:"+ request.form['id_cliente'] + session['usuario'] + "|"
+        funcoes.logInfo(log)
+
         return jsonify(erro=False, mensagem=_msg)
 
     except Exception as e:
         _msg, _msg_exception = e.args
+
+        #log
+        log = _msg  +"|Usuário:" + session['usuario'] + "|"
+        funcoes.logError(log)
+
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_exception)
     

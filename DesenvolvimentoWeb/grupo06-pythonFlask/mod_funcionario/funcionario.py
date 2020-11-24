@@ -1,8 +1,11 @@
-from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify
+from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify, session
 
 from mod_funcionario.funcionarioBD import Funcionarios
 
 from mod_login.login import validaSessao
+
+from funcoes import Funcoes
+
 
 bp_funcionario = Blueprint('funcionario', __name__, template_folder='templates', url_prefix="/funcionarios")
 
@@ -37,6 +40,7 @@ def formEditFuncionario():
 @bp_funcionario.route("/addFuncionario", methods=['GET','POST'])
 @validaSessao
 def addFuncionario():
+    funcoes = Funcoes()
     _msg = ""
 
     try:
@@ -51,17 +55,27 @@ def addFuncionario():
         funcionario.senha = request.form['senha']
 
         _msg = funcionario.insert()
+        
+        #log
+        log = _msg  +"|Matricula:"+ request.form['matricula'] +"|Usuário:" + session['usuario'] + "|"
+        funcoes.logInfo(log)
+
         return jsonify(erro=False, mensagem=_msg)
 
     except Exception as e:
         _msg, _msg_excpetion = e.args
+
+        #log
+        log = _msg  +"|Usuário:" + session['usuario'] + "|"
+        funcoes.logError(log)
+
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_excpetion)
 
 @bp_funcionario.route("/editFuncionario", methods=['POST'])
 @validaSessao
 def editFuncionario():
         _msg = ""
-
+        funcoes = Funcoes()
         try:
             funcionario=Funcionarios()
 
@@ -74,10 +88,20 @@ def editFuncionario():
             funcionario.senha = request.form['senha']
 
             _msg = funcionario.update()
+
+            #log
+            log = _msg  +"|ID:"+ request.form['id_funcionario'] +"|Usuário:" + session['usuario'] + "|"
+            funcoes.logInfo(log)
+
             return jsonify(erro=False, mensagem=_msg)
 
         except Exception as e:
             _msg, _msg_excpetion = e.args
+
+            #log
+            log = _msg  +"|Usuário:" + session['usuario'] + "|"
+            funcoes.logError(log)
+
             return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_excpetion)
 
 
@@ -85,6 +109,7 @@ def editFuncionario():
 @validaSessao
 def deleteFuncionario():
     _msg = ""
+    funcoes = Funcoes()
     try:
 
         funcionario = Funcionarios()
@@ -92,8 +117,17 @@ def deleteFuncionario():
 
         _msg = funcionario.delete()
 
+        #log
+        log = _msg  +"|ID:"+ request.form['id_funcionario'] +"|Usuário:" + session['usuario'] + "|"
+        funcoes.logInfo(log)
+
         return jsonify(erro=False, mensagem=_msg)
 
     except Exception as e:
         _msg, _msg_exception = e.args
+
+        #log
+        log = _msg  +"|Usuário:" + session['usuario'] + "|"
+        funcoes.logError(log)
+
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_exception)

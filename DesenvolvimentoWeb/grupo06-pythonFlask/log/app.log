@@ -1,0 +1,383 @@
+INFO|werkzeug|24/11/2020 01:34:08 AM|127.0.0.1 - - [24/Nov/2020 01:34:08] "[32mGET /funcionarios/listaFuncionarios HTTP/1.1[0m" 302 -
+INFO|werkzeug|24/11/2020 01:34:08 AM|127.0.0.1 - - [24/Nov/2020 01:34:08] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:34:10 AM|127.0.0.1 - - [24/Nov/2020 01:34:10] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 01:34:10 AM|127.0.0.1 - - [24/Nov/2020 01:34:10] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:34:10 AM|127.0.0.1 - - [24/Nov/2020 01:34:10] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:34:11 AM|127.0.0.1 - - [24/Nov/2020 01:34:11] "[37mGET /static/bootstrap-4.5.2-dist/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:34:18 AM|127.0.0.1 - - [24/Nov/2020 01:34:18] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 01:34:19 AM|127.0.0.1 - - [24/Nov/2020 01:34:19] "[37mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:34:19 AM|127.0.0.1 - - [24/Nov/2020 01:34:19] "[37mGET /login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:34:19 AM|127.0.0.1 - - [24/Nov/2020 01:34:19] "[37mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:34:20 AM|127.0.0.1 - - [24/Nov/2020 01:34:20] "[37mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:34:20 AM|127.0.0.1 - - [24/Nov/2020 01:34:20] "[37mGET /login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:34:20 AM|127.0.0.1 - - [24/Nov/2020 01:34:20] "[37mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:34:59 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_login\\login.py', reloading
+INFO|werkzeug|24/11/2020 01:35:47 AM|127.0.0.1 - - [24/Nov/2020 01:35:47] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+INFO|werkzeug|24/11/2020 01:35:47 AM|127.0.0.1 - - [24/Nov/2020 01:35:47] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 01:35:58 AM|127.0.0.1 - - [24/Nov/2020 01:35:58] "[37mGET / HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:35:58 AM|127.0.0.1 - - [24/Nov/2020 01:35:58] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 01:35:58 AM|127.0.0.1 - - [24/Nov/2020 01:35:58] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:35:58 AM|127.0.0.1 - - [24/Nov/2020 01:35:58] "[37mGET /static/bootstrap-4.5.2-dist/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:35:59 AM|127.0.0.1 - - [24/Nov/2020 01:35:59] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:36:02 AM|127.0.0.1 - - [24/Nov/2020 01:36:02] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 01:36:02 AM|127.0.0.1 - - [24/Nov/2020 01:36:02] "[37mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:36:02 AM|127.0.0.1 - - [24/Nov/2020 01:36:02] "[37mGET /login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:36:02 AM|127.0.0.1 - - [24/Nov/2020 01:36:02] "[37mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:36:02 AM|127.0.0.1 - - [24/Nov/2020 01:36:02] "[37mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:36:02 AM|127.0.0.1 - - [24/Nov/2020 01:36:02] "[37mGET /login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:36:02 AM|127.0.0.1 - - [24/Nov/2020 01:36:02] "[37mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:36:54 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_login\\login.py', reloading
+INFO|werkzeug|24/11/2020 01:36:57 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_login\\login.py', reloading
+INFO|werkzeug|24/11/2020 01:36:59 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_login\\login.py', reloading
+INFO|werkzeug|24/11/2020 01:37:07 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_login\\login.py', reloading
+INFO|werkzeug|24/11/2020 01:37:14 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_login\\login.py', reloading
+INFO|werkzeug|24/11/2020 01:37:16 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_login\\login.py', reloading
+INFO|werkzeug|24/11/2020 01:37:20 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_login\\login.py', reloading
+INFO|werkzeug|24/11/2020 01:37:24 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_login\\login.py', reloading
+INFO|werkzeug|24/11/2020 01:37:35 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_login\\login.py', reloading
+INFO|werkzeug|24/11/2020 01:37:38 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_login\\login.py', reloading
+INFO|werkzeug|24/11/2020 01:37:52 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_login\\login.py', reloading
+INFO|werkzeug|24/11/2020 01:38:22 AM|127.0.0.1 - - [24/Nov/2020 01:38:22] "[37mGET / HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:38:22 AM|127.0.0.1 - - [24/Nov/2020 01:38:22] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 01:38:22 AM|127.0.0.1 - - [24/Nov/2020 01:38:22] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:38:22 AM|127.0.0.1 - - [24/Nov/2020 01:38:22] "[37mGET /static/bootstrap-4.5.2-dist/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:38:22 AM|127.0.0.1 - - [24/Nov/2020 01:38:22] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:38:22 AM|127.0.0.1 - - [24/Nov/2020 01:38:22] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|root|24/11/2020 01:38:25 AM|Login Efetuado com sucesso|Usuário:nicolas|
+INFO|werkzeug|24/11/2020 01:38:25 AM|127.0.0.1 - - [24/Nov/2020 01:38:25] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|24/11/2020 01:38:28 AM|127.0.0.1 - - [24/Nov/2020 01:38:28] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:38:29 AM|127.0.0.1 - - [24/Nov/2020 01:38:29] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:38:29 AM|127.0.0.1 - - [24/Nov/2020 01:38:29] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 01:38:29 AM|127.0.0.1 - - [24/Nov/2020 01:38:29] "[37mGET /static/images/modelo/logoPastry.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:38:29 AM|127.0.0.1 - - [24/Nov/2020 01:38:29] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:38:30 AM|127.0.0.1 - - [24/Nov/2020 01:38:30] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:38:30 AM|127.0.0.1 - - [24/Nov/2020 01:38:30] "[37mGET /static/images/modelo/user.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:38:30 AM|127.0.0.1 - - [24/Nov/2020 01:38:30] "[37mGET /static/css/modelo/sidebar.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:38:30 AM|127.0.0.1 - - [24/Nov/2020 01:38:30] "[37mGET /static/css/modelo/main.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:38:30 AM|127.0.0.1 - - [24/Nov/2020 01:38:30] "[37mGET /static/sweetalert/sweetalert.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:38:30 AM|127.0.0.1 - - [24/Nov/2020 01:38:30] "[37mGET /static/js/jquery-3.5.1.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:38:31 AM|127.0.0.1 - - [24/Nov/2020 01:38:31] "[37mGET /static/css/modelo/header.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:38:32 AM|127.0.0.1 - - [24/Nov/2020 01:38:32] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|24/11/2020 01:40:36 AM|Logout efetuado|Usuário:nicolas|
+INFO|werkzeug|24/11/2020 01:40:36 AM|127.0.0.1 - - [24/Nov/2020 01:40:36] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO|werkzeug|24/11/2020 01:40:36 AM|127.0.0.1 - - [24/Nov/2020 01:40:36] "[37mGET /?falhaSessao=2 HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:40:36 AM|127.0.0.1 - - [24/Nov/2020 01:40:36] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 01:40:36 AM|127.0.0.1 - - [24/Nov/2020 01:40:36] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:40:36 AM|127.0.0.1 - - [24/Nov/2020 01:40:36] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:41:30 AM|127.0.0.1 - - [24/Nov/2020 01:41:30] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 01:41:30 AM|127.0.0.1 - - [24/Nov/2020 01:41:30] "[37mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:41:30 AM|127.0.0.1 - - [24/Nov/2020 01:41:30] "[37mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:41:30 AM|127.0.0.1 - - [24/Nov/2020 01:41:30] "[37mGET /login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:41:30 AM|127.0.0.1 - - [24/Nov/2020 01:41:30] "[37mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:41:30 AM|127.0.0.1 - - [24/Nov/2020 01:41:30] "[37mGET /login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:41:31 AM|127.0.0.1 - - [24/Nov/2020 01:41:31] "[37mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:41:51 AM|127.0.0.1 - - [24/Nov/2020 01:41:51] "[31m[1mGET /login HTTP/1.1[0m" 405 -
+INFO|werkzeug|24/11/2020 01:41:55 AM|127.0.0.1 - - [24/Nov/2020 01:41:55] "[37mGET / HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:41:55 AM|127.0.0.1 - - [24/Nov/2020 01:41:55] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 01:41:55 AM|127.0.0.1 - - [24/Nov/2020 01:41:55] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:41:55 AM|127.0.0.1 - - [24/Nov/2020 01:41:55] "[37mGET /static/bootstrap-4.5.2-dist/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:41:55 AM|127.0.0.1 - - [24/Nov/2020 01:41:55] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:42:23 AM|127.0.0.1 - - [24/Nov/2020 01:42:23] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 01:42:23 AM|127.0.0.1 - - [24/Nov/2020 01:42:23] "[37mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:42:23 AM|127.0.0.1 - - [24/Nov/2020 01:42:23] "[37mGET /login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:42:23 AM|127.0.0.1 - - [24/Nov/2020 01:42:23] "[37mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:42:23 AM|127.0.0.1 - - [24/Nov/2020 01:42:23] "[37mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:42:23 AM|127.0.0.1 - - [24/Nov/2020 01:42:23] "[37mGET /login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:42:23 AM|127.0.0.1 - - [24/Nov/2020 01:42:23] "[37mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:42:30 AM|127.0.0.1 - - [24/Nov/2020 01:42:30] "[37mGET / HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:42:30 AM|127.0.0.1 - - [24/Nov/2020 01:42:30] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 01:42:30 AM|127.0.0.1 - - [24/Nov/2020 01:42:30] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|root|24/11/2020 01:42:32 AM|Login Efetuado com sucesso|Usuário:nicolas|
+INFO|werkzeug|24/11/2020 01:42:32 AM|127.0.0.1 - - [24/Nov/2020 01:42:32] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|24/11/2020 01:42:32 AM|127.0.0.1 - - [24/Nov/2020 01:42:32] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:42:33 AM|127.0.0.1 - - [24/Nov/2020 01:42:33] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 01:42:33 AM|127.0.0.1 - - [24/Nov/2020 01:42:33] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:42:33 AM|127.0.0.1 - - [24/Nov/2020 01:42:33] "[37mGET /static/js/jquery-3.5.1.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:42:33 AM|127.0.0.1 - - [24/Nov/2020 01:42:33] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:42:33 AM|127.0.0.1 - - [24/Nov/2020 01:42:33] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:42:33 AM|127.0.0.1 - - [24/Nov/2020 01:42:33] "[37mGET /static/sweetalert/sweetalert.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:42:33 AM|127.0.0.1 - - [24/Nov/2020 01:42:33] "[37mGET /static/images/modelo/logoPastry.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:42:33 AM|127.0.0.1 - - [24/Nov/2020 01:42:33] "[37mGET /static/images/modelo/user.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:42:33 AM|127.0.0.1 - - [24/Nov/2020 01:42:33] "[37mGET /static/css/modelo/sidebar.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:42:33 AM|127.0.0.1 - - [24/Nov/2020 01:42:33] "[37mGET /static/css/modelo/main.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:42:33 AM|127.0.0.1 - - [24/Nov/2020 01:42:33] "[37mGET /static/css/modelo/header.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:42:33 AM|127.0.0.1 - - [24/Nov/2020 01:42:33] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 01:44:00 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_funcionario\\funcionario.py', reloading
+INFO|werkzeug|24/11/2020 01:44:30 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_funcionario\\funcionario.py', reloading
+INFO|werkzeug|24/11/2020 01:44:35 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_funcionario\\funcionario.py', reloading
+INFO|werkzeug|24/11/2020 01:44:39 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_funcionario\\funcionario.py', reloading
+INFO|werkzeug|24/11/2020 01:44:42 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_funcionario\\funcionario.py', reloading
+INFO|werkzeug|24/11/2020 01:44:58 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_funcionario\\funcionario.py', reloading
+INFO|werkzeug|24/11/2020 01:45:11 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_funcionario\\funcionario.py', reloading
+INFO|werkzeug|24/11/2020 01:45:31 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_funcionario\\funcionario.py', reloading
+INFO|werkzeug|24/11/2020 01:46:06 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_funcionario\\funcionario.py', reloading
+INFO|werkzeug|24/11/2020 01:46:11 AM|127.0.0.1 - - [24/Nov/2020 01:46:11] "[32mGET /funcionarios/listaFuncionarios HTTP/1.1[0m" 302 -
+INFO|werkzeug|24/11/2020 01:46:12 AM|127.0.0.1 - - [24/Nov/2020 01:46:12] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:46:13 AM|127.0.0.1 - - [24/Nov/2020 01:46:13] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 01:46:13 AM|127.0.0.1 - - [24/Nov/2020 01:46:13] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:46:13 AM|127.0.0.1 - - [24/Nov/2020 01:46:13] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|root|24/11/2020 01:46:14 AM|Login Efetuado com sucesso|Usuário:nicolas|
+INFO|werkzeug|24/11/2020 01:46:14 AM|127.0.0.1 - - [24/Nov/2020 01:46:14] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|24/11/2020 01:46:14 AM|127.0.0.1 - - [24/Nov/2020 01:46:14] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:46:14 AM|127.0.0.1 - - [24/Nov/2020 01:46:14] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:46:14 AM|127.0.0.1 - - [24/Nov/2020 01:46:14] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:46:14 AM|127.0.0.1 - - [24/Nov/2020 01:46:14] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 01:46:18 AM|127.0.0.1 - - [24/Nov/2020 01:46:18] "[37mGET /funcionarios/listaFuncionarios HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:46:18 AM|127.0.0.1 - - [24/Nov/2020 01:46:18] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 01:46:20 AM|127.0.0.1 - - [24/Nov/2020 01:46:20] "[37mGET /funcionarios/cadFuncionario HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:46:20 AM|127.0.0.1 - - [24/Nov/2020 01:46:20] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|24/11/2020 01:46:50 AM|Funcionário cadastrado com sucesso!|ID Funcionário cadastrado:0|Usuário:nicolas|
+INFO|werkzeug|24/11/2020 01:46:50 AM|127.0.0.1 - - [24/Nov/2020 01:46:50] "[37mPOST /funcionarios/addFuncionario HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:46:56 AM|127.0.0.1 - - [24/Nov/2020 01:46:56] "[37mGET /funcionarios/listaFuncionarios HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:46:56 AM|127.0.0.1 - - [24/Nov/2020 01:46:56] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:46:56 AM|127.0.0.1 - - [24/Nov/2020 01:46:56] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 01:48:33 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_funcionario\\funcionario.py', reloading
+INFO|werkzeug|24/11/2020 01:48:39 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_funcionario\\funcionario.py', reloading
+INFO|werkzeug|24/11/2020 01:48:44 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_funcionario\\funcionario.py', reloading
+INFO|werkzeug|24/11/2020 01:48:48 AM|127.0.0.1 - - [24/Nov/2020 01:48:48] "[32mGET /funcionarios/cadFuncionario HTTP/1.1[0m" 302 -
+INFO|werkzeug|24/11/2020 01:48:48 AM|127.0.0.1 - - [24/Nov/2020 01:48:48] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:48:48 AM|127.0.0.1 - - [24/Nov/2020 01:48:48] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 01:48:48 AM|127.0.0.1 - - [24/Nov/2020 01:48:48] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|root|24/11/2020 01:48:50 AM|Login Efetuado com sucesso|Usuário:nicolas|
+INFO|werkzeug|24/11/2020 01:48:50 AM|127.0.0.1 - - [24/Nov/2020 01:48:50] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|24/11/2020 01:48:50 AM|127.0.0.1 - - [24/Nov/2020 01:48:50] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:48:50 AM|127.0.0.1 - - [24/Nov/2020 01:48:50] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 01:48:50 AM|127.0.0.1 - - [24/Nov/2020 01:48:50] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:48:50 AM|127.0.0.1 - - [24/Nov/2020 01:48:50] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 01:48:53 AM|127.0.0.1 - - [24/Nov/2020 01:48:53] "[37mGET /funcionarios/listaFuncionarios HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:48:53 AM|127.0.0.1 - - [24/Nov/2020 01:48:53] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 01:48:55 AM|127.0.0.1 - - [24/Nov/2020 01:48:55] "[37mGET /funcionarios/cadFuncionario HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:48:55 AM|127.0.0.1 - - [24/Nov/2020 01:48:55] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 01:48:55 AM|127.0.0.1 - - [24/Nov/2020 01:48:55] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|24/11/2020 01:49:42 AM|Funcionário cadastrado com sucesso!|Matricula Funcionário cadastrado:12345|Usuário:nicolas|
+INFO|werkzeug|24/11/2020 01:49:42 AM|127.0.0.1 - - [24/Nov/2020 01:49:42] "[37mPOST /funcionarios/addFuncionario HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:49:44 AM|127.0.0.1 - - [24/Nov/2020 01:49:44] "[37mGET /funcionarios/listaFuncionarios HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:49:44 AM|127.0.0.1 - - [24/Nov/2020 01:49:44] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 01:49:44 AM|127.0.0.1 - - [24/Nov/2020 01:49:44] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 01:50:15 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_funcionario\\funcionario.py', reloading
+INFO|werkzeug|24/11/2020 01:50:29 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_funcionario\\funcionario.py', reloading
+INFO|werkzeug|24/11/2020 01:50:33 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_funcionario\\funcionario.py', reloading
+INFO|werkzeug|24/11/2020 01:50:38 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_funcionario\\funcionario.py', reloading
+INFO|werkzeug|24/11/2020 01:50:49 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_funcionario\\funcionario.py', reloading
+INFO|werkzeug|24/11/2020 01:50:54 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_funcionario\\funcionario.py', reloading
+INFO|werkzeug|24/11/2020 01:50:59 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_funcionario\\funcionario.py', reloading
+INFO|werkzeug|24/11/2020 01:51:24 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_funcionario\\funcionario.py', reloading
+INFO|werkzeug|24/11/2020 02:11:57 AM|127.0.0.1 - - [24/Nov/2020 02:11:57] "[37mGET / HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:11:57 AM|127.0.0.1 - - [24/Nov/2020 02:11:57] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:11:57 AM|127.0.0.1 - - [24/Nov/2020 02:11:57] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:11:57 AM|127.0.0.1 - - [24/Nov/2020 02:11:57] "[37mGET /static/bootstrap-4.5.2-dist/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:11:57 AM|127.0.0.1 - - [24/Nov/2020 02:11:57] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|root|24/11/2020 02:11:59 AM|Login Efetuado com sucesso|Usuário:nicolas|
+INFO|werkzeug|24/11/2020 02:11:59 AM|127.0.0.1 - - [24/Nov/2020 02:11:59] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|24/11/2020 02:11:59 AM|127.0.0.1 - - [24/Nov/2020 02:11:59] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:12:00 AM|127.0.0.1 - - [24/Nov/2020 02:12:00] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:12:00 AM|127.0.0.1 - - [24/Nov/2020 02:12:00] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:12:00 AM|127.0.0.1 - - [24/Nov/2020 02:12:00] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:12:00 AM|127.0.0.1 - - [24/Nov/2020 02:12:00] "[37mGET /static/sweetalert/sweetalert.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:12:00 AM|127.0.0.1 - - [24/Nov/2020 02:12:00] "[37mGET /static/images/modelo/logoPastry.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:12:00 AM|127.0.0.1 - - [24/Nov/2020 02:12:00] "[37mGET /static/images/modelo/user.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:12:00 AM|127.0.0.1 - - [24/Nov/2020 02:12:00] "[37mGET /static/js/jquery-3.5.1.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:12:00 AM|127.0.0.1 - - [24/Nov/2020 02:12:00] "[37mGET /static/css/modelo/sidebar.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:12:00 AM|127.0.0.1 - - [24/Nov/2020 02:12:00] "[37mGET /static/css/modelo/header.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:12:00 AM|127.0.0.1 - - [24/Nov/2020 02:12:00] "[37mGET /static/css/modelo/main.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:12:01 AM|127.0.0.1 - - [24/Nov/2020 02:12:01] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:12:04 AM|127.0.0.1 - - [24/Nov/2020 02:12:04] "[37mGET /funcionarios/listaFuncionarios HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:12:04 AM|127.0.0.1 - - [24/Nov/2020 02:12:04] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:12:11 AM|127.0.0.1 - - [24/Nov/2020 02:12:11] "[37mPOST /funcionarios/formEditFuncionario HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:12:11 AM|127.0.0.1 - - [24/Nov/2020 02:12:11] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:12:11 AM|127.0.0.1 - - [24/Nov/2020 02:12:11] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|24/11/2020 02:12:22 AM|Funcionário atualizado com sucesso!|ID:11|Usuário:nicolas|
+INFO|werkzeug|24/11/2020 02:12:22 AM|127.0.0.1 - - [24/Nov/2020 02:12:22] "[37mPOST /funcionarios/editFuncionario HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:12:25 AM|127.0.0.1 - - [24/Nov/2020 02:12:25] "[37mGET /funcionarios/listaFuncionarios HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:12:26 AM|127.0.0.1 - - [24/Nov/2020 02:12:26] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:12:26 AM|127.0.0.1 - - [24/Nov/2020 02:12:26] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:12:26 AM|127.0.0.1 - - [24/Nov/2020 02:12:26] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|24/11/2020 02:12:34 AM|Funcionário excluído com sucesso!|ID:11|Usuário:nicolas|
+INFO|werkzeug|24/11/2020 02:12:34 AM|127.0.0.1 - - [24/Nov/2020 02:12:34] "[37mPOST /funcionarios/deleteFuncionario HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:12:36 AM|127.0.0.1 - - [24/Nov/2020 02:12:36] "[37mGET /funcionarios/listaFuncionarios HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:12:36 AM|127.0.0.1 - - [24/Nov/2020 02:12:36] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:12:36 AM|127.0.0.1 - - [24/Nov/2020 02:12:36] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:12:36 AM|127.0.0.1 - - [24/Nov/2020 02:12:36] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:12:42 AM|127.0.0.1 - - [24/Nov/2020 02:12:42] "[37mGET /clientes/listaClientes HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:12:42 AM|127.0.0.1 - - [24/Nov/2020 02:12:42] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:12:44 AM|127.0.0.1 - - [24/Nov/2020 02:12:44] "[37mGET /clientes/cadCliente HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:12:44 AM|127.0.0.1 - - [24/Nov/2020 02:12:44] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:13:04 AM|127.0.0.1 - - [24/Nov/2020 02:13:04] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:15 AM|127.0.0.1 - - [24/Nov/2020 02:13:15] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:21 AM|127.0.0.1 - - [24/Nov/2020 02:13:21] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:22 AM|127.0.0.1 - - [24/Nov/2020 02:13:22] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:22 AM|127.0.0.1 - - [24/Nov/2020 02:13:22] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:23 AM|127.0.0.1 - - [24/Nov/2020 02:13:23] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:23 AM|127.0.0.1 - - [24/Nov/2020 02:13:23] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:23 AM|127.0.0.1 - - [24/Nov/2020 02:13:23] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:24 AM|127.0.0.1 - - [24/Nov/2020 02:13:24] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:25 AM|127.0.0.1 - - [24/Nov/2020 02:13:25] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:25 AM|127.0.0.1 - - [24/Nov/2020 02:13:25] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:25 AM|127.0.0.1 - - [24/Nov/2020 02:13:25] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:25 AM|127.0.0.1 - - [24/Nov/2020 02:13:25] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:26 AM|127.0.0.1 - - [24/Nov/2020 02:13:26] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:27 AM|127.0.0.1 - - [24/Nov/2020 02:13:27] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:27 AM|127.0.0.1 - - [24/Nov/2020 02:13:27] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:28 AM|127.0.0.1 - - [24/Nov/2020 02:13:28] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:28 AM|127.0.0.1 - - [24/Nov/2020 02:13:28] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:30 AM|127.0.0.1 - - [24/Nov/2020 02:13:30] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:30 AM|127.0.0.1 - - [24/Nov/2020 02:13:30] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:31 AM|127.0.0.1 - - [24/Nov/2020 02:13:31] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:31 AM|127.0.0.1 - - [24/Nov/2020 02:13:31] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:31 AM|127.0.0.1 - - [24/Nov/2020 02:13:31] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:31 AM|127.0.0.1 - - [24/Nov/2020 02:13:31] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:34 AM|127.0.0.1 - - [24/Nov/2020 02:13:34] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:35 AM|127.0.0.1 - - [24/Nov/2020 02:13:35] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:35 AM|127.0.0.1 - - [24/Nov/2020 02:13:35] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:35 AM|127.0.0.1 - - [24/Nov/2020 02:13:35] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:35 AM|127.0.0.1 - - [24/Nov/2020 02:13:35] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:36 AM|127.0.0.1 - - [24/Nov/2020 02:13:36] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:36 AM|127.0.0.1 - - [24/Nov/2020 02:13:36] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:37 AM|127.0.0.1 - - [24/Nov/2020 02:13:37] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:38 AM|127.0.0.1 - - [24/Nov/2020 02:13:38] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:38 AM|127.0.0.1 - - [24/Nov/2020 02:13:38] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:38 AM|127.0.0.1 - - [24/Nov/2020 02:13:38] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:38 AM|127.0.0.1 - - [24/Nov/2020 02:13:38] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:39 AM|127.0.0.1 - - [24/Nov/2020 02:13:39] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:39 AM|127.0.0.1 - - [24/Nov/2020 02:13:39] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:39 AM|127.0.0.1 - - [24/Nov/2020 02:13:39] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:39 AM|127.0.0.1 - - [24/Nov/2020 02:13:39] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:39 AM|127.0.0.1 - - [24/Nov/2020 02:13:39] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:40 AM|127.0.0.1 - - [24/Nov/2020 02:13:40] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:40 AM|127.0.0.1 - - [24/Nov/2020 02:13:40] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:40 AM|127.0.0.1 - - [24/Nov/2020 02:13:40] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:41 AM|127.0.0.1 - - [24/Nov/2020 02:13:41] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:41 AM|127.0.0.1 - - [24/Nov/2020 02:13:41] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:42 AM|127.0.0.1 - - [24/Nov/2020 02:13:42] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:43 AM|127.0.0.1 - - [24/Nov/2020 02:13:43] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:43 AM|127.0.0.1 - - [24/Nov/2020 02:13:43] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:43 AM|127.0.0.1 - - [24/Nov/2020 02:13:43] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:43 AM|127.0.0.1 - - [24/Nov/2020 02:13:43] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:44 AM|127.0.0.1 - - [24/Nov/2020 02:13:44] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:44 AM|127.0.0.1 - - [24/Nov/2020 02:13:44] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:44 AM|127.0.0.1 - - [24/Nov/2020 02:13:44] "[35m[1mPOST /clientes/addCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:13:49 AM|127.0.0.1 - - [24/Nov/2020 02:13:49] "[37mGET /produtos/listaProdutos HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:13:49 AM|127.0.0.1 - - [24/Nov/2020 02:13:49] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:13:49 AM|127.0.0.1 - - [24/Nov/2020 02:13:49] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:13:49 AM|127.0.0.1 - - [24/Nov/2020 02:13:49] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:13:51 AM|127.0.0.1 - - [24/Nov/2020 02:13:51] "[37mGET /produtos/cadProduto HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:13:51 AM|127.0.0.1 - - [24/Nov/2020 02:13:51] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:13:51 AM|127.0.0.1 - - [24/Nov/2020 02:13:51] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|24/11/2020 02:14:55 AM|Produto cadastrado com sucesso!|Produto:Produto de teste|Usuário:nicolas|
+INFO|werkzeug|24/11/2020 02:14:55 AM|127.0.0.1 - - [24/Nov/2020 02:14:55] "[37mPOST /produtos/addProduto HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:14:56 AM|127.0.0.1 - - [24/Nov/2020 02:14:56] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|root|24/11/2020 02:14:58 AM|Produto cadastrado com sucesso!|Produto:Produto de teste|Usuário:nicolas|
+INFO|werkzeug|24/11/2020 02:14:57 AM|127.0.0.1 - - [24/Nov/2020 02:14:57] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:14:58 AM|127.0.0.1 - - [24/Nov/2020 02:14:58] "[37mPOST /produtos/addProduto HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:14:58 AM|127.0.0.1 - - [24/Nov/2020 02:14:58] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:14:59 AM|127.0.0.1 - - [24/Nov/2020 02:14:59] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:14:59 AM|127.0.0.1 - - [24/Nov/2020 02:14:59] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|root|24/11/2020 02:15:00 AM|Produto cadastrado com sucesso!|Produto:Produto de teste|Usuário:nicolas|
+INFO|werkzeug|24/11/2020 02:15:00 AM|127.0.0.1 - - [24/Nov/2020 02:15:00] "[37mPOST /produtos/addProduto HTTP/1.1[0m" 200 -
+INFO|root|24/11/2020 02:15:00 AM|Produto cadastrado com sucesso!|Produto:Produto de teste|Usuário:nicolas|
+INFO|werkzeug|24/11/2020 02:15:00 AM|127.0.0.1 - - [24/Nov/2020 02:15:00] "[37mPOST /produtos/addProduto HTTP/1.1[0m" 200 -
+INFO|root|24/11/2020 02:15:01 AM|Produto cadastrado com sucesso!|Produto:Produto de teste|Usuário:nicolas|
+INFO|werkzeug|24/11/2020 02:15:01 AM|127.0.0.1 - - [24/Nov/2020 02:15:01] "[37mPOST /produtos/addProduto HTTP/1.1[0m" 200 -
+INFO|root|24/11/2020 02:15:01 AM|Produto cadastrado com sucesso!|Produto:Produto de teste|Usuário:nicolas|
+INFO|werkzeug|24/11/2020 02:15:01 AM|127.0.0.1 - - [24/Nov/2020 02:15:01] "[37mPOST /produtos/addProduto HTTP/1.1[0m" 200 -
+INFO|root|24/11/2020 02:15:02 AM|Produto cadastrado com sucesso!|Produto:Produto de teste|Usuário:nicolas|
+INFO|werkzeug|24/11/2020 02:15:02 AM|127.0.0.1 - - [24/Nov/2020 02:15:02] "[37mPOST /produtos/addProduto HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:15:03 AM|127.0.0.1 - - [24/Nov/2020 02:15:03] "[37mGET /clientes/listaClientes HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:15:03 AM|127.0.0.1 - - [24/Nov/2020 02:15:03] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:15:10 AM|127.0.0.1 - - [24/Nov/2020 02:15:10] "[37mPOST /clientes/formEditCliente HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:15:10 AM|127.0.0.1 - - [24/Nov/2020 02:15:10] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:15:10 AM|127.0.0.1 - - [24/Nov/2020 02:15:10] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:15:10 AM|127.0.0.1 - - [24/Nov/2020 02:15:10] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:15:18 AM|127.0.0.1 - - [24/Nov/2020 02:15:18] "[35m[1mPOST /clientes/editCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:15:32 AM|127.0.0.1 - - [24/Nov/2020 02:15:32] "[35m[1mPOST /clientes/editCliente HTTP/1.1[0m" 500 -
+INFO|werkzeug|24/11/2020 02:15:56 AM|127.0.0.1 - - [24/Nov/2020 02:15:56] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:15:56 AM|127.0.0.1 - - [24/Nov/2020 02:15:56] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:15:56 AM|127.0.0.1 - - [24/Nov/2020 02:15:56] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:16:56 AM|127.0.0.1 - - [24/Nov/2020 02:16:56] "[37mGET /produtos/listaProdutos HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:16:56 AM|127.0.0.1 - - [24/Nov/2020 02:16:56] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:16:56 AM|127.0.0.1 - - [24/Nov/2020 02:16:56] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|24/11/2020 02:17:02 AM|Produto excluído com sucesso!|ID Produto:17|Usuário:nicolas|
+INFO|werkzeug|24/11/2020 02:17:02 AM|127.0.0.1 - - [24/Nov/2020 02:17:02] "[37mPOST /produtos/deleteProduto HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:17:04 AM|127.0.0.1 - - [24/Nov/2020 02:17:04] "[37mGET /produtos/listaProdutos HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:17:04 AM|127.0.0.1 - - [24/Nov/2020 02:17:04] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:17:06 AM|127.0.0.1 - - [24/Nov/2020 02:17:06] "[37mPOST /produtos/formEditProduto HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:17:06 AM|127.0.0.1 - - [24/Nov/2020 02:17:06] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:17:06 AM|127.0.0.1 - - [24/Nov/2020 02:17:06] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:17:07 AM|127.0.0.1 - - [24/Nov/2020 02:17:07] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|24/11/2020 02:17:27 AM|Produto atualizado com sucesso!|ID Produto:12|Usuário:nicolas|
+INFO|werkzeug|24/11/2020 02:17:27 AM|127.0.0.1 - - [24/Nov/2020 02:17:27] "[37mPOST /produtos/editProduto HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:17:29 AM|127.0.0.1 - - [24/Nov/2020 02:17:29] "[37mGET /produtos/listaProdutos HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:17:29 AM|127.0.0.1 - - [24/Nov/2020 02:17:29] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:17:29 AM|127.0.0.1 - - [24/Nov/2020 02:17:29] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:17:29 AM|127.0.0.1 - - [24/Nov/2020 02:17:29] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:18:06 AM|127.0.0.1 - - [24/Nov/2020 02:18:06] "[37mGET /listaConfiguracoes HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:18:06 AM|127.0.0.1 - - [24/Nov/2020 02:18:06] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:18:06 AM|127.0.0.1 - - [24/Nov/2020 02:18:06] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:18:06 AM|127.0.0.1 - - [24/Nov/2020 02:18:06] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:18:09 AM|127.0.0.1 - - [24/Nov/2020 02:18:09] "[37mPOST /formEditConfiguracoes HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:18:09 AM|127.0.0.1 - - [24/Nov/2020 02:18:09] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|24/11/2020 02:18:17 AM|Configurações atualizadas com sucesso!|Usuário:nicolas|
+INFO|werkzeug|24/11/2020 02:18:17 AM|127.0.0.1 - - [24/Nov/2020 02:18:17] "[37mPOST /editConfiguracoes HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:18:19 AM|127.0.0.1 - - [24/Nov/2020 02:18:19] "[37mGET /listaConfiguracoes HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:18:19 AM|127.0.0.1 - - [24/Nov/2020 02:18:19] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:18:19 AM|127.0.0.1 - - [24/Nov/2020 02:18:19] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:18:19 AM|127.0.0.1 - - [24/Nov/2020 02:18:19] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:19:55 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|24/11/2020 02:20:08 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|24/11/2020 02:20:12 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|24/11/2020 02:20:23 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|24/11/2020 02:20:26 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|24/11/2020 02:20:32 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|24/11/2020 02:20:39 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|24/11/2020 02:20:45 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|24/11/2020 02:20:53 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|24/11/2020 02:20:56 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|24/11/2020 02:21:03 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|24/11/2020 02:21:06 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|24/11/2020 02:21:26 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|24/11/2020 02:21:38 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|24/11/2020 02:21:42 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|24/11/2020 02:21:45 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|24/11/2020 02:22:09 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|24/11/2020 02:22:12 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|24/11/2020 02:22:17 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|24/11/2020 02:22:22 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|24/11/2020 02:22:33 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|24/11/2020 02:24:23 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|24/11/2020 02:24:48 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:24:59 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:25:08 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:25:13 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:25:17 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:25:38 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:25:43 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:26:00 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:26:04 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:26:25 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:26:32 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:26:38 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:26:50 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:26:55 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:27:20 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:27:24 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:27:28 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:27:36 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:28:38 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:28:51 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:28:54 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:29:03 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:29:05 AM| * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+INFO|werkzeug|24/11/2020 02:29:08 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:29:12 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:29:30 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:29:35 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:29:44 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:29:59 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:30:02 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:31:13 AM| * Detected change in 'C:\\grupo06\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_dashboard\\dashboard.py', reloading
+INFO|werkzeug|24/11/2020 02:31:38 AM|127.0.0.1 - - [24/Nov/2020 02:31:38] "[32mGET /listaConfiguracoes HTTP/1.1[0m" 302 -
+INFO|werkzeug|24/11/2020 02:31:38 AM|127.0.0.1 - - [24/Nov/2020 02:31:38] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:31:40 AM|127.0.0.1 - - [24/Nov/2020 02:31:40] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|24/11/2020 02:31:40 AM|127.0.0.1 - - [24/Nov/2020 02:31:40] "[37mGET /static/bootstrap-4.5.2-dist/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:31:40 AM|127.0.0.1 - - [24/Nov/2020 02:31:40] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|24/11/2020 02:31:40 AM|127.0.0.1 - - [24/Nov/2020 02:31:40] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -

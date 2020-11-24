@@ -6,6 +6,8 @@ from functools import wraps
 #import funcionarios
 from mod_funcionario.funcionarioBD import Funcionarios
 
+from funcoes import Funcoes
+
 
 bp_login = Blueprint('login', __name__, template_folder='templates')
 
@@ -18,6 +20,8 @@ def login():
 #rota ajustada para validação de login
 @bp_login.route("/login", methods=['POST'])
 def validaLogin():
+    #cria objeto funcoes para armazenar log
+    funcoes = Funcoes()
 
     #cria o objeto e armezena usuário e senha digitado
     funcionario = Funcionarios()
@@ -39,18 +43,32 @@ def validaLogin():
         session['grupo'] = funcionario.grupo
         session['id_funcionario'] = funcionario.id_funcionario
 
+        #log
+        log = "Login Efetuado com sucesso" + "|Usuário:" + session['usuario']+ "|"
+        funcoes.logInfo(log)
+
         #abre a aplicação na tela home
         return redirect(url_for('home.formHome'))
 
     else:
+        #log
+        log = "Tentativa de Login" + "|Usuário:" + request.form['usuario'] + "|"
+        funcoes.logWarning(log)
+
         #retornna para a tela de login
         return redirect(url_for('login.login', falhaLogin=1))
 
-    
 
 #rota de log-out, para exibir mensagem de erro
 @bp_login.route("/logout")
 def logout ():
+    #cria objeto funcoes para armazenar log
+    funcoes = Funcoes()
+
+    #log
+    log = "Logout efetuado" + "|Usuário:" + session['usuario']+ "|"
+    funcoes.logInfo(log)
+
     session.pop('usuario',None)
 
     #poderiamos limpar toda a sessão utiliazando session.clear()

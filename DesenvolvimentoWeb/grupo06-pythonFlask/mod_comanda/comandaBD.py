@@ -103,6 +103,34 @@ class Comandas(object):
             if banco:
                 banco.conexao.close()
 
+    def selectALLComandasAtrasadas(self):
+            banco = None
+            c = None
+
+            try:
+                banco = Banco()
+
+                c = banco.conexao.cursor()
+
+                _sql = "select tbc.id_comanda as ID, tbc.numero_comanda as Comanda, tbc.data_hora as 'Data', SUM( tbcp.quantidade * tbcp.valor_unitario) as Total, tcl.nome as Cliente, tf.nome as Funcionario, CASE WHEN (DATEDIFF(NOW(),tbc.data_hora)-30) > 0 THEN (DATEDIFF(NOW(),tbc.data_hora)-30) ELSE 0 END AS 'Dias Atraso', CASE WHEN (DATEDIFF(NOW(),tbc.data_hora)-30) > 0 THEN (select multa_atraso from tb_empresa) ELSE 0 END as 'Multa', CASE WHEN (DATEDIFF(NOW(),tbc.data_hora)-30) > 0 THEN round((((select taxa_juro_diario from tb_empresa)* SUM(tbcp.quantidade * tbcp.valor_unitario))/100)*(DATEDIFF(NOW(),tbc.data_hora)-30), 2) ELSE 0 END as 'Juro' from tb_comanda tbc inner join tb_comanda_produto tbcp on tbcp.comanda_id = tbc.id_comanda inner join tb_produto tp on tbcp. produto_id = tp.id_produto inner join tb_funcionario tf on tbcp.funcionario_id = tf.id_funcionario inner join tb_cliente tcl on tbc.cliente_id = tcl.id_cliente where tbc.status_pagamento = 1 and tbc.status_comanda = 1  group by tbcp.comanda_id order by tbc.data_hora"
+
+                _sql_data = ()
+
+                c.execute(_sql, _sql_data)
+
+                result = c.fetchall()
+
+                return result
+
+            except Exception as e:
+                return "Ocorreu um erro na busca das Comandas"
+
+            finally:
+                if c:
+                    c.close()
+                if banco:
+                    banco.conexao.close()
+
     def insert(self):
         banco = None
         c = None
@@ -301,4 +329,10 @@ class ComandaAddCliente(object):
                 c.close()
             if banco:
                 banco.conexao.close()
+
+
+
+
+
+
     
