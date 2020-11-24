@@ -21,17 +21,18 @@ def ComandasAbertas():
     res = comanda.selectALLDashboard()
     return render_template("formComandasAbertas.html", result=res, content_type='application/json')
 
+
+@bp_dashboard.route("/RegistroFiados", methods=['GET'])
+@validaSessao
+def RegistroFiados():
+    return render_template("formRegistroFiados.html")
+
 @bp_dashboard.route("/ComandasAtrasadas", methods=['GET'])
 @validaSessao
 def ComandasAtrasadas():
     comanda=Comandas()
     res = comanda.selectALLComandasAtrasadas()
     return render_template("formComandasFiadoAtrasadas.html", result=res, content_type='application/json')
-
-@bp_dashboard.route("/RegistroFiados", methods=['GET'])
-@validaSessao
-def RegistroFiados():
-    return render_template("formRegistroFiados.html")
 
 
 @bp_dashboard.route("/AdicionarProdutos", methods=['GET','POST'])
@@ -162,7 +163,7 @@ def addClienteComanda():
         #log
         log = _msg  +"|Usuário:" + session['usuario'] + "|"
         funcoes.logError(log)
-        
+
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_excpetion)
 
 

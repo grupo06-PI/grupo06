@@ -1,0 +1,104 @@
+{% extends "modelo.html" %}
+
+{% block title %} Pagamentos à Vista {% endblock %}
+
+{% block style %}
+{{super()}}
+<style>
+    table {
+        border-top: solid 10px rgb(172, 34, 108);
+        border-bottom: solid 4px rgb(172, 34, 108);
+    }
+
+    .comandas {
+        padding: 15px;
+    }
+
+    .Comanda {
+        background-color: rgb(172, 34, 108);
+        border-right: solid 6px rgb(0, 0, 0);
+        border-left: solid 5px rgb(0, 0, 0);
+    }
+
+    .texttd {
+        color: white;
+        text-align: center;
+    }
+    
+    td{
+        border-right: solid 2px rgb(172, 34, 108);
+    }
+
+    #linkDashboard a:visited {
+        color: rgb(172, 34, 108);
+    }
+
+    button {
+        border: solid 1px rgb(172, 34, 108);
+        background-color: rgb(172, 34, 108);
+        color: white;
+        width: 40px;
+    }
+
+    #IconLista {
+        font-size: 19px;
+    }
+
+    i {
+        color: white;
+    }
+
+    i:hover {
+        color: black;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+{{ super() }}
+
+{% if result %}
+{% for row in result %}
+<div class="comandas">
+    <table>
+        <tr class="Comanda">
+
+            <td bgcolor=white>- ID Comanda:</td>
+            <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[0] }}</th>
+
+            <td></td>
+        </tr>
+        <tr class="Comanda">
+
+            <td bgcolor=white>- Data e Hora:</td>
+            <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[1] }}</th>
+
+            <td></td>
+        </tr>
+
+        <tr class="Comanda">
+            <td bgcolor=white>- Valor Total:</td>
+            <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[2] }}</th>
+
+            <td></td>
+        </tr>
+
+        <tr class="Comanda">
+
+            <td bgcolor=white>- Nome Funcionário:</td>
+            <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[3] }}</th>
+
+            <td></td>
+        </tr>
+    </table>
+</div>
+{% endfor %}
+{% endif %}
+
+{% endblock %}
+
+{% block js %}
+<script>
+
+</script>
+{% endblock %}
