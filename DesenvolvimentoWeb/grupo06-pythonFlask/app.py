@@ -1,6 +1,7 @@
 from flask import Flask
 from flask import send_from_directory
 from flask import session
+import logging
 
 #encerrar sessão por inatividade
 from datetime import timedelta
@@ -18,6 +19,8 @@ from mod_configuracoes.configuracoes import bp_configuracoes
 from mod_dashboard.dashboard import bp_dashboard
 from mod_login.login import bp_login
 
+#Log
+logging.basicConfig(filename='log/app.log', format= '%(levelname)s|%(name)s|%(asctime)s|%(message)s', datefmt='%d/%m/%Y %I:%M:%S %p', level=logging.DEBUG)
 
 app = Flask(__name__)
 

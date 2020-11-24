@@ -82,7 +82,7 @@
             <div class="col-md-6 mb-2">
                 <label for="nome">Nome:</label>
                 <input value="{{ cliente.nome }}" type="text" name="nome" id="nome" autofocus class="form-control"
-                    placeholder="Insira o nome do Cliente" maxlength="100">
+                    placeholder="Insira o nome do Cliente" maxlength="100" required>
             </div>
         </div>
         <br>
@@ -90,7 +90,7 @@
             <div class="col-md-3 mb-2">
                 <label for="cpf">CPF:</label>
                 <input value="{{ cliente.cpf }}" type="text" name="cpf" id="cpf" class="form-control" placeholder="000-000-000-00"
-                    maxlength="11">
+                    maxlength="11" required>
             </div>
         </div>
         <br>
@@ -121,7 +121,7 @@
         <div class="row">
             <div class="col-md-3 mb-2">
                 <label for="senha">Senha:</label>
-                <input value="{{ cliente.senha }}" type="text" name="senha" id="senha" class="form-control"
+                <input value="{{ cliente.senha }}" type="password" name="senha" id="senha" class="form-control"
                     placeholder="********" maxlength="200">
             </div>
         </div>

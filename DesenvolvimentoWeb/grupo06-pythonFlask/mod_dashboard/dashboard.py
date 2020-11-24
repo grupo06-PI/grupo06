@@ -7,6 +7,8 @@ from mod_produto.produtoBD import Produtos
 from mod_produto.produtoBD import ProdutosComandas
 from mod_cliente.clienteBD import Clientes
 
+from funcoes import Funcoes
+
 
 from mod_login.login import validaSessao
 
@@ -18,6 +20,13 @@ def ComandasAbertas():
     comanda=Comandas()
     res = comanda.selectALLDashboard()
     return render_template("formComandasAbertas.html", result=res, content_type='application/json')
+
+@bp_dashboard.route("/ComandasAtrasadas", methods=['GET'])
+@validaSessao
+def ComandasAtrasadas():
+    comanda=Comandas()
+    res = comanda.selectALLComandasAtrasadas()
+    return render_template("formComandasFiadoAtrasadas.html", result=res, content_type='application/json')
 
 @bp_dashboard.route("/RegistroFiados", methods=['GET'])
 @validaSessao
@@ -39,6 +48,7 @@ def AdicionarProdutos():
 @validaSessao
 def addProdutoComanda():
     _msg = ""
+    funcoes = Funcoes()
     
     try:
         
@@ -50,10 +60,20 @@ def addProdutoComanda():
         comandaAddProd.funcionario_id = session['id_funcionario']
 
         _msg = comandaAddProd.insert()
+        
+        #log
+        log = _msg  +"|ID Produto:"+ request.form['id_produto'] +"|Usuário:" + session['usuario'] + "|"
+        funcoes.logInfo(log)
+
         return jsonify(erro=False, mensagem=_msg)
 
     except Exception as e:
         _msg, _msg_excpetion = e.args
+
+        #log
+        log = _msg  +"|Usuário:" + session['usuario'] + "|"
+        funcoes.logError(log)
+
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_excpetion)
 
 
@@ -84,6 +104,7 @@ def listaProdComanda():
 @validaSessao
 def deleteProdComanda():
     _msg = ""
+    funcoes = Funcoes
     try:
 
         produtosComandas=ProdutosComandas()
@@ -91,10 +112,19 @@ def deleteProdComanda():
 
         _msg = produtosComandas.deleteProdComanda()
 
+        #log
+        log = _msg  +"|id_comanda_produto:"+ request.form['id_comanda_produto'] +"|Usuário:" + session['usuario'] + "|"
+        funcoes.logInfo(log)
+
         return jsonify(erro=False, mensagem=_msg)
 
     except Exception as e:
         _msg, _msg_exception = e.args
+
+        #log
+        log = _msg  +"|Usuário:" + session['usuario'] + "|"
+        funcoes.logError(log)
+
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_exception)
 
 
@@ -112,17 +142,31 @@ def AdicionarCliente():
 @validaSessao
 def addClienteComanda():
     _msg = ""
-    
+    funcoes = Funcoes()
     try:   
         comandaAddCliente = ComandaAddCliente()
         comandaAddCliente.cliente_id = request.form['id_cliente']
         comandaAddCliente.id_comanda = request.form['id_comanda']
 
         _msg = comandaAddCliente.update()
+
+        #log
+        log = _msg  +"|ID Comanda:"+ request.form['id_comanda']+"|ID Cliente:"+ request.form['id_cliente']+"|Usuário:" + session['usuario'] + "|"
+        funcoes.logInfo(log)
+
         return jsonify(erro=False, mensagem=_msg)
 
     except Exception as e:
         _msg, _msg_excpetion = e.args
+
+        #log
+        log = _msg  +"|Usuário:" + session['usuario'] + "|"
+        funcoes.logError(log)
+        
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_excpetion)
 
 
+@bp_dashboard.route("/Dashboard", methods=['GET'])
+@validaSessao
+def Dashboard():
+    return render_template("formDashboard.html", content_type='application/json')

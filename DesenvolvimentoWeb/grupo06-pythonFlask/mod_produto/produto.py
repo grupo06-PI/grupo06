@@ -1,9 +1,11 @@
-from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify
+from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify, session
 import base64
 
 from mod_produto.produtoBD import Produtos
 
 from mod_login.login import validaSessao
+
+from funcoes import Funcoes
 
 bp_produto = Blueprint('produto', __name__, template_folder='templates', url_prefix='/produtos')
 
@@ -33,6 +35,7 @@ def formEditProduto():
 @validaSessao
 def addProduto():
     _msg = ""
+    funcoes = Funcoes()
     try:
         produto = Produtos()
         produto.id_produto = request.form['id_produto']
@@ -42,16 +45,27 @@ def addProduto():
         produto.foto = "data:" + request.files['foto'].content_type + ";base64," +str(base64.b64encode(request.files['foto'].read()), "utf-8")
 
         _msg = produto.insert()
+
+        #log
+        log = _msg  +"|Produto:"+ request.form['nome'] +"|Usuário:" + session['usuario'] + "|"
+        funcoes.logInfo(log)
+
         return jsonify(erro=False, mensagem=_msg)
 
     except Exception as e:
         _msg, _msg_exception = e.args
+
+        #log
+        log = _msg  +"|Usuário:" + session['usuario'] + "|"
+        funcoes.logError(log)
+
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_exception)
 
 @bp_produto.route('/editProduto', methods=['POST'])
 @validaSessao
 def editProduto():
     _msg = ""
+    funcoes = Funcoes()
     try:
 
         produto = Produtos()
@@ -62,25 +76,45 @@ def editProduto():
         produto.foto = "data:" + request.files['foto'].content_type + ";base64," +str(base64.b64encode(request.files['foto'].read()), "utf-8")
 
         _msg = produto.update()
+
+        #log
+        log = _msg  +"|ID Produto:"+ request.form['id_produto'] +"|Usuário:" + session['usuario'] + "|"
+        funcoes.logInfo(log)
+
         return jsonify(erro=False, mensagem=_msg)
 
     except Exception as e:
         _msg, _msg_exception = e.args
+
+        #log
+        log = _msg  +"|Usuário:" + session['usuario'] + "|"
+        funcoes.logError(log)
+
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_exception)
 
 @bp_produto.route('/deleteProduto', methods=['POST'])
 @validaSessao
 def deleteProduto():
     _msg = ""
+    funcoes = Funcoes()
     try:
 
         produto = Produtos()
         produto.id_produto = request.form['id_produto']
 
         _msg = produto.delete()
-
+        
+        #log
+        log = _msg  +"|ID Produto:"+ request.form['id_produto'] +"|Usuário:" + session['usuario'] + "|"
+        funcoes.logInfo(log)
+        
         return jsonify(erro=False, mensagem=_msg)
 
     except Exception as e:
         _msg, _msg_exception = e.args
+
+        #log
+        log = _msg  +"|Usuário:" + session['usuario'] + "|"
+        funcoes.logError(log)
+
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_exception)

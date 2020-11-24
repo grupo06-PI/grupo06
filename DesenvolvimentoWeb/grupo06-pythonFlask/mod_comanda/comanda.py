@@ -4,6 +4,8 @@ from mod_comanda.comandaBD import Comandas
 
 from mod_login.login import validaSessao
 
+from funcoes import Funcoes
+
 import datetime
 
 bp_comanda = Blueprint('comanda', __name__, template_folder='templates', url_prefix='/comandas')
@@ -30,7 +32,7 @@ def ListaComandas():
 @validaSessao
 def abrirComanda():
     _msg = ""
-
+    funcoes = Fucoes()
     try:
         comanda=Comandas()
 
@@ -43,10 +45,20 @@ def abrirComanda():
         comanda.cliente_id = 1
 
         _msg = comanda.insert()
+        
+        #log
+        log = _msg  +"|Comanda:"+ request.form['numero_comanda'] +"|Usuário:" + session['usuario'] + "|"
+        funcoes.logInfo(log)
+
         return jsonify(erro=False, mensagem=_msg)
 
     except Exception as e:
         _msg, _msg_excpetion = e.args
+
+        #log
+        log = _msg +"|Usuário:" + session['usuario'] + "|"
+        funcoes.logError(log)
+
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_excpetion)
 
 
@@ -54,15 +66,25 @@ def abrirComanda():
 @validaSessao
 def deleteComanda():
     _msg = ""
+    funcoes = Funcoes()
     try:
         comanda = Comandas()
         comanda.id_comanda = request.form['id_comanda']
 
         _msg = comanda.delete()
 
+        #log
+        log = _msg  +"|ID Comanda:"+ request.form['id_comanda'] +"|Usuário:" + session['usuario'] + "|"
+        funcoes.logInfo(log)
+
         return jsonify(erro=False, mensagem=_msg)
 
     except Exception as e:
         _msg, _msg_exception = e.args
+
+        #log
+        log = _msg +"|Usuário:" + session['usuario'] + "|"
+        funcoes.logError(log)
+
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_exception)
     
