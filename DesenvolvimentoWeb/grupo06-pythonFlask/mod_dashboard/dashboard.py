@@ -55,7 +55,7 @@ def addProdutoComanda():
         
         comandaAddProd = ComandaAddProd()
         comandaAddProd.quantidade = request.form['quantidade']
-        comandaAddProd.valor_unitario = request.form['valor_unitario']
+        comandaAddProd.valor_unitario = request.form['valor_total']
         comandaAddProd.comanda_id = request.form['comanda_id']
         comandaAddProd.produto_id = request.form['id_produto']
         comandaAddProd.funcionario_id = session['id_funcionario']
@@ -105,7 +105,7 @@ def listaProdComanda():
 @validaSessao
 def deleteProdComanda():
     _msg = ""
-    funcoes = Funcoes
+    funcoes = Funcoes()
     try:
 
         produtosComandas=ProdutosComandas()
@@ -171,3 +171,5 @@ def addClienteComanda():
 @validaSessao
 def Dashboard():
     return render_template("formDashboard.html", content_type='application/json')
+
+    

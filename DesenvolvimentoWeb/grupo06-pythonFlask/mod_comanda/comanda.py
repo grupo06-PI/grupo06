@@ -32,15 +32,15 @@ def ListaComandas():
 @validaSessao
 def abrirComanda():
     _msg = ""
-    funcoes = Fucoes()
+    funcoes = Funcoes()
     try:
         comanda=Comandas()
 
         comanda.id_comanda = request.form['id_comanda']
         comanda.numero_comanda = request.form['numero_comanda']
         comanda.data_hora = datetime.datetime.now()
-        comanda.status_comanda = request.form['status_comanda']
-        comanda.status_pagamento = request.form['status_pagamento']
+        comanda.status_comanda = 1
+        comanda.status_pagamento = 1
         comanda.funcionario_id = session['id_funcionario']
         comanda.cliente_id = 1
 
