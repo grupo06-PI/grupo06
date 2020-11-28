@@ -1,6 +1,8 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify, session
 
 from mod_comanda.comandaBD import Comandas
+from mod_comanda.comandaBD import ComandaRecebimento
+from mod_produto.produtoBD import ProdutosComandas
 
 from mod_login.login import validaSessao
 
@@ -87,4 +89,47 @@ def deleteComanda():
         funcoes.logError(log)
 
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_exception)
+
+
+@bp_comanda.route("/RecebimentoAVista", methods=['GET','POST'])
+@validaSessao
+def RecebimentoAVista():
+    produtosComandas=ProdutosComandas()
+    comanda=Comandas()
+    comanda.id_comanda = request.form['id_comanda']
+    comanda.selectONE()
+    produtosComandas.comanda_id = request.values['id_comanda']
+    comandaRecebimento = ComandaRecebimento()
+    
+    subTotalComandas = produtosComandas.selectALLSubTotal()
+    return render_template("formRecebimentoAVista.html", comanda=comanda, comandaRecebimento=comandaRecebimento, subTotalComandas=subTotalComandas, content_type='application/json')
+
+
+@bp_comanda.route("/finalizarRecebimentoAVista", methods=['GET','POST'])
+@validaSessao
+def finalizarRecebimentoAVista():
+    _msg = ""
+    funcoes = Funcoes()
+    try:
+        comandaRecebimento = ComandaRecebimento()
+        comandaRecebimento.data_hora = datetime.datetime.now()
+        comandaRecebimento.tipo = 1 #a vista 1
+        comandaRecebimento.valor_acrescimo = request.form['valor_acrescimo']
+        comandaRecebimento.valor_desconto = request.form['valor_desconto']
+        comandaRecebimento.valor_total  = request.form['subtotal']
+        comandaRecebimento.funcionario_id = session['id_funcionario']
+        _msg = comandaRecebimento.insert()
+        
+        return jsonify(erro=False, mensagem=_msg)
+
+    except Exception as e:
+        _msg, _msg_excpetion = e.args
+
+        return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_excpetion)
+
+
+
+
+
+
     

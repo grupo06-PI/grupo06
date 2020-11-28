@@ -116,7 +116,12 @@
             <td bgcolor=white>- Nome Cliente:</td>
             <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[8] }}</th>
 
-            <td></td>
+            <td>
+                <form action='{{ url_for('comanda.RecebimentoAVista') }}' method='POST' name='recebimentoAVista'>
+                    <input type='hidden' name='id_comanda' value='{{ row[0] }}'>
+                    <button type='submit' name='formRecebimentoAVista'><i class='fa fa-fw fa-user' id="IconLista"></i></button>
+                </form>
+            </td>
         </tr>
     </table>
 </div>

@@ -331,8 +331,104 @@ class ComandaAddCliente(object):
                 banco.conexao.close()
 
 
+class ComandaRecebimento(object):
+
+    def __init__(self, id_recebimento=0, data_hora="", tipo="", valor_acrescimo=0, valor_desconto="", valor_total="", funcionario_id="", recebimento_id="", comanda_id=""):
+
+        self.id_recebimento = id_recebimento
+        self.data_hora = data_hora
+        self.tipo = tipo
+        self.valor_acrescimo = valor_acrescimo
+        self.valor_desconto = valor_desconto
+        self.valor_total = valor_total
+        self.funcionario_id = funcionario_id
+        self.recebimento_id = recebimento_id
+        self.comanda_id = comanda_id
 
 
 
 
-    
+    def insert(self):
+        banco = None
+        c = None
+
+        try:
+            banco = Banco()
+
+            c = banco.conexao.cursor()
+
+            _sql = "insert into tb_recebimento(data_hora,tipo,valor_acrescimo,valor_desconto,valor_total,funcionario_id) values (%s,%s,%s,%s,%s,%s)"
+
+            _sql_data = (self.data_hora, self.tipo, self.valor_acrescimo,
+                         self.valor_desconto, self.valor_total, self.funcionario_id,)
+
+            c.execute(_sql, _sql_data)
+
+            banco.conexao.commit()
+
+            return "Comanda Finalizada Com Sucesso!"
+
+        except Exception as e:
+            raise Exception('Erro ao Finalizar Comanda!', str(e))
+        finally:
+            if c:
+                c.close
+            if banco:
+                banco.conexao.close()
+
+
+    def insertTbComandaRecebimento(self):
+        banco = None
+        c = None
+
+        try:
+            banco = Banco()
+
+            c = banco.conexao.cursor()
+
+            _sql = "insert into tb_comanda_recebimento(recebimento_id,comanda_id) values (%s,%s)"
+
+            _sql_data = (self.recebimento_id, self.comanda_id,)
+
+            c.execute(_sql, _sql_data)
+
+            banco.conexao.commit()
+
+            return "Comanda Finalizada Com Sucesso!"
+
+        except Exception as e:
+            raise Exception('Erro ao Finalizar Comanda!', str(e))
+        finally:
+            if c:
+                c.close
+            if banco:
+                banco.conexao.close()
+
+        
+
+
+    def selectSubTotalProdsPedidos(self):
+        banco = None
+        c = None
+
+        try:
+            banco = Banco()
+            c = banco.conexao.cursor()
+            _sql = "SELECT SUM(VALOR_UNITARIO) FROM TB_COMANDA_PRODUTO WHERE COMANDA_ID = %s"
+            _sql_data = (self.comanda_id,)
+            c.execute(_sql,_sql_data)
+            resultSubTotal = c.fetchall()
+            return resultSubTotal
+            
+        except Exception as e:
+            return "Ocorreu um erro na busca do subTotal"
+            
+        finally:
+            if c:
+                c.close()
+            if banco:
+                banco.conexao.close()
+
+
+
+

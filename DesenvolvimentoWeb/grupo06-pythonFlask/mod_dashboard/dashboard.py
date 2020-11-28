@@ -3,9 +3,11 @@ from flask import Blueprint, render_template, request, redirect, url_for, flash,
 from mod_comanda.comandaBD import Comandas
 from mod_comanda.comandaBD import ComandaAddProd
 from mod_comanda.comandaBD import ComandaAddCliente
+from mod_comanda.comandaBD import ComandaRecebimento
 from mod_produto.produtoBD import Produtos
 from mod_produto.produtoBD import ProdutosComandas
 from mod_cliente.clienteBD import Clientes
+
 
 from funcoes import Funcoes
 
@@ -96,10 +98,12 @@ def buscaProduto():
 @bp_dashboard.route('/listaProdComanda', methods = ['POST'])
 @validaSessao
 def listaProdComanda():
+    comandaRecebimento = ComandaRecebimento()
     produtosComandas=ProdutosComandas()
     produtosComandas.comanda_id = request.values['comanda_id']
     listaProdComandas = produtosComandas.selectALL()
-    return render_template("formListaProdComanda.html", produtosComandas=ProdutosComandas, listaProdComandas=listaProdComandas, content_type='application/json')
+    subTotalComandas = produtosComandas.selectALLSubTotal()
+    return render_template("formListaProdComanda.html", produtosComandas=ProdutosComandas, listaProdComandas=listaProdComandas, subTotalComandas=subTotalComandas, content_type='application/json')
 
 @bp_dashboard.route('/deleteProdComanda', methods=['POST'])
 @validaSessao
@@ -170,6 +174,9 @@ def addClienteComanda():
 @bp_dashboard.route("/Dashboard", methods=['GET'])
 @validaSessao
 def Dashboard():
-    return render_template("formDashboard.html", content_type='application/json')
+    comanda=Comandas()
+    comanda.id_comanda = request.form['id_comanda']
+    comanda.selectONE
+    return render_template("formDashboard.html", content_type='application/json', comanda=comanda)
 
     
