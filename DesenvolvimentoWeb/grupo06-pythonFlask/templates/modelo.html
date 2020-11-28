@@ -47,22 +47,7 @@
 
             <li id="linkDashboard">
               <i class="fa fa-bar-chart"></i>
-              <a href="{{url_for('dashboard.ComandasAbertas')}}">Dashboard</a>
-            </li>
-
-            <li id="linkEmployee">
-              <i class="fa fa-fw fa-user"></i>
-              <a href="{{url_for('funcionario.ListaFuncionarios')}}">Funcionários</a>
-            </li>
-
-            <li id="linkClient">
-              <i class="fa fa-fw fa-group"></i>
-              <a href="{{url_for('cliente.ListaClientes')}}">Clientes</a>
-            </li>
-
-            <li id="linkProduct">
-              <i class="fa fa-fw fa-cubes"></i>
-              <a href="{{url_for('produto.ListaProdutos')}}">Produtos</a>
+              <a href="{{url_for('dashboard.ComandasAbertas')}}">Dashboard Comandas</a>
             </li>
 
             <li id="linkComandas">
@@ -70,9 +55,31 @@
               <a href="{{url_for('comanda.ListaComandas')}}">Comandas</a>
             </li>
 
+            <li id="linkClient">
+              <i class="fa fa-fw fa-group"></i>
+              <a href="{{url_for('cliente.ListaClientes')}}">Clientes</a>
+            </li>
+
+            <li id="linkEmployee">
+              <i class="fa fa-fw fa-user"></i>
+              <a href="{{url_for('funcionario.ListaFuncionarios')}}">Funcionários</a>
+            </li>
+
+
+            <li id="linkProduct">
+              <i class="fa fa-fw fa-cubes"></i>
+              <a href="{{url_for('produto.ListaProdutos')}}">Produtos</a>
+            </li>
+
+
             <li id="linkSettings">
               <i class="fa fa-fw fa-cogs"></i>
               <a href="{{url_for('configuracoes.ListaConfiguracoes')}}">Configurações</a>
+            </li>
+
+            <li id="linkRelatorios">
+              <i class="fa fa-fw fa-bars"></i>
+              <a href="{{url_for('relatorios.Relatorios')}}">Relatórios</a>
             </li>
 
             <!-- info user sidebar-->

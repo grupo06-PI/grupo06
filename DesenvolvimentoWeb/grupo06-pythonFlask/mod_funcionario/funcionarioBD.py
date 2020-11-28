@@ -21,7 +21,7 @@ class Funcionarios(object):
 
             c = banco.conexao.cursor()
 
-            _sql = "select id_funcionario, nome, matricula, cpf, telefone, if(grupo =1,'Admin','Atendente'), senha from tb_funcionario"
+            _sql = "select id_funcionario, nome, matricula, cpf, telefone, if(grupo =1,'Admin','Atendente'), senha from tb_funcionario order by nome"
 
             _sql_data = ()
 

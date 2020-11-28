@@ -18,6 +18,7 @@ from mod_comanda.comanda import bp_comanda
 from mod_configuracoes.configuracoes import bp_configuracoes
 from mod_dashboard.dashboard import bp_dashboard
 from mod_login.login import bp_login
+from mod_relatorio.relatorios import bp_relatorios
 
 #Log
 logging.basicConfig(filename='log/app.log', format= '%(levelname)s|%(name)s|%(asctime)s|%(message)s', datefmt='%d/%m/%Y %I:%M:%S %p', level=logging.DEBUG)
@@ -50,6 +51,9 @@ app.register_blueprint(bp_dashboard)
 
 #mod_login
 app.register_blueprint(bp_login)
+
+#mod_relatorio
+app.register_blueprint(bp_relatorios)
 
 #encerrando a sessao por inatividade
 @app.before_request
