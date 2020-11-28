@@ -87,8 +87,8 @@
     <br>
     <div class="row">
         <div class="col-md-4 mb-2">
-            <label for="">Valor Unitário:</label>
-            <input value="{{ comandaAddProd.valor_unitario}}" type="text" name="valor_unitario" id="valor_unitario" class="form-control" readonly>
+            <label for="unitario">Valor Unitário:</label>
+            <input value="" type="text" name="unitario" id="unitario" class="form-control" readonly>
         </div>
     </div>
     <br>
@@ -99,6 +99,14 @@
         </div>
     </div>
     <br>
+    <div class="row">
+        <div class="col-md-4 mb-2">
+            <label for="valor_total">Valor Total:</label>
+            <input value="{{ comandaAddProd.valor_unitario}}" type="number" name="valor_total" id="valor_total" class="form-control" placeholder="" readonly>
+        </div>
+    </div>
+    <br>
+    
 
     <button type='submit' name='salvaComandaDB' id='salvaComandaDB' class="buttonsCfg"><i class="fa fa-fw fa-save"
             id="IconLista"></i> Salvar</a></button>
@@ -165,12 +173,17 @@
                 {id_produto: e.target.value},
                  function (data) {
                     let produto = $.parseJSON(data.produto);
-                    $('#valor_unitario').val(produto.valor_unitario);
+                    $('#unitario').val(produto.valor_unitario);
                 })
         })
 
 
     })
+
+    $('#quantidade').change(function (){
+      $('#valor_total').val($('#quantidade').val() * $('#unitario').val()) 
+    })
+
 
 </script>
 {% endblock %}
