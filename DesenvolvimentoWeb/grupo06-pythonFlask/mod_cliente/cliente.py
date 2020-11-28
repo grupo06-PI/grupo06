@@ -1,10 +1,9 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify, session
-
 from mod_cliente.clienteBD import Clientes
-
 from mod_login.login import validaSessao
-
 from funcoes import Funcoes
+from GeraPdf import PDF
+from flask import send_file
 
 bp_cliente = Blueprint('cliente', __name__, template_folder='templates', url_prefix='/clientes')
 
@@ -129,4 +128,10 @@ def deleteCliente():
         funcoes.logError(log)
 
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_exception)
-    
+
+@bp_cliente.route('/pdfCliente', methods=['POST'])
+@validaSessao
+def pdfCliente():
+    geraPdf = PDF()
+    geraPdf.pdfClientes()
+    return send_file('pdfClientes.pdf', attachment_filename='pdfClientes.pdf')

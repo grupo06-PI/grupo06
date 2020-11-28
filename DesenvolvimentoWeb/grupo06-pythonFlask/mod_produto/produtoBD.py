@@ -198,6 +198,29 @@ class ProdutosComandas(object):
         except Exception as e:
             return "Ocorreu um erro na busca do produto"
 
+    
+    def selectALLSubTotal(self):
+        banco = None
+        c = None
+
+        try:
+            banco = Banco()
+
+            c = banco.conexao.cursor()
+
+            _sql = "SELECT TBCP.ID_COMANDA_PRODUTO, TBCP.COMANDA_ID, TBP.NOME, TBCP.QUANTIDADE, SUM(TBCP.VALOR_UNITARIO), CONVERT(TBP.FOTO USING utf8) FROM TB_PRODUTO TBP INNER JOIN TB_COMANDA_PRODUTO TBCP ON TBP.ID_PRODUTO = TBCP.PRODUTO_ID WHERE comanda_id = %s;"
+
+            _sql_data = (self.comanda_id,)
+
+            c.execute(_sql,_sql_data)
+
+            resultProd = c.fetchall()
+
+            return resultProd
+
+        except Exception as e:
+            return "Ocorreu um erro na busca do produto"
+
 
     def deleteProdComanda(self):
         banco = None
@@ -221,6 +244,38 @@ class ProdutosComandas(object):
         except Exception as e:
             raise Exception("Erro ao tentar excluir produto!", str(e))
         
+        finally:
+            if c:
+                c.close()
+            if banco:
+                banco.conexao.close()
+
+    def selectONE(self):
+        banco = None
+        c = None
+
+        try:
+            banco = Banco()
+
+            c = banco.conexao.cursor()
+
+            _sql = "select id_comanda_produto, quantidade, valor_unitario, comanda_id, produto_id, funcionario_id from tb_comanda_produto where comanda_id = %s"
+
+            _sql_data = (self.comanda_id,)
+
+            c.execute(_sql,_sql_data)
+
+            for linha in c:
+                self.id_comanda_produto = linha[0]
+                self.quantidade = linha[1]
+                self.comanda_id = linha[2]
+                self.produto_id = linha[3]
+                self.funcionario_id = linha[4]
+                
+            return "Busca feita com sucesso!"
+        except:
+            return "Ocorreu um erro na busca do produto"
+            
         finally:
             if c:
                 c.close()

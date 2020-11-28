@@ -1,0 +1,65 @@
+{% extends "modelo.html" %}
+
+{% block title %} Relatórios {% endblock %}
+
+{% block style %}
+{{super()}}
+<style>
+   
+</style>
+{% endblock %}
+
+{% block content %}
+{{ super() }}
+
+<div class="menu">
+    <ul>
+      <li id="linkComandaAtrasadas">
+        <i class="fa fa-fw fa-drivers-license-o"></i>
+        <form action="{{ url_for('comanda.pdfComandasAtrasadas') }}" method="POST">
+          <input type="submit" value="Fiados Atrasados" formtarget="_blank" >
+          </form>
+      </li>
+
+      <li id="linkComandaAVista">
+        <i class="fa fa-fw fa-drivers-license-o"></i>
+        <form action="{{ url_for('comanda.pdfRecebimentoAVista') }}" method="POST">
+          <input type="submit" value="Recebimentos à Vista" formtarget="_blank" >
+          </form>
+      </li>
+
+      <li id="linkComandaFiado">
+        <i class="fa fa-fw fa-drivers-license-o"></i>
+        <form action="{{ url_for('comanda.pdfRecebimentoFiado') }}" method="POST">
+          <input type="submit" value="Recebimentos de Fiados" formtarget="_blank" >
+          </form>
+      </li>
+
+      <li id="linkClientes">
+        <i class="fa fa-fw fa-group"></i>
+        <form action="{{ url_for('cliente.pdfCliente') }}" method="POST">
+          <input type="submit" value="Clientes" formtarget="_blank" >
+          </form>
+      </li>
+
+      <li id="linkFucionarios">
+        <i class="fa fa-fw fa-user"></i>
+        <form action="{{ url_for('funcionario.pdfFuncionarios') }}" method="POST">
+          <input type="submit" value="Funcionários" formtarget="_blank" >
+          </form>
+      </li>
+
+      <li id="linkProdutos">
+        <i class="fa fa-fw fa-cubes"></i>
+        <form action="{{ url_for('produto.pdfProduto') }}" method="POST">
+          <input type="submit" value="Produtos" formtarget="_blank" >
+          </form>
+      </li>
+    </ul>
+</div>
+{% endblock %}
+{% block js %}
+<script>
+
+</script>
+{% endblock %}

@@ -23,7 +23,7 @@ class Clientes(object):
 
             c = banco.conexao.cursor()
 
-            _sql = "select id_cliente,nome,cpf,telefone,compra_fiado,dia_fiado,senha from tb_cliente where id_cliente != 1"
+            _sql = "select id_cliente,nome,cpf,telefone, case when compra_fiado = 1 then 'Sim' when compra_fiado = 2 then 'Não'end  as compra_fiado,dia_fiado,senha from tb_cliente where id_cliente != 1 order by nome"
 
             _sql_data = ()
 
@@ -51,7 +51,7 @@ class Clientes(object):
 
             c = banco.conexao.cursor()
 
-            _sql = "select id_cliente,nome,cpf,telefone,compra_fiado,dia_fiado,senha from tb_cliente where id_cliente"
+            _sql = "select id_cliente,nome,cpf,telefone,case when compra_fiado = 1 then 'Sim' when compra_fiado = 2 then 'Não'end  as compra_fiado,dia_fiado,senha from tb_cliente where id_cliente order by nome"
 
             _sql_data = ()
 
@@ -79,7 +79,7 @@ class Clientes(object):
 
             c = banco.conexao.cursor()
 
-            _sql = "select id_cliente,nome,cpf,telefone,compra_fiado,dia_fiado,senha from tb_cliente where id_cliente = %s"
+            _sql = "select id_cliente,nome,cpf,telefone,case when compra_fiado = 1 then 'Sim' when compra_fiado = 2 then 'Não'end  as compra_fiado,dia_fiado,senha from tb_cliente where id_cliente = %s"
 
             _sql_data = (self.id_cliente,)
 

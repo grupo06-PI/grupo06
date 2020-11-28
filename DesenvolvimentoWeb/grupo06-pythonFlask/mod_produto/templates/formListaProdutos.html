@@ -89,6 +89,11 @@
 
 {% block content %}
 {{ super() }}
+<div class="menu">
+  <ul>
+    <a class="buttonsCfg" href="{{url_for('produto.CadProduto')}}"><i class="fa fa-fw fa-plus" id="IconLista"></i> Novo Produto</a>
+  </ul>
+</div>
 
 <div class="listaClientes">
   <table class="table table-striped table-primary">
@@ -135,7 +140,6 @@
   </table>
 </div>
 
-<a class="buttonsCfg" href="{{url_for('produto.CadProduto')}}"><i class="fa fa-fw fa-plus" id="IconLista"></i> Novo Produto</a>
 
 {% endblock %}
 

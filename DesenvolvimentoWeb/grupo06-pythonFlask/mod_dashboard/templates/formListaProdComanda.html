@@ -124,6 +124,30 @@
     </tbody>
   </table>
 </div>
+
+<div class="listaClientes">
+  <table class="table table-striped table-primary">
+    <thead class="">
+      <tr>
+        <th scope="col">Valor Total</th>
+
+      </tr>
+    </thead>
+
+
+    <tbody>
+      {% for produtosComandas in subTotalComandas: %}
+      <tr>
+        <td> {{ produtosComandas[4] }}</td>
+      </tr>
+      {% endfor %}
+
+    </tbody>
+  </table>
+</div>
+
+
+
 {% endblock %}
 
 {% block js %}
