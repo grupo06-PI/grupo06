@@ -56,7 +56,7 @@ class Comandas(object):
 
             c = banco.conexao.cursor()
 
-            _sql = "select id_comanda, numero_comanda, data_hora, if(status_comanda =1,'Aberta','Fechada'), if(status_pagamento =1,'Em Aberto','Fechada'), funcionario_id, cliente_id from tb_comanda"
+            _sql = "select tbc.id_comanda, tbc.numero_comanda, tbc.data_hora, if(tbc.status_comanda =1,'Aberta','Fechada'), if(tbc.status_pagamento =1,'Em Aberto','Fechado'), tf.nome, tbc.cliente_id, tc.nome  from tb_comanda tbc left join tb_cliente tc on tbc.cliente_id = tc.id_cliente  left join tb_funcionario tf on tbc.funcionario_id = tf.id_funcionario order by status_comanda"
 
             _sql_data = ()
 
@@ -84,7 +84,7 @@ class Comandas(object):
 
             c = banco.conexao.cursor()
 
-            _sql = "SELECT TBC.ID_COMANDA, TBC.NUMERO_COMANDA, TBC.DATA_HORA, TBC.STATUS_COMANDA, TBC.STATUS_PAGAMENTO, TBC.FUNCIONARIO_ID, TBF.NOME, TBC.CLIENTE_ID, TBCLI.NOME FROM TB_COMANDA TBC INNER JOIN TB_FUNCIONARIO TBF ON TBF.ID_FUNCIONARIO = TBC.FUNCIONARIO_ID INNER JOIN TB_CLIENTE TBCLI ON TBCLI.ID_CLIENTE = TBC.CLIENTE_ID"
+            _sql = "SELECT TBC.ID_COMANDA, TBC.NUMERO_COMANDA, TBC.DATA_HORA, TBC.STATUS_COMANDA, TBC.STATUS_PAGAMENTO, TBC.FUNCIONARIO_ID, TBF.NOME, TBC.CLIENTE_ID, TBCLI.NOME FROM TB_COMANDA TBC INNER JOIN TB_FUNCIONARIO TBF ON TBF.ID_FUNCIONARIO = TBC.FUNCIONARIO_ID INNER JOIN TB_CLIENTE TBCLI ON TBCLI.ID_CLIENTE = TBC.CLIENTE_ID where TBC.STATUS_COMANDA = 1"
 
             _sql_data = ()
 
@@ -112,7 +112,7 @@ class Comandas(object):
 
                 c = banco.conexao.cursor()
 
-                _sql = "select tbc.id_comanda as ID, tbc.numero_comanda as Comanda, tbc.data_hora as 'Data', SUM( tbcp.quantidade * tbcp.valor_unitario) as Total, tcl.nome as Cliente, tf.nome as Funcionario, CASE WHEN (DATEDIFF(NOW(),tbc.data_hora)-30) > 0 THEN (DATEDIFF(NOW(),tbc.data_hora)-30) ELSE 0 END AS 'Dias Atraso', CASE WHEN (DATEDIFF(NOW(),tbc.data_hora)-30) > 0 THEN (select multa_atraso from tb_empresa) ELSE 0 END as 'Multa', CASE WHEN (DATEDIFF(NOW(),tbc.data_hora)-30) > 0 THEN round((((select taxa_juro_diario from tb_empresa)* SUM(tbcp.quantidade * tbcp.valor_unitario))/100)*(DATEDIFF(NOW(),tbc.data_hora)-30), 2) ELSE 0 END as 'Juro' from tb_comanda tbc inner join tb_comanda_produto tbcp on tbcp.comanda_id = tbc.id_comanda inner join tb_produto tp on tbcp. produto_id = tp.id_produto inner join tb_funcionario tf on tbcp.funcionario_id = tf.id_funcionario inner join tb_cliente tcl on tbc.cliente_id = tcl.id_cliente where tbc.status_pagamento = 1 and tbc.status_comanda = 1  group by tbcp.comanda_id order by tbc.data_hora"
+                _sql = "select tbc.id_comanda as ID, tbc.numero_comanda as Comanda, tbc.data_hora as 'Data', SUM( tbcp.quantidade * tbcp.valor_unitario) as Total, tcl.nome as Cliente, tf.nome as Funcionario, CASE WHEN (DATEDIFF(NOW(),tbc.data_hora)-30) > 0 THEN (DATEDIFF(NOW(),tbc.data_hora)-30) ELSE 0 END AS 'Dias Atraso', CASE WHEN (DATEDIFF(NOW(),tbc.data_hora)-30) > 0 THEN (select multa_atraso from tb_empresa) ELSE 0 END as 'Multa', CASE WHEN (DATEDIFF(NOW(),tbc.data_hora)-30) > 0 THEN round((((select taxa_juro_diario from tb_empresa)* SUM(tbcp.quantidade * tbcp.valor_unitario))/100)*(DATEDIFF(NOW(),tbc.data_hora)-30), 2) ELSE 0 END as 'Juro' from tb_comanda tbc inner join tb_comanda_produto tbcp on tbcp.comanda_id = tbc.id_comanda inner join tb_produto tp on tbcp. produto_id = tp.id_produto inner join tb_funcionario tf on tbcp.funcionario_id = tf.id_funcionario inner join tb_cliente tcl on tbc.cliente_id = tcl.id_cliente  where tbc.status_pagamento = 1  and tbc.status_comanda = 1   and (DATEDIFF(NOW(),tbc.data_hora)-30) > 0 group by tbcp.comanda_id order by tbc.data_hora"
 
                 _sql_data = ()
 
@@ -404,8 +404,49 @@ class ComandaRecebimento(object):
             if banco:
                 banco.conexao.close()
 
-        
+    def selectRecebimentoAVista(self):
+        banco = None
+        c = None
 
+        try:
+            banco = Banco()
+            c = banco.conexao.cursor()
+            _sql = "select tbr.id_recebimento, tbc.numero_comanda, tbr.data_hora, if(tbr.tipo =1, 'A Vista', 'Fiado') as tipo, tbr.valor_total, tbf.nome from tb_recebimento tbr left join tb_funcionario tbf  on tbr.funcionario_id = tbf.id_funcionario  inner join tb_comanda_recebimento tbcr on tbr.id_recebimento = tbcr.recebimento_id inner join tb_comanda tbc on tbcr.comanda_id = tbc.id_comanda where tbr.tipo = 1 order by data_hora"
+            _sql_data = ()
+            c.execute(_sql,_sql_data)
+            result = c.fetchall()
+            return result
+            
+        except Exception as e:
+            return "Ocorreu um erro na busca do Recebimento"
+            
+        finally:
+            if c:
+                c.close()
+            if banco:
+                banco.conexao.close()
+
+    def selectRecebimentoFiado(self):
+        banco = None
+        c = None
+
+        try:
+            banco = Banco()
+            c = banco.conexao.cursor()
+            _sql = "select tbr.id_recebimento, tbc.numero_comanda, tbr.data_hora, if(tbr.tipo =1, 'A Vista', 'Fiado') as tipo, tbr.valor_total, tbf.nome from tb_recebimento tbr left join tb_funcionario tbf  on tbr.funcionario_id = tbf.id_funcionario  inner join tb_comanda_recebimento tbcr on tbr.id_recebimento = tbcr.recebimento_id inner join tb_comanda tbc on tbcr.comanda_id = tbc.id_comanda where tbr.tipo = 2 order by data_hora"
+            _sql_data = ()
+            c.execute(_sql,_sql_data)
+            result = c.fetchall()
+            return result
+            
+        except Exception as e:
+            return "Ocorreu um erro na busca do Recebimento"
+            
+        finally:
+            if c:
+                c.close()
+            if banco:
+                banco.conexao.close()
 
     def selectSubTotalProdsPedidos(self):
         banco = None
@@ -428,6 +469,8 @@ class ComandaRecebimento(object):
                 c.close()
             if banco:
                 banco.conexao.close()
+
+
 
 
 

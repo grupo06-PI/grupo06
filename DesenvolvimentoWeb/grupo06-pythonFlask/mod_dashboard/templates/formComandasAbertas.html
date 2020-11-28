@@ -37,7 +37,7 @@
         border: solid 1px rgb(172, 34, 108);
         background-color: rgb(172, 34, 108);
         color: white;
-        width: 40px;
+        width: 60px;
     }
 
     #IconLista {
@@ -65,7 +65,7 @@
             <td>
                 <form action='{{ url_for('dashboard.AdicionarProdutos') }}' method='POST' name='addProd'>
                     <input type='hidden' name='comanda_id' value='{{ row[0] }}'>
-                    <button type='submit' name='AdicionarProdutos'><i class='fa fa-fw fa-edit' id="IconLista"></i></button>
+                    <button type='submit' name='AdicionarProdutos'><i class='fa fa-fw fa-edit' id="IconLista">Adicionar Produto</i></button>
                 </form>
             </td>
 
@@ -87,7 +87,7 @@
             <td>
                 <form action='{{ url_for('dashboard.listaProdComanda') }}' method='POST' name='DeleteProd'>
                     <input type='hidden' name='comanda_id' value='{{ row[0] }}'>
-                    <button type='submit' name='DeleteProd'><i class='fa fa-fw fa-cubes' id="IconLista"></i></button>
+                    <button type='submit' name='DeleteProd'><i class='fa fa-fw fa-cubes' id="IconLista"> Listar Produtos</i></button>
                 </form>
             </td>
 
@@ -109,7 +109,7 @@
             <td>
                 <form action='{{ url_for('dashboard.AdicionarCliente') }}' method='POST' name='addCliente'>
                     <input type='hidden' name='id_comanda' value='{{ row[0] }}'>
-                    <button type='submit' name='addCliente'><i class='fa fa-fw fa-user' id="IconLista"></i></button>
+                    <button type='submit' name='addCliente'><i class='fa fa-fw fa-user' id="IconLista">Informar Cliente</i></button>
                 </form>
             </td>
 
@@ -119,7 +119,7 @@
             <td>
                 <form action='{{ url_for('comanda.RecebimentoAVista') }}' method='POST' name='recebimentoAVista'>
                     <input type='hidden' name='id_comanda' value='{{ row[0] }}'>
-                    <button type='submit' name='formRecebimentoAVista'><i class='fa fa-fw fa-user' id="IconLista"></i></button>
+                    <button type='submit' name='formRecebimentoAVista'><i class='fa fa-fw fa-user' id="IconLista">Finalizar</i></button>
                 </form>
             </td>
         </tr>

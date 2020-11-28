@@ -105,8 +105,10 @@
         <div class="row">
             <div class="col-md-3 mb-2">
                 <label for="compra_fiado">Compra Fiado:</label>
-                <input value="{{ cliente.compra_fiado }}" type="text" name="compra_fiado" id="compra_fiado"
-                    class="form-control" placeholder="" maxlength="2">
+                <select name="compra_fiado" id="Compra_fiado" class="form-control">
+                    <option value="0">Não</option>
+                    <option value="1">Sim</option>
+                </select>
             </div>
         </div>
         <br>

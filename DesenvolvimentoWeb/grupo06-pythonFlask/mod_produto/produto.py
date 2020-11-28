@@ -1,11 +1,10 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify, session
 import base64
-
 from mod_produto.produtoBD import Produtos
-
 from mod_login.login import validaSessao
-
 from funcoes import Funcoes
+from GeraPdf import PDF
+from flask import send_file
 
 bp_produto = Blueprint('produto', __name__, template_folder='templates', url_prefix='/produtos')
 
@@ -118,3 +117,10 @@ def deleteProduto():
         funcoes.logError(log)
 
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_exception)
+
+@bp_produto.route('/pdfProduto', methods=['POST'])
+@validaSessao
+def pdfProduto():
+    geraPdf = PDF()
+    geraPdf.pdfProdutos()
+    return send_file('pdfProdutos.pdf', attachment_filename='pdfProdutos.pdf')

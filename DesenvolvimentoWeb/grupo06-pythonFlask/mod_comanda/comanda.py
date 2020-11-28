@@ -1,13 +1,11 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify, session
-
 from mod_comanda.comandaBD import Comandas
 from mod_comanda.comandaBD import ComandaRecebimento
 from mod_produto.produtoBD import ProdutosComandas
-
+from GeraPdf import PDF
+from flask import send_file
 from mod_login.login import validaSessao
-
 from funcoes import Funcoes
-
 import datetime
 
 bp_comanda = Blueprint('comanda', __name__, template_folder='templates', url_prefix='/comandas')
@@ -128,8 +126,25 @@ def finalizarRecebimentoAVista():
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_excpetion)
 
 
+@bp_comanda.route('/pdfComandasAtrasadas', methods=['POST'])
+@validaSessao
+def pdfComandasAtrasadas():
+    geraPdf = PDF()
+    geraPdf.pdfComandasAtrasadas()
+    return send_file('pdfComandasAtrasadas.pdf', attachment_filename='pdfComandasAtrasadas.pdf')
 
+@bp_comanda.route('/pdfRecebimentoAVista', methods=['POST'])
+@validaSessao
+def pdfRecebimentoAVista():
+    geraPdf = PDF()
+    geraPdf.pdfRecebimentoAVista()
+    return send_file('pdfRecebimentoAVista.pdf', attachment_filename='pdfRecebimentoAVista.pdf')
 
-
+@bp_comanda.route('/pdfRecebimentoFiado', methods=['POST'])
+@validaSessao
+def pdfRecebimentoFiado():
+    geraPdf = PDF()
+    geraPdf.pdfRecebimentoFiado()
+    return send_file('pdfRecebimentoFiado.pdf', attachment_filename='pdfRecebimentoFiado.pdf')
 
     

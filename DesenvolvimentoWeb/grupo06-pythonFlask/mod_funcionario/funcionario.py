@@ -1,10 +1,9 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify, session
-
 from mod_funcionario.funcionarioBD import Funcionarios
-
 from mod_login.login import validaSessao
-
 from funcoes import Funcoes
+from GeraPdf import PDF
+from flask import send_file
 
 
 bp_funcionario = Blueprint('funcionario', __name__, template_folder='templates', url_prefix="/funcionarios")
@@ -131,3 +130,10 @@ def deleteFuncionario():
         funcoes.logError(log)
 
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_exception)
+
+@bp_funcionario.route('/pdfFuncionario', methods=['POST'])
+@validaSessao
+def pdfFuncionarios():
+    geraPdf = PDF()
+    geraPdf.pdfFuncionarios()
+    return send_file('pdfFuncionarios.pdf', attachment_filename='pdfFuncionarios.pdf')

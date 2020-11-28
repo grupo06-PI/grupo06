@@ -88,6 +88,13 @@
 {% block content %}
 {{ super() }}
 
+<div class="menu">
+  <ul>
+    <a class="buttonsCfg" href="{{url_for('funcionario.CadFuncionario')}}"><i class="fa fa-fw fa-plus" id="IconLista"></i> Novo
+      Funcionário</a>  </ul>
+</div>
+
+
 <div class="listaClientes">
   <table class="table table-striped table-primary">
     <thead class="">
@@ -138,8 +145,7 @@
   </table>
 </div>
 
-<a class="buttonsCfg" href="{{url_for('funcionario.CadFuncionario')}}"><i class="fa fa-fw fa-plus" id="IconLista"></i> Novo
-  Funcionário</a>
+
 {% endblock %}
 
 {% block js %}
