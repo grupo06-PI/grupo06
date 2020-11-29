@@ -333,7 +333,7 @@ class ComandaAddCliente(object):
 
 class ComandaRecebimento(object):
 
-    def __init__(self, id_recebimento=0, data_hora="", tipo="", valor_acrescimo=0, valor_desconto="", valor_total="", funcionario_id="", recebimento_id="", id_comanda=""):
+    def __init__(self, id_recebimento=0, data_hora="", tipo="", valor_acrescimo=0, valor_desconto="", valor_total="", funcionario_id="", recebimento_id="", id_comanda="", id_cliente=""):
 
         self.id_recebimento = id_recebimento
         self.data_hora = data_hora
@@ -344,6 +344,7 @@ class ComandaRecebimento(object):
         self.funcionario_id = funcionario_id
         self.recebimento_id = recebimento_id
         self.id_comanda = id_comanda
+        self.id_cliente = id_cliente
 
 
 
@@ -531,6 +532,65 @@ class ComandaRecebimento(object):
                 c.close()
             if banco:
                 banco.conexao.close()
+
+
+    def selectALLComandasFiados(self):
+        banco = None
+        c = None
+
+        try:
+            banco = Banco()
+
+            c = banco.conexao.cursor()
+
+            _sql = "SELECT TBC.NUMERO_COMANDA, TBC.DATA_HORA, TBCLI.ID_CLIENTE, TBCLI.NOME, SUM(TBCP.VALOR_UNITARIO) as 'VALOR TOTAL' FROM TB_COMANDA TBC INNER JOIN TB_CLIENTE TBCLI ON TBCLI.ID_CLIENTE = TBC.CLIENTE_ID INNER JOIN TB_COMANDA_PRODUTO TBCP ON TBC.ID_COMANDA = TBCP.COMANDA_ID WHERE STATUS_COMANDA = 2 AND STATUS_PAGAMENTO = 0  GROUP BY TBC.NUMERO_COMANDA"
+            
+            _sql_data = ()
+
+            c.execute(_sql, _sql_data)
+
+            result = c.fetchall()
+
+            return result
+
+        except Exception as e:
+            return "Ocorreu um erro na busca das Comandas"
+
+        finally:
+            if c:
+                c.close()
+            if banco:
+                banco.conexao.close()
+
+    def selectONEComandasFiados(self):
+        banco = None
+        c = None
+
+        try:
+            banco = Banco()
+
+            c = banco.conexao.cursor()
+
+            _sql = "SELECT TBC.NUMERO_COMANDA, TBC.DATA_HORA, TBCLI.ID_CLIENTE, TBCLI.NOME, SUM(TBCP.VALOR_UNITARIO) as 'VALOR TOTAL' FROM TB_COMANDA TBC INNER JOIN TB_CLIENTE TBCLI ON TBCLI.ID_CLIENTE = TBC.CLIENTE_ID INNER JOIN TB_COMANDA_PRODUTO TBCP ON TBC.ID_COMANDA = TBCP.COMANDA_ID WHERE STATUS_COMANDA = 2 AND STATUS_PAGAMENTO = 0 AND TBCLI.ID_CLIENTE = %s GROUP BY TBC.NUMERO_COMANDA"
+            
+            _sql_data = (self.id_cliente)
+
+            c.execute(_sql, _sql_data)
+
+            result = c.fetchall()
+
+            return result
+
+        except Exception as e:
+            return "Ocorreu um erro na busca das Comandas"
+
+        finally:
+            if c:
+                c.close()
+            if banco:
+                banco.conexao.close()
+
+    
 
 
 
