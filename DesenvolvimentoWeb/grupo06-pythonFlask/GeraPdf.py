@@ -261,8 +261,8 @@ class PDF(FPDF):
             for row in res:
                 pdf.cell(25, 5, str(row[0]), 0, 0, 'L')
                 pdf.cell(30, 5, str(row[1]), 0, 0, 'L')
-                pdf.cell(30, 5, str(row[2]), 0, 0, 'L')
-                pdf.cell(25, 5, str(row[4]), 0, 0, 'L')
+                pdf.cell(40, 5, str(row[2]), 0, 0, 'L')
+                pdf.cell(30, 5, str(row[4]), 0, 0, 'L')
                 pdf.cell(80, 5, str(row[5]), 0, 0, 'L')
                 pdf.ln(5)
 

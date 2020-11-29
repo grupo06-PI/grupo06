@@ -5238,3 +5238,1201 @@ INFO|werkzeug|29/11/2020 04:25:17 PM|127.0.0.1 - - [29/Nov/2020 16:25:17] "[37m
 INFO|werkzeug|29/11/2020 04:25:18 PM|127.0.0.1 - - [29/Nov/2020 16:25:18] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
 INFO|werkzeug|29/11/2020 04:25:19 PM|127.0.0.1 - - [29/Nov/2020 16:25:19] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
 INFO|werkzeug|29/11/2020 04:25:19 PM|127.0.0.1 - - [29/Nov/2020 16:25:19] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:34:47 PM|127.0.0.1 - - [29/Nov/2020 16:34:47] "[32mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 04:34:47 PM|127.0.0.1 - - [29/Nov/2020 16:34:47] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:34:48 PM|127.0.0.1 - - [29/Nov/2020 16:34:48] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:34:48 PM|127.0.0.1 - - [29/Nov/2020 16:34:48] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 04:34:49 PM|Login Efetuado com sucesso|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 04:34:49 PM|127.0.0.1 - - [29/Nov/2020 16:34:49] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 04:34:49 PM|127.0.0.1 - - [29/Nov/2020 16:34:49] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:34:49 PM|127.0.0.1 - - [29/Nov/2020 16:34:49] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:34:49 PM|127.0.0.1 - - [29/Nov/2020 16:34:49] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:34:49 PM|127.0.0.1 - - [29/Nov/2020 16:34:49] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:34:50 PM|127.0.0.1 - - [29/Nov/2020 16:34:50] "[37mGET /comandas/formRecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:34:50 PM|127.0.0.1 - - [29/Nov/2020 16:34:50] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:34:51 PM|127.0.0.1 - - [29/Nov/2020 16:34:51] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:34:51 PM|127.0.0.1 - - [29/Nov/2020 16:34:51] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:34:51 PM|127.0.0.1 - - [29/Nov/2020 16:34:51] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:34:52 PM|127.0.0.1 - - [29/Nov/2020 16:34:52] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:34:53 PM|127.0.0.1 - - [29/Nov/2020 16:34:53] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:34:53 PM|127.0.0.1 - - [29/Nov/2020 16:34:53] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:34:53 PM|127.0.0.1 - - [29/Nov/2020 16:34:53] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:34:53 PM|127.0.0.1 - - [29/Nov/2020 16:34:53] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:35:01 PM|127.0.0.1 - - [29/Nov/2020 16:35:01] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:35:01 PM|127.0.0.1 - - [29/Nov/2020 16:35:01] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:35:01 PM|127.0.0.1 - - [29/Nov/2020 16:35:01] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:36:55 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comandaBD.py', reloading
+INFO|werkzeug|29/11/2020 04:36:55 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 04:36:57 PM|127.0.0.1 - - [29/Nov/2020 16:36:57] "[32mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 04:36:57 PM|127.0.0.1 - - [29/Nov/2020 16:36:57] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:36:57 PM|127.0.0.1 - - [29/Nov/2020 16:36:57] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:36:57 PM|127.0.0.1 - - [29/Nov/2020 16:36:57] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:36:57 PM|127.0.0.1 - - [29/Nov/2020 16:36:57] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 04:36:58 PM|Login Efetuado com sucesso|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 04:36:58 PM|127.0.0.1 - - [29/Nov/2020 16:36:58] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 04:36:58 PM|127.0.0.1 - - [29/Nov/2020 16:36:58] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:36:58 PM|127.0.0.1 - - [29/Nov/2020 16:36:58] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:36:58 PM|127.0.0.1 - - [29/Nov/2020 16:36:58] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:36:58 PM|127.0.0.1 - - [29/Nov/2020 16:36:58] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:37:01 PM|127.0.0.1 - - [29/Nov/2020 16:37:01] "[37mGET /comandas/formRecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:37:01 PM|127.0.0.1 - - [29/Nov/2020 16:37:01] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:37:02 PM|127.0.0.1 - - [29/Nov/2020 16:37:02] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:37:02 PM|127.0.0.1 - - [29/Nov/2020 16:37:02] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:37:26 PM|127.0.0.1 - - [29/Nov/2020 16:37:26] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:37:26 PM|127.0.0.1 - - [29/Nov/2020 16:37:26] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:37:26 PM|127.0.0.1 - - [29/Nov/2020 16:37:26] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:37:26 PM|127.0.0.1 - - [29/Nov/2020 16:37:26] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:37:30 PM|127.0.0.1 - - [29/Nov/2020 16:37:30] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:37:30 PM|127.0.0.1 - - [29/Nov/2020 16:37:30] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:37:30 PM|127.0.0.1 - - [29/Nov/2020 16:37:30] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:38:31 PM|127.0.0.1 - - [29/Nov/2020 16:38:31] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:38:32 PM|127.0.0.1 - - [29/Nov/2020 16:38:32] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:38:32 PM|127.0.0.1 - - [29/Nov/2020 16:38:32] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:38:32 PM|127.0.0.1 - - [29/Nov/2020 16:38:32] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:38:44 PM|127.0.0.1 - - [29/Nov/2020 16:38:44] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:38:44 PM|127.0.0.1 - - [29/Nov/2020 16:38:44] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:38:44 PM|127.0.0.1 - - [29/Nov/2020 16:38:44] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:38:44 PM|127.0.0.1 - - [29/Nov/2020 16:38:44] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:38:44 PM|127.0.0.1 - - [29/Nov/2020 16:38:44] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:38:56 PM|127.0.0.1 - - [29/Nov/2020 16:38:56] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:38:56 PM|127.0.0.1 - - [29/Nov/2020 16:38:56] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:38:56 PM|127.0.0.1 - - [29/Nov/2020 16:38:56] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:38:56 PM|127.0.0.1 - - [29/Nov/2020 16:38:56] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:38:56 PM|127.0.0.1 - - [29/Nov/2020 16:38:56] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:39:07 PM|127.0.0.1 - - [29/Nov/2020 16:39:07] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:39:07 PM|127.0.0.1 - - [29/Nov/2020 16:39:07] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:39:07 PM|127.0.0.1 - - [29/Nov/2020 16:39:07] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:39:07 PM|127.0.0.1 - - [29/Nov/2020 16:39:07] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:39:26 PM|127.0.0.1 - - [29/Nov/2020 16:39:26] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:39:26 PM|127.0.0.1 - - [29/Nov/2020 16:39:26] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:39:26 PM|127.0.0.1 - - [29/Nov/2020 16:39:26] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:39:26 PM|127.0.0.1 - - [29/Nov/2020 16:39:26] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:39:26 PM|127.0.0.1 - - [29/Nov/2020 16:39:26] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:39:29 PM|127.0.0.1 - - [29/Nov/2020 16:39:29] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:39:29 PM|127.0.0.1 - - [29/Nov/2020 16:39:29] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:39:29 PM|127.0.0.1 - - [29/Nov/2020 16:39:29] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:39:29 PM|127.0.0.1 - - [29/Nov/2020 16:39:29] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:39:31 PM|127.0.0.1 - - [29/Nov/2020 16:39:31] "[37mGET /comandas/formRecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:39:31 PM|127.0.0.1 - - [29/Nov/2020 16:39:31] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:39:32 PM|127.0.0.1 - - [29/Nov/2020 16:39:32] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:39:32 PM|127.0.0.1 - - [29/Nov/2020 16:39:32] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:39:32 PM|127.0.0.1 - - [29/Nov/2020 16:39:32] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:40:11 PM|127.0.0.1 - - [29/Nov/2020 16:40:11] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:40:11 PM|127.0.0.1 - - [29/Nov/2020 16:40:11] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:40:11 PM|127.0.0.1 - - [29/Nov/2020 16:40:11] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:40:11 PM|127.0.0.1 - - [29/Nov/2020 16:40:11] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:40:32 PM|127.0.0.1 - - [29/Nov/2020 16:40:32] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:40:32 PM|127.0.0.1 - - [29/Nov/2020 16:40:32] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:40:32 PM|127.0.0.1 - - [29/Nov/2020 16:40:32] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:40:32 PM|127.0.0.1 - - [29/Nov/2020 16:40:32] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:40:32 PM|127.0.0.1 - - [29/Nov/2020 16:40:32] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:40:48 PM|127.0.0.1 - - [29/Nov/2020 16:40:48] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:40:48 PM|127.0.0.1 - - [29/Nov/2020 16:40:48] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:40:49 PM|127.0.0.1 - - [29/Nov/2020 16:40:49] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:40:49 PM|127.0.0.1 - - [29/Nov/2020 16:40:49] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:40:49 PM|127.0.0.1 - - [29/Nov/2020 16:40:49] "[37mGET /clientes/listaClientes HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:40:49 PM|127.0.0.1 - - [29/Nov/2020 16:40:49] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:40:50 PM|127.0.0.1 - - [29/Nov/2020 16:40:50] "[37mGET /clientes/cadCliente HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:40:50 PM|127.0.0.1 - - [29/Nov/2020 16:40:50] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 04:41:04 PM|Cliente cadastrado com sucesso!|CPF:234234|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 04:41:04 PM|127.0.0.1 - - [29/Nov/2020 16:41:04] "[37mPOST /clientes/addCliente HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:41:04 PM|127.0.0.1 - - [29/Nov/2020 16:41:04] "[37mGET /clientes/listaClientes HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:41:04 PM|127.0.0.1 - - [29/Nov/2020 16:41:04] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:41:04 PM|127.0.0.1 - - [29/Nov/2020 16:41:04] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:41:05 PM|127.0.0.1 - - [29/Nov/2020 16:41:05] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:41:08 PM|127.0.0.1 - - [29/Nov/2020 16:41:08] "[37mGET /comandas/formRecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:41:08 PM|127.0.0.1 - - [29/Nov/2020 16:41:08] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:41:18 PM|127.0.0.1 - - [29/Nov/2020 16:41:18] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:41:18 PM|127.0.0.1 - - [29/Nov/2020 16:41:18] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:41:18 PM|127.0.0.1 - - [29/Nov/2020 16:41:18] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:41:23 PM|127.0.0.1 - - [29/Nov/2020 16:41:23] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:41:23 PM|127.0.0.1 - - [29/Nov/2020 16:41:23] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:41:23 PM|127.0.0.1 - - [29/Nov/2020 16:41:23] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:41:34 PM|127.0.0.1 - - [29/Nov/2020 16:41:34] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:41:34 PM|127.0.0.1 - - [29/Nov/2020 16:41:34] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:41:34 PM|127.0.0.1 - - [29/Nov/2020 16:41:34] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:41:34 PM|127.0.0.1 - - [29/Nov/2020 16:41:34] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:41:34 PM|127.0.0.1 - - [29/Nov/2020 16:41:34] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:41:49 PM|127.0.0.1 - - [29/Nov/2020 16:41:49] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:41:49 PM|127.0.0.1 - - [29/Nov/2020 16:41:49] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:41:49 PM|127.0.0.1 - - [29/Nov/2020 16:41:49] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:41:49 PM|127.0.0.1 - - [29/Nov/2020 16:41:49] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:41:56 PM|127.0.0.1 - - [29/Nov/2020 16:41:56] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:41:56 PM|127.0.0.1 - - [29/Nov/2020 16:41:56] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:41:56 PM|127.0.0.1 - - [29/Nov/2020 16:41:56] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:07 PM|127.0.0.1 - - [29/Nov/2020 16:42:07] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:07 PM|127.0.0.1 - - [29/Nov/2020 16:42:07] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:07 PM|127.0.0.1 - - [29/Nov/2020 16:42:07] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:42:07 PM|127.0.0.1 - - [29/Nov/2020 16:42:07] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:42:07 PM|127.0.0.1 - - [29/Nov/2020 16:42:07] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:09 PM|127.0.0.1 - - [29/Nov/2020 16:42:09] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:09 PM|127.0.0.1 - - [29/Nov/2020 16:42:09] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:42:13 PM|127.0.0.1 - - [29/Nov/2020 16:42:13] "[37mGET /comandas/formRecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:13 PM|127.0.0.1 - - [29/Nov/2020 16:42:13] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:13 PM|127.0.0.1 - - [29/Nov/2020 16:42:13] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:13 PM|127.0.0.1 - - [29/Nov/2020 16:42:13] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:13 PM|127.0.0.1 - - [29/Nov/2020 16:42:13] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:42:14 PM|127.0.0.1 - - [29/Nov/2020 16:42:14] "[37mGET /static/js/jquery-3.5.1.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:14 PM|127.0.0.1 - - [29/Nov/2020 16:42:14] "[37mGET /static/bootstrap-4.5.2-dist/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:14 PM|127.0.0.1 - - [29/Nov/2020 16:42:14] "[37mGET /static/css/modelo/header.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:14 PM|127.0.0.1 - - [29/Nov/2020 16:42:14] "[37mGET /static/css/modelo/sidebar.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:14 PM|127.0.0.1 - - [29/Nov/2020 16:42:14] "[37mGET /static/css/modelo/main.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:14 PM|127.0.0.1 - - [29/Nov/2020 16:42:14] "[37mGET /static/images/modelo/logoPastry.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:14 PM|127.0.0.1 - - [29/Nov/2020 16:42:14] "[37mGET /static/sweetalert/sweetalert.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:14 PM|127.0.0.1 - - [29/Nov/2020 16:42:14] "[37mGET /static/images/modelo/user.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:14 PM|127.0.0.1 - - [29/Nov/2020 16:42:14] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:42:16 PM|127.0.0.1 - - [29/Nov/2020 16:42:16] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:16 PM|127.0.0.1 - - [29/Nov/2020 16:42:16] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:42:16 PM|127.0.0.1 - - [29/Nov/2020 16:42:16] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:42:21 PM|127.0.0.1 - - [29/Nov/2020 16:42:21] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:21 PM|127.0.0.1 - - [29/Nov/2020 16:42:21] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:42:23 PM|127.0.0.1 - - [29/Nov/2020 16:42:23] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:23 PM|127.0.0.1 - - [29/Nov/2020 16:42:23] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:42:30 PM|127.0.0.1 - - [29/Nov/2020 16:42:30] "[37mGET /comandas/formRecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:30 PM|127.0.0.1 - - [29/Nov/2020 16:42:30] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:30 PM|127.0.0.1 - - [29/Nov/2020 16:42:30] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:30 PM|127.0.0.1 - - [29/Nov/2020 16:42:30] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:30 PM|127.0.0.1 - - [29/Nov/2020 16:42:30] "[37mGET /static/js/jquery-3.5.1.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:30 PM|127.0.0.1 - - [29/Nov/2020 16:42:30] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:42:30 PM|127.0.0.1 - - [29/Nov/2020 16:42:30] "[37mGET /static/bootstrap-4.5.2-dist/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:30 PM|127.0.0.1 - - [29/Nov/2020 16:42:30] "[37mGET /static/sweetalert/sweetalert.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:30 PM|127.0.0.1 - - [29/Nov/2020 16:42:30] "[37mGET /static/css/modelo/sidebar.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:30 PM|127.0.0.1 - - [29/Nov/2020 16:42:30] "[37mGET /static/css/modelo/header.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:30 PM|127.0.0.1 - - [29/Nov/2020 16:42:30] "[37mGET /static/css/modelo/main.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:30 PM|127.0.0.1 - - [29/Nov/2020 16:42:30] "[37mGET /static/images/modelo/logoPastry.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:30 PM|127.0.0.1 - - [29/Nov/2020 16:42:30] "[37mGET /static/images/modelo/user.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:30 PM|127.0.0.1 - - [29/Nov/2020 16:42:30] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:42:35 PM|127.0.0.1 - - [29/Nov/2020 16:42:35] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:35 PM|127.0.0.1 - - [29/Nov/2020 16:42:35] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:42:35 PM|127.0.0.1 - - [29/Nov/2020 16:42:35] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:42:37 PM|127.0.0.1 - - [29/Nov/2020 16:42:37] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:37 PM|127.0.0.1 - - [29/Nov/2020 16:42:37] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:42:43 PM|127.0.0.1 - - [29/Nov/2020 16:42:43] "[37mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:44 PM|127.0.0.1 - - [29/Nov/2020 16:42:44] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:44 PM|127.0.0.1 - - [29/Nov/2020 16:42:44] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:44 PM|127.0.0.1 - - [29/Nov/2020 16:42:44] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:42:44 PM|127.0.0.1 - - [29/Nov/2020 16:42:44] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:42:55 PM|127.0.0.1 - - [29/Nov/2020 16:42:55] "[37mGET /comandas/formRecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:55 PM|127.0.0.1 - - [29/Nov/2020 16:42:55] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:55 PM|127.0.0.1 - - [29/Nov/2020 16:42:55] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:42:58 PM|127.0.0.1 - - [29/Nov/2020 16:42:58] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:42:58 PM|127.0.0.1 - - [29/Nov/2020 16:42:58] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:42:58 PM|127.0.0.1 - - [29/Nov/2020 16:42:58] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:43:01 PM|127.0.0.1 - - [29/Nov/2020 16:43:01] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:43:01 PM|127.0.0.1 - - [29/Nov/2020 16:43:01] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:43:04 PM|127.0.0.1 - - [29/Nov/2020 16:43:04] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:43:04 PM|127.0.0.1 - - [29/Nov/2020 16:43:04] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:43:04 PM|127.0.0.1 - - [29/Nov/2020 16:43:04] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:43:05 PM|127.0.0.1 - - [29/Nov/2020 16:43:05] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:43:05 PM|127.0.0.1 - - [29/Nov/2020 16:43:05] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:43:05 PM|127.0.0.1 - - [29/Nov/2020 16:43:05] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:43:05 PM|127.0.0.1 - - [29/Nov/2020 16:43:05] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:43:13 PM|127.0.0.1 - - [29/Nov/2020 16:43:13] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:43:13 PM|127.0.0.1 - - [29/Nov/2020 16:43:13] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:43:16 PM|127.0.0.1 - - [29/Nov/2020 16:43:16] "[37mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:43:17 PM|127.0.0.1 - - [29/Nov/2020 16:43:17] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:43:17 PM|127.0.0.1 - - [29/Nov/2020 16:43:17] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:43:17 PM|127.0.0.1 - - [29/Nov/2020 16:43:17] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:43:17 PM|127.0.0.1 - - [29/Nov/2020 16:43:17] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:43:18 PM|127.0.0.1 - - [29/Nov/2020 16:43:18] "[37mGET /comandas/formRecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:43:18 PM|127.0.0.1 - - [29/Nov/2020 16:43:18] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:43:21 PM|127.0.0.1 - - [29/Nov/2020 16:43:21] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:43:21 PM|127.0.0.1 - - [29/Nov/2020 16:43:21] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:43:22 PM|127.0.0.1 - - [29/Nov/2020 16:43:22] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:43:22 PM|127.0.0.1 - - [29/Nov/2020 16:43:22] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:44:18 PM|127.0.0.1 - - [29/Nov/2020 16:44:18] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:44:19 PM|127.0.0.1 - - [29/Nov/2020 16:44:19] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:44:19 PM|127.0.0.1 - - [29/Nov/2020 16:44:19] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:44:19 PM|127.0.0.1 - - [29/Nov/2020 16:44:19] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:44:20 PM|127.0.0.1 - - [29/Nov/2020 16:44:20] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:44:20 PM|127.0.0.1 - - [29/Nov/2020 16:44:20] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:44:21 PM|127.0.0.1 - - [29/Nov/2020 16:44:21] "[37mGET /comandas/AbrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:44:21 PM|127.0.0.1 - - [29/Nov/2020 16:44:21] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 04:44:25 PM|Comanda Aberto com Sucesso!|Comanda:666|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 04:44:25 PM|127.0.0.1 - - [29/Nov/2020 16:44:25] "[37mPOST /comandas/abrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:44:26 PM|127.0.0.1 - - [29/Nov/2020 16:44:26] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:44:26 PM|127.0.0.1 - - [29/Nov/2020 16:44:26] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:44:27 PM|127.0.0.1 - - [29/Nov/2020 16:44:27] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:44:27 PM|127.0.0.1 - - [29/Nov/2020 16:44:27] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:44:27 PM|127.0.0.1 - - [29/Nov/2020 16:44:27] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:44:28 PM|127.0.0.1 - - [29/Nov/2020 16:44:28] "[37mPOST /dashboard/AdicionarProdutos HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:44:28 PM|127.0.0.1 - - [29/Nov/2020 16:44:28] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:44:28 PM|127.0.0.1 - - [29/Nov/2020 16:44:28] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:44:28 PM|127.0.0.1 - - [29/Nov/2020 16:44:28] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:44:30 PM|127.0.0.1 - - [29/Nov/2020 16:44:30] "[37mPOST /dashboard/buscaProduto HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 04:44:33 PM|Produto adicionado com sucesso!|ID Produto:14|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 04:44:33 PM|127.0.0.1 - - [29/Nov/2020 16:44:33] "[37mPOST /dashboard/addProdutoComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:44:33 PM|127.0.0.1 - - [29/Nov/2020 16:44:33] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:44:33 PM|127.0.0.1 - - [29/Nov/2020 16:44:33] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:44:35 PM|127.0.0.1 - - [29/Nov/2020 16:44:35] "[37mPOST /dashboard/AdicionarProdutos HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:44:35 PM|127.0.0.1 - - [29/Nov/2020 16:44:35] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:44:36 PM|127.0.0.1 - - [29/Nov/2020 16:44:36] "[37mPOST /dashboard/buscaProduto HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:44:37 PM|127.0.0.1 - - [29/Nov/2020 16:44:37] "[37mPOST /dashboard/buscaProduto HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 04:44:40 PM|Produto adicionado com sucesso!|ID Produto:4|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 04:44:40 PM|127.0.0.1 - - [29/Nov/2020 16:44:40] "[37mPOST /dashboard/addProdutoComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:44:40 PM|127.0.0.1 - - [29/Nov/2020 16:44:40] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:44:40 PM|127.0.0.1 - - [29/Nov/2020 16:44:40] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:44:40 PM|127.0.0.1 - - [29/Nov/2020 16:44:40] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:44:40 PM|127.0.0.1 - - [29/Nov/2020 16:44:40] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:44:41 PM|127.0.0.1 - - [29/Nov/2020 16:44:41] "[37mPOST /dashboard/listaProdComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:44:41 PM|127.0.0.1 - - [29/Nov/2020 16:44:41] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:44:49 PM|127.0.0.1 - - [29/Nov/2020 16:44:49] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:44:49 PM|127.0.0.1 - - [29/Nov/2020 16:44:49] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:44:49 PM|127.0.0.1 - - [29/Nov/2020 16:44:49] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:44:50 PM|127.0.0.1 - - [29/Nov/2020 16:44:50] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:44:50 PM|127.0.0.1 - - [29/Nov/2020 16:44:50] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:45:00 PM|127.0.0.1 - - [29/Nov/2020 16:45:00] "[37mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:45:01 PM|127.0.0.1 - - [29/Nov/2020 16:45:01] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:45:01 PM|127.0.0.1 - - [29/Nov/2020 16:45:01] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:45:01 PM|127.0.0.1 - - [29/Nov/2020 16:45:01] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:45:26 PM|127.0.0.1 - - [29/Nov/2020 16:45:26] "[37mGET /comandas/formRecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:45:26 PM|127.0.0.1 - - [29/Nov/2020 16:45:26] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:45:26 PM|127.0.0.1 - - [29/Nov/2020 16:45:26] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:45:26 PM|127.0.0.1 - - [29/Nov/2020 16:45:26] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:45:28 PM|127.0.0.1 - - [29/Nov/2020 16:45:28] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:45:28 PM|127.0.0.1 - - [29/Nov/2020 16:45:28] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:45:32 PM|127.0.0.1 - - [29/Nov/2020 16:45:32] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:45:32 PM|127.0.0.1 - - [29/Nov/2020 16:45:32] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:45:37 PM|127.0.0.1 - - [29/Nov/2020 16:45:37] "[37mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:45:38 PM|127.0.0.1 - - [29/Nov/2020 16:45:38] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:45:38 PM|127.0.0.1 - - [29/Nov/2020 16:45:38] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:45:38 PM|127.0.0.1 - - [29/Nov/2020 16:45:38] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:45:39 PM|127.0.0.1 - - [29/Nov/2020 16:45:39] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:47:48 PM|127.0.0.1 - - [29/Nov/2020 16:47:48] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:47:48 PM|127.0.0.1 - - [29/Nov/2020 16:47:48] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:47:48 PM|127.0.0.1 - - [29/Nov/2020 16:47:48] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:47:48 PM|127.0.0.1 - - [29/Nov/2020 16:47:48] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:47:50 PM|127.0.0.1 - - [29/Nov/2020 16:47:50] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:47:50 PM|127.0.0.1 - - [29/Nov/2020 16:47:50] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:47:50 PM|127.0.0.1 - - [29/Nov/2020 16:47:50] "[37mGET /comandas/AbrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:47:50 PM|127.0.0.1 - - [29/Nov/2020 16:47:50] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 04:47:53 PM|Comanda Aberto com Sucesso!|Comanda:666|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 04:47:53 PM|127.0.0.1 - - [29/Nov/2020 16:47:53] "[37mPOST /comandas/abrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:47:53 PM|127.0.0.1 - - [29/Nov/2020 16:47:53] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:47:53 PM|127.0.0.1 - - [29/Nov/2020 16:47:53] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:47:54 PM|127.0.0.1 - - [29/Nov/2020 16:47:54] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:47:54 PM|127.0.0.1 - - [29/Nov/2020 16:47:54] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:47:54 PM|127.0.0.1 - - [29/Nov/2020 16:47:54] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:47:55 PM|127.0.0.1 - - [29/Nov/2020 16:47:55] "[37mPOST /dashboard/AdicionarProdutos HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:47:55 PM|127.0.0.1 - - [29/Nov/2020 16:47:55] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:47:57 PM|127.0.0.1 - - [29/Nov/2020 16:47:57] "[37mPOST /dashboard/buscaProduto HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 04:47:59 PM|Produto adicionado com sucesso!|ID Produto:14|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 04:47:59 PM|127.0.0.1 - - [29/Nov/2020 16:47:59] "[37mPOST /dashboard/addProdutoComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:48:00 PM|127.0.0.1 - - [29/Nov/2020 16:48:00] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:48:00 PM|127.0.0.1 - - [29/Nov/2020 16:48:00] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:48:00 PM|127.0.0.1 - - [29/Nov/2020 16:48:00] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:48:01 PM|127.0.0.1 - - [29/Nov/2020 16:48:01] "[37mPOST /dashboard/AdicionarCliente HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:48:01 PM|127.0.0.1 - - [29/Nov/2020 16:48:01] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 04:48:03 PM|Cliente vinculado com Sucesso!|ID Comanda:89|ID Cliente:30|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 04:48:03 PM|127.0.0.1 - - [29/Nov/2020 16:48:03] "[37mPOST /dashboard/addClienteComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:48:03 PM|127.0.0.1 - - [29/Nov/2020 16:48:03] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:48:03 PM|127.0.0.1 - - [29/Nov/2020 16:48:03] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:48:03 PM|127.0.0.1 - - [29/Nov/2020 16:48:03] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:48:03 PM|127.0.0.1 - - [29/Nov/2020 16:48:03] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:48:04 PM|127.0.0.1 - - [29/Nov/2020 16:48:04] "[37mPOST /dashboard/listaProdComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:48:05 PM|127.0.0.1 - - [29/Nov/2020 16:48:05] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:48:06 PM|127.0.0.1 - - [29/Nov/2020 16:48:06] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:48:06 PM|127.0.0.1 - - [29/Nov/2020 16:48:06] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:48:06 PM|127.0.0.1 - - [29/Nov/2020 16:48:06] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:48:07 PM|127.0.0.1 - - [29/Nov/2020 16:48:07] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:48:24 PM|127.0.0.1 - - [29/Nov/2020 16:48:24] "[37mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:48:25 PM|127.0.0.1 - - [29/Nov/2020 16:48:25] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:48:25 PM|127.0.0.1 - - [29/Nov/2020 16:48:25] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:48:25 PM|127.0.0.1 - - [29/Nov/2020 16:48:25] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:48:25 PM|127.0.0.1 - - [29/Nov/2020 16:48:25] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:48:44 PM|127.0.0.1 - - [29/Nov/2020 16:48:44] "[37mGET /comandas/formRecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:48:44 PM|127.0.0.1 - - [29/Nov/2020 16:48:44] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:48:44 PM|127.0.0.1 - - [29/Nov/2020 16:48:44] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:48:45 PM|127.0.0.1 - - [29/Nov/2020 16:48:45] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:48:48 PM|127.0.0.1 - - [29/Nov/2020 16:48:48] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:48:48 PM|127.0.0.1 - - [29/Nov/2020 16:48:48] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:48:50 PM|127.0.0.1 - - [29/Nov/2020 16:48:50] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:48:50 PM|127.0.0.1 - - [29/Nov/2020 16:48:50] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:48:55 PM|127.0.0.1 - - [29/Nov/2020 16:48:55] "[37mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:48:56 PM|127.0.0.1 - - [29/Nov/2020 16:48:56] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:48:56 PM|127.0.0.1 - - [29/Nov/2020 16:48:56] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:48:56 PM|127.0.0.1 - - [29/Nov/2020 16:48:56] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:48:56 PM|127.0.0.1 - - [29/Nov/2020 16:48:56] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:49:53 PM|127.0.0.1 - - [29/Nov/2020 16:49:53] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:49:53 PM|127.0.0.1 - - [29/Nov/2020 16:49:53] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:49:53 PM|127.0.0.1 - - [29/Nov/2020 16:49:53] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:49:53 PM|127.0.0.1 - - [29/Nov/2020 16:49:53] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:49:54 PM|127.0.0.1 - - [29/Nov/2020 16:49:54] "[37mGET /clientes/listaClientes HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:49:54 PM|127.0.0.1 - - [29/Nov/2020 16:49:54] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:49:55 PM|127.0.0.1 - - [29/Nov/2020 16:49:55] "[37mGET /funcionarios/listaFuncionarios HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:49:55 PM|127.0.0.1 - - [29/Nov/2020 16:49:55] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:49:55 PM|127.0.0.1 - - [29/Nov/2020 16:49:55] "[37mGET /produtos/listaProdutos HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:49:55 PM|127.0.0.1 - - [29/Nov/2020 16:49:55] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:49:56 PM|127.0.0.1 - - [29/Nov/2020 16:49:56] "[37mGET /comandas/formRecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:49:56 PM|127.0.0.1 - - [29/Nov/2020 16:49:56] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:49:58 PM|127.0.0.1 - - [29/Nov/2020 16:49:58] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:49:58 PM|127.0.0.1 - - [29/Nov/2020 16:49:58] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:49:58 PM|127.0.0.1 - - [29/Nov/2020 16:49:58] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:49:59 PM|127.0.0.1 - - [29/Nov/2020 16:49:59] "[37mGET /comandas/AbrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:49:59 PM|127.0.0.1 - - [29/Nov/2020 16:49:59] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 04:50:05 PM|Comanda Aberto com Sucesso!|Comanda:897|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 04:50:05 PM|127.0.0.1 - - [29/Nov/2020 16:50:05] "[37mPOST /comandas/abrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:50:06 PM|127.0.0.1 - - [29/Nov/2020 16:50:06] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:50:06 PM|127.0.0.1 - - [29/Nov/2020 16:50:06] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:50:06 PM|127.0.0.1 - - [29/Nov/2020 16:50:06] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:50:06 PM|127.0.0.1 - - [29/Nov/2020 16:50:06] "[37mGET /static/css/modelo/sidebar.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:50:06 PM|127.0.0.1 - - [29/Nov/2020 16:50:06] "[37mGET /static/css/modelo/header.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:50:06 PM|127.0.0.1 - - [29/Nov/2020 16:50:06] "[37mGET /static/css/modelo/main.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:50:06 PM|127.0.0.1 - - [29/Nov/2020 16:50:06] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:50:06 PM|127.0.0.1 - - [29/Nov/2020 16:50:06] "[37mGET /static/bootstrap-4.5.2-dist/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:50:06 PM|127.0.0.1 - - [29/Nov/2020 16:50:06] "[37mGET /static/sweetalert/sweetalert.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:50:07 PM|127.0.0.1 - - [29/Nov/2020 16:50:07] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:50:07 PM|127.0.0.1 - - [29/Nov/2020 16:50:07] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:50:09 PM|127.0.0.1 - - [29/Nov/2020 16:50:09] "[37mPOST /dashboard/AdicionarProdutos HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:50:09 PM|127.0.0.1 - - [29/Nov/2020 16:50:09] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:50:10 PM|127.0.0.1 - - [29/Nov/2020 16:50:10] "[37mPOST /dashboard/buscaProduto HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 04:50:12 PM|Produto adicionado com sucesso!|ID Produto:4|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 04:50:12 PM|127.0.0.1 - - [29/Nov/2020 16:50:12] "[37mPOST /dashboard/addProdutoComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:50:13 PM|127.0.0.1 - - [29/Nov/2020 16:50:13] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:50:13 PM|127.0.0.1 - - [29/Nov/2020 16:50:13] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:50:15 PM|127.0.0.1 - - [29/Nov/2020 16:50:15] "[37mPOST /dashboard/AdicionarCliente HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:50:15 PM|127.0.0.1 - - [29/Nov/2020 16:50:15] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 04:50:17 PM|Cliente vinculado com Sucesso!|ID Comanda:90|ID Cliente:28|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 04:50:17 PM|127.0.0.1 - - [29/Nov/2020 16:50:17] "[37mPOST /dashboard/addClienteComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:50:17 PM|127.0.0.1 - - [29/Nov/2020 16:50:17] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:50:17 PM|127.0.0.1 - - [29/Nov/2020 16:50:17] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:50:17 PM|127.0.0.1 - - [29/Nov/2020 16:50:17] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:50:17 PM|127.0.0.1 - - [29/Nov/2020 16:50:17] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:50:18 PM|127.0.0.1 - - [29/Nov/2020 16:50:18] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:50:18 PM|127.0.0.1 - - [29/Nov/2020 16:50:18] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:50:22 PM|127.0.0.1 - - [29/Nov/2020 16:50:22] "[37mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:50:23 PM|127.0.0.1 - - [29/Nov/2020 16:50:23] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:50:23 PM|127.0.0.1 - - [29/Nov/2020 16:50:23] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:55:22 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|29/11/2020 04:55:22 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 04:56:13 PM|127.0.0.1 - - [29/Nov/2020 16:56:13] "[32mGET /comandas/ListaComandas HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 04:56:13 PM|127.0.0.1 - - [29/Nov/2020 16:56:13] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:56:13 PM|127.0.0.1 - - [29/Nov/2020 16:56:13] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:56:13 PM|127.0.0.1 - - [29/Nov/2020 16:56:13] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 04:56:14 PM|Login Efetuado com sucesso|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 04:56:14 PM|127.0.0.1 - - [29/Nov/2020 16:56:14] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 04:56:15 PM|127.0.0.1 - - [29/Nov/2020 16:56:15] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:56:15 PM|127.0.0.1 - - [29/Nov/2020 16:56:15] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:56:15 PM|127.0.0.1 - - [29/Nov/2020 16:56:15] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:56:32 PM|127.0.0.1 - - [29/Nov/2020 16:56:32] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:56:32 PM|127.0.0.1 - - [29/Nov/2020 16:56:32] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:56:32 PM|127.0.0.1 - - [29/Nov/2020 16:56:32] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:56:32 PM|127.0.0.1 - - [29/Nov/2020 16:56:32] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:56:33 PM|127.0.0.1 - - [29/Nov/2020 16:56:33] "[37mGET /comandas/AbrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:56:33 PM|127.0.0.1 - - [29/Nov/2020 16:56:33] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 04:56:36 PM|Comanda Aberto com Sucesso!|Comanda:777|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 04:56:36 PM|127.0.0.1 - - [29/Nov/2020 16:56:36] "[37mPOST /comandas/abrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:56:37 PM|127.0.0.1 - - [29/Nov/2020 16:56:37] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:56:37 PM|127.0.0.1 - - [29/Nov/2020 16:56:37] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:56:38 PM|127.0.0.1 - - [29/Nov/2020 16:56:38] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:56:38 PM|127.0.0.1 - - [29/Nov/2020 16:56:38] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:56:39 PM|127.0.0.1 - - [29/Nov/2020 16:56:39] "[37mPOST /dashboard/AdicionarProdutos HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:56:39 PM|127.0.0.1 - - [29/Nov/2020 16:56:39] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:56:40 PM|127.0.0.1 - - [29/Nov/2020 16:56:40] "[37mPOST /dashboard/buscaProduto HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 04:56:42 PM|Produto adicionado com sucesso!|ID Produto:11|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 04:56:42 PM|127.0.0.1 - - [29/Nov/2020 16:56:42] "[37mPOST /dashboard/addProdutoComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:56:43 PM|127.0.0.1 - - [29/Nov/2020 16:56:43] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:56:43 PM|127.0.0.1 - - [29/Nov/2020 16:56:43] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:56:43 PM|127.0.0.1 - - [29/Nov/2020 16:56:43] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:56:44 PM|127.0.0.1 - - [29/Nov/2020 16:56:44] "[37mPOST /dashboard/AdicionarCliente HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:56:44 PM|127.0.0.1 - - [29/Nov/2020 16:56:44] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 04:56:46 PM|Cliente vinculado com Sucesso!|ID Comanda:91|ID Cliente:30|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 04:56:46 PM|127.0.0.1 - - [29/Nov/2020 16:56:46] "[37mPOST /dashboard/addClienteComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:56:47 PM|127.0.0.1 - - [29/Nov/2020 16:56:47] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:56:47 PM|127.0.0.1 - - [29/Nov/2020 16:56:47] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:56:48 PM|127.0.0.1 - - [29/Nov/2020 16:56:48] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:56:48 PM|127.0.0.1 - - [29/Nov/2020 16:56:48] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:56:48 PM|127.0.0.1 - - [29/Nov/2020 16:56:48] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:56:51 PM|127.0.0.1 - - [29/Nov/2020 16:56:51] "[35m[1mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 500 -
+INFO|werkzeug|29/11/2020 04:57:21 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|29/11/2020 04:57:21 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 04:57:23 PM|127.0.0.1 - - [29/Nov/2020 16:57:23] "[32mPOST /comandas/Recebimento HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 04:57:23 PM|127.0.0.1 - - [29/Nov/2020 16:57:23] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:57:23 PM|127.0.0.1 - - [29/Nov/2020 16:57:23] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:57:23 PM|127.0.0.1 - - [29/Nov/2020 16:57:23] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:57:23 PM|127.0.0.1 - - [29/Nov/2020 16:57:23] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 04:57:24 PM|Login Efetuado com sucesso|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 04:57:24 PM|127.0.0.1 - - [29/Nov/2020 16:57:24] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 04:57:24 PM|127.0.0.1 - - [29/Nov/2020 16:57:24] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:57:24 PM|127.0.0.1 - - [29/Nov/2020 16:57:24] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:57:24 PM|127.0.0.1 - - [29/Nov/2020 16:57:24] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:57:24 PM|127.0.0.1 - - [29/Nov/2020 16:57:24] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:57:25 PM|127.0.0.1 - - [29/Nov/2020 16:57:25] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:57:25 PM|127.0.0.1 - - [29/Nov/2020 16:57:25] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:57:28 PM|127.0.0.1 - - [29/Nov/2020 16:57:28] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:57:28 PM|127.0.0.1 - - [29/Nov/2020 16:57:28] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:57:29 PM|127.0.0.1 - - [29/Nov/2020 16:57:29] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:57:29 PM|127.0.0.1 - - [29/Nov/2020 16:57:29] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:57:29 PM|127.0.0.1 - - [29/Nov/2020 16:57:29] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:57:32 PM|127.0.0.1 - - [29/Nov/2020 16:57:32] "[35m[1mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 500 -
+INFO|werkzeug|29/11/2020 04:58:33 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|29/11/2020 04:58:33 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 04:58:39 PM|127.0.0.1 - - [29/Nov/2020 16:58:39] "[32mPOST /comandas/Recebimento HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 04:58:39 PM|127.0.0.1 - - [29/Nov/2020 16:58:39] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:58:39 PM|127.0.0.1 - - [29/Nov/2020 16:58:39] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:58:39 PM|127.0.0.1 - - [29/Nov/2020 16:58:39] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:58:39 PM|127.0.0.1 - - [29/Nov/2020 16:58:39] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 04:58:40 PM|Login Efetuado com sucesso|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 04:58:40 PM|127.0.0.1 - - [29/Nov/2020 16:58:40] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 04:58:40 PM|127.0.0.1 - - [29/Nov/2020 16:58:40] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:58:40 PM|127.0.0.1 - - [29/Nov/2020 16:58:40] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:58:40 PM|127.0.0.1 - - [29/Nov/2020 16:58:40] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:58:40 PM|127.0.0.1 - - [29/Nov/2020 16:58:40] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:58:42 PM|127.0.0.1 - - [29/Nov/2020 16:58:42] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:58:42 PM|127.0.0.1 - - [29/Nov/2020 16:58:42] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:58:44 PM|127.0.0.1 - - [29/Nov/2020 16:58:44] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 04:58:44 PM|127.0.0.1 - - [29/Nov/2020 16:58:44] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 04:58:47 PM|127.0.0.1 - - [29/Nov/2020 16:58:47] "[35m[1mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 500 -
+INFO|werkzeug|29/11/2020 05:02:00 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|29/11/2020 05:02:00 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:02:05 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|29/11/2020 05:02:05 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:02:31 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|29/11/2020 05:02:31 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:02:36 PM|127.0.0.1 - - [29/Nov/2020 17:02:36] "[32mPOST /comandas/Recebimento HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:02:36 PM|127.0.0.1 - - [29/Nov/2020 17:02:36] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:02:37 PM|127.0.0.1 - - [29/Nov/2020 17:02:37] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:02:37 PM|127.0.0.1 - - [29/Nov/2020 17:02:37] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:02:37 PM|127.0.0.1 - - [29/Nov/2020 17:02:37] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:02:37 PM|Login Efetuado com sucesso|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:02:37 PM|127.0.0.1 - - [29/Nov/2020 17:02:37] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:02:38 PM|127.0.0.1 - - [29/Nov/2020 17:02:38] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:02:38 PM|127.0.0.1 - - [29/Nov/2020 17:02:38] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:02:38 PM|127.0.0.1 - - [29/Nov/2020 17:02:38] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:02:38 PM|127.0.0.1 - - [29/Nov/2020 17:02:38] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:02:38 PM|127.0.0.1 - - [29/Nov/2020 17:02:38] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:02:38 PM|127.0.0.1 - - [29/Nov/2020 17:02:38] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:02:39 PM|127.0.0.1 - - [29/Nov/2020 17:02:39] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:02:39 PM|127.0.0.1 - - [29/Nov/2020 17:02:39] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:02:42 PM|127.0.0.1 - - [29/Nov/2020 17:02:42] "[35m[1mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 500 -
+INFO|werkzeug|29/11/2020 05:03:02 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|29/11/2020 05:03:02 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:03:09 PM|127.0.0.1 - - [29/Nov/2020 17:03:09] "[32mPOST /comandas/Recebimento HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:03:09 PM|127.0.0.1 - - [29/Nov/2020 17:03:09] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:03:09 PM|127.0.0.1 - - [29/Nov/2020 17:03:09] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:03:09 PM|127.0.0.1 - - [29/Nov/2020 17:03:09] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:03:09 PM|127.0.0.1 - - [29/Nov/2020 17:03:09] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:03:10 PM|Login Efetuado com sucesso|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:03:10 PM|127.0.0.1 - - [29/Nov/2020 17:03:10] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:03:10 PM|127.0.0.1 - - [29/Nov/2020 17:03:10] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:03:10 PM|127.0.0.1 - - [29/Nov/2020 17:03:10] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:03:10 PM|127.0.0.1 - - [29/Nov/2020 17:03:10] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:03:10 PM|127.0.0.1 - - [29/Nov/2020 17:03:10] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:03:11 PM|127.0.0.1 - - [29/Nov/2020 17:03:11] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:03:11 PM|127.0.0.1 - - [29/Nov/2020 17:03:11] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:03:12 PM|127.0.0.1 - - [29/Nov/2020 17:03:12] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:03:12 PM|127.0.0.1 - - [29/Nov/2020 17:03:12] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:03:14 PM|127.0.0.1 - - [29/Nov/2020 17:03:14] "[35m[1mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 500 -
+INFO|werkzeug|29/11/2020 05:03:26 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|29/11/2020 05:03:26 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:04:59 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|29/11/2020 05:04:59 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:09:09 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|29/11/2020 05:09:09 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:09:38 PM|127.0.0.1 - - [29/Nov/2020 17:09:38] "[32mPOST /comandas/Recebimento HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:09:38 PM|127.0.0.1 - - [29/Nov/2020 17:09:38] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:09:39 PM|127.0.0.1 - - [29/Nov/2020 17:09:39] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:09:39 PM|127.0.0.1 - - [29/Nov/2020 17:09:39] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:09:39 PM|127.0.0.1 - - [29/Nov/2020 17:09:39] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:09:40 PM|Login Efetuado com sucesso|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:09:40 PM|127.0.0.1 - - [29/Nov/2020 17:09:40] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:09:40 PM|127.0.0.1 - - [29/Nov/2020 17:09:40] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:09:40 PM|127.0.0.1 - - [29/Nov/2020 17:09:40] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:09:40 PM|127.0.0.1 - - [29/Nov/2020 17:09:40] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:09:40 PM|127.0.0.1 - - [29/Nov/2020 17:09:40] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:09:40 PM|127.0.0.1 - - [29/Nov/2020 17:09:40] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:09:41 PM|127.0.0.1 - - [29/Nov/2020 17:09:41] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:09:41 PM|127.0.0.1 - - [29/Nov/2020 17:09:41] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:09:41 PM|127.0.0.1 - - [29/Nov/2020 17:09:41] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:09:44 PM|127.0.0.1 - - [29/Nov/2020 17:09:44] "[37mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:09:45 PM|127.0.0.1 - - [29/Nov/2020 17:09:45] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:09:45 PM|127.0.0.1 - - [29/Nov/2020 17:09:45] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:11:54 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comandaBD.py', reloading
+INFO|werkzeug|29/11/2020 05:11:54 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:12:23 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|29/11/2020 05:12:23 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:12:37 PM|127.0.0.1 - - [29/Nov/2020 17:12:37] "[32mGET /comandas/ListaComandas HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:12:37 PM|127.0.0.1 - - [29/Nov/2020 17:12:37] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:12:37 PM|127.0.0.1 - - [29/Nov/2020 17:12:37] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:12:37 PM|127.0.0.1 - - [29/Nov/2020 17:12:37] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:12:38 PM|Login Efetuado com sucesso|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:12:38 PM|127.0.0.1 - - [29/Nov/2020 17:12:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:12:38 PM|127.0.0.1 - - [29/Nov/2020 17:12:38] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:12:39 PM|127.0.0.1 - - [29/Nov/2020 17:12:39] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:12:39 PM|127.0.0.1 - - [29/Nov/2020 17:12:39] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:12:39 PM|127.0.0.1 - - [29/Nov/2020 17:12:39] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:12:39 PM|127.0.0.1 - - [29/Nov/2020 17:12:39] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:12:40 PM|127.0.0.1 - - [29/Nov/2020 17:12:40] "[37mGET /comandas/AbrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:12:40 PM|127.0.0.1 - - [29/Nov/2020 17:12:40] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 05:12:42 PM|Comanda Aberto com Sucesso!|Comanda:111|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:12:42 PM|127.0.0.1 - - [29/Nov/2020 17:12:42] "[37mPOST /comandas/abrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:12:43 PM|127.0.0.1 - - [29/Nov/2020 17:12:43] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:12:43 PM|127.0.0.1 - - [29/Nov/2020 17:12:43] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:12:44 PM|127.0.0.1 - - [29/Nov/2020 17:12:44] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:12:44 PM|127.0.0.1 - - [29/Nov/2020 17:12:44] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:12:44 PM|127.0.0.1 - - [29/Nov/2020 17:12:44] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:12:45 PM|127.0.0.1 - - [29/Nov/2020 17:12:45] "[37mPOST /dashboard/AdicionarProdutos HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:12:45 PM|127.0.0.1 - - [29/Nov/2020 17:12:45] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:12:47 PM|127.0.0.1 - - [29/Nov/2020 17:12:47] "[37mPOST /dashboard/buscaProduto HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:12:49 PM|Produto adicionado com sucesso!|ID Produto:14|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:12:49 PM|127.0.0.1 - - [29/Nov/2020 17:12:49] "[37mPOST /dashboard/addProdutoComanda HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:12:52 PM|Produto adicionado com sucesso!|ID Produto:14|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:12:52 PM|127.0.0.1 - - [29/Nov/2020 17:12:52] "[37mPOST /dashboard/addProdutoComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:12:53 PM|127.0.0.1 - - [29/Nov/2020 17:12:53] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:12:53 PM|127.0.0.1 - - [29/Nov/2020 17:12:53] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:12:53 PM|127.0.0.1 - - [29/Nov/2020 17:12:53] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:12:53 PM|127.0.0.1 - - [29/Nov/2020 17:12:53] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:12:53 PM|127.0.0.1 - - [29/Nov/2020 17:12:53] "[37mPOST /dashboard/listaProdComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:12:53 PM|127.0.0.1 - - [29/Nov/2020 17:12:53] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:12:56 PM|127.0.0.1 - - [29/Nov/2020 17:12:56] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:12:56 PM|127.0.0.1 - - [29/Nov/2020 17:12:56] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:13:00 PM|127.0.0.1 - - [29/Nov/2020 17:13:00] "[37mPOST /dashboard/AdicionarCliente HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:13:01 PM|127.0.0.1 - - [29/Nov/2020 17:13:01] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 05:13:03 PM|Cliente vinculado com Sucesso!|ID Comanda:92|ID Cliente:28|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:13:03 PM|127.0.0.1 - - [29/Nov/2020 17:13:03] "[37mPOST /dashboard/addClienteComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:13:03 PM|127.0.0.1 - - [29/Nov/2020 17:13:03] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:13:03 PM|127.0.0.1 - - [29/Nov/2020 17:13:03] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:13:03 PM|127.0.0.1 - - [29/Nov/2020 17:13:03] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:13:04 PM|127.0.0.1 - - [29/Nov/2020 17:13:04] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:13:04 PM|127.0.0.1 - - [29/Nov/2020 17:13:04] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:13:08 PM|127.0.0.1 - - [29/Nov/2020 17:13:08] "[37mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:13:37 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comandaBD.py', reloading
+INFO|werkzeug|29/11/2020 05:13:37 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:13:43 PM|127.0.0.1 - - [29/Nov/2020 17:13:43] "[32mPOST /comandas/Recebimento HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:13:43 PM|127.0.0.1 - - [29/Nov/2020 17:13:43] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:13:43 PM|127.0.0.1 - - [29/Nov/2020 17:13:43] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:13:43 PM|127.0.0.1 - - [29/Nov/2020 17:13:43] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:13:43 PM|127.0.0.1 - - [29/Nov/2020 17:13:43] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:13:44 PM|Login Efetuado com sucesso|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:13:44 PM|127.0.0.1 - - [29/Nov/2020 17:13:44] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:13:44 PM|127.0.0.1 - - [29/Nov/2020 17:13:44] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:13:44 PM|127.0.0.1 - - [29/Nov/2020 17:13:44] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:13:44 PM|127.0.0.1 - - [29/Nov/2020 17:13:44] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:13:44 PM|127.0.0.1 - - [29/Nov/2020 17:13:44] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:13:45 PM|127.0.0.1 - - [29/Nov/2020 17:13:45] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:13:45 PM|127.0.0.1 - - [29/Nov/2020 17:13:45] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:13:46 PM|127.0.0.1 - - [29/Nov/2020 17:13:46] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:13:46 PM|127.0.0.1 - - [29/Nov/2020 17:13:46] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:13:48 PM|127.0.0.1 - - [29/Nov/2020 17:13:48] "[37mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:14:13 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comandaBD.py', reloading
+INFO|werkzeug|29/11/2020 05:14:13 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:14:17 PM|127.0.0.1 - - [29/Nov/2020 17:14:17] "[32mPOST /comandas/Recebimento HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:14:17 PM|127.0.0.1 - - [29/Nov/2020 17:14:17] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:14:17 PM|127.0.0.1 - - [29/Nov/2020 17:14:17] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:14:17 PM|127.0.0.1 - - [29/Nov/2020 17:14:17] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:14:17 PM|127.0.0.1 - - [29/Nov/2020 17:14:17] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:14:26 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comandaBD.py', reloading
+INFO|werkzeug|29/11/2020 05:14:26 PM| * Restarting with stat
+INFO|root|29/11/2020 05:14:28 PM|Login Efetuado com sucesso|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:14:28 PM|127.0.0.1 - - [29/Nov/2020 17:14:28] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:14:28 PM|127.0.0.1 - - [29/Nov/2020 17:14:28] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:14:28 PM|127.0.0.1 - - [29/Nov/2020 17:14:28] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:14:28 PM|127.0.0.1 - - [29/Nov/2020 17:14:28] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:14:28 PM|127.0.0.1 - - [29/Nov/2020 17:14:28] "[37mGET /static/sweetalert/sweetalert.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:14:28 PM|127.0.0.1 - - [29/Nov/2020 17:14:28] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:14:28 PM|127.0.0.1 - - [29/Nov/2020 17:14:28] "[37mGET /static/js/jquery-3.5.1.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:14:28 PM|127.0.0.1 - - [29/Nov/2020 17:14:28] "[37mGET /static/images/modelo/logoPastry.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:14:29 PM|127.0.0.1 - - [29/Nov/2020 17:14:29] "[37mGET /static/images/modelo/user.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:14:29 PM|127.0.0.1 - - [29/Nov/2020 17:14:29] "[37mGET /static/css/modelo/sidebar.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:14:29 PM|127.0.0.1 - - [29/Nov/2020 17:14:29] "[37mGET /static/css/modelo/header.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:14:29 PM|127.0.0.1 - - [29/Nov/2020 17:14:29] "[37mGET /static/css/modelo/main.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:14:29 PM|127.0.0.1 - - [29/Nov/2020 17:14:29] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:14:30 PM|127.0.0.1 - - [29/Nov/2020 17:14:30] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:14:30 PM|127.0.0.1 - - [29/Nov/2020 17:14:30] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:14:31 PM|127.0.0.1 - - [29/Nov/2020 17:14:31] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:14:31 PM|127.0.0.1 - - [29/Nov/2020 17:14:31] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:14:33 PM|127.0.0.1 - - [29/Nov/2020 17:14:33] "[37mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:17:11 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comandaBD.py', reloading
+INFO|werkzeug|29/11/2020 05:17:11 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:17:40 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comandaBD.py', reloading
+INFO|werkzeug|29/11/2020 05:17:40 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:17:44 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|29/11/2020 05:17:45 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:17:54 PM|127.0.0.1 - - [29/Nov/2020 17:17:54] "[32mPOST /comandas/Recebimento HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:17:54 PM|127.0.0.1 - - [29/Nov/2020 17:17:54] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:17:54 PM|127.0.0.1 - - [29/Nov/2020 17:17:54] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:17:54 PM|127.0.0.1 - - [29/Nov/2020 17:17:54] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:17:54 PM|127.0.0.1 - - [29/Nov/2020 17:17:54] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:17:54 PM|Login Efetuado com sucesso|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:17:54 PM|127.0.0.1 - - [29/Nov/2020 17:17:54] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:17:54 PM|127.0.0.1 - - [29/Nov/2020 17:17:54] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:17:55 PM|127.0.0.1 - - [29/Nov/2020 17:17:55] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:17:55 PM|127.0.0.1 - - [29/Nov/2020 17:17:55] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:17:55 PM|127.0.0.1 - - [29/Nov/2020 17:17:55] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:17:56 PM|127.0.0.1 - - [29/Nov/2020 17:17:56] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:17:56 PM|127.0.0.1 - - [29/Nov/2020 17:17:56] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:17:56 PM|127.0.0.1 - - [29/Nov/2020 17:17:56] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:17:56 PM|127.0.0.1 - - [29/Nov/2020 17:17:56] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:18:00 PM|127.0.0.1 - - [29/Nov/2020 17:18:00] "[37mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:19:01 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comandaBD.py', reloading
+INFO|werkzeug|29/11/2020 05:19:01 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:19:05 PM|127.0.0.1 - - [29/Nov/2020 17:19:05] "[32mPOST /comandas/Recebimento HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:19:05 PM|127.0.0.1 - - [29/Nov/2020 17:19:05] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:19:05 PM|127.0.0.1 - - [29/Nov/2020 17:19:05] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:19:05 PM|127.0.0.1 - - [29/Nov/2020 17:19:05] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:19:05 PM|127.0.0.1 - - [29/Nov/2020 17:19:05] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:19:06 PM|Login Efetuado com sucesso|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:19:06 PM|127.0.0.1 - - [29/Nov/2020 17:19:06] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:19:06 PM|127.0.0.1 - - [29/Nov/2020 17:19:06] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:19:06 PM|127.0.0.1 - - [29/Nov/2020 17:19:06] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:19:06 PM|127.0.0.1 - - [29/Nov/2020 17:19:06] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:19:06 PM|127.0.0.1 - - [29/Nov/2020 17:19:06] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:19:07 PM|127.0.0.1 - - [29/Nov/2020 17:19:07] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:19:07 PM|127.0.0.1 - - [29/Nov/2020 17:19:07] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:19:08 PM|127.0.0.1 - - [29/Nov/2020 17:19:08] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:19:08 PM|127.0.0.1 - - [29/Nov/2020 17:19:08] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:19:10 PM|127.0.0.1 - - [29/Nov/2020 17:19:10] "[37mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:22:08 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comandaBD.py', reloading
+INFO|werkzeug|29/11/2020 05:22:08 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:22:10 PM|127.0.0.1 - - [29/Nov/2020 17:22:10] "[32mPOST /comandas/Recebimento HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:22:10 PM|127.0.0.1 - - [29/Nov/2020 17:22:10] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:22:10 PM|127.0.0.1 - - [29/Nov/2020 17:22:10] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:22:10 PM|127.0.0.1 - - [29/Nov/2020 17:22:10] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:22:10 PM|127.0.0.1 - - [29/Nov/2020 17:22:10] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:22:11 PM|Login Efetuado com sucesso|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:22:11 PM|127.0.0.1 - - [29/Nov/2020 17:22:11] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:22:11 PM|127.0.0.1 - - [29/Nov/2020 17:22:11] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:22:11 PM|127.0.0.1 - - [29/Nov/2020 17:22:11] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:22:11 PM|127.0.0.1 - - [29/Nov/2020 17:22:11] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:22:11 PM|127.0.0.1 - - [29/Nov/2020 17:22:11] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:22:13 PM|127.0.0.1 - - [29/Nov/2020 17:22:13] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:22:13 PM|127.0.0.1 - - [29/Nov/2020 17:22:13] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:22:14 PM|127.0.0.1 - - [29/Nov/2020 17:22:14] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:22:14 PM|127.0.0.1 - - [29/Nov/2020 17:22:14] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:22:17 PM|127.0.0.1 - - [29/Nov/2020 17:22:17] "[37mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:23:37 PM|127.0.0.1 - - [29/Nov/2020 17:23:37] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:23:37 PM|127.0.0.1 - - [29/Nov/2020 17:23:37] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:23:37 PM|127.0.0.1 - - [29/Nov/2020 17:23:37] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:23:37 PM|127.0.0.1 - - [29/Nov/2020 17:23:37] "[37mGET /comandas/AbrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:23:37 PM|127.0.0.1 - - [29/Nov/2020 17:23:37] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 05:23:39 PM|Comanda Aberto com Sucesso!|Comanda:2|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:23:39 PM|127.0.0.1 - - [29/Nov/2020 17:23:39] "[37mPOST /comandas/abrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:23:40 PM|127.0.0.1 - - [29/Nov/2020 17:23:40] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:23:40 PM|127.0.0.1 - - [29/Nov/2020 17:23:40] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:23:41 PM|127.0.0.1 - - [29/Nov/2020 17:23:41] "[37mGET /comandas/AbrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:23:41 PM|127.0.0.1 - - [29/Nov/2020 17:23:41] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 05:23:43 PM|Comanda Aberto com Sucesso!|Comanda:222|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:23:43 PM|127.0.0.1 - - [29/Nov/2020 17:23:43] "[37mPOST /comandas/abrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:23:44 PM|127.0.0.1 - - [29/Nov/2020 17:23:44] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:23:44 PM|127.0.0.1 - - [29/Nov/2020 17:23:44] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:23:44 PM|127.0.0.1 - - [29/Nov/2020 17:23:44] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:26:07 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comandaBD.py', reloading
+INFO|werkzeug|29/11/2020 05:26:08 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:26:31 PM|127.0.0.1 - - [29/Nov/2020 17:26:31] "[32mGET /comandas/ListaComandas HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:26:31 PM|127.0.0.1 - - [29/Nov/2020 17:26:31] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:26:31 PM|127.0.0.1 - - [29/Nov/2020 17:26:31] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:26:31 PM|127.0.0.1 - - [29/Nov/2020 17:26:31] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:26:31 PM|127.0.0.1 - - [29/Nov/2020 17:26:31] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:26:32 PM|Login Efetuado com sucesso|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:26:32 PM|127.0.0.1 - - [29/Nov/2020 17:26:32] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:26:32 PM|127.0.0.1 - - [29/Nov/2020 17:26:32] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:26:32 PM|127.0.0.1 - - [29/Nov/2020 17:26:32] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:26:32 PM|127.0.0.1 - - [29/Nov/2020 17:26:32] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:26:32 PM|127.0.0.1 - - [29/Nov/2020 17:26:32] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:26:32 PM|127.0.0.1 - - [29/Nov/2020 17:26:32] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:26:33 PM|127.0.0.1 - - [29/Nov/2020 17:26:33] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:26:33 PM|127.0.0.1 - - [29/Nov/2020 17:26:33] "[37mGET /comandas/AbrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:26:33 PM|127.0.0.1 - - [29/Nov/2020 17:26:33] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 05:26:35 PM|Comanda Aberto com Sucesso!|Comanda:111|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:26:35 PM|127.0.0.1 - - [29/Nov/2020 17:26:35] "[37mPOST /comandas/abrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:26:35 PM|127.0.0.1 - - [29/Nov/2020 17:26:35] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:26:36 PM|127.0.0.1 - - [29/Nov/2020 17:26:36] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:26:36 PM|127.0.0.1 - - [29/Nov/2020 17:26:36] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:26:37 PM|127.0.0.1 - - [29/Nov/2020 17:26:37] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:26:37 PM|127.0.0.1 - - [29/Nov/2020 17:26:37] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:26:37 PM|127.0.0.1 - - [29/Nov/2020 17:26:37] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:26:38 PM|127.0.0.1 - - [29/Nov/2020 17:26:38] "[37mPOST /dashboard/AdicionarProdutos HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:26:38 PM|127.0.0.1 - - [29/Nov/2020 17:26:38] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:26:39 PM|127.0.0.1 - - [29/Nov/2020 17:26:39] "[37mPOST /dashboard/buscaProduto HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:26:41 PM|Produto adicionado com sucesso!|ID Produto:11|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:26:41 PM|127.0.0.1 - - [29/Nov/2020 17:26:41] "[37mPOST /dashboard/addProdutoComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:26:42 PM|127.0.0.1 - - [29/Nov/2020 17:26:42] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:26:42 PM|127.0.0.1 - - [29/Nov/2020 17:26:42] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:26:43 PM|127.0.0.1 - - [29/Nov/2020 17:26:43] "[37mPOST /dashboard/AdicionarCliente HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:26:43 PM|127.0.0.1 - - [29/Nov/2020 17:26:43] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:26:43 PM|127.0.0.1 - - [29/Nov/2020 17:26:43] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 05:26:45 PM|Cliente vinculado com Sucesso!|ID Comanda:95|ID Cliente:29|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:26:45 PM|127.0.0.1 - - [29/Nov/2020 17:26:45] "[37mPOST /dashboard/addClienteComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:26:46 PM|127.0.0.1 - - [29/Nov/2020 17:26:46] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:26:46 PM|127.0.0.1 - - [29/Nov/2020 17:26:46] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:26:46 PM|127.0.0.1 - - [29/Nov/2020 17:26:46] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:26:46 PM|127.0.0.1 - - [29/Nov/2020 17:26:46] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:26:46 PM|127.0.0.1 - - [29/Nov/2020 17:26:46] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:26:49 PM|127.0.0.1 - - [29/Nov/2020 17:26:49] "[37mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:28:11 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comandaBD.py', reloading
+INFO|werkzeug|29/11/2020 05:28:11 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:28:43 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|29/11/2020 05:28:43 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:28:46 PM|127.0.0.1 - - [29/Nov/2020 17:28:46] "[32mPOST /comandas/Recebimento HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:28:46 PM|127.0.0.1 - - [29/Nov/2020 17:28:46] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:28:46 PM|127.0.0.1 - - [29/Nov/2020 17:28:46] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:28:46 PM|127.0.0.1 - - [29/Nov/2020 17:28:46] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:28:47 PM|127.0.0.1 - - [29/Nov/2020 17:28:47] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:28:48 PM|Login Efetuado com sucesso|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:28:48 PM|127.0.0.1 - - [29/Nov/2020 17:28:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:28:48 PM|127.0.0.1 - - [29/Nov/2020 17:28:48] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:28:48 PM|127.0.0.1 - - [29/Nov/2020 17:28:48] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:28:48 PM|127.0.0.1 - - [29/Nov/2020 17:28:48] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:28:48 PM|127.0.0.1 - - [29/Nov/2020 17:28:48] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:28:48 PM|127.0.0.1 - - [29/Nov/2020 17:28:48] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:28:48 PM|127.0.0.1 - - [29/Nov/2020 17:28:48] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:28:49 PM|127.0.0.1 - - [29/Nov/2020 17:28:49] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:28:49 PM|127.0.0.1 - - [29/Nov/2020 17:28:49] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:28:52 PM|127.0.0.1 - - [29/Nov/2020 17:28:52] "[37mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:30:08 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comandaBD.py', reloading
+INFO|werkzeug|29/11/2020 05:30:08 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:30:27 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comandaBD.py', reloading
+INFO|werkzeug|29/11/2020 05:30:27 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:30:31 PM|127.0.0.1 - - [29/Nov/2020 17:30:31] "[32mPOST /comandas/Recebimento HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:30:32 PM|127.0.0.1 - - [29/Nov/2020 17:30:32] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:30:32 PM|127.0.0.1 - - [29/Nov/2020 17:30:32] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:30:32 PM|127.0.0.1 - - [29/Nov/2020 17:30:32] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:30:32 PM|127.0.0.1 - - [29/Nov/2020 17:30:32] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:30:32 PM|Login Efetuado com sucesso|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:30:32 PM|127.0.0.1 - - [29/Nov/2020 17:30:32] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:30:32 PM|127.0.0.1 - - [29/Nov/2020 17:30:32] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:30:33 PM|127.0.0.1 - - [29/Nov/2020 17:30:33] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:30:33 PM|127.0.0.1 - - [29/Nov/2020 17:30:33] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:30:33 PM|127.0.0.1 - - [29/Nov/2020 17:30:33] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:30:34 PM|127.0.0.1 - - [29/Nov/2020 17:30:34] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:30:34 PM|127.0.0.1 - - [29/Nov/2020 17:30:34] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:30:34 PM|127.0.0.1 - - [29/Nov/2020 17:30:34] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:30:34 PM|127.0.0.1 - - [29/Nov/2020 17:30:34] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:30:37 PM|127.0.0.1 - - [29/Nov/2020 17:30:37] "[37mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:30:40 PM|127.0.0.1 - - [29/Nov/2020 17:30:40] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:30:40 PM|127.0.0.1 - - [29/Nov/2020 17:30:40] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:30:40 PM|127.0.0.1 - - [29/Nov/2020 17:30:40] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:31:52 PM|127.0.0.1 - - [29/Nov/2020 17:31:52] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:31:52 PM|127.0.0.1 - - [29/Nov/2020 17:31:52] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:31:52 PM|127.0.0.1 - - [29/Nov/2020 17:31:52] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:31:52 PM|127.0.0.1 - - [29/Nov/2020 17:31:52] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:31:54 PM|127.0.0.1 - - [29/Nov/2020 17:31:54] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:31:54 PM|127.0.0.1 - - [29/Nov/2020 17:31:54] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:31:55 PM|127.0.0.1 - - [29/Nov/2020 17:31:55] "[37mGET /comandas/AbrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:31:55 PM|127.0.0.1 - - [29/Nov/2020 17:31:55] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 05:31:58 PM|Comanda Aberto com Sucesso!|Comanda:666|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:31:58 PM|127.0.0.1 - - [29/Nov/2020 17:31:58] "[37mPOST /comandas/abrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:31:59 PM|127.0.0.1 - - [29/Nov/2020 17:31:59] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:31:59 PM|127.0.0.1 - - [29/Nov/2020 17:31:59] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:31:59 PM|127.0.0.1 - - [29/Nov/2020 17:31:59] "[37mGET /comandas/AbrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:31:59 PM|127.0.0.1 - - [29/Nov/2020 17:31:59] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 05:32:04 PM|Comanda Aberto com Sucesso!|Comanda:777|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:32:04 PM|127.0.0.1 - - [29/Nov/2020 17:32:04] "[37mPOST /comandas/abrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:05 PM|127.0.0.1 - - [29/Nov/2020 17:32:05] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:05 PM|127.0.0.1 - - [29/Nov/2020 17:32:05] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:05 PM|127.0.0.1 - - [29/Nov/2020 17:32:05] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:32:19 PM|127.0.0.1 - - [29/Nov/2020 17:32:19] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:19 PM|127.0.0.1 - - [29/Nov/2020 17:32:19] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:19 PM|127.0.0.1 - - [29/Nov/2020 17:32:19] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:32:19 PM|127.0.0.1 - - [29/Nov/2020 17:32:19] "[37mPOST /dashboard/AdicionarProdutos HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:19 PM|127.0.0.1 - - [29/Nov/2020 17:32:19] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:32:21 PM|127.0.0.1 - - [29/Nov/2020 17:32:21] "[37mPOST /dashboard/buscaProduto HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:32:27 PM|Produto adicionado com sucesso!|ID Produto:14|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:32:27 PM|127.0.0.1 - - [29/Nov/2020 17:32:27] "[37mPOST /dashboard/addProdutoComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:27 PM|127.0.0.1 - - [29/Nov/2020 17:32:27] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:27 PM|127.0.0.1 - - [29/Nov/2020 17:32:27] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:27 PM|127.0.0.1 - - [29/Nov/2020 17:32:27] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:32:27 PM|127.0.0.1 - - [29/Nov/2020 17:32:27] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:32:28 PM|127.0.0.1 - - [29/Nov/2020 17:32:28] "[37mPOST /dashboard/AdicionarCliente HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:28 PM|127.0.0.1 - - [29/Nov/2020 17:32:28] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 05:32:30 PM|Cliente vinculado com Sucesso!|ID Comanda:96|ID Cliente:28|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:32:30 PM|127.0.0.1 - - [29/Nov/2020 17:32:30] "[37mPOST /dashboard/addClienteComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:31 PM|127.0.0.1 - - [29/Nov/2020 17:32:31] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:31 PM|127.0.0.1 - - [29/Nov/2020 17:32:31] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:32:32 PM|127.0.0.1 - - [29/Nov/2020 17:32:32] "[37mPOST /dashboard/AdicionarProdutos HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:32 PM|127.0.0.1 - - [29/Nov/2020 17:32:32] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:32:32 PM|127.0.0.1 - - [29/Nov/2020 17:32:32] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:32:33 PM|127.0.0.1 - - [29/Nov/2020 17:32:33] "[37mPOST /dashboard/buscaProduto HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:32:35 PM|Produto adicionado com sucesso!|ID Produto:4|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:32:35 PM|127.0.0.1 - - [29/Nov/2020 17:32:35] "[37mPOST /dashboard/addProdutoComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:36 PM|127.0.0.1 - - [29/Nov/2020 17:32:36] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:36 PM|127.0.0.1 - - [29/Nov/2020 17:32:36] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:36 PM|127.0.0.1 - - [29/Nov/2020 17:32:36] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:32:37 PM|127.0.0.1 - - [29/Nov/2020 17:32:37] "[37mPOST /dashboard/AdicionarCliente HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:37 PM|127.0.0.1 - - [29/Nov/2020 17:32:37] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+ERROR|root|29/11/2020 05:32:38 PM|Erro ao vincular Cliente!|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:32:38 PM|127.0.0.1 - - [29/Nov/2020 17:32:38] "[37mPOST /dashboard/addClienteComanda HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:32:41 PM|Cliente vinculado com Sucesso!|ID Comanda:97|ID Cliente:30|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:32:41 PM|127.0.0.1 - - [29/Nov/2020 17:32:41] "[37mPOST /dashboard/addClienteComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:42 PM|127.0.0.1 - - [29/Nov/2020 17:32:42] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:42 PM|127.0.0.1 - - [29/Nov/2020 17:32:42] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:32:42 PM|127.0.0.1 - - [29/Nov/2020 17:32:42] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:32:43 PM|127.0.0.1 - - [29/Nov/2020 17:32:43] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:43 PM|127.0.0.1 - - [29/Nov/2020 17:32:43] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:32:43 PM|127.0.0.1 - - [29/Nov/2020 17:32:43] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:43 PM|127.0.0.1 - - [29/Nov/2020 17:32:43] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:32:47 PM|127.0.0.1 - - [29/Nov/2020 17:32:47] "[37mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:48 PM|127.0.0.1 - - [29/Nov/2020 17:32:48] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:48 PM|127.0.0.1 - - [29/Nov/2020 17:32:48] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:32:48 PM|127.0.0.1 - - [29/Nov/2020 17:32:48] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:33:59 PM|127.0.0.1 - - [29/Nov/2020 17:33:59] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:33:59 PM|127.0.0.1 - - [29/Nov/2020 17:33:59] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:33:59 PM|127.0.0.1 - - [29/Nov/2020 17:33:59] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:33:59 PM|127.0.0.1 - - [29/Nov/2020 17:33:59] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:33:59 PM|127.0.0.1 - - [29/Nov/2020 17:33:59] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:00 PM|127.0.0.1 - - [29/Nov/2020 17:34:00] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:00 PM|127.0.0.1 - - [29/Nov/2020 17:34:00] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:34:00 PM|127.0.0.1 - - [29/Nov/2020 17:34:00] "[37mGET /comandas/AbrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:01 PM|127.0.0.1 - - [29/Nov/2020 17:34:01] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 05:34:03 PM|Comanda Aberto com Sucesso!|Comanda:666|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:34:03 PM|127.0.0.1 - - [29/Nov/2020 17:34:03] "[37mPOST /comandas/abrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:04 PM|127.0.0.1 - - [29/Nov/2020 17:34:04] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:04 PM|127.0.0.1 - - [29/Nov/2020 17:34:04] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:34:05 PM|127.0.0.1 - - [29/Nov/2020 17:34:05] "[37mGET /comandas/AbrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:05 PM|127.0.0.1 - - [29/Nov/2020 17:34:05] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 05:34:08 PM|Comanda Aberto com Sucesso!|Comanda:777|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:34:08 PM|127.0.0.1 - - [29/Nov/2020 17:34:08] "[37mPOST /comandas/abrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:08 PM|127.0.0.1 - - [29/Nov/2020 17:34:08] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:08 PM|127.0.0.1 - - [29/Nov/2020 17:34:08] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:08 PM|127.0.0.1 - - [29/Nov/2020 17:34:08] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:34:08 PM|127.0.0.1 - - [29/Nov/2020 17:34:08] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:34:11 PM|127.0.0.1 - - [29/Nov/2020 17:34:11] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:11 PM|127.0.0.1 - - [29/Nov/2020 17:34:11] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:34:11 PM|127.0.0.1 - - [29/Nov/2020 17:34:11] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:11 PM|127.0.0.1 - - [29/Nov/2020 17:34:11] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:34:12 PM|127.0.0.1 - - [29/Nov/2020 17:34:12] "[37mPOST /dashboard/AdicionarProdutos HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:12 PM|127.0.0.1 - - [29/Nov/2020 17:34:12] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:34:14 PM|127.0.0.1 - - [29/Nov/2020 17:34:14] "[37mPOST /dashboard/buscaProduto HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:34:16 PM|Produto adicionado com sucesso!|ID Produto:14|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:34:16 PM|127.0.0.1 - - [29/Nov/2020 17:34:16] "[37mPOST /dashboard/addProdutoComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:17 PM|127.0.0.1 - - [29/Nov/2020 17:34:17] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:17 PM|127.0.0.1 - - [29/Nov/2020 17:34:17] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:34:17 PM|127.0.0.1 - - [29/Nov/2020 17:34:17] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:17 PM|127.0.0.1 - - [29/Nov/2020 17:34:17] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:34:19 PM|127.0.0.1 - - [29/Nov/2020 17:34:19] "[37mPOST /dashboard/listaProdComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:19 PM|127.0.0.1 - - [29/Nov/2020 17:34:19] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:34:19 PM|127.0.0.1 - - [29/Nov/2020 17:34:19] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:34:21 PM|127.0.0.1 - - [29/Nov/2020 17:34:21] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:21 PM|127.0.0.1 - - [29/Nov/2020 17:34:21] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:34:21 PM|127.0.0.1 - - [29/Nov/2020 17:34:21] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:34:21 PM|127.0.0.1 - - [29/Nov/2020 17:34:21] "[37mPOST /dashboard/AdicionarCliente HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:21 PM|127.0.0.1 - - [29/Nov/2020 17:34:21] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 05:34:23 PM|Cliente vinculado com Sucesso!|ID Comanda:98|ID Cliente:30|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:34:23 PM|127.0.0.1 - - [29/Nov/2020 17:34:23] "[37mPOST /dashboard/addClienteComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:24 PM|127.0.0.1 - - [29/Nov/2020 17:34:24] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:24 PM|127.0.0.1 - - [29/Nov/2020 17:34:24] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:24 PM|127.0.0.1 - - [29/Nov/2020 17:34:24] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:34:25 PM|127.0.0.1 - - [29/Nov/2020 17:34:25] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:25 PM|127.0.0.1 - - [29/Nov/2020 17:34:25] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:34:28 PM|127.0.0.1 - - [29/Nov/2020 17:34:28] "[37mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:29 PM|127.0.0.1 - - [29/Nov/2020 17:34:29] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:34:29 PM|127.0.0.1 - - [29/Nov/2020 17:34:29] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:35:44 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|29/11/2020 05:35:44 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:36:08 PM|127.0.0.1 - - [29/Nov/2020 17:36:08] "[32mGET /comandas/ListaComandas HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:36:08 PM|127.0.0.1 - - [29/Nov/2020 17:36:08] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:36:08 PM|127.0.0.1 - - [29/Nov/2020 17:36:08] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:36:08 PM|127.0.0.1 - - [29/Nov/2020 17:36:08] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:36:09 PM|Login Efetuado com sucesso|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:36:09 PM|127.0.0.1 - - [29/Nov/2020 17:36:09] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:36:09 PM|127.0.0.1 - - [29/Nov/2020 17:36:09] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:36:09 PM|127.0.0.1 - - [29/Nov/2020 17:36:09] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:36:09 PM|127.0.0.1 - - [29/Nov/2020 17:36:09] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:36:09 PM|127.0.0.1 - - [29/Nov/2020 17:36:09] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:36:14 PM|127.0.0.1 - - [29/Nov/2020 17:36:14] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:36:14 PM|127.0.0.1 - - [29/Nov/2020 17:36:14] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:36:15 PM|127.0.0.1 - - [29/Nov/2020 17:36:15] "[37mPOST /dashboard/AdicionarProdutos HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:36:15 PM|127.0.0.1 - - [29/Nov/2020 17:36:15] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:36:16 PM|127.0.0.1 - - [29/Nov/2020 17:36:16] "[37mPOST /dashboard/buscaProduto HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:36:19 PM|Produto adicionado com sucesso!|ID Produto:14|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:36:19 PM|127.0.0.1 - - [29/Nov/2020 17:36:19] "[37mPOST /dashboard/addProdutoComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:36:20 PM|127.0.0.1 - - [29/Nov/2020 17:36:20] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:36:20 PM|127.0.0.1 - - [29/Nov/2020 17:36:20] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:36:20 PM|127.0.0.1 - - [29/Nov/2020 17:36:20] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:36:20 PM|127.0.0.1 - - [29/Nov/2020 17:36:20] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:36:20 PM|127.0.0.1 - - [29/Nov/2020 17:36:20] "[37mPOST /dashboard/AdicionarCliente HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:36:20 PM|127.0.0.1 - - [29/Nov/2020 17:36:20] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 05:36:22 PM|Cliente vinculado com Sucesso!|ID Comanda:99|ID Cliente:28|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:36:22 PM|127.0.0.1 - - [29/Nov/2020 17:36:22] "[37mPOST /dashboard/addClienteComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:36:22 PM|127.0.0.1 - - [29/Nov/2020 17:36:22] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:36:22 PM|127.0.0.1 - - [29/Nov/2020 17:36:22] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:36:22 PM|127.0.0.1 - - [29/Nov/2020 17:36:22] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:36:24 PM|127.0.0.1 - - [29/Nov/2020 17:36:24] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:36:24 PM|127.0.0.1 - - [29/Nov/2020 17:36:24] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:36:29 PM|127.0.0.1 - - [29/Nov/2020 17:36:29] "[37mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:36:30 PM|127.0.0.1 - - [29/Nov/2020 17:36:30] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:36:30 PM|127.0.0.1 - - [29/Nov/2020 17:36:30] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:36:30 PM|127.0.0.1 - - [29/Nov/2020 17:36:30] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:36:30 PM|127.0.0.1 - - [29/Nov/2020 17:36:30] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:36:33 PM|127.0.0.1 - - [29/Nov/2020 17:36:33] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:36:33 PM|127.0.0.1 - - [29/Nov/2020 17:36:33] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:36:59 PM|127.0.0.1 - - [29/Nov/2020 17:36:59] "[37mGET /comandas/formRecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:36:59 PM|127.0.0.1 - - [29/Nov/2020 17:36:59] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:36:59 PM|127.0.0.1 - - [29/Nov/2020 17:36:59] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:36:59 PM|127.0.0.1 - - [29/Nov/2020 17:36:59] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:37:00 PM|127.0.0.1 - - [29/Nov/2020 17:37:00] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:37:00 PM|127.0.0.1 - - [29/Nov/2020 17:37:00] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:37:02 PM|127.0.0.1 - - [29/Nov/2020 17:37:02] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:37:02 PM|127.0.0.1 - - [29/Nov/2020 17:37:02] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:37:06 PM|127.0.0.1 - - [29/Nov/2020 17:37:06] "[37mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:37:07 PM|127.0.0.1 - - [29/Nov/2020 17:37:07] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:37:07 PM|127.0.0.1 - - [29/Nov/2020 17:37:07] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:37:07 PM|127.0.0.1 - - [29/Nov/2020 17:37:07] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:37:07 PM|127.0.0.1 - - [29/Nov/2020 17:37:07] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:37:10 PM|127.0.0.1 - - [29/Nov/2020 17:37:10] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:37:10 PM|127.0.0.1 - - [29/Nov/2020 17:37:10] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:40:57 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|29/11/2020 05:40:58 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:42:25 PM|127.0.0.1 - - [29/Nov/2020 17:42:25] "[32mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:42:25 PM|127.0.0.1 - - [29/Nov/2020 17:42:25] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:42:25 PM|127.0.0.1 - - [29/Nov/2020 17:42:25] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:42:25 PM|127.0.0.1 - - [29/Nov/2020 17:42:25] "[37mGET /static/bootstrap-4.5.2-dist/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:42:25 PM|127.0.0.1 - - [29/Nov/2020 17:42:25] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:42:25 PM|127.0.0.1 - - [29/Nov/2020 17:42:25] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:46:01 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|29/11/2020 05:46:02 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:46:48 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|29/11/2020 05:46:48 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:48:34 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comandaBD.py', reloading
+INFO|werkzeug|29/11/2020 05:48:34 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:48:39 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|29/11/2020 05:48:39 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:48:44 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|29/11/2020 05:48:44 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:48:55 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|29/11/2020 05:48:55 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:51:51 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|29/11/2020 05:51:51 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 05:52:08 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_comanda\\comanda.py', reloading
+INFO|werkzeug|29/11/2020 05:52:08 PM| * Restarting with stat
+INFO|root|29/11/2020 05:52:16 PM|Login Efetuado com sucesso|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:52:16 PM|127.0.0.1 - - [29/Nov/2020 17:52:16] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:52:16 PM|127.0.0.1 - - [29/Nov/2020 17:52:16] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:52:16 PM|127.0.0.1 - - [29/Nov/2020 17:52:16] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:52:16 PM|127.0.0.1 - - [29/Nov/2020 17:52:16] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:52:16 PM|127.0.0.1 - - [29/Nov/2020 17:52:16] "[37mGET /static/js/jquery-3.5.1.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:52:16 PM|127.0.0.1 - - [29/Nov/2020 17:52:16] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:52:16 PM|127.0.0.1 - - [29/Nov/2020 17:52:16] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:52:16 PM|127.0.0.1 - - [29/Nov/2020 17:52:16] "[37mGET /static/sweetalert/sweetalert.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:52:16 PM|127.0.0.1 - - [29/Nov/2020 17:52:16] "[37mGET /static/images/modelo/logoPastry.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:52:16 PM|127.0.0.1 - - [29/Nov/2020 17:52:16] "[37mGET /static/css/modelo/sidebar.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:52:16 PM|127.0.0.1 - - [29/Nov/2020 17:52:16] "[37mGET /static/css/modelo/header.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:52:16 PM|127.0.0.1 - - [29/Nov/2020 17:52:16] "[37mGET /static/css/modelo/main.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:52:16 PM|127.0.0.1 - - [29/Nov/2020 17:52:16] "[37mGET /static/images/modelo/user.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:52:16 PM|127.0.0.1 - - [29/Nov/2020 17:52:16] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:52:47 PM|127.0.0.1 - - [29/Nov/2020 17:52:47] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:52:47 PM|127.0.0.1 - - [29/Nov/2020 17:52:47] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:52:47 PM|127.0.0.1 - - [29/Nov/2020 17:52:47] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:52:47 PM|127.0.0.1 - - [29/Nov/2020 17:52:47] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:52:47 PM|127.0.0.1 - - [29/Nov/2020 17:52:47] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:52:48 PM|127.0.0.1 - - [29/Nov/2020 17:52:48] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+ERROR|root|29/11/2020 05:52:50 PM|Erro ao tentar excluir comanda!|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:52:50 PM|127.0.0.1 - - [29/Nov/2020 17:52:50] "[37mPOST /comandas/deleteComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:53:05 PM|127.0.0.1 - - [29/Nov/2020 17:53:05] "[37mGET /comandas/AbrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:53:05 PM|127.0.0.1 - - [29/Nov/2020 17:53:05] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:53:05 PM|127.0.0.1 - - [29/Nov/2020 17:53:05] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:53:05 PM|127.0.0.1 - - [29/Nov/2020 17:53:05] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:53:05 PM|127.0.0.1 - - [29/Nov/2020 17:53:05] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:53:06 PM|127.0.0.1 - - [29/Nov/2020 17:53:06] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 05:53:07 PM|Comanda Aberto com Sucesso!|Comanda:1|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:53:07 PM|127.0.0.1 - - [29/Nov/2020 17:53:07] "[37mPOST /comandas/abrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:53:08 PM|127.0.0.1 - - [29/Nov/2020 17:53:08] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:53:08 PM|127.0.0.1 - - [29/Nov/2020 17:53:08] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:53:08 PM|127.0.0.1 - - [29/Nov/2020 17:53:08] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:53:22 PM|127.0.0.1 - - [29/Nov/2020 17:53:22] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:53:22 PM|127.0.0.1 - - [29/Nov/2020 17:53:22] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:53:22 PM|127.0.0.1 - - [29/Nov/2020 17:53:22] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:53:24 PM|127.0.0.1 - - [29/Nov/2020 17:53:24] "[37mPOST /dashboard/AdicionarProdutos HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:53:24 PM|127.0.0.1 - - [29/Nov/2020 17:53:24] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:53:25 PM|127.0.0.1 - - [29/Nov/2020 17:53:25] "[37mPOST /dashboard/buscaProduto HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:53:28 PM|Produto adicionado com sucesso!|ID Produto:4|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:53:28 PM|127.0.0.1 - - [29/Nov/2020 17:53:28] "[37mPOST /dashboard/addProdutoComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:53:28 PM|127.0.0.1 - - [29/Nov/2020 17:53:28] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:53:28 PM|127.0.0.1 - - [29/Nov/2020 17:53:28] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:53:30 PM|127.0.0.1 - - [29/Nov/2020 17:53:30] "[37mPOST /dashboard/AdicionarCliente HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:53:30 PM|127.0.0.1 - - [29/Nov/2020 17:53:30] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 05:53:32 PM|Cliente vinculado com Sucesso!|ID Comanda:100|ID Cliente:23|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:53:32 PM|127.0.0.1 - - [29/Nov/2020 17:53:32] "[37mPOST /dashboard/addClienteComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:53:33 PM|127.0.0.1 - - [29/Nov/2020 17:53:33] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:53:33 PM|127.0.0.1 - - [29/Nov/2020 17:53:33] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:53:33 PM|127.0.0.1 - - [29/Nov/2020 17:53:33] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:53:33 PM|127.0.0.1 - - [29/Nov/2020 17:53:33] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:53:33 PM|127.0.0.1 - - [29/Nov/2020 17:53:33] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:53:33 PM|127.0.0.1 - - [29/Nov/2020 17:53:33] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:53:38 PM|127.0.0.1 - - [29/Nov/2020 17:53:38] "[37mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:53:39 PM|127.0.0.1 - - [29/Nov/2020 17:53:39] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:53:39 PM|127.0.0.1 - - [29/Nov/2020 17:53:39] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:53:39 PM|127.0.0.1 - - [29/Nov/2020 17:53:39] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:53:57 PM|127.0.0.1 - - [29/Nov/2020 17:53:57] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:53:57 PM|127.0.0.1 - - [29/Nov/2020 17:53:57] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:53:57 PM|127.0.0.1 - - [29/Nov/2020 17:53:57] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:53:57 PM|127.0.0.1 - - [29/Nov/2020 17:53:57] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:54:12 PM|127.0.0.1 - - [29/Nov/2020 17:54:12] "[37mGET /comandas/AbrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:54:12 PM|127.0.0.1 - - [29/Nov/2020 17:54:12] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:54:12 PM|127.0.0.1 - - [29/Nov/2020 17:54:12] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 05:54:15 PM|Comanda Aberto com Sucesso!|Comanda:222|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:54:15 PM|127.0.0.1 - - [29/Nov/2020 17:54:15] "[37mPOST /comandas/abrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:54:15 PM|127.0.0.1 - - [29/Nov/2020 17:54:15] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:54:15 PM|127.0.0.1 - - [29/Nov/2020 17:54:15] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:54:17 PM|127.0.0.1 - - [29/Nov/2020 17:54:17] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:54:17 PM|127.0.0.1 - - [29/Nov/2020 17:54:17] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:54:18 PM|127.0.0.1 - - [29/Nov/2020 17:54:18] "[37mPOST /dashboard/AdicionarProdutos HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:54:18 PM|127.0.0.1 - - [29/Nov/2020 17:54:18] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:54:18 PM|127.0.0.1 - - [29/Nov/2020 17:54:18] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:54:19 PM|127.0.0.1 - - [29/Nov/2020 17:54:19] "[37mPOST /dashboard/buscaProduto HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:54:21 PM|Produto adicionado com sucesso!|ID Produto:11|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:54:21 PM|127.0.0.1 - - [29/Nov/2020 17:54:21] "[37mPOST /dashboard/addProdutoComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:54:22 PM|127.0.0.1 - - [29/Nov/2020 17:54:22] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:54:22 PM|127.0.0.1 - - [29/Nov/2020 17:54:22] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:54:22 PM|127.0.0.1 - - [29/Nov/2020 17:54:22] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:54:22 PM|127.0.0.1 - - [29/Nov/2020 17:54:22] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:54:23 PM|127.0.0.1 - - [29/Nov/2020 17:54:23] "[37mPOST /dashboard/AdicionarCliente HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:54:23 PM|127.0.0.1 - - [29/Nov/2020 17:54:23] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|root|29/11/2020 05:54:26 PM|Cliente vinculado com Sucesso!|ID Comanda:101|ID Cliente:30|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:54:26 PM|127.0.0.1 - - [29/Nov/2020 17:54:26] "[37mPOST /dashboard/addClienteComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:54:26 PM|127.0.0.1 - - [29/Nov/2020 17:54:26] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:54:26 PM|127.0.0.1 - - [29/Nov/2020 17:54:26] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:54:27 PM|127.0.0.1 - - [29/Nov/2020 17:54:27] "[37mPOST /comandas/Recebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:54:27 PM|127.0.0.1 - - [29/Nov/2020 17:54:27] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:54:27 PM|127.0.0.1 - - [29/Nov/2020 17:54:27] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:54:30 PM|127.0.0.1 - - [29/Nov/2020 17:54:30] "[37mPOST /comandas/finalizarRecebimento HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:54:31 PM|127.0.0.1 - - [29/Nov/2020 17:54:31] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:54:31 PM|127.0.0.1 - - [29/Nov/2020 17:54:31] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:54:31 PM|127.0.0.1 - - [29/Nov/2020 17:54:31] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:54:31 PM|127.0.0.1 - - [29/Nov/2020 17:54:31] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:57:03 PM|127.0.0.1 - - [29/Nov/2020 17:57:03] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:03 PM|127.0.0.1 - - [29/Nov/2020 17:57:03] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:03 PM|127.0.0.1 - - [29/Nov/2020 17:57:03] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:57:03 PM|127.0.0.1 - - [29/Nov/2020 17:57:03] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:05 PM|127.0.0.1 - - [29/Nov/2020 17:57:05] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:05 PM|127.0.0.1 - - [29/Nov/2020 17:57:05] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:57:05 PM|127.0.0.1 - - [29/Nov/2020 17:57:05] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:57:05 PM|127.0.0.1 - - [29/Nov/2020 17:57:05] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:57:06 PM|Logout efetuado|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:57:06 PM|127.0.0.1 - - [29/Nov/2020 17:57:06] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:57:06 PM|127.0.0.1 - - [29/Nov/2020 17:57:06] "[37mGET /?falhaSessao=2 HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:06 PM|127.0.0.1 - - [29/Nov/2020 17:57:06] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:57:06 PM|127.0.0.1 - - [29/Nov/2020 17:57:06] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:57:08 PM|Login Efetuado com sucesso|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:57:08 PM|127.0.0.1 - - [29/Nov/2020 17:57:08] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:57:08 PM|127.0.0.1 - - [29/Nov/2020 17:57:08] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:08 PM|127.0.0.1 - - [29/Nov/2020 17:57:08] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:57:09 PM|127.0.0.1 - - [29/Nov/2020 17:57:09] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:09 PM|127.0.0.1 - - [29/Nov/2020 17:57:09] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:57:16 PM|127.0.0.1 - - [29/Nov/2020 17:57:16] "[37mGET /clientes/listaClientes HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:16 PM|127.0.0.1 - - [29/Nov/2020 17:57:16] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:16 PM|127.0.0.1 - - [29/Nov/2020 17:57:16] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:57:18 PM|127.0.0.1 - - [29/Nov/2020 17:57:18] "[37mGET /comandas/formRecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:18 PM|127.0.0.1 - - [29/Nov/2020 17:57:18] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:57:20 PM|127.0.0.1 - - [29/Nov/2020 17:57:20] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:20 PM|127.0.0.1 - - [29/Nov/2020 17:57:20] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:57:21 PM|127.0.0.1 - - [29/Nov/2020 17:57:21] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:21 PM|127.0.0.1 - - [29/Nov/2020 17:57:21] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:57:23 PM|127.0.0.1 - - [29/Nov/2020 17:57:23] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:23 PM|127.0.0.1 - - [29/Nov/2020 17:57:23] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:57:28 PM|127.0.0.1 - - [29/Nov/2020 17:57:28] "[35m[1mPOST /comandas/RecebimentoFiadosAVista HTTP/1.1[0m" 500 -
+INFO|werkzeug|29/11/2020 05:57:28 PM|127.0.0.1 - - [29/Nov/2020 17:57:28] "[37mGET /comandas/RecebimentoFiadosAVista?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:28 PM|127.0.0.1 - - [29/Nov/2020 17:57:28] "[37mGET /comandas/RecebimentoFiadosAVista?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:28 PM|127.0.0.1 - - [29/Nov/2020 17:57:28] "[37mGET /comandas/RecebimentoFiadosAVista?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:28 PM|127.0.0.1 - - [29/Nov/2020 17:57:28] "[37mGET /comandas/RecebimentoFiadosAVista?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:28 PM|127.0.0.1 - - [29/Nov/2020 17:57:28] "[37mGET /comandas/RecebimentoFiadosAVista?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:28 PM|127.0.0.1 - - [29/Nov/2020 17:57:28] "[37mGET /comandas/RecebimentoFiadosAVista?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:56 PM|127.0.0.1 - - [29/Nov/2020 17:57:56] "[37mPOST /comandas/RecebimentoFiadosAVista HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:56 PM|127.0.0.1 - - [29/Nov/2020 17:57:56] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:56 PM|127.0.0.1 - - [29/Nov/2020 17:57:56] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:56 PM|127.0.0.1 - - [29/Nov/2020 17:57:56] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:56 PM|127.0.0.1 - - [29/Nov/2020 17:57:56] "[37mGET /static/js/jquery-3.5.1.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:57 PM|127.0.0.1 - - [29/Nov/2020 17:57:57] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:57:57 PM|127.0.0.1 - - [29/Nov/2020 17:57:57] "[37mGET /static/bootstrap-4.5.2-dist/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:57 PM|127.0.0.1 - - [29/Nov/2020 17:57:57] "[37mGET /static/sweetalert/sweetalert.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:57 PM|127.0.0.1 - - [29/Nov/2020 17:57:57] "[37mGET /static/css/modelo/sidebar.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:57 PM|127.0.0.1 - - [29/Nov/2020 17:57:57] "[37mGET /static/css/modelo/header.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:57 PM|127.0.0.1 - - [29/Nov/2020 17:57:57] "[37mGET /static/css/modelo/main.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:57 PM|127.0.0.1 - - [29/Nov/2020 17:57:57] "[37mGET /static/images/modelo/logoPastry.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:57 PM|127.0.0.1 - - [29/Nov/2020 17:57:57] "[37mGET /static/images/modelo/user.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:57:57 PM|127.0.0.1 - - [29/Nov/2020 17:57:57] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:57:57 PM|127.0.0.1 - - [29/Nov/2020 17:57:57] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:58:02 PM|127.0.0.1 - - [29/Nov/2020 17:58:02] "[37mGET / HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:58:02 PM|127.0.0.1 - - [29/Nov/2020 17:58:02] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:58:02 PM|127.0.0.1 - - [29/Nov/2020 17:58:02] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:58:02 PM|127.0.0.1 - - [29/Nov/2020 17:58:02] "[37mGET /static/bootstrap-4.5.2-dist/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:58:02 PM|127.0.0.1 - - [29/Nov/2020 17:58:02] "[37mGET / HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:58:02 PM|127.0.0.1 - - [29/Nov/2020 17:58:02] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 05:58:03 PM|Login Efetuado com sucesso|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 05:58:03 PM|127.0.0.1 - - [29/Nov/2020 17:58:03] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 05:58:03 PM|127.0.0.1 - - [29/Nov/2020 17:58:03] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:58:03 PM|127.0.0.1 - - [29/Nov/2020 17:58:03] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:58:03 PM|127.0.0.1 - - [29/Nov/2020 17:58:03] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:58:03 PM|127.0.0.1 - - [29/Nov/2020 17:58:03] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:58:03 PM|127.0.0.1 - - [29/Nov/2020 17:58:03] "[37mGET /static/js/jquery-3.5.1.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:58:03 PM|127.0.0.1 - - [29/Nov/2020 17:58:03] "[37mGET /static/sweetalert/sweetalert.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:58:03 PM|127.0.0.1 - - [29/Nov/2020 17:58:03] "[37mGET /static/images/modelo/logoPastry.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:58:03 PM|127.0.0.1 - - [29/Nov/2020 17:58:03] "[37mGET /static/images/modelo/user.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:58:03 PM|127.0.0.1 - - [29/Nov/2020 17:58:03] "[37mGET /static/css/modelo/sidebar.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:58:03 PM|127.0.0.1 - - [29/Nov/2020 17:58:03] "[37mGET /static/css/modelo/header.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:58:03 PM|127.0.0.1 - - [29/Nov/2020 17:58:03] "[37mGET /static/css/modelo/main.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:58:03 PM|127.0.0.1 - - [29/Nov/2020 17:58:03] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:58:05 PM|127.0.0.1 - - [29/Nov/2020 17:58:05] "[37mGET /comandas/formRecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:58:05 PM|127.0.0.1 - - [29/Nov/2020 17:58:05] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:58:07 PM|127.0.0.1 - - [29/Nov/2020 17:58:07] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:58:07 PM|127.0.0.1 - - [29/Nov/2020 17:58:07] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:58:07 PM|127.0.0.1 - - [29/Nov/2020 17:58:07] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:58:15 PM|127.0.0.1 - - [29/Nov/2020 17:58:15] "[37mPOST /comandas/RecebimentoFiadosAVista HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:58:15 PM|127.0.0.1 - - [29/Nov/2020 17:58:15] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:58:15 PM|127.0.0.1 - - [29/Nov/2020 17:58:15] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:58:15 PM|127.0.0.1 - - [29/Nov/2020 17:58:15] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:58:25 PM|127.0.0.1 - - [29/Nov/2020 17:58:25] "[37mPOST /comandas/RecebimentoFiadosAVista HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:58:25 PM|127.0.0.1 - - [29/Nov/2020 17:58:25] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:58:25 PM|127.0.0.1 - - [29/Nov/2020 17:58:25] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:59:03 PM|127.0.0.1 - - [29/Nov/2020 17:59:03] "[37mPOST /comandas/RecebimentoFiadosAVista HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:59:03 PM|127.0.0.1 - - [29/Nov/2020 17:59:03] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:59:03 PM|127.0.0.1 - - [29/Nov/2020 17:59:03] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:59:03 PM|127.0.0.1 - - [29/Nov/2020 17:59:03] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:59:08 PM|127.0.0.1 - - [29/Nov/2020 17:59:08] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:59:08 PM|127.0.0.1 - - [29/Nov/2020 17:59:08] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:59:31 PM|127.0.0.1 - - [29/Nov/2020 17:59:31] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:59:31 PM|127.0.0.1 - - [29/Nov/2020 17:59:31] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:59:31 PM|127.0.0.1 - - [29/Nov/2020 17:59:31] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:59:31 PM|127.0.0.1 - - [29/Nov/2020 17:59:31] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:59:31 PM|127.0.0.1 - - [29/Nov/2020 17:59:31] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:59:35 PM|127.0.0.1 - - [29/Nov/2020 17:59:35] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:59:35 PM|127.0.0.1 - - [29/Nov/2020 17:59:35] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:59:36 PM|127.0.0.1 - - [29/Nov/2020 17:59:36] "[37mGET /comandas/formRecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:59:36 PM|127.0.0.1 - - [29/Nov/2020 17:59:36] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:59:38 PM|127.0.0.1 - - [29/Nov/2020 17:59:38] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:59:38 PM|127.0.0.1 - - [29/Nov/2020 17:59:38] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:59:39 PM|127.0.0.1 - - [29/Nov/2020 17:59:39] "[37mPOST /comandas/RecebimentoFiadosAVista HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:59:39 PM|127.0.0.1 - - [29/Nov/2020 17:59:39] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:59:39 PM|127.0.0.1 - - [29/Nov/2020 17:59:39] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:59:42 PM|127.0.0.1 - - [29/Nov/2020 17:59:42] "[37mPOST /comandas/finalizarRecebimentoFiado HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:59:43 PM|127.0.0.1 - - [29/Nov/2020 17:59:43] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:59:43 PM|127.0.0.1 - - [29/Nov/2020 17:59:43] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:59:47 PM|127.0.0.1 - - [29/Nov/2020 17:59:47] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:59:47 PM|127.0.0.1 - - [29/Nov/2020 17:59:47] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 05:59:47 PM|127.0.0.1 - - [29/Nov/2020 17:59:47] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 05:59:47 PM|127.0.0.1 - - [29/Nov/2020 17:59:47] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 06:02:28 PM|127.0.0.1 - - [29/Nov/2020 18:02:28] "[32mGET /relatorios/relatorios HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 06:02:28 PM|127.0.0.1 - - [29/Nov/2020 18:02:28] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 06:02:28 PM|127.0.0.1 - - [29/Nov/2020 18:02:28] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 06:02:28 PM|127.0.0.1 - - [29/Nov/2020 18:02:28] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 06:02:30 PM|Login Efetuado com sucesso|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 06:02:30 PM|127.0.0.1 - - [29/Nov/2020 18:02:30] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 06:02:30 PM|127.0.0.1 - - [29/Nov/2020 18:02:30] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 06:02:30 PM|127.0.0.1 - - [29/Nov/2020 18:02:30] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 06:02:30 PM|127.0.0.1 - - [29/Nov/2020 18:02:30] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 06:02:30 PM|127.0.0.1 - - [29/Nov/2020 18:02:30] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 06:02:31 PM|127.0.0.1 - - [29/Nov/2020 18:02:31] "[37mGET /relatorios/relatorios HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 06:02:31 PM|127.0.0.1 - - [29/Nov/2020 18:02:31] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 06:02:33 PM|127.0.0.1 - - [29/Nov/2020 18:02:33] "[37mPOST /comandas/pdfRecebimentoAVista HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 06:03:32 PM|127.0.0.1 - - [29/Nov/2020 18:03:32] "[37mPOST /comandas/pdfRecebimentoFiado HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 06:04:30 PM| * Detected change in 'C:\\Projetos\\Integrador\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\GeraPdf.py', reloading
+INFO|werkzeug|29/11/2020 06:04:30 PM| * Restarting with stat
+INFO|werkzeug|29/11/2020 06:04:33 PM|127.0.0.1 - - [29/Nov/2020 18:04:33] "[32mGET /relatorios/relatorios HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 06:04:33 PM|127.0.0.1 - - [29/Nov/2020 18:04:33] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 06:04:33 PM|127.0.0.1 - - [29/Nov/2020 18:04:33] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 06:04:33 PM|127.0.0.1 - - [29/Nov/2020 18:04:33] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 06:04:33 PM|127.0.0.1 - - [29/Nov/2020 18:04:33] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|root|29/11/2020 06:04:34 PM|Login Efetuado com sucesso|Usuário:Nicolas Adams|
+INFO|werkzeug|29/11/2020 06:04:34 PM|127.0.0.1 - - [29/Nov/2020 18:04:34] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|29/11/2020 06:04:34 PM|127.0.0.1 - - [29/Nov/2020 18:04:34] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 06:04:34 PM|127.0.0.1 - - [29/Nov/2020 18:04:34] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 06:04:34 PM|127.0.0.1 - - [29/Nov/2020 18:04:34] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 06:04:34 PM|127.0.0.1 - - [29/Nov/2020 18:04:34] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 06:04:35 PM|127.0.0.1 - - [29/Nov/2020 18:04:35] "[37mGET /relatorios/relatorios HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 06:04:35 PM|127.0.0.1 - - [29/Nov/2020 18:04:35] "[33mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 404 -
+INFO|werkzeug|29/11/2020 06:04:41 PM|127.0.0.1 - - [29/Nov/2020 18:04:41] "[37mPOST /comandas/pdfRecebimentoFiado HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 06:04:45 PM|127.0.0.1 - - [29/Nov/2020 18:04:45] "[37mPOST /comandas/pdfRecebimentoAVista HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 06:04:49 PM|127.0.0.1 - - [29/Nov/2020 18:04:49] "[37mPOST /clientes/pdfCliente HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 06:04:56 PM|127.0.0.1 - - [29/Nov/2020 18:04:56] "[37mPOST /comandas/pdfComandasAtrasadas HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 06:05:01 PM|127.0.0.1 - - [29/Nov/2020 18:05:01] "[37mPOST /funcionarios/pdfFuncionario HTTP/1.1[0m" 200 -
+INFO|werkzeug|29/11/2020 06:05:08 PM|127.0.0.1 - - [29/Nov/2020 18:05:08] "[37mPOST /produtos/pdfProduto HTTP/1.1[0m" 200 -

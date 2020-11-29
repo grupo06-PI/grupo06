@@ -91,21 +91,13 @@
     <table>
         <tr class="Comanda">
             <td bgcolor=white>-Número Comanda:</td>
-            <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[0] }}</td>
+            <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[1] }}</td>
 
         </tr>
 
         <tr class="Comanda">
 
             <td bgcolor=white>-Data e Hora:</td>
-            <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[1] }}</td>
-
-            <td></td>
-        </tr>
-
-        <tr class="Comanda">
-
-            <td bgcolor=white>-ID Cliente:</td>
             <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[2] }}</td>
 
             <td></td>
@@ -113,8 +105,16 @@
 
         <tr class="Comanda">
 
-            <td bgcolor=white>-Nome Cliente:</td>
+            <td bgcolor=white>-ID Cliente:</td>
             <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[3] }}</td>
+
+            <td></td>
+        </tr>
+
+        <tr class="Comanda">
+
+            <td bgcolor=white>-Nome Cliente:</td>
+            <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[4] }}</td>
 
             <td></td>
         </tr>
@@ -123,11 +123,17 @@
 
 
             <td bgcolor=white>-Valor Total:</td>
-            <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[4] }}</td>
-
+            <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[5] }}</td> 
             <td>
-            </td>
+                <form action='{{ url_for('comanda.RecebimentoFiadosAVista') }}' method='POST' name='Recebimento'>
+                    <input type='hidden' name='id_comanda' value='{{ row[0] }}'>
+                    <button type='submit' name='formRecebimentoAVista'><i class='fa fa-fw fa-user' id="IconLista"></i></button>
+                </form>
+            </td>       
+
         </tr>
+
+        
     </table>
 </div>
 <br>
