@@ -380,6 +380,32 @@ class ComandaRecebimento(object):
             if banco:
                 banco.conexao.close()
 
+    def pegarLastrowid(self):
+        banco = None
+        c = None
+
+        try:
+            banco = Banco()
+            c = banco.conexao.cursor()
+
+            _sql = "select max(id_recebimento) from tb_recebimento;"
+
+            c.execute(_sql) 
+
+            banco.conexao.commit()
+
+            lastId = c.fetchall()
+
+            return lastId
+
+        except Exception as e:
+            raise Exception('Erro ao Pegar Ultimo ID Comanda!', str(e))
+        finally:
+            if c:
+                c.close
+            if banco:
+                banco.conexao.close()
+
     def updateTbComandaAVista(self):
         banco = None
         c = None
@@ -418,6 +444,34 @@ class ComandaRecebimento(object):
             c = banco.conexao.cursor()
 
             _sql = "UPDATE TB_COMANDA SET STATUS_COMANDA=2, STATUS_PAGAMENTO=0 WHERE ID_COMANDA = %s"
+
+            _sql_data = (self.id_comanda,)
+
+            c.execute(_sql,_sql_data)
+
+            banco.conexao.commit()
+
+            return "Comanda Finalizada com Sucesso!"
+
+        except Exception as e:
+            raise Exception("Erro ao Receber Comanda", str(e))
+
+        finally:
+            if c:
+                c.close()
+            if banco:
+                banco.conexao.close()
+
+    def updateTbComandaFiadoPaga(self):
+        banco = None
+        c = None
+
+        try:
+            banco = Banco()
+            
+            c = banco.conexao.cursor()
+
+            _sql = "UPDATE TB_COMANDA SET STATUS_COMANDA=2, STATUS_PAGAMENTO=1 WHERE ID_COMANDA = %s"
 
             _sql_data = (self.id_comanda,)
 
@@ -571,7 +625,7 @@ class ComandaRecebimento(object):
 
             c = banco.conexao.cursor()
 
-            _sql = "SELECT TBC.NUMERO_COMANDA, TBC.DATA_HORA, TBCLI.ID_CLIENTE, TBCLI.NOME, SUM(TBCP.VALOR_UNITARIO) as 'VALOR TOTAL' FROM TB_COMANDA TBC INNER JOIN TB_CLIENTE TBCLI ON TBCLI.ID_CLIENTE = TBC.CLIENTE_ID INNER JOIN TB_COMANDA_PRODUTO TBCP ON TBC.ID_COMANDA = TBCP.COMANDA_ID WHERE STATUS_COMANDA = 2 AND STATUS_PAGAMENTO = 0 AND TBCLI.ID_CLIENTE = %s GROUP BY TBC.NUMERO_COMANDA"
+            _sql = "SELECT TBC.ID_COMANDA,TBC.NUMERO_COMANDA, TBC.DATA_HORA, TBCLI.ID_CLIENTE, TBCLI.NOME, SUM(TBCP.VALOR_UNITARIO) as 'VALOR TOTAL' FROM TB_COMANDA TBC INNER JOIN TB_CLIENTE TBCLI ON TBCLI.ID_CLIENTE = TBC.CLIENTE_ID INNER JOIN TB_COMANDA_PRODUTO TBCP ON TBC.ID_COMANDA = TBCP.COMANDA_ID WHERE STATUS_COMANDA = 2 AND STATUS_PAGAMENTO = 0 AND TBCLI.ID_CLIENTE = %s GROUP BY TBC.NUMERO_COMANDA"
             
             _sql_data = (self.id_cliente)
 

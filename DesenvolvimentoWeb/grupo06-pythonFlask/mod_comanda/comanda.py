@@ -121,18 +121,18 @@ def finalizarRecebimento():
             comandaRecebimento.valor_desconto = request.form['valor_desconto']
             comandaRecebimento.valor_total  = request.form['subtotal']
             comandaRecebimento.funcionario_id = session['id_funcionario']
-
             comandaRecebimento.insert()
+
+            ultimoId = comandaRecebimento.pegarLastrowid()
 
              #insert tb_comanda recebimento
             comandaRecebimento.id_comanda = request.form['id_comanda']
-            comandaRecebimento.recebimento_id = comandaRecebimento.insert()
+            comandaRecebimento.recebimento_id = ultimoId
             comandaRecebimento.insertTbComandaRecebimento()
 
             #update status comanda e pagamento tb_comanda
             comandaRecebimento.id_comanda = request.form['id_comanda']
             _msg = comandaRecebimento.updateTbComandaAVista()
-
         
         else:
             comandaRecebimento = ComandaRecebimento()
@@ -150,6 +150,58 @@ def finalizarRecebimento():
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_excpetion)
 
 
+@bp_comanda.route("/RecebimentoFiadosAVista", methods=['GET','POST'])
+@validaSessao
+def RecebimentoFiadosAVista():
+
+    produtosComandas=ProdutosComandas()
+    comanda=Comandas()
+    comanda.id_comanda = request.form['id_comanda']
+    comanda.selectONE()
+    produtosComandas.comanda_id = request.values['id_comanda']
+    comandaRecebimento = ComandaRecebimento()
+    
+    subTotalComandas = produtosComandas.selectALLSubTotal()
+    return render_template("formRecebimentosFiadosAVista.html", comanda=comanda, comandaRecebimento=comandaRecebimento, subTotalComandas=subTotalComandas, content_type='application/json')
+
+@bp_comanda.route("/finalizarRecebimentoFiado", methods=['GET','POST'])
+@validaSessao
+def finalizarRecebimentoFiado():
+    _msg = ""
+    funcoes = Funcoes()
+    try:
+
+        
+        #inserindo na TB_RECEBIMENTO
+        comandaRecebimento = ComandaRecebimento()
+        comandaRecebimento.data_hora = datetime.datetime.now()
+        comandaRecebimento.tipo = 2 #fiado
+        comandaRecebimento.valor_acrescimo = request.form['valor_acrescimo']
+        comandaRecebimento.valor_desconto = request.form['valor_desconto']
+        comandaRecebimento.valor_total  = request.form['subtotal']
+        comandaRecebimento.funcionario_id = session['id_funcionario']
+        comandaRecebimento.insert()
+
+        ultimoId = comandaRecebimento.pegarLastrowid()
+
+        #insert tb_comanda recebimento
+        comandaRecebimento.id_comanda = request.form['id_comanda']
+        comandaRecebimento.recebimento_id = ultimoId
+        comandaRecebimento.insertTbComandaRecebimento()
+
+            #update status comanda e pagamento tb_comanda
+        comandaRecebimento.id_comanda = request.form['id_comanda']
+        _msg = comandaRecebimento.updateTbComandaFiadoPaga()
+        
+
+
+        
+        return jsonify(erro=False, mensagem=_msg)
+
+    except Exception as e:
+        _msg, _msg_excpetion = e.args
+
+        return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_excpetion)
 
 @bp_comanda.route("/formRecebimentosFiados", methods=['GET','POST'])
 @validaSessao
