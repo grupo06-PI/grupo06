@@ -2,6 +2,7 @@ from flask import Blueprint, render_template, request, redirect, url_for, flash,
 from mod_comanda.comandaBD import Comandas
 from mod_comanda.comandaBD import ComandaRecebimento
 from mod_produto.produtoBD import ProdutosComandas
+from mod_cliente.clienteBD import Clientes
 from GeraPdf import PDF
 from flask import send_file
 from mod_login.login import validaSessao
@@ -147,6 +148,43 @@ def finalizarRecebimento():
         _msg, _msg_excpetion = e.args
 
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_excpetion)
+
+
+
+@bp_comanda.route("/formRecebimentosFiados", methods=['GET','POST'])
+@validaSessao
+def formRecebimentosFiados():
+
+    clientes=Clientes()
+    listaClientes = clientes.selectALLClientes()
+    return render_template("formRecebimentosFiados.html",listaClientes=listaClientes,clientes=clientes,content_type='application/json')
+
+@bp_comanda.route("/RecebimentosFiados", methods=['GET','POST'])
+@validaSessao
+def RecebimentosFiados():
+    clientes=Clientes()
+    comandaRecebimento=ComandaRecebimento()
+    listaClientes = clientes.selectALLClientes()
+    comandaRecebimento.id_cliente = request.form['id_cliente' ]
+    res = comandaRecebimento.selectONEComandasFiados()  
+
+    return render_template("formRecebimentosFiados.html",result=res,listaClientes=listaClientes, content_type='application/json')
+
+@bp_comanda.route('/buscaCliente', methods = ['POST'])
+@validaSessao
+def buscaCliente():
+
+    try:
+        cliente=Clientes()
+        cliente.id_cliente = request.form['id_cliente']
+        cliente.selectONE()
+
+        clienteJson = cliente.toJSON()
+        
+        return jsonify(error=False, cliente=clienteJson)
+
+    except Exception as e:
+        return jsonify(erro=True, mensagem_exception = str(e))
 
 
 @bp_comanda.route('/pdfComandasAtrasadas', methods=['POST'])
