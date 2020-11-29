@@ -136,10 +136,21 @@ def finalizarRecebimento():
         
         else:
             comandaRecebimento = ComandaRecebimento()
+            cliente=Clientes()
 
-            #update status comanda e pagamento tb_comanda
-            comandaRecebimento.id_comanda = request.form['id_comanda']
-            _msg = comandaRecebimento.updateTbComandaFiado()
+            cliente.cpf = request.form['cpf']
+            cliente.senha = request.form['senha']
+
+            cliente.selectLogin()
+
+            if cliente.id_cliente > 0:
+                #update status comanda e pagamento tb_comanda
+                comandaRecebimento.id_comanda = request.form['id_comanda']
+                _msg = comandaRecebimento.updateTbComandaFiado()
+            
+            else:
+                _msg = "Dados do Cliente Incorretos"
+                return jsonify(erro=True, mensagem=_msg)
 
         
         return jsonify(erro=False, mensagem=_msg)

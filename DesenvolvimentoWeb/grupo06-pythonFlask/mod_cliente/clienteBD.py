@@ -192,3 +192,29 @@ class Clientes(object):
 
     def toJSON(self):
         return json.dumps(self, default=lambda o: o.__dict__, sort_keys=True, indent=4)
+
+    
+
+    def selectLogin(self):
+        banco = Banco()
+
+        try:
+            c = banco.conexao.cursor()
+
+            c.execute("select id_cliente, nome, cpf, telefone, compra_fiado, dia_fiado, senha from tb_cliente where cpf = %s and senha = %s", (self.cpf, self.senha))
+
+            for linha in c:
+                self.id_cliente = linha[0]
+                self.nome = linha[1]
+                self.cpf = linha[2]
+                self.telefone = linha[3]
+                self.compra_fiado = linha[4]
+                self.dia_fiado = linha[5]
+                self.senha = linha[6]
+                
+            c.close()
+
+            return "Busca feita com sucesso!"
+
+        except Exception as e:
+            raise Exception("Dados do Cliente Incorretos", str(e))
