@@ -72,6 +72,13 @@
             <input value="{{ comanda.id_comanda }}" type="text" name="id_comanda" id="id_comanda"
                 class="form-control" placeholder="" readonly>
         </div>
+
+
+        <div class="col-md-2 mb-2">
+            <label for="cpf">CPF Usuário:</label>
+            <input value="" type="text" name="cpf" id="cpf"
+                class="form-control" placeholder="" >
+        </div>
     </div>
     <br>
     <div class="row">
@@ -81,6 +88,12 @@
             <input value="{{ produtosComandas[4] }}" type="text" name="valor_total" id="valor_total"
                 class="form-control" placeholder="" readonly>
             {% endfor %}
+        </div>
+
+        <div class="col-md-2 mb-2">
+            <label for="">Senha Usuário:</label>
+            <input value="" type="text" name="senha" id="senha"
+                class="form-control" placeholder="" >
         </div>
     </div>
     <br>
@@ -118,9 +131,6 @@
         </div>
     </div>
     <br>
-
-    
-
     <button type='submit' name='salvaClienteDB' id='salvaClienteDB' class="buttonsCfg"><i class="fa fa-fw fa-save"
             id="IconLista"></i> Salvar</a></button>
 </form>
@@ -155,6 +165,7 @@ $('#finalizarRecebimento').submit(function (e) {
 
         // manipular o retorno da requisição
         success: function (data) {
+            console.log(data)
             if (!data.erro) {
                 swal({
                     title: "",
