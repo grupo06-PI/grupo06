@@ -39,8 +39,8 @@ def abrirComanda():
         comanda.id_comanda = request.form['id_comanda']
         comanda.numero_comanda = request.form['numero_comanda']
         comanda.data_hora = datetime.datetime.now()
-        comanda.status_comanda = 1
-        comanda.status_pagamento = 1
+        comanda.status_comanda = 0
+        comanda.status_pagamento = 0
         comanda.funcionario_id = session['id_funcionario']
         comanda.cliente_id = 1
 
@@ -89,9 +89,10 @@ def deleteComanda():
         return jsonify(erro=True, mensagem=_msg, mensagem_exception=_msg_exception)
 
 
-@bp_comanda.route("/RecebimentoAVista", methods=['GET','POST'])
+@bp_comanda.route("/Recebimento", methods=['GET','POST'])
 @validaSessao
-def RecebimentoAVista():
+def Recebimento():
+
     produtosComandas=ProdutosComandas()
     comanda=Comandas()
     comanda.id_comanda = request.form['id_comanda']
@@ -103,20 +104,42 @@ def RecebimentoAVista():
     return render_template("formRecebimentoAVista.html", comanda=comanda, comandaRecebimento=comandaRecebimento, subTotalComandas=subTotalComandas, content_type='application/json')
 
 
-@bp_comanda.route("/finalizarRecebimentoAVista", methods=['GET','POST'])
+@bp_comanda.route("/finalizarRecebimento", methods=['GET','POST'])
 @validaSessao
-def finalizarRecebimentoAVista():
+def finalizarRecebimento():
     _msg = ""
     funcoes = Funcoes()
     try:
-        comandaRecebimento = ComandaRecebimento()
-        comandaRecebimento.data_hora = datetime.datetime.now()
-        comandaRecebimento.tipo = 1 #a vista 1
-        comandaRecebimento.valor_acrescimo = request.form['valor_acrescimo']
-        comandaRecebimento.valor_desconto = request.form['valor_desconto']
-        comandaRecebimento.valor_total  = request.form['subtotal']
-        comandaRecebimento.funcionario_id = session['id_funcionario']
-        _msg = comandaRecebimento.insert()
+        if request.form['tipo_recebimento'] == "1":
+            
+            #inserindo na TB_RECEBIMENTO
+            comandaRecebimento = ComandaRecebimento()
+            comandaRecebimento.data_hora = datetime.datetime.now()
+            comandaRecebimento.tipo = 1 #a vista 1
+            comandaRecebimento.valor_acrescimo = request.form['valor_acrescimo']
+            comandaRecebimento.valor_desconto = request.form['valor_desconto']
+            comandaRecebimento.valor_total  = request.form['subtotal']
+            comandaRecebimento.funcionario_id = session['id_funcionario']
+
+            comandaRecebimento.insert()
+
+             #insert tb_comanda recebimento
+            comandaRecebimento.id_comanda = request.form['id_comanda']
+            comandaRecebimento.recebimento_id = comandaRecebimento.insert()
+            comandaRecebimento.insertTbComandaRecebimento()
+
+            #update status comanda e pagamento tb_comanda
+            comandaRecebimento.id_comanda = request.form['id_comanda']
+            _msg = comandaRecebimento.updateTbComandaAVista()
+
+        
+        else:
+            comandaRecebimento = ComandaRecebimento()
+
+            #update status comanda e pagamento tb_comanda
+            comandaRecebimento.id_comanda = request.form['id_comanda']
+            _msg = comandaRecebimento.updateTbComandaFiado()
+
         
         return jsonify(erro=False, mensagem=_msg)
 

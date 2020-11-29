@@ -2,7 +2,7 @@ from BancoBD import Banco
 
 class Comandas(object):
 
-    def __init__(self, id_comanda=0, numero_comanda="", data_hora="", status_comanda=1, status_pagamento=1, funcionario_id="", cliente_id=""):
+    def __init__(self, id_comanda=0, numero_comanda="", data_hora="", status_comanda=0, status_pagamento=0, funcionario_id="", cliente_id=""):
 
         self.id_comanda = id_comanda
         self.numero_comanda = numero_comanda
@@ -56,7 +56,7 @@ class Comandas(object):
 
             c = banco.conexao.cursor()
 
-            _sql = "select tbc.id_comanda, tbc.numero_comanda, tbc.data_hora, if(tbc.status_comanda =1,'Aberta','Fechada'), if(tbc.status_pagamento =1,'Em Aberto','Fechado'), tf.nome, tbc.cliente_id, tc.nome  from tb_comanda tbc left join tb_cliente tc on tbc.cliente_id = tc.id_cliente  left join tb_funcionario tf on tbc.funcionario_id = tf.id_funcionario order by status_comanda"
+            _sql = "select tbc.id_comanda, tbc.numero_comanda, tbc.data_hora, if(tbc.status_comanda =0,'Aberta','Fechada'), if(tbc.status_pagamento =0,'Em Aberto','Fechado'), tf.nome, tbc.cliente_id, tc.nome  from tb_comanda tbc left join tb_cliente tc on tbc.cliente_id = tc.id_cliente  left join tb_funcionario tf on tbc.funcionario_id = tf.id_funcionario order by status_comanda"
 
             _sql_data = ()
 
@@ -84,7 +84,7 @@ class Comandas(object):
 
             c = banco.conexao.cursor()
 
-            _sql = "SELECT TBC.ID_COMANDA, TBC.NUMERO_COMANDA, TBC.DATA_HORA, TBC.STATUS_COMANDA, TBC.STATUS_PAGAMENTO, TBC.FUNCIONARIO_ID, TBF.NOME, TBC.CLIENTE_ID, TBCLI.NOME FROM TB_COMANDA TBC INNER JOIN TB_FUNCIONARIO TBF ON TBF.ID_FUNCIONARIO = TBC.FUNCIONARIO_ID INNER JOIN TB_CLIENTE TBCLI ON TBCLI.ID_CLIENTE = TBC.CLIENTE_ID where TBC.STATUS_COMANDA = 1"
+            _sql = "SELECT TBC.ID_COMANDA, TBC.NUMERO_COMANDA, TBC.DATA_HORA, TBC.STATUS_COMANDA, TBC.STATUS_PAGAMENTO, TBC.FUNCIONARIO_ID, TBF.NOME, TBC.CLIENTE_ID, TBCLI.NOME FROM TB_COMANDA TBC INNER JOIN TB_FUNCIONARIO TBF ON TBF.ID_FUNCIONARIO = TBC.FUNCIONARIO_ID INNER JOIN TB_CLIENTE TBCLI ON TBCLI.ID_CLIENTE = TBC.CLIENTE_ID where TBC.STATUS_COMANDA = 0"
 
             _sql_data = ()
 
@@ -333,7 +333,7 @@ class ComandaAddCliente(object):
 
 class ComandaRecebimento(object):
 
-    def __init__(self, id_recebimento=0, data_hora="", tipo="", valor_acrescimo=0, valor_desconto="", valor_total="", funcionario_id="", recebimento_id="", comanda_id=""):
+    def __init__(self, id_recebimento=0, data_hora="", tipo="", valor_acrescimo=0, valor_desconto="", valor_total="", funcionario_id="", recebimento_id="", id_comanda=""):
 
         self.id_recebimento = id_recebimento
         self.data_hora = data_hora
@@ -343,7 +343,8 @@ class ComandaRecebimento(object):
         self.valor_total = valor_total
         self.funcionario_id = funcionario_id
         self.recebimento_id = recebimento_id
-        self.comanda_id = comanda_id
+        self.id_comanda = id_comanda
+
 
 
 
@@ -366,7 +367,9 @@ class ComandaRecebimento(object):
 
             banco.conexao.commit()
 
-            return "Comanda Finalizada Com Sucesso!"
+            x = c.lastrowid
+
+            return x
 
         except Exception as e:
             raise Exception('Erro ao Finalizar Comanda!', str(e))
@@ -376,6 +379,61 @@ class ComandaRecebimento(object):
             if banco:
                 banco.conexao.close()
 
+    def updateTbComandaAVista(self):
+        banco = None
+        c = None
+
+        try:
+            banco = Banco()
+            
+            c = banco.conexao.cursor()
+
+            _sql = "UPDATE TB_COMANDA SET STATUS_COMANDA=1, STATUS_PAGAMENTO=1 WHERE ID_COMANDA = %s"
+
+            _sql_data = (self.id_comanda,)
+
+            c.execute(_sql,_sql_data)
+
+            banco.conexao.commit()
+
+            return "Comanda Recebida com Sucesso!"
+
+        except Exception as e:
+            raise Exception("Erro ao Receber Comanda", str(e))
+
+        finally:
+            if c:
+                c.close()
+            if banco:
+                banco.conexao.close()
+
+    def updateTbComandaFiado(self):
+        banco = None
+        c = None
+
+        try:
+            banco = Banco()
+            
+            c = banco.conexao.cursor()
+
+            _sql = "UPDATE TB_COMANDA SET STATUS_COMANDA=2, STATUS_PAGAMENTO=0 WHERE ID_COMANDA = %s"
+
+            _sql_data = (self.id_comanda,)
+
+            c.execute(_sql,_sql_data)
+
+            banco.conexao.commit()
+
+            return "Comanda Finalizada com Sucesso!"
+
+        except Exception as e:
+            raise Exception("Erro ao Receber Comanda", str(e))
+
+        finally:
+            if c:
+                c.close()
+            if banco:
+                banco.conexao.close()
 
     def insertTbComandaRecebimento(self):
         banco = None
@@ -386,15 +444,15 @@ class ComandaRecebimento(object):
 
             c = banco.conexao.cursor()
 
-            _sql = "insert into tb_comanda_recebimento(recebimento_id,comanda_id) values (%s,%s)"
+            _sql = "insert into tb_comanda_recebimento(recebimento_id, comanda_id) values (%s,%s)"
 
-            _sql_data = (self.recebimento_id, self.comanda_id,)
+            _sql_data = (self.recebimento_id, self.id_comanda,)
 
             c.execute(_sql, _sql_data)
 
             banco.conexao.commit()
 
-            return "Comanda Finalizada Com Sucesso!"
+            return "Comanda Finalizada com Sucesso!"
 
         except Exception as e:
             raise Exception('Erro ao Finalizar Comanda!', str(e))
@@ -403,6 +461,10 @@ class ComandaRecebimento(object):
                 c.close
             if banco:
                 banco.conexao.close()
+
+    
+
+    
 
     def selectRecebimentoAVista(self):
         banco = None
