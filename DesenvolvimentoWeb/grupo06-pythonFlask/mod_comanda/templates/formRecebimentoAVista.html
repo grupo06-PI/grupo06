@@ -62,13 +62,9 @@
 {% block content %}
 
 <br>
-<a class="buttonsCfg" href="{{url_for('comanda.RecebimentoAVista')}}"><i class="fa fa-fw fa-plus" id="IconLista"></i>A Vista</a>
-<a class="buttonsCfg" href=""><i class="fa fa-fw fa-plus" id="IconLista"></i>Fiado</a>
-<br>
-<br>
 
 <label for="" class="titleForm">Recebimento A Vista</label>
-<form id="finalizarRecebimentoAVista" name="finalizarRecebimentoAVista" method="POST" enctype="multipart/form-data">
+<form id="finalizarRecebimento" name="finalizarRecebimento" method="POST" enctype="multipart/form-data">
 
     <div class="row">
         <div class="col-md-2 mb-2">
@@ -112,6 +108,16 @@
         </div>
     </div>
     <br>
+    <div class="row">
+        <div class="col-md-2 mb-2">
+            <label for="">Tipo Recebimento:</label>
+            <select name="tipo_recebimento" id="tipo_recebimento" class="form-control">
+                <option value="1">A Vista</option>
+                <option value="2">Fiado</option>
+            </select>
+        </div>
+    </div>
+    <br>
 
     
 
@@ -132,15 +138,15 @@ $('#valor_desconto').change(function (){
 
     $SCRIPT_ROOT = {{ request.script_root | tojson | safe }}; // pega a url da barra de endereço
 
-$('#finalizarRecebimentoAVista').submit(function (e) {
+$('#finalizarRecebimento').submit(function (e) {
     e.preventDefault(); // parar o envio para poder fazer manualmente
-    var form = $('#finalizarRecebimentoAVista')[0]; // captura o form
+    var form = $('#finalizarRecebimento')[0]; // captura o form
     var data = new FormData(form); // cria o FormData {Object}
 
     $.ajax({
         type: "POST",
         enctype: 'multipart/form-data',
-        url: "{{url_for('comanda.finalizarRecebimentoAVista')}}",
+        url: "{{url_for('comanda.finalizarRecebimento')}}",
         data: data,
         processData: false,
         contentType: false,
