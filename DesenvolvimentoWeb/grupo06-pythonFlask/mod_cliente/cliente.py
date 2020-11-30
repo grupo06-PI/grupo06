@@ -48,7 +48,7 @@ def addCliente():
         cliente.telefone = request.form['telefone']
         cliente.compra_fiado = request.form['compra_fiado']
         cliente.dia_fiado = request.form['dia_fiado']
-        cliente.senha = request.form['senha']
+        cliente.senha = funcoes.encrypt(request.form['senha']) 
 
         _msg = cliente.insert()
 
@@ -83,7 +83,7 @@ def editCliente():
         cliente.telefone = request.form['telefone']
         cliente.compra_fiado = request.form['compra_fiado']
         cliente.dia_fiado = request.form['dia_fiado']
-        cliente.senha = request.form['senha']   
+        cliente.senha = funcoes.encrypt(request.form['senha'])  
 
         _msg = cliente.update()
 

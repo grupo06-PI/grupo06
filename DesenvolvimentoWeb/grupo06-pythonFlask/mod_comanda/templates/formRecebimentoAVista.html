@@ -77,7 +77,7 @@
         <div class="col-md-2 mb-2">
             <label for="cpf">CPF Usuário:</label>
             <input value="" type="text" name="cpf" id="cpf"
-                class="form-control" placeholder="" >
+                class="form-control" placeholder="" maxlength="11">
         </div>
     </div>
     <br>
@@ -93,7 +93,7 @@
         <div class="col-md-2 mb-2">
             <label for="">Senha Usuário:</label>
             <input value="" type="text" name="senha" id="senha"
-                class="form-control" placeholder="" >
+                class="form-control" placeholder="" maxlength="200" >
         </div>
     </div>
     <br>
@@ -109,7 +109,7 @@
         <div class="col-md-2 mb-2">
             <label for="valor_desconto">Valor Desconto:</label>
             <input value="{{ comandaRecebimento.valor_desconto }}" type="text" name="valor_desconto" id="valor_desconto"
-                class="form-control" placeholder="" >
+                class="form-control" placeholder="" required>
         </div>
     </div>
     <br>
@@ -124,7 +124,7 @@
     <div class="row">
         <div class="col-md-2 mb-2">
             <label for="">Tipo Recebimento:</label>
-            <select name="tipo_recebimento" id="tipo_recebimento" class="form-control">
+            <select name="tipo_recebimento" id="tipo_recebimento" class="form-control" required>
                 <option value="1">A Vista</option>
                 <option value="2">Fiado</option>
             </select>

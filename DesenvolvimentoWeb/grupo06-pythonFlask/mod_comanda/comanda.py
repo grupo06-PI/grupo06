@@ -139,7 +139,7 @@ def finalizarRecebimento():
             cliente=Clientes()
 
             cliente.cpf = request.form['cpf']
-            cliente.senha = request.form['senha']
+            cliente.senha = funcoes.encrypt(request.form['senha'])
 
             cliente.selectLogin()
 

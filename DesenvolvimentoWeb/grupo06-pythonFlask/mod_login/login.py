@@ -27,7 +27,7 @@ def validaLogin():
     funcionario = Funcionarios()
 
     funcionario.cpf = request.form['cpf']
-    funcionario.senha = request.form['senha']
+    funcionario.senha = funcoes.encrypt(request.form['senha'])
 
     #realiza a busca pelo usuário e armazena o resultado no objeto
     funcionario.selectLogin()
@@ -52,7 +52,7 @@ def validaLogin():
 
     else:
         #log
-        log = "Tentativa de Login" + "|Usuário:" + request.form['usuario'] + "|"
+        log = "Tentativa de Login" + "|Usuário:" + request.form['cpf'] + "|"
         funcoes.logWarning(log)
 
         #retornna para a tela de login
