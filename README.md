@@ -106,9 +106,9 @@ As comandas serão placas de acrílico com numeração individual gravada em um 
 - UML:
   - Diagrama de Classes
     -incluir Link
-  -Diagrama de caso de uso
+  - Diagrama de caso de uso
     -incluir Link
-  -Diagrama de atividades
+  - Diagrama de atividades
     -incluir Link
 - Modelagem de Banco de Dados:
   - Conceitual
@@ -150,3 +150,6 @@ As comandas serão placas de acrílico com numeração individual gravada em um 
 - Teste de Usabilidade do Produto (Escala SUS)
     -incluir Link
 - Interface de Usuário bem Resolvida (Design Visual)
+- Outras Validações de Acessibilidade
+  - Site Utilizado para validar as cores para Daltonismo: https://www.color-blindness.com/coblis-color-blindness-simulator/
+  - Site Utilizado para validar o contraste nos padrões W3C: https://contrastchecker.com/
