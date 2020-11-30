@@ -122,6 +122,18 @@
 
   <script src="{{ url_for('static', filename='sweetalert/sweetalert.min.js') }}"></script>
 
+  <script type="text/javascript">
+    $(document).ready(function() {
+        $("#telefone").mask("(00) 00000-0000")
+        $("#cpf").mask("000.000.000-00")
+        $("#dia_fiado").mask("00/00/0000")
+        $("#valor_unitario").mask('#.##0,00', {reverse: true});
+        $("#taxa_juro_diario").mask('#.##0,00', {reverse: true});
+        $("#multa_atraso").mask('#.##0,00', {reverse: true});
+        
+    })
+  </script>
+
   {% block js %}
 
   {% endblock %}
