@@ -28,7 +28,6 @@ def ListaComandas():
     return render_template("formListaComandas.html", result=res, content_type='application/json')
     
 
-
 @bp_comanda.route("/abrirComanda", methods=['GET','POST'])
 @validaSessao
 def abrirComanda():
@@ -271,4 +270,17 @@ def pdfRecebimentoFiado():
     geraPdf.pdfRecebimentoFiado()
     return send_file('pdfRecebimentoFiado.pdf', attachment_filename='pdfRecebimentoFiado.pdf')
 
-    
+@bp_comanda.route('/verificaSeComandaAberta', methods = ['POST'])
+@validaSessao
+def verificaSeComandaAberta():
+    comanda = Comandas()
+    comanda.numero_comanda = request.form['numero_comanda']
+    try:
+        result = comanda.verificaSeComandaAberta()
+    #Verifica se achou o login no banco
+        if len(result) > 0:
+            return jsonify(comanda_existe = True)
+        else:
+            return jsonify(comanda_existe = False)
+    except Exception as e:
+        return jsonify(erro = True, mensagem_exception = str(e))

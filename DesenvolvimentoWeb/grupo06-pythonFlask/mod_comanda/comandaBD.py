@@ -44,8 +44,26 @@ class Comandas(object):
             if c:
                 c.close()
             if banco:
+                banco.conexao.close()   
+    
+    def verificaSeComandaAberta(self):
+        banco = None
+        c = None
+        try:
+            banco = Banco()
+            c = banco.conexao.cursor()
+            _sql = "SELECT numero_comanda FROM tb_comanda WHERE numero_comanda = %s and status_comanda = 0"
+            _sql_data = (self.numero_comanda,)
+            c.execute(_sql, _sql_data)
+            result = c.fetchall()
+            return result
+        except Exception as e:
+            raise Exception(str(e))
+        finally:
+            if c:
+                c.close()
+            if banco:
                 banco.conexao.close()
-
 
     def selectALL(self):
         banco = None
