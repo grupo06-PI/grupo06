@@ -97,26 +97,27 @@ As comandas serão placas de acrílico com numeração individual gravada em um 
 
 ## Engenharia de Software
 - Levantamento de requisitos: Usuário (Funcionais e não funcionais)
-    -incluir Link
+    - https://github.com/grupo06-PI/grupo06/blob/master/EngenhariaSoftware/Requisitos%20do%20usu%C3%A1rio%20Vers%C3%A3o%201.13.09.doc
 - Levantamento de requisitos: Sistema (Funcionais e não funcionais)
-    -incluir Link
+    - https://github.com/grupo06-PI/grupo06/blob/master/EngenhariaSoftware/Requisitos%20do%20usu%C3%A1rio%20Vers%C3%A3o%201.13.09.doc
 - Histórias de Usuário e critérios de aceitação
-    -incluir Link
+    - https://github.com/grupo06-PI/grupo06/blob/master/EngenhariaSoftware/Product%20Backlog%20-%20Pastelaria%20do%20Z%C3%A9.doc
+    - https://github.com/grupo06-PI/grupo06/blob/master/EngenhariaSoftware/Requisitos%20do%20sistema%20Vers%C3%A3o%201.13.09.doc
     
 - UML:
   - Diagrama de Classes
-    -incluir Link
+    - https://github.com/grupo06-PI/grupo06/blob/master/EngenhariaSoftware/UML%20-%20Diagrama%20Classe.png
   - Diagrama de caso de uso
-    -incluir Link
+    - https://github.com/grupo06-PI/grupo06/blob/master/EngenhariaSoftware/UML-%20Diagrama%20Caso%20de%20Uso.png
   - Diagrama de atividades
-    -incluir Link
+    - 
 - Modelagem de Banco de Dados:
   - Conceitual
-    -incluir Link
+    - https://github.com/grupo06-PI/grupo06/blob/master/EngenhariaSoftware/Modelagem%20Conceitual.doc
   - Lógica
-    -incluir Link
+    - https://github.com/grupo06-PI/grupo06/blob/master/EngenhariaSoftware/Modelagem%20L%C3%B3gica.doc
   - Física
-    -incluir Link
+    - https://github.com/grupo06-PI/grupo06/blob/master/EngenhariaSoftware/modelagem%20f%C3%ADsica.sql
     
 - Gerenciamento de Projeto:
   - Kanban: Utilizamos a estrutura do git para criarmos um projeto para cada disciplina, e dentro dos projetos a estrutura de Kanban automatizada, onde a cada issue criada atribuíamos a um projeto e a um status (planejado, em execução, enviado para aprovação, aprovado e concluído), a cada atualização de um dos integrantes nas issues automaticamente a "nota" atribuída no projeto era movida para seu novo status até o fechamento, facilitando o controle das atividades.
@@ -131,24 +132,34 @@ As comandas serão placas de acrílico com numeração individual gravada em um 
         
 ## User Experience
 - Mapa de Stakeholders
-    -incluir Link
+    - https://github.com/grupo06-PI/grupo06/blob/UXVideo/UX/Stakeholder%20Mapa%20-%20Pastelaria%20do%20Seu%20Z%C3%A9.docx
 - Questionário / Entrevistas com Stakeholders
-    -incluir Link
+    - https://github.com/grupo06-PI/grupo06/blob/UXVideo/UX/Relat%C3%B3rio%20da%20Pesquisa%20Qualitativa.docx
+    - https://github.com/grupo06-PI/grupo06/blob/master/UX/Relat%C3%B3rio%20de%20Pesquisa%20Quantitativa.doc
 - Questionário / Entrevistas com Usuários
-    -incluir Link
+    - https://github.com/grupo06-PI/grupo06/blob/UXVideo/UX/Entrevista%20com%20o%20Seu%20Z%C3%A9%20-%20Luciano%20Coelho.mp4
 - Desenho das Personas (Usuário)
-    -incluir Link
+    - https://github.com/grupo06-PI/grupo06/blob/master/UX/Link%20gr%C3%A1ficos%20pesquisa%20usu%C3%A1rios
+    - https://github.com/grupo06-PI/grupo06/blob/master/UX/Persona%20I%20-%20Pastelaria%20do%20Z%C3%A9.png
+    - https://github.com/grupo06-PI/grupo06/blob/master/UX/Persona%20II%20-%20Pastelaria%20do%20Z%C3%A9.png
+    - 
 - Fluxo de Uso / Jornada do Usuário
-    -incluir Link
+    - https://github.com/grupo06-PI/grupo06/blob/UXVideo/UX/User%20Flow%20-%20Cadastro%20de%20Clientes.pdf
+    - https://github.com/grupo06-PI/grupo06/blob/UXVideo/UX/User%20Flow%20-%20Cadastro%20de%20Comandas.pdf
+    - https://github.com/grupo06-PI/grupo06/blob/UXVideo/UX/User%20Flow%20-%20Cadastro%20de%20Funcionarios.pdf
+    - https://github.com/grupo06-PI/grupo06/blob/UXVideo/UX/User%20Flow%20-%20Cadastro%20de%20Produtos.pdf
+    - https://github.com/grupo06-PI/grupo06/blob/UXVideo/UX/User%20Flow%20-%20Configura%C3%A7%C3%B5es.pdf
+    - https://github.com/grupo06-PI/grupo06/blob/UXVideo/UX/User%20Flow%20-%20Editar%20e%20Excluir%20nos%20Modulos%20de%20Cadastro.pdf
+    - https://github.com/grupo06-PI/grupo06/blob/UXVideo/UX/User%20Flow%20-%20Login%2C%20Funcionario%20acesso.pdf
 - Mapa de empatia
-    -incluir Link
+    - https://github.com/grupo06-PI/grupo06/blob/UXVideo/UX/Mapa%20Empatia%20-%20Grupo06.pdf
 - Esboço das soluções (com descrição das soluções/diferenciais)
-    -incluir Link
+    - https://github.com/grupo06-PI/grupo06/blob/UXVideo/UX/Pastelaria%20do%20Seu%20Z%C3%A9%20-%20Brainstorming.pdf
 - Protótipos navegáveis em Adobe XD
     - https://xd.adobe.com/view/7e2ecfcd-6222-4262-922f-f66a6d9290e8-2b7d/
     - https://xd.adobe.com/view/9de7cd51-9307-4d18-82f1-52d7c2882fa2-c8b4/
 - Teste de Usabilidade do Produto (Escala SUS)
-    -incluir Link
+    - https://github.com/grupo06-PI/grupo06/blob/UXVideo/UX/System%20Usability%20Scale%20-%20SUS%20Grupo%2006.xlsx
 - Interface de Usuário bem Resolvida (Design Visual)
 - Outras Validações de Acessibilidade
   - Site Utilizado para validar as cores para Daltonismo: https://www.color-blindness.com/coblis-color-blindness-simulator/
