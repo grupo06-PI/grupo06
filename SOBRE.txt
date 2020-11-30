@@ -36,15 +36,15 @@ Descrever aqui todas as tecnologias Utilizadas e versões
 
 #Usuários
 Grupo 1 - Admin: 
-Usuário: grupo01
+Usuário:  11111111111
 Senha:abcBolinhas
 
 Grupo 2 - Atendimento de Balcão: 
-Usuário: grupo02
+Usuário: 22222222222
 Senha: abcBolinhas
 
 Grupo 3 - Cliente
-Usuário: grupo03
+Usuário:  33333333333
 Senha: abcBolinhas
 
 #Nome e local do Arquivo das credenciais DB
