@@ -94,6 +94,8 @@ As comandas serão placas de acrílico com numeração individual gravada em um 
     - Pagamentos à Vista
     - Pagamentos Fiado
     - etc.
+    
+ - <a href="https://github.com/grupo06-PI/grupo06/tree/master/DesenvolvimentoWeb/Dump%20BD">Dump DB</a>  
 
 ## Engenharia de Software
 - <a href="https://github.com/grupo06-PI/grupo06/blob/master/EngenhariaSoftware/Requisitos%20do%20usu%C3%A1rio%20Vers%C3%A3o%201.13.09.doc">Levantamento de requisitos: Usuário (Funcionais e não funcionais)</a> 
