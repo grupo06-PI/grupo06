@@ -6,58 +6,85 @@
 {{super()}}
 <style>
   #linkRelatorios a:visited {
-      color: #98133F;
+    color: #98133F;
+  }
+
+  input {
+    color: white;
+    background-color: transparent;
+    border: solid 0px black;
+  }
+
+  ul.Rel {
+    background-color: rgb(11, 7, 31);
+    border: 3px solid #1d1d40;
+    border-top: solid 7px #1d1d40;
+  }
+
+  div.menu ul li input:hover {
+    color: white;
+    background-color: #3a9ec2;
+    border: solid 0px #3a9ec2;
+  }
+
+  .titleForm {
+    color: white;
+    font-size: 30px;
+
+    font-family: Snell Roundhand, sans-serif;
+    font-variant: small-caps;
   }
 </style>
 {% endblock %}
 
 {% block content %}
 {{ super() }}
+<label for="" class="titleForm">Relatórios</label>
 
 <div class="menu">
-    <ul>
-      <li id="linkComandaAtrasadas">
-        <i class="fa fa-fw fa-drivers-license-o"></i>
-        <form action="{{ url_for('comanda.pdfComandasAtrasadas') }}" method="POST">
-          <input type="submit" value="Fiados Atrasados" formtarget="_blank" >
-          </form>
-      </li>
+  <ul class="Rel">
+    <li id="linkComandaAtrasadas">
+      <i class="fa fa-fw fa-drivers-license-o"></i>
+      <form action="{{ url_for('comanda.pdfComandasAtrasadas') }}" method="POST">
+        <input type="submit" value=" Fiados Atrasados" formtarget="_blank">
+      </form>
+    </li>
 
-      <li id="linkComandaAVista">
-        <i class="fa fa-fw fa-drivers-license-o"></i>
-        <form action="{{ url_for('comanda.pdfRecebimentoAVista') }}" method="POST">
-          <input type="submit" value="Recebimentos à Vista" formtarget="_blank" >
-          </form>
-      </li>
+    <li id="linkComandaAVista">
+      <i class="fa fa-fw fa-drivers-license-o"></i>
+      <form action="{{ url_for('comanda.pdfRecebimentoAVista') }}" method="POST">
+        <input type="submit" value=" Recebimentos à Vista" formtarget="_blank">
+      </form>
+    </li>
 
-      <li id="linkComandaFiado">
-        <i class="fa fa-fw fa-drivers-license-o"></i>
-        <form action="{{ url_for('comanda.pdfRecebimentoFiado') }}" method="POST">
-          <input type="submit" value="Recebimentos de Fiados" formtarget="_blank" >
-          </form>
-      </li>
+    <li id="linkComandaFiado">
+      <i class="fa fa-fw fa-drivers-license-o"></i>
+      <form action="{{ url_for('comanda.pdfRecebimentoFiado') }}" method="POST">
+        <input type="submit" value=" Recebimentos de Fiados" formtarget="_blank">
+      </form>
+    </li>
 
-      <li id="linkClientes">
-        <i class="fa fa-fw fa-group"></i>
-        <form action="{{ url_for('cliente.pdfCliente') }}" method="POST">
-          <input type="submit" value="Clientes" formtarget="_blank" >
-          </form>
-      </li>
+    <li id="linkClientes">
+      <i class="fa fa-fw fa-group"></i>
+      <form action="{{ url_for('cliente.pdfCliente') }}" method="POST">
+        <input type="submit" value=" Clientes" formtarget="_blank">
+      </form>
+    </li>
 
-      <li id="linkFucionarios">
-        <i class="fa fa-fw fa-user"></i>
-        <form action="{{ url_for('funcionario.pdfFuncionarios') }}" method="POST">
-          <input type="submit" value="Funcionários" formtarget="_blank" >
-          </form>
-      </li>
+    <li id="linkFucionarios">
+      <i class="fa fa-fw fa-user"></i>
+      <form action="{{ url_for('funcionario.pdfFuncionarios') }}" method="POST">
+        <input type="submit" value=" Funcionários" formtarget="_blank">
+      </form>
+    </li>
 
-      <li id="linkProdutos">
-        <i class="fa fa-fw fa-cubes"></i>
-        <form action="{{ url_for('produto.pdfProduto') }}" method="POST">
-          <input type="submit" value="Produtos" formtarget="_blank" >
-          </form>
-      </li>
-    </ul>
+    <li id="linkProdutos">
+      <i class="fa fa-fw fa-cubes"></i>
+      <form action="{{ url_for('produto.pdfProduto') }}" method="POST">
+        <input type="submit" value=" Produtos" formtarget="_blank">
+      </form>
+    </li>
+  </ul>
 </div>
 {% endblock %}
 {% block js %}

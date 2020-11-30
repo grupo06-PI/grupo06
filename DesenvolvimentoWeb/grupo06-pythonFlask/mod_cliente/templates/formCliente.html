@@ -6,7 +6,7 @@
 {{super()}}
 <style>
     form {
-        border: 3px solid  #1d1d40;
+        border: 3px solid #1d1d40;
         padding: 20px;
         background-color: rgb(11, 7, 31);
         width: 100%;
@@ -20,7 +20,7 @@
         font-size: 15px;
         text-align: center;
         border-radius: 4px;
-        border: 1px solid white;
+        border: 2px solid #1d1d40;
         font-weight: bold;
         background-color: rgb(11, 7, 31);
 
@@ -30,13 +30,12 @@
 
     .buttonsCfg:hover {
         color: rgb(11, 7, 31);
-        padding: 12px;
         background-color: #3a9ec2;
     }
 
-    #IconLista{
-    font-size: 19px;
-  }
+    #IconLista {
+        font-size: 19px;
+    }
 
     label {
         color: white;
@@ -54,20 +53,18 @@
     }
 
     #linkClient a:visited {
-        color:#98133F;
+        color: #98133F;
     }
 </style>
 {% endblock %}
 
 {% block content %}
 
-
 {% if cliente.id_cliente == 0 %}
 
 <label for="" class="titleForm">Novo Cliente</label>
 <form id="addCliente" name="addCliente" method="POST" enctype="multipart/form-data">
     {% else %}
-
     <label class="titleForm">Editar Cliente: {{ cliente.id_cliente }}</label>
     <form id="editCliente" name="editCliente" method="POST" enctype="multipart/form-data">
         {% endif %}
@@ -85,15 +82,19 @@
                     placeholder="Insira o nome do Cliente" maxlength="100" required>
             </div>
         </div>
+
         <br>
+
         <div class="row">
             <div class="col-md-3 mb-2">
                 <label for="cpf">CPF:</label>
-                <input value="{{ cliente.cpf }}" type="text" name="cpf" id="cpf" class="form-control" placeholder="000-000-000-00"
-                    maxlength="11" required>
+                <input value="{{ cliente.cpf }}" type="text" name="cpf" id="cpf" class="form-control"
+                    placeholder="000-000-000-00" maxlength="11" required>
             </div>
         </div>
+
         <br>
+
         <div class="row">
             <div class="col-md-3 mb-2">
                 <label for="telefone">Telefone:</label>
@@ -101,7 +102,9 @@
                     placeholder="(99) 99999-9999" maxlength="11">
             </div>
         </div>
+
         <br>
+
         <div class="row">
             <div class="col-md-3 mb-2">
                 <label for="compra_fiado">Compra Fiado:</label>
@@ -111,15 +114,19 @@
                 </select>
             </div>
         </div>
+
         <br>
+
         <div class="row">
             <div class="col-md-3 mb-2">
                 <label for="dia_fiado">Dia do Fiado:</label>
                 <input value="{{ cliente.dia_fiado }}" type="text" name="dia_fiado" id="dia_fiado" class="form-control"
-                    placeholder="" maxlength="8">
+                    placeholder="00/00/0000" maxlength="8">
             </div>
         </div>
+
         <br>
+
         <div class="row">
             <div class="col-md-3 mb-2">
                 <label for="senha">Senha:</label>
@@ -127,10 +134,11 @@
                     placeholder="********" maxlength="200">
             </div>
         </div>
+        
         <br>
 
-        <button type='submit' name='salvaUsuarioDB' id='salvaUsuarioDB' class="buttonsCfg"><i
-                class="fa fa-fw fa-save" id="IconLista"></i> Salvar</button>
+        <button type='submit' name='salvaUsuarioDB' id='salvaUsuarioDB' class="buttonsCfg"><i class="fa fa-fw fa-save"
+                id="IconLista"></i> Salvar</button>
 
     </form>
     </div>

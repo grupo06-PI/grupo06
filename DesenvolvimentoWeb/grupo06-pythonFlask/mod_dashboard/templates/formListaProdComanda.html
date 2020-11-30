@@ -12,10 +12,9 @@
     font-size: 15px;
     text-align: center;
     border-radius: 4px;
-    border: 1px solid white;
+    border: 2px solid #1d1d40;
     font-weight: bold;
     background-color: rgb(11, 7, 31);
-
     font-family: Snell Roundhand, sans-serif;
     font-variant: small-caps;
   }
@@ -23,7 +22,6 @@
   .buttonsCfg:hover {
     text-decoration: none;
     color: rgb(11, 7, 31);
-    padding: 12px;
     background-color: #3a9ec2;
   }
 
@@ -80,12 +78,10 @@
   }
 
   #linkDashboard a:visited {
-        color: #98133F;
-    }
+    color: #98133F;
+  }
 </style>
 {% endblock %}
-
-
 
 {% block content %}
 {{ super() }}
@@ -103,7 +99,6 @@
       </tr>
     </thead>
 
-
     <tbody>
       {% for produtosComandas in listaProdComandas: %}
       <tr>
@@ -120,7 +115,6 @@
         </td>
       </tr>
       {% endfor %}
-
     </tbody>
   </table>
 </div>
@@ -130,10 +124,8 @@
     <thead class="">
       <tr>
         <th scope="col">Valor Total</th>
-
       </tr>
     </thead>
-
 
     <tbody>
       {% for produtosComandas in subTotalComandas: %}
@@ -141,12 +133,9 @@
         <td> {{ produtosComandas[4] }}</td>
       </tr>
       {% endfor %}
-
     </tbody>
   </table>
 </div>
-
-
 
 {% endblock %}
 
@@ -158,15 +147,15 @@
   $("form[name='deleteProdComanda']").submit(function (e) {
     e.preventDefault(); // parar o envio para poder fazer manualmente
     swal({ // abre um popup pedindo a confirmação do usuário
-        title: "",
-        text: "Deseja realmente excluir o produto" + $(e.target)[0][0].value,
-        type: "warning",
-        showCancelButton: true,
-        confirmButtonClass: "btn-danger",
-        confirmButtonText: "Sim",
-        cancelButtonText: 'Cancelar',
-        closeOnConfirm: false
-      },
+      title: "",
+      text: "Deseja realmente excluir o produto" + $(e.target)[0][0].value,
+      type: "warning",
+      showCancelButton: true,
+      confirmButtonClass: "btn-danger",
+      confirmButtonText: "Sim",
+      cancelButtonText: 'Cancelar',
+      closeOnConfirm: false
+    },
       function () {
         deleteProd($(e.target)[0][0].value); // Retorna o valor que está no id do produto escolhido);
       });
@@ -178,14 +167,14 @@
     }, function (data) {
       if (!data.erro) {
         swal({
-            title: "",
-            text: data.mensagem,
-            type: "success",
-            confirmButtonClass: "btn-success",
-            confirmButtonText: "Ok",
-            closeOnConfirm: false,
-            closeOnCancel: false
-          },
+          title: "",
+          text: data.mensagem,
+          type: "success",
+          confirmButtonClass: "btn-success",
+          confirmButtonText: "Ok",
+          closeOnConfirm: false,
+          closeOnCancel: false
+        },
           function (isConfirm) {
             if (isConfirm) {
               window.location.replace($SCRIPT_ROOT + "{{ url_for('dashboard.ComandasAbertas') }}");

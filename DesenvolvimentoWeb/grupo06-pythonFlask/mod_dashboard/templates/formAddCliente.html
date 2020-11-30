@@ -6,7 +6,7 @@
 {{super()}}
 <style>
     form {
-        border: 3px solid  #1d1d40;
+        border: 3px solid #1d1d40;
         padding: 20px;
         background-color: rgb(11, 7, 31);
         width: 100%;
@@ -20,23 +20,21 @@
         font-size: 15px;
         text-align: center;
         border-radius: 4px;
-        border: 1px solid white;
+        border: 2px solid #1d1d40;
         font-weight: bold;
         background-color: rgb(11, 7, 31);
-
         font-family: Snell Roundhand, sans-serif;
         font-variant: small-caps;
     }
 
     .buttonsCfg:hover {
         color: rgb(11, 7, 31);
-        padding: 12px;
         background-color: #3a9ec2;
     }
 
-    #IconLista{
-    font-size: 19px;
-  }
+    #IconLista {
+        font-size: 19px;
+    }
 
     label {
         color: white;
@@ -68,19 +66,19 @@
         <div class="col-md-2 mb-2">
             <label for="id_comanda">Comanda ID:</label>
             <input value="{{ comandaAddCliente.id_comanda }}" type="text" name="id_comanda" id="id_comanda"
-                class="form-control" placeholder="" >
+                class="form-control" placeholder="">
         </div>
     </div>
     <br>
     <div class="row">
- <!--
+        <!--
             <div class="col-md-2 mb-2">
                 <label for="id_cliente">id cliente:</label>
                 <input value="{{ comandaAddCliente.id_cliente }}" type="text" name="id_cliente" id="id_cliente"
                     class="form-control" placeholder="" >
             </div>
     -->
-          
+    
         <div class="col-md-4 mb-2">
             <label for="nome">Nome Cliente:</label>
             <select name="id_cliente" id="id_cliente" class="form-control">
@@ -90,10 +88,10 @@
                 {% endfor %}
             </select>
         </div>
-    
-    </div>
-    <br>
 
+    </div>
+
+    <br>
 
     <button type='submit' name='salvaClienteDB' id='salvaClienteDB' class="buttonsCfg"><i class="fa fa-fw fa-save"
             id="IconLista"></i> Salvar</a></button>
@@ -127,14 +125,14 @@
             success: function (data) {
                 if (!data.erro) {
                     swal({
-                            title: "",
-                            text: data.mensagem,
-                            type: "success",
-                            confirmButtonClass: "btn-success",
-                            confirmButtonText: "Ok",
-                            closeOnConfirm: false,
-                            closeOnCancel: false
-                        },
+                        title: "",
+                        text: data.mensagem,
+                        type: "success",
+                        confirmButtonClass: "btn-success",
+                        confirmButtonText: "Ok",
+                        closeOnConfirm: false,
+                        closeOnCancel: false
+                    },
                         function (isConfirm) {
                             if (isConfirm) {
                                 window.location.replace($SCRIPT_ROOT +
