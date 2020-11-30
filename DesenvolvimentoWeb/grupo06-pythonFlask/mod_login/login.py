@@ -27,7 +27,7 @@ def validaLogin():
     funcionario = Funcionarios()
 
     funcionario.cpf = request.form['cpf']
-    funcionario.senha = funcoes.encrypt(request.form['senha'])
+    funcionario.senha = request.form['senha'] #funcoes.encrypt(request.form['senha'])
 
     #realiza a busca pelo usuário e armazena o resultado no objeto
     funcionario.selectLogin()

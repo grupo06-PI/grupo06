@@ -51,6 +51,10 @@
     i:hover {
         color: black;
     }
+
+    .admin.oculta {
+      visibility:hidden ;
+    }
 </style>
 {% endblock %}
 
@@ -117,10 +121,12 @@
             <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[8] }}</th>
 
             <td>
+                <div class="admin">
                 <form action='{{ url_for('comanda.Recebimento') }}' method='POST' name='Recebimento'>
                     <input type='hidden' name='id_comanda' value='{{ row[0] }}'>
                     <button type='submit' name='formRecebimentoAVista'><i class='fa fa-fw fa-user' id="IconLista">Finalizar</i></button>
                 </form>
+            </div>
             </td>
         </tr>
     </table>
@@ -131,7 +137,11 @@
 {% endblock %}
 
 {% block js %}
-<script>
-
-</script>
+{{super()}}
+<Script>
+    if ("{{ session['grupo'] }}" != 'Admin') {
+      $('.menu ul .admin').toggleClass('oculta');
+      $('.admin').toggleClass('oculta')
+    }
+</Script>
 {% endblock %}
