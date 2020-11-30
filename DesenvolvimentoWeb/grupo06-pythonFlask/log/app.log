@@ -9528,3 +9528,25 @@ INFO|werkzeug|30/11/2020 02:10:14 AM| * Detected change in 'C:\\grupo06\\Desenvo
 INFO|werkzeug|30/11/2020 02:12:52 AM| * Detected change in 'C:\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_login\\login.py', reloading
 INFO|werkzeug|30/11/2020 02:12:56 AM| * Detected change in 'C:\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_login\\login.py', reloading
 INFO|werkzeug|30/11/2020 02:13:02 AM| * Detected change in 'C:\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_login\\login.py', reloading
+INFO|werkzeug|30/11/2020 02:17:37 AM|127.0.0.1 - - [30/Nov/2020 02:17:37] "[37mGET / HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 02:17:37 AM|127.0.0.1 - - [30/Nov/2020 02:17:37] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 02:17:37 AM|127.0.0.1 - - [30/Nov/2020 02:17:37] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 02:17:37 AM|127.0.0.1 - - [30/Nov/2020 02:17:37] "[37mGET /static/bootstrap-4.5.2-dist/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 02:17:38 AM|127.0.0.1 - - [30/Nov/2020 02:17:38] "[37mGET / HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 02:17:38 AM|127.0.0.1 - - [30/Nov/2020 02:17:38] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 02:17:38 AM|127.0.0.1 - - [30/Nov/2020 02:17:38] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 02:17:38 AM|127.0.0.1 - - [30/Nov/2020 02:17:38] "[37mGET /static/bootstrap-4.5.2-dist/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 02:17:38 AM|127.0.0.1 - - [30/Nov/2020 02:17:38] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+WARNING|root|30/11/2020 02:17:39 AM|Tentativa de Login|Usuário:123|
+INFO|werkzeug|30/11/2020 02:17:39 AM|127.0.0.1 - - [30/Nov/2020 02:17:39] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 02:17:40 AM|127.0.0.1 - - [30/Nov/2020 02:17:40] "[37mGET /?falhaLogin=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 02:17:40 AM|127.0.0.1 - - [30/Nov/2020 02:17:40] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+WARNING|root|30/11/2020 02:17:42 AM|Tentativa de Login|Usuário:123|
+INFO|werkzeug|30/11/2020 02:17:42 AM|127.0.0.1 - - [30/Nov/2020 02:17:42] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 02:17:42 AM|127.0.0.1 - - [30/Nov/2020 02:17:42] "[37mGET /?falhaLogin=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 02:17:42 AM|127.0.0.1 - - [30/Nov/2020 02:17:42] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+WARNING|root|30/11/2020 02:17:44 AM|Tentativa de Login|Usuário:123|
+INFO|werkzeug|30/11/2020 02:17:44 AM|127.0.0.1 - - [30/Nov/2020 02:17:44] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 02:17:44 AM|127.0.0.1 - - [30/Nov/2020 02:17:44] "[37mGET /?falhaLogin=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 02:17:44 AM|127.0.0.1 - - [30/Nov/2020 02:17:44] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 02:17:53 AM| * Detected change in 'C:\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_login\\login.py', reloading
