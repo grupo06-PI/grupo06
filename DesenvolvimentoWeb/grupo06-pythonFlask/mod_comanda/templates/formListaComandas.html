@@ -4,8 +4,11 @@
 
 {% block style %}
 {{super()}}
-
 <style>
+  .btn {
+    margin-top: 5px;
+  }
+
   .buttonsCfg {
     padding: 10px;
     text-decoration: none;
@@ -13,7 +16,7 @@
     font-size: 15px;
     text-align: center;
     border-radius: 4px;
-    border: 1px solid white;
+    border: 2px solid #1d1d40;
     font-weight: bold;
     background-color: rgb(11, 7, 31);
 
@@ -72,11 +75,11 @@
   }
 
   button {
-    background-color:  rgb(11, 7, 31);
+    background-color: rgb(11, 7, 31);
     border: 1px solid rgb(11, 7, 31);
   }
 
-  #IconLista{
+  #IconLista {
     font-size: 19px;
   }
 
@@ -86,13 +89,12 @@
 </style>
 {% endblock %}
 
-
 {% block content %}
 {{ super() }}
-
-<div class="menu">
+<div class="btn">
   <ul>
-    <a class="buttonsCfg" href="{{url_for('comanda.AbrirComanda')}}"><i class="fa fa-fw fa-plus" id="IconLista"></i> Abrir Comanda</a>
+    <a class="buttonsCfg" href="{{url_for('comanda.AbrirComanda')}}"><i class="fa fa-fw fa-plus" id="IconLista"></i>
+      Abrir Comanda</a>
   </ul>
 </div>
 
@@ -134,7 +136,6 @@
     </tbody>
   </table>
 </div>
-
 
 {% endblock %}
 
@@ -185,6 +186,4 @@
     })
   }
 </script>
-
-
 {% endblock %}

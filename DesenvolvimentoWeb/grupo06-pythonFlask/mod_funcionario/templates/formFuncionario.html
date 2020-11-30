@@ -6,7 +6,7 @@
 {{super()}}
 <style>
     form {
-        border: 3px solid  #1d1d40;
+        border: 3px solid #1d1d40;
         padding: 20px;
         background-color: rgb(11, 7, 31);
         width: 100%;
@@ -20,7 +20,7 @@
         font-size: 15px;
         text-align: center;
         border-radius: 4px;
-        border: 1px solid white;
+        border: 2px solid #1d1d40;
         font-weight: bold;
         background-color: rgb(11, 7, 31);
 
@@ -30,13 +30,12 @@
 
     .buttonsCfg:hover {
         color: rgb(11, 7, 31);
-        padding: 12px;
         background-color: #3a9ec2;
     }
 
-    #IconLista{
-    font-size: 19px;
-  }
+    #IconLista {
+        font-size: 19px;
+    }
 
     label {
         color: white;
@@ -54,7 +53,7 @@
     }
 
     #linkEmployee a:visited {
-        color:#98133F;
+        color: #98133F;
     }
 </style>
 
@@ -89,7 +88,9 @@
                         class="form-control" placeholder="Insira o nome do Funcionário" maxlength="100" required>
                 </div>
             </div>
+
             <br>
+
             <div class="row">
                 <div class="col-md-3 mb-2">
                     <label for="matricula">Matrícula:</label>
@@ -97,7 +98,9 @@
                         class="form-control" placeholder="0000000000" maxlength="10" required>
                 </div>
             </div>
+
             <br>
+
             <div class="row">
                 <div class="col-md-3 mb-2">
                     <label for="cpf">CPF:</label>
@@ -105,7 +108,9 @@
                         placeholder="000-000-000-00" maxlength="11" required>
                 </div>
             </div>
+
             <br>
+
             <div class="row">
                 <div class="col-md-3 mb-2">
                     <label for="telefone">Telefone:</label>
@@ -113,7 +118,9 @@
                         class="form-control" placeholder="(99) 99999-9999" maxlength="11" required>
                 </div>
             </div>
+
             <br>
+
             <div class="row">
 
                 <div class="col-md-3 mb-2">
@@ -123,21 +130,23 @@
                         <option value="1">Administrador</option>
                     </select>
                 </div>
-
             </div>
+
             <br>
+
             <div class="row">
                 <div class="col-md-3 mb-2">
                     <label for="senha">Senha:</label>
                     <input value="{{ funcionario.senha }}" type="password" name="senha" id="senha" class="form-control"
                         placeholder="********" maxlength="200" required>
                 </div>
-            </div><br>
+            </div>
+            
+            <br>
+
             <button type='submit' name='salvaFuncionarioDB' id='salvaFuncionarioDB' class="buttonsCfg"><i
-                class="fa fa-fw fa-save" id="IconLista"></i> Salvar</a></button>
+                    class="fa fa-fw fa-save" id="IconLista"></i> Salvar</a></button>
         </form>
-
-
         {% endblock %}
 
         {% block js %}

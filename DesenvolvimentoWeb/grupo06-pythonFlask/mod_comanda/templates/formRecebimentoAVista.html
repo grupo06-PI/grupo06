@@ -6,7 +6,7 @@
 {{super()}}
 <style>
     form {
-        border: 3px solid  #1d1d40;
+        border: 3px solid #1d1d40;
         padding: 20px;
         background-color: rgb(11, 7, 31);
         width: 100%;
@@ -20,7 +20,7 @@
         font-size: 15px;
         text-align: center;
         border-radius: 4px;
-        border: 1px solid white;
+        border: 2px solid #1d1d40;
         font-weight: bold;
         background-color: rgb(11, 7, 31);
 
@@ -30,13 +30,12 @@
 
     .buttonsCfg:hover {
         color: rgb(11, 7, 31);
-        padding: 12px;
         background-color: #3a9ec2;
     }
 
-    #IconLista{
-    font-size: 19px;
-  }
+    #IconLista {
+        font-size: 19px;
+    }
 
     label {
         color: white;
@@ -54,33 +53,30 @@
     }
 
     #linkDashboard a:visited {
-        color:#98133F;
+        color: #98133F;
     }
 </style>
 {% endblock %}
 
 {% block content %}
-
-<br>
-
 <label for="" class="titleForm">Recebimentos</label>
 <form id="finalizarRecebimento" name="finalizarRecebimento" method="POST" enctype="multipart/form-data">
 
     <div class="row">
         <div class="col-md-2 mb-2">
             <label for="id_comanda">Comanda ID:</label>
-            <input value="{{ comanda.id_comanda }}" type="text" name="id_comanda" id="id_comanda"
-                class="form-control" placeholder="" readonly>
+            <input value="{{ comanda.id_comanda }}" type="text" name="id_comanda" id="id_comanda" class="form-control"
+                placeholder="" readonly>
         </div>
-
 
         <div class="col-md-2 mb-2">
             <label for="cpf">CPF Usuário:</label>
-            <input value="" type="text" name="cpf" id="cpf"
-                class="form-control" placeholder="" maxlength="11">
+            <input value="" type="text" name="cpf" id="cpf" class="form-control" placeholder="" maxlength="11">
         </div>
     </div>
+
     <br>
+
     <div class="row">
         <div class="col-md-2 mb-2">
             {% for produtosComandas in subTotalComandas: %}
@@ -92,19 +88,22 @@
 
         <div class="col-md-2 mb-2">
             <label for="">Senha Usuário:</label>
-            <input value="" type="password" name="senha" id="senha"
-                class="form-control" placeholder="" maxlength="200" >
+            <input value="" type="password" name="senha" id="senha" class="form-control" placeholder="" maxlength="200">
         </div>
     </div>
+
     <br>
+
     <div class="row">
         <div class="col-md-2 mb-2">
             <label for="valor_acrescimo">Valor Acréscimo:</label>
-            <input value="{{ comandaRecebimento.valor_acrescimo }}" type="number" name="valor_acrescimo" id="valor_acrescimo"
-                class="form-control" placeholder="" readonly>
+            <input value="{{ comandaRecebimento.valor_acrescimo }}" type="number" name="valor_acrescimo"
+                id="valor_acrescimo" class="form-control" placeholder="" readonly>
         </div>
     </div>
+
     <br>
+
     <div class="row">
         <div class="col-md-2 mb-2">
             <label for="valor_desconto">Valor Desconto:</label>
@@ -112,7 +111,9 @@
                 class="form-control" placeholder="" required>
         </div>
     </div>
+
     <br>
+
     <div class="row">
         <div class="col-md-2 mb-2">
             <label for="subtotal">Subtotal:</label>
@@ -120,7 +121,9 @@
                 class="form-control" placeholder="" readonly>
         </div>
     </div>
+
     <br>
+
     <div class="row">
         <div class="col-md-2 mb-2">
             <label for="">Tipo Recebimento:</label>
@@ -130,69 +133,67 @@
             </select>
         </div>
     </div>
+
     <br>
+
     <button type='submit' name='salvaClienteDB' id='salvaClienteDB' class="buttonsCfg"><i class="fa fa-fw fa-save"
             id="IconLista"></i> Salvar</a></button>
 </form>
 
 <br><br>
-
 {% endblock %}
 
 {% block js %}
 {{super()}}
 <script>
-
-$('#valor_desconto').change(function (){
-      $('#subtotal').val($('#valor_total').val() - $('#valor_desconto').val()) 
+    $('#valor_desconto').change(function () {
+        $('#subtotal').val($('#valor_total').val() - $('#valor_desconto').val())
     })
 
     $SCRIPT_ROOT = {{ request.script_root | tojson | safe }}; // pega a url da barra de endereço
 
-$('#finalizarRecebimento').submit(function (e) {
-    e.preventDefault(); // parar o envio para poder fazer manualmente
-    var form = $('#finalizarRecebimento')[0]; // captura o form
-    var data = new FormData(form); // cria o FormData {Object}
+    $('#finalizarRecebimento').submit(function (e) {
+        e.preventDefault(); // parar o envio para poder fazer manualmente
+        var form = $('#finalizarRecebimento')[0]; // captura o form
+        var data = new FormData(form); // cria o FormData {Object}
 
-    $.ajax({
-        type: "POST",
-        enctype: 'multipart/form-data',
-        url: "{{url_for('comanda.finalizarRecebimento')}}",
-        data: data,
-        processData: false,
-        contentType: false,
-        cache: false,
-        timeout: 600000,
+        $.ajax({
+            type: "POST",
+            enctype: 'multipart/form-data',
+            url: "{{url_for('comanda.finalizarRecebimento')}}",
+            data: data,
+            processData: false,
+            contentType: false,
+            cache: false,
+            timeout: 600000,
 
-        // manipular o retorno da requisição
-        success: function (data) {
-            console.log(data)
-            if (!data.erro) {
-                swal({
-                    title: "",
-                    text: data.mensagem,
-                    type: "success",
-                    confirmButtonClass: "btn-success",
-                    confirmButtonText: "Ok",
-                    closeOnConfirm: false,
-                    closeOnCancel: false
-                },
-                    function (isConfirm) {
-                        if (isConfirm) {
-                            window.location.replace($SCRIPT_ROOT +
-                                "{{ url_for('dashboard.ComandasAbertas') }}");
-                        }
-                    });
-            } else {
-                swal("", data.mensagem + '\n' + data.mensagem_exception, "error");
+            // manipular o retorno da requisição
+            success: function (data) {
+                console.log(data)
+                if (!data.erro) {
+                    swal({
+                        title: "",
+                        text: data.mensagem,
+                        type: "success",
+                        confirmButtonClass: "btn-success",
+                        confirmButtonText: "Ok",
+                        closeOnConfirm: false,
+                        closeOnCancel: false
+                    },
+                        function (isConfirm) {
+                            if (isConfirm) {
+                                window.location.replace($SCRIPT_ROOT +
+                                    "{{ url_for('dashboard.ComandasAbertas') }}");
+                            }
+                        });
+                } else {
+                    swal("", data.mensagem + '\n' + data.mensagem_exception, "error");
+                }
+            },
+            error: function (e) {
+                console.log(e);
             }
-        },
-        error: function (e) {
-            console.log(e);
-        }
+        })
     })
-})
-
-
 </script>
 {% endblock %}

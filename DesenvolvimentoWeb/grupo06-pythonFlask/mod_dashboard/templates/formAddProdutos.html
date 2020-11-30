@@ -6,7 +6,7 @@
 {{super()}}
 <style>
     form {
-        border: 3px solid  #1d1d40;
+        border: 3px solid #1d1d40;
         padding: 20px;
         background-color: rgb(11, 7, 31);
         width: 100%;
@@ -20,23 +20,21 @@
         font-size: 15px;
         text-align: center;
         border-radius: 4px;
-        border: 1px solid white;
+        border: 2px solid #1d1d40;
         font-weight: bold;
         background-color: rgb(11, 7, 31);
-
         font-family: Snell Roundhand, sans-serif;
         font-variant: small-caps;
     }
 
     .buttonsCfg:hover {
         color: rgb(11, 7, 31);
-        padding: 12px;
         background-color: #3a9ec2;
     }
 
-    #IconLista{
-    font-size: 19px;
-  }
+    #IconLista {
+        font-size: 19px;
+    }
 
     label {
         color: white;
@@ -67,10 +65,13 @@
     <div class="row">
         <div class="col-md-2 mb-2">
             <label for="comanda_id">Comanda ID:</label>
-            <input value="{{ comandaAddProd.comanda_id }}" type="text" name="comanda_id" id="comanda_id" class="form-control" placeholder="ID da Comanda" readonly>
+            <input value="{{ comandaAddProd.comanda_id }}" type="text" name="comanda_id" id="comanda_id"
+                class="form-control" placeholder="ID da Comanda" readonly>
         </div>
     </div>
+
     <br>
+
     <div class="row">
 
         <div class="col-md-4 mb-2">
@@ -82,31 +83,38 @@
                 {% endfor %}
             </select>
         </div>
-
     </div>
+
     <br>
+
     <div class="row">
         <div class="col-md-4 mb-2">
             <label for="unitario">Valor Unitário:</label>
             <input value="" type="text" name="unitario" id="unitario" class="form-control" readonly>
         </div>
     </div>
+
     <br>
+
     <div class="row">
         <div class="col-md-4 mb-2">
             <label for="">Quantidade:</label>
-            <input value="{{ comandaAddProd.quantidade}}" type="number" name="quantidade" id="quantidade" class="form-control" placeholder="">
+            <input value="{{ comandaAddProd.quantidade}}" type="number" name="quantidade" id="quantidade"
+                class="form-control" placeholder="">
         </div>
     </div>
+
     <br>
+
     <div class="row">
         <div class="col-md-4 mb-2">
             <label for="valor_total">Valor Total:</label>
-            <input value="{{ comandaAddProd.valor_unitario}}" type="number" name="valor_total" id="valor_total" class="form-control" placeholder="" readonly>
+            <input value="{{ comandaAddProd.valor_unitario}}" type="number" name="valor_total" id="valor_total"
+                class="form-control" placeholder="" readonly>
         </div>
     </div>
+
     <br>
-    
 
     <button type='submit' name='salvaComandaDB' id='salvaComandaDB' class="buttonsCfg"><i class="fa fa-fw fa-save"
             id="IconLista"></i> Salvar</a></button>
@@ -140,14 +148,14 @@
             success: function (data) {
                 if (!data.erro) {
                     swal({
-                            title: "",
-                            text: data.mensagem,
-                            type: "success",
-                            confirmButtonClass: "btn-success",
-                            confirmButtonText: "Ok",
-                            closeOnConfirm: false,
-                            closeOnCancel: false
-                        },
+                        title: "",
+                        text: data.mensagem,
+                        type: "success",
+                        confirmButtonClass: "btn-success",
+                        confirmButtonText: "Ok",
+                        closeOnConfirm: false,
+                        closeOnCancel: false
+                    },
                         function (isConfirm) {
                             if (isConfirm) {
                                 window.location.replace($SCRIPT_ROOT +
@@ -165,14 +173,14 @@
     })
 
     //parte de listagem de produtos
-    $(document).ready(function() {
+    $(document).ready(function () {
 
 
         $('#id_produto').change(function (e) {
             $.post($SCRIPT_ROOT + "{{ url_for('dashboard.buscaProduto') }}",
 
-                {id_produto: e.target.value},
-                 function (data) {
+                { id_produto: e.target.value },
+                function (data) {
                     let produto = $.parseJSON(data.produto);
                     $('#unitario').val(produto.valor_unitario);
                 })
@@ -181,10 +189,8 @@
 
     })
 
-    $('#quantidade').change(function (){
-      $('#valor_total').val($('#quantidade').val() * $('#unitario').val()) 
+    $('#quantidade').change(function () {
+        $('#valor_total').val($('#quantidade').val() * $('#unitario').val())
     })
-
-
 </script>
 {% endblock %}

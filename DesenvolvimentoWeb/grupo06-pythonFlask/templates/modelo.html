@@ -8,17 +8,13 @@
 <link rel="stylesheet" href="{{ url_for('static', filename='css/modelo/all.css') }}">
 
 <head>
-
-  {% block style %} 
+  {% block style %}
   <style>
     .menu ul .admin.oculta {
-      visibility:hidden ;
+      visibility: hidden;
     }
   </style>
-
   {% endblock %}
-
-
 
   <!-- Importando sweetalert.css-->
   <link rel="stylesheet" href="{{ url_for('static', filename='sweetalert/sweetalert.css') }}">
@@ -72,7 +68,6 @@
               <a href="{{url_for('funcionario.ListaFuncionarios')}}">Funcionários</a>
             </li>
 
-
             <li class="admin" id="linkProduct">
               <i class="fa fa-fw fa-cubes"></i>
               <a href="{{url_for('produto.ListaProdutos')}}">Produtos</a>
@@ -82,7 +77,6 @@
               <i class="fa fa-fw fa-money"></i>
               <a href="{{url_for('comanda.formRecebimentosFiados')}}">Recebimentos</a>
             </li>
-
 
             <li class="admin" id="linkSettings">
               <i class="fa fa-fw fa-cogs"></i>
@@ -130,28 +124,25 @@
   <script src="{{ url_for('static', filename='sweetalert/sweetalert.min.js') }}"></script>
 
   <script type="text/javascript">
-    $(document).ready(function() {
-        $("#telefone").mask("(00) 00000-0000")
-        $("#cpf").mask("000.000.000-00")
-        $("#dia_fiado").mask("00/00/0000")
-        $("#valor_unitario").mask('#.##0,00', {reverse: true});
-        $("#taxa_juro_diario").mask('#.##0,00', {reverse: true});
-        $("#multa_atraso").mask('#.##0,00', {reverse: true});
-        
+    $(document).ready(function () {
+      $("#telefone").mask("(00) 00000-0000")
+      $("#cpf").mask("000.000.000-00")
+      $("#dia_fiado").mask("00/00/0000")
+      $("#valor_unitario").mask('#.##0,00', { reverse: true });
+      $("#taxa_juro_diario").mask('#.##0,00', { reverse: true });
+      $("#multa_atraso").mask('#.##0,00', { reverse: true });
+
     })
   </script>
 
   {% block js %}
   <Script>
     if ("{{ session['grupo'] }}" != 'Admin') {
-    $('.menu ul .admin').toggleClass('oculta')
-  }
-</Script>
+      $('.menu ul .admin').toggleClass('oculta')
+    }
+  </Script>
   {% endblock %}
 
-
 </body>
-
-
 
 </html>
