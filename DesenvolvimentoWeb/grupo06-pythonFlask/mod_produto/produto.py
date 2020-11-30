@@ -40,7 +40,7 @@ def addProduto():
         produto.id_produto = request.form['id_produto']
         produto.nome = request.form['nome']
         produto.descricao = request.form['descricao']
-        produto.valor_unitario = request.form['valor_unitario']
+        produto.valor_unitario = request.form['valor_unitario'].replace(',','.')
         produto.foto = "data:" + request.files['foto'].content_type + ";base64," +str(base64.b64encode(request.files['foto'].read()), "utf-8")
 
         _msg = produto.insert()
@@ -71,7 +71,7 @@ def editProduto():
         produto.id_produto = request.form['id_produto']
         produto.nome = request.form['nome']
         produto.descricao = request.form['descricao']
-        produto.valor_unitario = request.form['valor_unitario']
+        produto.valor_unitario = request.form['valor_unitario'].replace(',','.')
         produto.foto = "data:" + request.files['foto'].content_type + ";base64," +str(base64.b64encode(request.files['foto'].read()), "utf-8")
 
         _msg = produto.update()

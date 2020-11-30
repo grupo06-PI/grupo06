@@ -48,8 +48,8 @@ def addFuncionario():
         funcionario.id_funcionario = request.form['id_funcionario']
         funcionario.nome = request.form['nome']
         funcionario.matricula = request.form['matricula']
-        funcionario.cpf = request.form['cpf']
-        funcionario.telefone = request.form['telefone']
+        funcionario.cpf = request.form['cpf'].replace('.','').replace('-','')
+        funcionario.telefone = request.form['telefone'].replace('(','').replace(')','').replace(' ','').replace('-','')
         funcionario.grupo = request.form['grupo']
         funcionario.senha = funcoes.encrypt(request.form['senha'])  
         _msg = funcionario.insert()
@@ -80,10 +80,10 @@ def editFuncionario():
             funcionario.id_funcionario = request.form['id_funcionario']
             funcionario.nome = request.form['nome']
             funcionario.matricula = request.form['matricula']
-            funcionario.cpf = request.form['cpf']
-            funcionario.telefone = request.form['telefone']
+            funcionario.cpf = request.form['cpf'].replace('.','').replace('-','')
+            funcionario.telefone = request.form['telefone'].replace('(','').replace(')','').replace(' ','').replace('-','')
             funcionario.grupo = request.form['grupo']
-            funcionario.senha = funcoes.encrypt(request.form['senha'])
+            funcionario.senha = funcoes.encrypt(request.form['senha']) 
 
             _msg = funcionario.update()
 

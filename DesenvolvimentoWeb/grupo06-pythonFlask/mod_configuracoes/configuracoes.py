@@ -38,8 +38,8 @@ def editConfiguracoes():
     try:
 
         configuracoes = Configuracoes()
-        configuracoes.taxa_juro_diario = request.form['taxa_juro_diario']
-        configuracoes.multa_atraso = request.form['multa_atraso']
+        configuracoes.taxa_juro_diario = request.form['taxa_juro_diario'].replace(',','.')
+        configuracoes.multa_atraso = request.form['multa_atraso'].replace(',','.')
       
         _msg = configuracoes.update()
 

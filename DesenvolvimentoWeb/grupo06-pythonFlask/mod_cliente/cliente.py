@@ -44,10 +44,10 @@ def addCliente():
 
         cliente.id_cliente = request.form['id_cliente']
         cliente.nome = request.form['nome']
-        cliente.cpf = request.form['cpf']
-        cliente.telefone = request.form['telefone']
+        cliente.cpf = request.form['cpf'].replace('.','').replace('-','')
+        cliente.telefone = request.form['telefone'].replace('(','').replace(')','').replace(' ','').replace('-','')
         cliente.compra_fiado = request.form['compra_fiado']
-        cliente.dia_fiado = request.form['dia_fiado']
+        cliente.dia_fiado = request.form['dia_fiado'].replace('/','')
         cliente.senha = funcoes.encrypt(request.form['senha']) 
 
         _msg = cliente.insert()
@@ -79,11 +79,11 @@ def editCliente():
 
         cliente.id_cliente = request.form['id_cliente']
         cliente.nome = request.form['nome']
-        cliente.cpf = request.form['cpf']
-        cliente.telefone = request.form['telefone']
+        cliente.cpf = request.form['cpf'].replace('.','').replace('-','')
+        cliente.telefone = request.form['telefone'].replace('(','').replace(')','').replace(' ','').replace('-','')
         cliente.compra_fiado = request.form['compra_fiado']
-        cliente.dia_fiado = request.form['dia_fiado']
-        cliente.senha = funcoes.encrypt(request.form['senha'])  
+        cliente.dia_fiado = request.form['dia_fiado'].replace('/','')
+        cliente.senha = funcoes.encrypt(request.form['senha'])   
 
         _msg = cliente.update()
 
