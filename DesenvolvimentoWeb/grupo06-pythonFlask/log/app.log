@@ -9996,3 +9996,4 @@ INFO|werkzeug|30/11/2020 08:01:24 PM|127.0.0.1 - - [30/Nov/2020 20:01:24] "[33m
 INFO|werkzeug|30/11/2020 08:02:31 PM| * Detected change in 'C:\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_login\\login.py', reloading
 INFO|werkzeug|30/11/2020 08:02:31 PM| * Restarting with stat
 INFO|werkzeug|30/11/2020 08:02:43 PM| * Detected change in 'C:\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_login\\login.py', reloading
+INFO|werkzeug|30/11/2020 08:02:43 PM| * Restarting with stat
