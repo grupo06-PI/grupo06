@@ -51,8 +51,7 @@ def addFuncionario():
         funcionario.cpf = request.form['cpf']
         funcionario.telefone = request.form['telefone']
         funcionario.grupo = request.form['grupo']
-        funcionario.senha = request.form['senha']
-
+        funcionario.senha = funcoes.encrypt(request.form['senha'])  
         _msg = funcionario.insert()
         
         #log
@@ -84,7 +83,7 @@ def editFuncionario():
             funcionario.cpf = request.form['cpf']
             funcionario.telefone = request.form['telefone']
             funcionario.grupo = request.form['grupo']
-            funcionario.senha = request.form['senha']
+            funcionario.senha = funcoes.encrypt(request.form['senha'])
 
             _msg = funcionario.update()
 

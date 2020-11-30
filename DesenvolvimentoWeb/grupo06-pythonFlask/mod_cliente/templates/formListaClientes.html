@@ -103,7 +103,6 @@
         <th scope="col">Telefone</th>
         <th scope="col">Compra Fiado</th>
         <th scope="col">Dia do Fiado</th>
-        <th scope="col">Senha</th>
         <th scope="col">Editar</th>
         <th scope="col">Excluir</th>
       </tr>
@@ -121,7 +120,6 @@
         <td> {{ row[3] }}</td>
         <td> {{ row[4] }}</td>
         <td> {{ row[5] }}</td>
-        <td> {{ row[6] }}</td>
         <td>
           <form action='{{ url_for('cliente.formEditCliente') }}' method='POST' name='editCliente'>
             <input type='hidden' name='id_cliente' value='{{ row[0] }}'>
