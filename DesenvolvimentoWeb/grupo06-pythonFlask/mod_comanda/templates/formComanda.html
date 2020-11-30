@@ -6,7 +6,7 @@
 {{super()}}
 <style>
     form {
-        border: 3px solid  #1d1d40;
+        border: 3px solid #1d1d40;
         padding: 20px;
         background-color: rgb(11, 7, 31);
         width: 100%;
@@ -34,9 +34,9 @@
         background-color: #3a9ec2;
     }
 
-    #IconLista{
-    font-size: 19px;
-  }
+    #IconLista {
+        font-size: 19px;
+    }
 
     label {
         color: white;
@@ -68,19 +68,21 @@
         <div class="col-md-1 mb-2">
             <label for="id_comanda">ID:</label>
             <input readonly value="{{ comanda.id_comanda }}" type="text" name="id_comanda" id="id_comanda"
-                class="form-control" placeholder="ID da Comanda" required >
+                class="form-control" placeholder="ID da Comanda" required>
         </div>
 
         <div class="col-md-6 mb-2">
             <label for="numero_comanda">Número Comanda:</label>
             <input value="{{ comanda.numero_comanda }}" type="text" name="numero_comanda" id="numero_comanda" autofocus
                 class="form-control" placeholder="Insira o número da Comanda" maxlenght="100">
+            <div class="valid-feedback">Comanda Disponível!</div> <!-- incluido para ajax -->
+            <div class="invalid-feedback">Comanda em uso! Tente outra!</div> <!-- incluido para ajax -->
         </div>
     </div>
     <br>
 
-    <button type='submit' name='salvaComandaDB' id='salvaComandaDB' class="buttonsCfg"><i
-        class="fa fa-fw fa-save" id="IconLista"></i> Salvar</a></button>
+    <button type='submit' name='salvaComandaDB' id='salvaComandaDB' class="buttonsCfg"><i class="fa fa-fw fa-save"
+            id="IconLista"></i> Salvar</a></button>
 </form>
 
 {% endblock %}
@@ -89,6 +91,32 @@
 {{super()}}
 <script>
     $SCRIPT_ROOT = {{ request.script_root | tojson | safe }}; // pega a url da barra de endereço
+    
+    $(document).ready(function () {
+        //Verifica se comanda está aberta
+        $('#numero_comanda').keyup(function (e) {
+            if (e.target.value.length > 0) {
+                $.post($SCRIPT_ROOT + "{{ url_for('comanda.verificaSeComandaAberta') }}", {
+                    numero_comanda: $('#numero_comanda').val()
+                }, function (data) {
+                    if (data.erro) {
+                        console.log(data.mensagem_exception);
+                    }
+                    else if (data.comanda_existe) {
+                        $('#numero_comanda').addClass('is-invalid').removeClass('is-valid');
+                        $("button[name='salvaComandaDB']").attr('disabled', true);
+                    }
+                    else {
+                        $('#numero_comanda').addClass('is-valid').removeClass('is-invalid');
+                        $("button[name='salvaComandaDB']").attr('disabled', false)
+                    }
+                })
+            }
+            else {
+                $('#numero_comanda').removeClass('is-valid').removeClass('is-invalid');
+            }
+        })
+    })
 
     $('#abrirComanda').submit(function (e) {
         e.preventDefault(); // parar o envio para poder fazer manualmente
@@ -132,5 +160,8 @@
             }
         })
     })
+
+    
 </script>
+
 {% endblock %}
