@@ -1,17 +1,38 @@
-#Tecnologias Utilizadas
+#Tecnologias e Ferramentas Utilizadas
 Descrever aqui todas as tecnologias Utilizadas e versões
 - Git 2.28.0
 - Python 3.8.5
-- Flask
 - Html 5
 - CSS
 - VSCode 1.48.2
-- MySQL Server 5.7
+- MySQL Server 8.0.22
 - MySQL Workbench 8.0 CE
 - Adobe XD 32.1.22.3
 - Skype 
 - Trello
 - GitHub
+- jquery-3.5.1
+- font-awesome/4.7.0
+- bootstrap-4.5.2
+- sweetalert.css
+- autopep8==1.5.4
+- cffi==1.14.3
+- click==7.1.2
+- cryptography==3.1.1
+- Flask==1.1.2
+- fpdf==1.7.2
+- itsdangerous==1.1.0
+- Jinja2==2.11.2
+- MarkupSafe==1.1.1
+- Pillow==8.0.1
+- pycodestyle==2.6.0
+- pycparser==2.20
+- PyMySQL==0.10.1
+- reportlab==3.5.55
+- six==1.15.0
+- toml==0.10.1
+- Werkzeug==1.0.1
+
 
 #Usuários
 Grupo 1 - Admin: 
@@ -27,5 +48,6 @@ Usuário: grupo03
 Senha: abcBolinhas
 
 #Nome e local do Arquivo das credenciais DB
+BancoBD.py - grupo06/DesenvolvimentoWeb/grupo06-pythonFlask/BancoBD.py
 
 #Observações Gerais
