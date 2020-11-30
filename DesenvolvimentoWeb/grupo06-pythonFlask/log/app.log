@@ -8990,3 +8990,313 @@ INFO|werkzeug|29/11/2020 10:12:08 PM|127.0.0.1 - - [29/Nov/2020 22:12:08] "[37m
 INFO|werkzeug|29/11/2020 10:12:08 PM|127.0.0.1 - - [29/Nov/2020 22:12:08] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
 INFO|werkzeug|29/11/2020 10:12:08 PM|127.0.0.1 - - [29/Nov/2020 22:12:08] "[37mGET /static/bootstrap-4.5.2-dist/js/bootstrap.min.js.map HTTP/1.1[0m" 200 -
 INFO|werkzeug|29/11/2020 10:12:08 PM|127.0.0.1 - - [29/Nov/2020 22:12:08] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css.map HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:02:11 AM|127.0.0.1 - - [30/Nov/2020 00:02:11] "[37mGET / HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:02:11 AM|127.0.0.1 - - [30/Nov/2020 00:02:11] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 12:02:11 AM|127.0.0.1 - - [30/Nov/2020 00:02:11] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:02:11 AM|127.0.0.1 - - [30/Nov/2020 00:02:11] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:02:12 AM|127.0.0.1 - - [30/Nov/2020 00:02:12] "[37mGET /static/bootstrap-4.5.2-dist/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:02:25 AM|127.0.0.1 - - [30/Nov/2020 00:02:25] "[35m[1mPOST /login HTTP/1.1[0m" 500 -
+INFO|werkzeug|30/11/2020 12:02:25 AM|127.0.0.1 - - [30/Nov/2020 00:02:25] "[37mGET /login?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:02:27 AM|127.0.0.1 - - [30/Nov/2020 00:02:27] "[37mGET /login?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:02:28 AM|127.0.0.1 - - [30/Nov/2020 00:02:28] "[37mGET /login?__debugger__=yes&cmd=resource&f=jquery.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:02:37 AM|127.0.0.1 - - [30/Nov/2020 00:02:37] "[37mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:02:38 AM|127.0.0.1 - - [30/Nov/2020 00:02:38] "[37mGET /login?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:02:41 AM|127.0.0.1 - - [30/Nov/2020 00:02:41] "[37mGET /login?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:02:54 AM| * Detected change in 'C:\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\BancoBD.py', reloading
+INFO|werkzeug|30/11/2020 12:02:56 AM| * Restarting with stat
+INFO|werkzeug|30/11/2020 12:04:17 AM|127.0.0.1 - - [30/Nov/2020 00:04:17] "[37mGET / HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:04:18 AM|127.0.0.1 - - [30/Nov/2020 00:04:18] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 12:04:18 AM|127.0.0.1 - - [30/Nov/2020 00:04:18] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:04:18 AM|127.0.0.1 - - [30/Nov/2020 00:04:18] "[37mGET /static/bootstrap-4.5.2-dist/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:04:19 AM|127.0.0.1 - - [30/Nov/2020 00:04:19] "[37mGET / HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:04:19 AM|127.0.0.1 - - [30/Nov/2020 00:04:19] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 12:04:20 AM|127.0.0.1 - - [30/Nov/2020 00:04:20] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:04:20 AM|127.0.0.1 - - [30/Nov/2020 00:04:20] "[37mGET /static/bootstrap-4.5.2-dist/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:04:20 AM|127.0.0.1 - - [30/Nov/2020 00:04:20] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+WARNING|root|30/11/2020 12:04:33 AM|Tentativa de Login|Usuário:123|
+INFO|werkzeug|30/11/2020 12:04:33 AM|127.0.0.1 - - [30/Nov/2020 00:04:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:04:33 AM|127.0.0.1 - - [30/Nov/2020 00:04:33] "[37mGET /?falhaLogin=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:04:33 AM|127.0.0.1 - - [30/Nov/2020 00:04:33] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 12:05:01 AM| * Detected change in 'C:\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_login\\login.py', reloading
+INFO|werkzeug|30/11/2020 12:05:01 AM| * Restarting with stat
+INFO|root|30/11/2020 12:05:21 AM|Login Efetuado com sucesso|Usuário:nicolas|
+INFO|werkzeug|30/11/2020 12:05:21 AM|127.0.0.1 - - [30/Nov/2020 00:05:21] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:05:21 AM| * Detected change in 'C:\\grupo06\\DesenvolvimentoWeb\\grupo06-pythonFlask\\mod_login\\login.py', reloading
+INFO|werkzeug|30/11/2020 12:05:21 AM| * Restarting with stat
+INFO|werkzeug|30/11/2020 12:05:22 AM|127.0.0.1 - - [30/Nov/2020 00:05:22] "[32mGET /home HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:05:22 AM|127.0.0.1 - - [30/Nov/2020 00:05:22] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:05:23 AM|127.0.0.1 - - [30/Nov/2020 00:05:23] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 12:05:24 AM|127.0.0.1 - - [30/Nov/2020 00:05:24] "[37mGET /?falhaSessao=1 HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:05:24 AM|127.0.0.1 - - [30/Nov/2020 00:05:24] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 12:05:24 AM|127.0.0.1 - - [30/Nov/2020 00:05:24] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:05:35 AM|Login Efetuado com sucesso|Usuário:nicolas|
+INFO|werkzeug|30/11/2020 12:05:35 AM|127.0.0.1 - - [30/Nov/2020 00:05:35] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:05:35 AM|127.0.0.1 - - [30/Nov/2020 00:05:35] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:05:37 AM|127.0.0.1 - - [30/Nov/2020 00:05:37] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:05:37 AM|127.0.0.1 - - [30/Nov/2020 00:05:37] "[37mGET /static/images/modelo/logoPastry.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:05:38 AM|127.0.0.1 - - [30/Nov/2020 00:05:38] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:05:38 AM|127.0.0.1 - - [30/Nov/2020 00:05:38] "[37mGET /static/js/jquery-3.5.1.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:05:39 AM|127.0.0.1 - - [30/Nov/2020 00:05:39] "[37mGET /static/css/modelo/header.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:05:39 AM|127.0.0.1 - - [30/Nov/2020 00:05:39] "[37mGET /static/css/modelo/sidebar.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:05:39 AM|127.0.0.1 - - [30/Nov/2020 00:05:39] "[37mGET /static/css/modelo/main.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:05:40 AM|127.0.0.1 - - [30/Nov/2020 00:05:40] "[37mGET /static/sweetalert/sweetalert.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:05:41 AM|127.0.0.1 - - [30/Nov/2020 00:05:41] "[37mGET /static/images/modelo/user.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:05:41 AM|127.0.0.1 - - [30/Nov/2020 00:05:41] "[37mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:12:36 AM|Logout efetuado|Usuário:nicolas|
+INFO|werkzeug|30/11/2020 12:12:36 AM|127.0.0.1 - - [30/Nov/2020 00:12:36] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:12:36 AM|127.0.0.1 - - [30/Nov/2020 00:12:36] "[37mGET /?falhaSessao=2 HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:12:36 AM|127.0.0.1 - - [30/Nov/2020 00:12:36] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 12:12:36 AM|127.0.0.1 - - [30/Nov/2020 00:12:36] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:12:37 AM|127.0.0.1 - - [30/Nov/2020 00:12:37] "[37mGET /?falhaSessao=2 HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:12:37 AM|127.0.0.1 - - [30/Nov/2020 00:12:37] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 12:12:37 AM|127.0.0.1 - - [30/Nov/2020 00:12:37] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:12:39 AM|127.0.0.1 - - [30/Nov/2020 00:12:39] "[37mGET / HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:12:39 AM|127.0.0.1 - - [30/Nov/2020 00:12:39] "[37mGET / HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:12:39 AM|127.0.0.1 - - [30/Nov/2020 00:12:39] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|root|30/11/2020 12:12:42 AM|Login Efetuado com sucesso|Usuário:nicolas|
+INFO|werkzeug|30/11/2020 12:12:42 AM|127.0.0.1 - - [30/Nov/2020 00:12:42] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:12:42 AM|127.0.0.1 - - [30/Nov/2020 00:12:42] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:12:42 AM|127.0.0.1 - - [30/Nov/2020 00:12:42] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:12:42 AM|127.0.0.1 - - [30/Nov/2020 00:12:42] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:12:49 AM|Logout efetuado|Usuário:nicolas|
+INFO|werkzeug|30/11/2020 12:12:49 AM|127.0.0.1 - - [30/Nov/2020 00:12:49] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:12:49 AM|127.0.0.1 - - [30/Nov/2020 00:12:49] "[37mGET /?falhaSessao=2 HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:12:49 AM|127.0.0.1 - - [30/Nov/2020 00:12:49] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 12:12:49 AM|127.0.0.1 - - [30/Nov/2020 00:12:49] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:12:55 AM|Login Efetuado com sucesso|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:12:55 AM|127.0.0.1 - - [30/Nov/2020 00:12:55] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:12:55 AM|127.0.0.1 - - [30/Nov/2020 00:12:55] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:12:55 AM|127.0.0.1 - - [30/Nov/2020 00:12:55] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:12:55 AM|127.0.0.1 - - [30/Nov/2020 00:12:55] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:13:15 AM|Logout efetuado|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:13:15 AM|127.0.0.1 - - [30/Nov/2020 00:13:15] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:13:15 AM|127.0.0.1 - - [30/Nov/2020 00:13:15] "[37mGET /?falhaSessao=2 HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:13:15 AM|127.0.0.1 - - [30/Nov/2020 00:13:15] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 12:13:15 AM|127.0.0.1 - - [30/Nov/2020 00:13:15] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:15:33 AM|Login Efetuado com sucesso|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:15:33 AM|127.0.0.1 - - [30/Nov/2020 00:15:33] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:15:33 AM|127.0.0.1 - - [30/Nov/2020 00:15:33] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:15:33 AM|127.0.0.1 - - [30/Nov/2020 00:15:33] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:15:33 AM|127.0.0.1 - - [30/Nov/2020 00:15:33] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:15:33 AM|127.0.0.1 - - [30/Nov/2020 00:15:33] "[37mGET /static/js/jquery-3.5.1.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:15:33 AM|127.0.0.1 - - [30/Nov/2020 00:15:33] "[37mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:15:33 AM|127.0.0.1 - - [30/Nov/2020 00:15:33] "[37mGET /static/sweetalert/sweetalert.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:15:33 AM|127.0.0.1 - - [30/Nov/2020 00:15:33] "[37mGET /static/images/modelo/logoPastry.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:15:33 AM|127.0.0.1 - - [30/Nov/2020 00:15:33] "[37mGET /static/images/modelo/user.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:15:33 AM|127.0.0.1 - - [30/Nov/2020 00:15:33] "[37mGET /static/css/modelo/sidebar.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:15:33 AM|127.0.0.1 - - [30/Nov/2020 00:15:33] "[37mGET /static/css/modelo/header.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:15:33 AM|127.0.0.1 - - [30/Nov/2020 00:15:33] "[37mGET /static/css/modelo/main.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:15:41 AM|127.0.0.1 - - [30/Nov/2020 00:15:41] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:15:43 AM|127.0.0.1 - - [30/Nov/2020 00:15:43] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:15:43 AM|127.0.0.1 - - [30/Nov/2020 00:15:43] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:15:46 AM|127.0.0.1 - - [30/Nov/2020 00:15:46] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:15:50 AM|127.0.0.1 - - [30/Nov/2020 00:15:50] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:15:52 AM|127.0.0.1 - - [30/Nov/2020 00:15:52] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:15:52 AM|127.0.0.1 - - [30/Nov/2020 00:15:52] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:15:57 AM|127.0.0.1 - - [30/Nov/2020 00:15:57] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:15:57 AM|127.0.0.1 - - [30/Nov/2020 00:15:57] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:18:30 AM|127.0.0.1 - - [30/Nov/2020 00:18:30] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:18:30 AM|127.0.0.1 - - [30/Nov/2020 00:18:30] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:18:31 AM|Logout efetuado|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:18:31 AM|127.0.0.1 - - [30/Nov/2020 00:18:31] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:18:31 AM|127.0.0.1 - - [30/Nov/2020 00:18:31] "[37mGET /?falhaSessao=2 HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:18:31 AM|127.0.0.1 - - [30/Nov/2020 00:18:31] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 12:18:31 AM|127.0.0.1 - - [30/Nov/2020 00:18:31] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:18:38 AM|Login Efetuado com sucesso|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:18:38 AM|127.0.0.1 - - [30/Nov/2020 00:18:38] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:18:38 AM|127.0.0.1 - - [30/Nov/2020 00:18:38] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:19:14 AM|127.0.0.1 - - [30/Nov/2020 00:19:14] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:19:14 AM|127.0.0.1 - - [30/Nov/2020 00:19:14] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:19:15 AM|Logout efetuado|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:19:15 AM|127.0.0.1 - - [30/Nov/2020 00:19:15] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:19:15 AM|127.0.0.1 - - [30/Nov/2020 00:19:15] "[37mGET /?falhaSessao=2 HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:19:15 AM|127.0.0.1 - - [30/Nov/2020 00:19:15] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 12:19:15 AM|127.0.0.1 - - [30/Nov/2020 00:19:15] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:19:21 AM|Login Efetuado com sucesso|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:19:21 AM|127.0.0.1 - - [30/Nov/2020 00:19:21] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:19:21 AM|127.0.0.1 - - [30/Nov/2020 00:19:21] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:19:25 AM|127.0.0.1 - - [30/Nov/2020 00:19:25] "[37mGET /comandas/formRecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:19:25 AM|127.0.0.1 - - [30/Nov/2020 00:19:25] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:19:31 AM|127.0.0.1 - - [30/Nov/2020 00:19:31] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:19:36 AM|127.0.0.1 - - [30/Nov/2020 00:19:36] "[37mPOST /comandas/RecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:19:36 AM|127.0.0.1 - - [30/Nov/2020 00:19:36] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:19:39 AM|127.0.0.1 - - [30/Nov/2020 00:19:39] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:19:41 AM|127.0.0.1 - - [30/Nov/2020 00:19:41] "[37mGET /comandas/formRecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:20:26 AM|Logout efetuado|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:20:26 AM|127.0.0.1 - - [30/Nov/2020 00:20:26] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:20:26 AM|127.0.0.1 - - [30/Nov/2020 00:20:26] "[37mGET /?falhaSessao=2 HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:20:26 AM|127.0.0.1 - - [30/Nov/2020 00:20:26] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 12:20:26 AM|127.0.0.1 - - [30/Nov/2020 00:20:26] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:20:30 AM|127.0.0.1 - - [30/Nov/2020 00:20:30] "[37mGET / HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:20:30 AM|127.0.0.1 - - [30/Nov/2020 00:20:30] "[37mGET / HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:20:30 AM|127.0.0.1 - - [30/Nov/2020 00:20:30] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 12:20:30 AM|127.0.0.1 - - [30/Nov/2020 00:20:30] "[37mGET /static/bootstrap-4.5.2-dist/css/bootstrap.min.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:20:30 AM|127.0.0.1 - - [30/Nov/2020 00:20:30] "[37mGET /static/bootstrap-4.5.2-dist/js/bootstrap.min.js HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:20:35 AM|Login Efetuado com sucesso|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:20:35 AM|127.0.0.1 - - [30/Nov/2020 00:20:35] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:20:35 AM|127.0.0.1 - - [30/Nov/2020 00:20:35] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:20:35 AM|127.0.0.1 - - [30/Nov/2020 00:20:35] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:20:35 AM|127.0.0.1 - - [30/Nov/2020 00:20:35] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:20:35 AM|127.0.0.1 - - [30/Nov/2020 00:20:35] "[37mGET /static/js/jquery-3.5.1.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:20:35 AM|127.0.0.1 - - [30/Nov/2020 00:20:35] "[37mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:20:35 AM|127.0.0.1 - - [30/Nov/2020 00:20:35] "[37mGET /static/sweetalert/sweetalert.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:20:35 AM|127.0.0.1 - - [30/Nov/2020 00:20:35] "[37mGET /static/images/modelo/logoPastry.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:20:35 AM|127.0.0.1 - - [30/Nov/2020 00:20:35] "[37mGET /static/images/modelo/user.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:20:35 AM|127.0.0.1 - - [30/Nov/2020 00:20:35] "[37mGET /static/css/modelo/sidebar.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:20:35 AM|127.0.0.1 - - [30/Nov/2020 00:20:35] "[37mGET /static/css/modelo/header.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:20:35 AM|127.0.0.1 - - [30/Nov/2020 00:20:35] "[37mGET /static/css/modelo/main.css HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:21:19 AM|Logout efetuado|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:21:19 AM|127.0.0.1 - - [30/Nov/2020 00:21:19] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:21:19 AM|127.0.0.1 - - [30/Nov/2020 00:21:19] "[37mGET /?falhaSessao=2 HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:21:19 AM|127.0.0.1 - - [30/Nov/2020 00:21:19] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 12:21:19 AM|127.0.0.1 - - [30/Nov/2020 00:21:19] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:21:22 AM|127.0.0.1 - - [30/Nov/2020 00:21:22] "[37mGET /?falhaSessao=2 HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:21:22 AM|127.0.0.1 - - [30/Nov/2020 00:21:22] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 12:21:22 AM|127.0.0.1 - - [30/Nov/2020 00:21:22] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:21:25 AM|127.0.0.1 - - [30/Nov/2020 00:21:25] "[37mGET / HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:21:25 AM|127.0.0.1 - - [30/Nov/2020 00:21:25] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|root|30/11/2020 12:21:30 AM|Login Efetuado com sucesso|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:21:30 AM|127.0.0.1 - - [30/Nov/2020 00:21:30] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:21:30 AM|127.0.0.1 - - [30/Nov/2020 00:21:30] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:21:31 AM|127.0.0.1 - - [30/Nov/2020 00:21:31] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:21:31 AM|127.0.0.1 - - [30/Nov/2020 00:21:31] "[37mGET /static/sweetalert/sweetalert.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:21:31 AM|127.0.0.1 - - [30/Nov/2020 00:21:31] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:21:31 AM|127.0.0.1 - - [30/Nov/2020 00:21:31] "[37mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:21:31 AM|127.0.0.1 - - [30/Nov/2020 00:21:31] "[37mGET /static/js/jquery-3.5.1.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:21:31 AM|127.0.0.1 - - [30/Nov/2020 00:21:31] "[37mGET /static/images/modelo/logoPastry.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:21:31 AM|127.0.0.1 - - [30/Nov/2020 00:21:31] "[37mGET /static/images/modelo/user.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:21:31 AM|127.0.0.1 - - [30/Nov/2020 00:21:31] "[37mGET /static/css/modelo/header.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:21:31 AM|127.0.0.1 - - [30/Nov/2020 00:21:31] "[37mGET /static/css/modelo/sidebar.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:21:31 AM|127.0.0.1 - - [30/Nov/2020 00:21:31] "[37mGET /static/css/modelo/main.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:21:40 AM|127.0.0.1 - - [30/Nov/2020 00:21:40] "[37mGET /comandas/formRecebimentosFiados HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:21:40 AM|127.0.0.1 - - [30/Nov/2020 00:21:40] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:21:40 AM|127.0.0.1 - - [30/Nov/2020 00:21:40] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:21:43 AM|Logout efetuado|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:21:43 AM|127.0.0.1 - - [30/Nov/2020 00:21:43] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:21:43 AM|127.0.0.1 - - [30/Nov/2020 00:21:43] "[37mGET /?falhaSessao=2 HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:21:43 AM|127.0.0.1 - - [30/Nov/2020 00:21:43] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 12:21:43 AM|127.0.0.1 - - [30/Nov/2020 00:21:43] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:22:42 AM|127.0.0.1 - - [30/Nov/2020 00:22:42] "[37mGET /?falhaSessao=2 HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:22:42 AM|127.0.0.1 - - [30/Nov/2020 00:22:42] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 12:22:42 AM|127.0.0.1 - - [30/Nov/2020 00:22:42] "[37mGET /static/images/favicon.ico HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:22:48 AM|Login Efetuado com sucesso|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:22:48 AM|127.0.0.1 - - [30/Nov/2020 00:22:48] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:22:48 AM|127.0.0.1 - - [30/Nov/2020 00:22:48] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:22:48 AM|127.0.0.1 - - [30/Nov/2020 00:22:48] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:22:48 AM|127.0.0.1 - - [30/Nov/2020 00:22:48] "[37mGET /static/js/jquery-3.5.1.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:22:48 AM|127.0.0.1 - - [30/Nov/2020 00:22:48] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:22:48 AM|127.0.0.1 - - [30/Nov/2020 00:22:48] "[37mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:22:48 AM|127.0.0.1 - - [30/Nov/2020 00:22:48] "[37mGET /static/sweetalert/sweetalert.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:22:48 AM|127.0.0.1 - - [30/Nov/2020 00:22:48] "[37mGET /static/images/modelo/logoPastry.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:22:48 AM|127.0.0.1 - - [30/Nov/2020 00:22:48] "[37mGET /static/images/modelo/user.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:22:48 AM|127.0.0.1 - - [30/Nov/2020 00:22:48] "[37mGET /static/css/modelo/header.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:22:48 AM|127.0.0.1 - - [30/Nov/2020 00:22:48] "[37mGET /static/css/modelo/sidebar.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:22:48 AM|127.0.0.1 - - [30/Nov/2020 00:22:48] "[37mGET /static/css/modelo/main.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:22:50 AM|127.0.0.1 - - [30/Nov/2020 00:22:50] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:22:50 AM|127.0.0.1 - - [30/Nov/2020 00:22:50] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:22:50 AM|127.0.0.1 - - [30/Nov/2020 00:22:50] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:22:53 AM|127.0.0.1 - - [30/Nov/2020 00:22:53] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:22:53 AM|127.0.0.1 - - [30/Nov/2020 00:22:53] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:22:53 AM|127.0.0.1 - - [30/Nov/2020 00:22:53] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:22:55 AM|127.0.0.1 - - [30/Nov/2020 00:22:55] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:22:56 AM|Logout efetuado|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:22:56 AM|127.0.0.1 - - [30/Nov/2020 00:22:56] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:22:56 AM|127.0.0.1 - - [30/Nov/2020 00:22:56] "[37mGET /?falhaSessao=2 HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:22:56 AM|127.0.0.1 - - [30/Nov/2020 00:22:56] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 12:22:56 AM|127.0.0.1 - - [30/Nov/2020 00:22:56] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:23:05 AM|Login Efetuado com sucesso|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:23:05 AM|127.0.0.1 - - [30/Nov/2020 00:23:05] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:23:05 AM|127.0.0.1 - - [30/Nov/2020 00:23:05] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:23:05 AM|127.0.0.1 - - [30/Nov/2020 00:23:05] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:23:05 AM|127.0.0.1 - - [30/Nov/2020 00:23:05] "[37mGET /static/sweetalert/sweetalert.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:23:05 AM|127.0.0.1 - - [30/Nov/2020 00:23:05] "[37mGET /static/js/jquery-3.5.1.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:23:05 AM|127.0.0.1 - - [30/Nov/2020 00:23:05] "[37mGET /static/js/jquery.mask.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:23:05 AM|127.0.0.1 - - [30/Nov/2020 00:23:05] "[37mGET /static/sweetalert/sweetalert.min.js HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:23:05 AM|127.0.0.1 - - [30/Nov/2020 00:23:05] "[37mGET /static/images/modelo/logoPastry.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:23:05 AM|127.0.0.1 - - [30/Nov/2020 00:23:05] "[37mGET /static/images/modelo/user.png HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:23:05 AM|127.0.0.1 - - [30/Nov/2020 00:23:05] "[37mGET /static/css/modelo/header.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:23:05 AM|127.0.0.1 - - [30/Nov/2020 00:23:05] "[37mGET /static/css/modelo/sidebar.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:23:05 AM|127.0.0.1 - - [30/Nov/2020 00:23:05] "[37mGET /static/css/modelo/main.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:23:08 AM|127.0.0.1 - - [30/Nov/2020 00:23:08] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:23:09 AM|127.0.0.1 - - [30/Nov/2020 00:23:09] "[37mGET /comandas/AbrirComanda HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:23:15 AM|Comanda Aberto com Sucesso!|Comanda:111|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:23:15 AM|127.0.0.1 - - [30/Nov/2020 00:23:15] "[37mPOST /comandas/abrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:23:22 AM|127.0.0.1 - - [30/Nov/2020 00:23:22] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:23:22 AM|127.0.0.1 - - [30/Nov/2020 00:23:22] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:23:24 AM|127.0.0.1 - - [30/Nov/2020 00:23:24] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:23:26 AM|127.0.0.1 - - [30/Nov/2020 00:23:26] "[37mPOST /dashboard/AdicionarProdutos HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:23:30 AM|127.0.0.1 - - [30/Nov/2020 00:23:30] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:23:30 AM|127.0.0.1 - - [30/Nov/2020 00:23:30] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:23:32 AM|127.0.0.1 - - [30/Nov/2020 00:23:32] "[37mPOST /dashboard/listaProdComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:23:32 AM|127.0.0.1 - - [30/Nov/2020 00:23:32] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:23:35 AM|127.0.0.1 - - [30/Nov/2020 00:23:35] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:23:37 AM|127.0.0.1 - - [30/Nov/2020 00:23:37] "[37mPOST /dashboard/AdicionarCliente HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:23:39 AM|127.0.0.1 - - [30/Nov/2020 00:23:39] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:25:35 AM|Logout efetuado|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:25:35 AM|127.0.0.1 - - [30/Nov/2020 00:25:35] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:25:35 AM|127.0.0.1 - - [30/Nov/2020 00:25:35] "[37mGET /?falhaSessao=2 HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:25:35 AM|127.0.0.1 - - [30/Nov/2020 00:25:35] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 12:25:35 AM|127.0.0.1 - - [30/Nov/2020 00:25:35] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:25:39 AM|Login Efetuado com sucesso|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:25:39 AM|127.0.0.1 - - [30/Nov/2020 00:25:39] "[32mPOST /login HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:25:39 AM|127.0.0.1 - - [30/Nov/2020 00:25:39] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:25:39 AM|127.0.0.1 - - [30/Nov/2020 00:25:39] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:25:42 AM|127.0.0.1 - - [30/Nov/2020 00:25:42] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:25:43 AM|127.0.0.1 - - [30/Nov/2020 00:25:43] "[37mPOST /dashboard/AdicionarProdutos HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:25:43 AM|127.0.0.1 - - [30/Nov/2020 00:25:43] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:25:47 AM|127.0.0.1 - - [30/Nov/2020 00:25:47] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:25:47 AM|127.0.0.1 - - [30/Nov/2020 00:25:47] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:25:48 AM|127.0.0.1 - - [30/Nov/2020 00:25:48] "[37mPOST /dashboard/listaProdComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:25:50 AM|127.0.0.1 - - [30/Nov/2020 00:25:50] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:25:51 AM|127.0.0.1 - - [30/Nov/2020 00:25:51] "[37mPOST /dashboard/AdicionarCliente HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:25:55 AM|Cliente vinculado com Sucesso!|ID Comanda:19|ID Cliente:47|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:25:55 AM|127.0.0.1 - - [30/Nov/2020 00:25:55] "[37mPOST /dashboard/addClienteComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:25:56 AM|127.0.0.1 - - [30/Nov/2020 00:25:56] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:25:56 AM|127.0.0.1 - - [30/Nov/2020 00:25:56] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:25:58 AM|127.0.0.1 - - [30/Nov/2020 00:25:58] "[37mPOST /dashboard/listaProdComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:25:58 AM|127.0.0.1 - - [30/Nov/2020 00:25:58] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:25:59 AM|127.0.0.1 - - [30/Nov/2020 00:25:59] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:26:01 AM|127.0.0.1 - - [30/Nov/2020 00:26:01] "[37mPOST /dashboard/AdicionarProdutos HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:26:03 AM|127.0.0.1 - - [30/Nov/2020 00:26:03] "[37mPOST /dashboard/buscaProduto HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:26:07 AM|Produto adicionado com sucesso!|ID Produto:12|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:26:07 AM|127.0.0.1 - - [30/Nov/2020 00:26:07] "[37mPOST /dashboard/addProdutoComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:26:08 AM|127.0.0.1 - - [30/Nov/2020 00:26:08] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:26:08 AM|127.0.0.1 - - [30/Nov/2020 00:26:08] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:26:10 AM|127.0.0.1 - - [30/Nov/2020 00:26:10] "[37mPOST /dashboard/listaProdComanda HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:26:16 AM|Produto excluído com sucesso!|id_comanda_produto:4|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:26:16 AM|127.0.0.1 - - [30/Nov/2020 00:26:16] "[37mPOST /dashboard/deleteProdComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:26:17 AM|127.0.0.1 - - [30/Nov/2020 00:26:17] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:26:17 AM|127.0.0.1 - - [30/Nov/2020 00:26:17] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:26:24 AM|127.0.0.1 - - [30/Nov/2020 00:26:24] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:26:25 AM|127.0.0.1 - - [30/Nov/2020 00:26:25] "[37mGET /comandas/AbrirComanda HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:26:27 AM|Comanda Aberto com Sucesso!|Comanda:333|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:26:27 AM|127.0.0.1 - - [30/Nov/2020 00:26:27] "[37mPOST /comandas/abrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:26:29 AM|127.0.0.1 - - [30/Nov/2020 00:26:29] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:26:29 AM|127.0.0.1 - - [30/Nov/2020 00:26:29] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+ERROR|root|30/11/2020 12:26:34 AM|Erro ao tentar excluir comanda!|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:26:34 AM|127.0.0.1 - - [30/Nov/2020 00:26:34] "[37mPOST /comandas/deleteComanda HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:26:38 AM|Comanda excluída com sucesso!|ID Comanda:20|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:26:38 AM|127.0.0.1 - - [30/Nov/2020 00:26:38] "[37mPOST /comandas/deleteComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:26:39 AM|127.0.0.1 - - [30/Nov/2020 00:26:39] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:26:39 AM|127.0.0.1 - - [30/Nov/2020 00:26:39] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:26:41 AM|127.0.0.1 - - [30/Nov/2020 00:26:41] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:26:42 AM|127.0.0.1 - - [30/Nov/2020 00:26:42] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:26:43 AM|127.0.0.1 - - [30/Nov/2020 00:26:43] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:26:44 AM|127.0.0.1 - - [30/Nov/2020 00:26:44] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:26:56 AM|127.0.0.1 - - [30/Nov/2020 00:26:56] "[37mGET /home HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:26:56 AM|127.0.0.1 - - [30/Nov/2020 00:26:56] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:26:57 AM|127.0.0.1 - - [30/Nov/2020 00:26:57] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:26:58 AM|127.0.0.1 - - [30/Nov/2020 00:26:58] "[37mPOST /dashboard/AdicionarProdutos HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:26:59 AM|127.0.0.1 - - [30/Nov/2020 00:26:59] "[37mGET /dashboard/ComandasAbertas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:27:00 AM|127.0.0.1 - - [30/Nov/2020 00:27:00] "[37mPOST /dashboard/listaProdComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:27:04 AM|127.0.0.1 - - [30/Nov/2020 00:27:04] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:27:06 AM|127.0.0.1 - - [30/Nov/2020 00:27:06] "[37mGET /comandas/AbrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:27:06 AM|127.0.0.1 - - [30/Nov/2020 00:27:06] "[37mGET /static/css/modelo/all.css HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:27:08 AM|Comanda Aberto com Sucesso!|Comanda:444|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:27:08 AM|127.0.0.1 - - [30/Nov/2020 00:27:08] "[37mPOST /comandas/abrirComanda HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:27:09 AM|127.0.0.1 - - [30/Nov/2020 00:27:09] "[37mGET /comandas/ListaComandas HTTP/1.1[0m" 200 -
+INFO|root|30/11/2020 12:27:11 AM|Logout efetuado|Usuário:Eliza Souza|
+INFO|werkzeug|30/11/2020 12:27:11 AM|127.0.0.1 - - [30/Nov/2020 00:27:11] "[32mGET /logout HTTP/1.1[0m" 302 -
+INFO|werkzeug|30/11/2020 12:27:11 AM|127.0.0.1 - - [30/Nov/2020 00:27:11] "[37mGET /?falhaSessao=2 HTTP/1.1[0m" 200 -
+INFO|werkzeug|30/11/2020 12:27:11 AM|127.0.0.1 - - [30/Nov/2020 00:27:11] "[33mGET /assets/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+INFO|werkzeug|30/11/2020 12:27:11 AM|127.0.0.1 - - [30/Nov/2020 00:27:11] "[37mGET /static/images/wallpaperLogin.png HTTP/1.1[0m" 200 -

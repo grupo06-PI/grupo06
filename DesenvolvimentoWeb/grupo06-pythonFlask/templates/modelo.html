@@ -9,7 +9,14 @@
 
 <head>
 
-  {% block style %} {% endblock %}
+  {% block style %} 
+  <style>
+    .menu ul .admin.oculta {
+      visibility:hidden ;
+    }
+  </style>
+
+  {% endblock %}
 
 
 
@@ -40,49 +47,49 @@
         </div>
         <div class="menu">
           <ul>
-            <li id="linkHome">
+            <li class="balcao" id="linkHome">
               <i class="fa fa-fw fa-home"></i>
               <a href="{{url_for('home.formHome')}}">Home</a>
             </li>
 
-            <li id="linkDashboard">
+            <li class="balcao" id="linkDashboard">
               <i class="fa fa-bar-chart"></i>
               <a href="{{url_for('dashboard.ComandasAbertas')}}">Dashboard Comandas</a>
             </li>
 
-            <li id="linkComandas">
+            <li class="balcao" id="linkComandas">
               <i class="fa fa-fw fa-drivers-license-o"></i>
               <a href="{{url_for('comanda.ListaComandas')}}">Comandas</a>
             </li>
 
-            <li id="linkClient">
+            <li class="admin" id="linkClient">
               <i class="fa fa-fw fa-group"></i>
               <a href="{{url_for('cliente.ListaClientes')}}">Clientes</a>
             </li>
 
-            <li id="linkEmployee">
+            <li class="admin" id="linkEmployee">
               <i class="fa fa-fw fa-user"></i>
               <a href="{{url_for('funcionario.ListaFuncionarios')}}">Funcionários</a>
             </li>
 
 
-            <li id="linkProduct">
+            <li class="admin" id="linkProduct">
               <i class="fa fa-fw fa-cubes"></i>
               <a href="{{url_for('produto.ListaProdutos')}}">Produtos</a>
             </li>
 
-            <li id="linkRecebimentos">
+            <li class="admin" id="linkRecebimentos">
               <i class="fa fa-fw fa-money"></i>
               <a href="{{url_for('comanda.formRecebimentosFiados')}}">Recebimentos</a>
             </li>
 
 
-            <li id="linkSettings">
+            <li class="admin" id="linkSettings">
               <i class="fa fa-fw fa-cogs"></i>
               <a href="{{url_for('configuracoes.ListaConfiguracoes')}}">Configurações</a>
             </li>
 
-            <li id="linkRelatorios">
+            <li class="admin" id="linkRelatorios">
               <i class="fa fa-fw fa-bars"></i>
               <a href="{{url_for('relatorios.Relatorios')}}">Relatórios</a>
             </li>
@@ -135,7 +142,11 @@
   </script>
 
   {% block js %}
-
+  <Script>
+    if ("{{ session['grupo'] }}" != 'Admin') {
+    $('.menu ul .admin').toggleClass('oculta')
+  }
+</Script>
   {% endblock %}
 
 

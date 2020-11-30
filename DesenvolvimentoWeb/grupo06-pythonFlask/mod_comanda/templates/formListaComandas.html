@@ -139,7 +139,7 @@
 {% endblock %}
 
 {% block js %}
-
+{{super()}}
 <script>
   $SCRIPT_ROOT = {{ request.script_root | tojson | safe }}; // pega a url da barra de endereço
 
