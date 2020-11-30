@@ -145,8 +145,8 @@ As comandas serão placas de acrílico com numeração individual gravada em um 
 - Esboço das soluções (com descrição das soluções/diferenciais)
     -incluir Link
 - Protótipos navegáveis em Adobe XD
-    -incluir Link
-    -incluir Link
+    - https://xd.adobe.com/view/7e2ecfcd-6222-4262-922f-f66a6d9290e8-2b7d/
+    - https://xd.adobe.com/view/9de7cd51-9307-4d18-82f1-52d7c2882fa2-c8b4/
 - Teste de Usabilidade do Produto (Escala SUS)
     -incluir Link
 - Interface de Usuário bem Resolvida (Design Visual)
