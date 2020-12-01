@@ -5,7 +5,7 @@
 {% block style %}
 {{super()}}
 <style>
-    form {
+    #RecebimentosFiados {
         border: 3px solid #1d1d40;
         padding: 20px;
         background-color: rgb(11, 7, 31);
@@ -31,6 +31,48 @@
     .buttonsCfg:hover {
         color: rgb(11, 7, 31);
         background-color: #3a9ec2;
+    }
+
+    table {
+        border-top: solid 10px #98133F;
+        border-bottom: solid 4px #98133F;
+    }
+
+    .Comanda {
+        background-color: #98133F;
+        border-right: solid 7px rgb(0, 0, 0);
+        border-left: solid 7px rgb(0, 0, 0);
+    }
+
+    .texttd {
+        color: white;
+        text-align: center;
+        border: solid 1px #98133F;
+    }
+
+    .textTD {
+        border-top: solid 2px rgb(0, 0, 0);
+    }
+
+    td {
+        font-family: Snell Roundhand, sans-serif;
+        font-variant: small-caps;
+        border-right: solid 2px #98133F;
+    }
+
+    #ButtonFin {
+        color: white;
+        width: 120px;
+        text-align: center;
+    }
+
+    #ButtonFin:hover {
+        color: black;
+    }
+
+    #IconBTN {
+        font-size: 17px;
+        color: white;
     }
 
     #IconLista {
@@ -60,7 +102,8 @@
 
 {% block content %}
 <label for="" class="titleForm">Recebimento Fiado</label>
-<form id="RecebimentosFiados" name="RecebimentosFiados" method="POST" action="{{ url_for('comanda.RecebimentosFiados') }}">
+<form id="RecebimentosFiados" name="RecebimentosFiados" method="POST"
+    action="{{ url_for('comanda.RecebimentosFiados') }}">
 
     <div class="col-md-4 mb-2">
         <label for="id_cliente">Nome Cliente:</label>
@@ -72,10 +115,9 @@
         </select>
 
         <br>
-    
 
-    <button type='submit' name='salvaComandaDB' id='salvaComandaDB' class="buttonsCfg"><i class="fa fa-fw fa-save"
-            id="IconLista"></i> Filtrar</a></button>
+        <button type='submit' name='salvaComandaDB' id='salvaComandaDB' class="buttonsCfg"><i class="fa fa-fw fa-save"
+                id="IconLista"></i> Filtrar</a></button>
     </div>
 
 </form>
@@ -86,40 +128,51 @@
 <div class="comandas">
     <table>
         <tr class="Comanda">
-            <td bgcolor=white>-Número Comanda:</td>
+            <td></td>
+            <td class="textTD" bgcolor=white>-Número Comanda:</td>
             <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[1] }}</td>
+            <td></td>
         </tr>
 
         <tr class="Comanda">
-            <td bgcolor=white>-Data e Hora:</td>
+            <td></td>
+            <td class="textTD" bgcolor=white>-Data e Hora:</td>
             <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[2] }}</td>
-
             <td></td>
         </tr>
 
         <tr class="Comanda">
-            <td bgcolor=white>-ID Cliente:</td>
+            <td></td>
+            <td class="textTD" bgcolor=white>-ID Cliente:</td>
             <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[3] }}</td>
-
             <td></td>
         </tr>
 
         <tr class="Comanda">
-            <td bgcolor=white>-Nome Cliente:</td>
+            <td></td>
+            <td class="textTD" bgcolor=white>-Nome Cliente:</td>
             <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[4] }}</td>
-
             <td></td>
         </tr>
 
         <tr class="Comanda">
-            <td bgcolor=white>-Valor Total:</td>
-            <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[5] }}</td> 
+            <td></td>
+            <td class="textTD" bgcolor=white>-Valor Total:</td>
+            <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[5] }}</td>
+            <td></td>
+        </tr>
+
+        <tr class="Comanda">
+            <td></td>
+            <td></td>
             <td>
                 <form action='{{ url_for('comanda.RecebimentoFiadosAVista') }}' method='POST' name='Recebimento'>
                     <input type='hidden' name='id_comanda' value='{{ row[0] }}'>
-                    <button type='submit' name='formRecebimentoAVista'><i class='fa fa-fw fa-user' id="IconLista"></i></button>
+                    <button class="btn" type='submit' name='formRecebimentoAVista' id="ButtonFin"><i class='fa fa-fw fa-user' id="IconBTN"></i>
+                        Finalizar</button>
                 </form>
-            </td>       
+            </td>
+            <td></td>
         </tr>
     </table>
 </div>

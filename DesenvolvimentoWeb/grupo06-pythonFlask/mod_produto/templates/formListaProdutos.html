@@ -27,7 +27,6 @@
   .buttonsCfg:hover {
     text-decoration: none;
     color: rgb(11, 7, 31);
-    padding: 12px;
     background-color: #3a9ec2;
   }
 
@@ -79,11 +78,12 @@
     border: 1px solid rgb(11, 7, 31);
   }
 
-  #IconLista {
+  #IconBTN {
     font-size: 19px;
   }
 
-  i {
+  #IconLista {
+    font-size: 19px;
     color: white;
   }
 </style>
@@ -93,7 +93,7 @@
 {{ super() }}
 <div class="btn">
   <ul>
-    <a class="buttonsCfg" href="{{url_for('produto.CadProduto')}}"><i class="fa fa-fw fa-plus" id="IconLista"></i> Novo
+    <a class="buttonsCfg" href="{{url_for('produto.CadProduto')}}"><i class="fa fa-fw fa-plus" id="IconBTN"></i> Novo
       Produto</a>
   </ul>
 </div>
