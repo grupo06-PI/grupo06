@@ -23,6 +23,14 @@ def ComandasAbertas():
     res = comanda.selectALLDashboard()
     return render_template("formComandasAbertas.html", result=res, content_type='application/json')
 
+@bp_dashboard.route("/ComandasAbertasCliente", methods=['GET'])
+@validaSessao
+def ComandasAbertasCliente():
+    comanda=Comandas()
+    comanda.cliente_id = session['id_cliente']
+    res = comanda.selectCliente()
+    return render_template("formComandasAbertasCliente.html", result=res, content_type='application/json')
+
 
 @bp_dashboard.route("/RegistroFiados", methods=['GET'])
 @validaSessao
@@ -179,4 +187,10 @@ def Dashboard():
     comanda.selectONE
     return render_template("formDashboard.html", content_type='application/json', comanda=comanda)
 
-    
+@bp_dashboard.route("/ComandasCliente", methods=['GET'])
+@validaSessao
+def ComandasCliente():
+    comanda=Comandas()
+    comanda.cliente_id = session['id_cliente']
+    res = comanda.selectCliente()
+    return render_template("formComandasAbertasCliente.html", result=res, content_type='application/json')   

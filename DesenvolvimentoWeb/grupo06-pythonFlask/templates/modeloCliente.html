@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<title>{% block title %} {% endblock %} - Pastelaria do Zé </title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/modelo/all.css') }}">
+
+<head>
+  {% block style %}
+  <style>
+    .menu ul .admin.oculta {
+      visibility: hidden;
+    }
+  </style>
+  {% endblock %}
+
+  <!-- Importando sweetalert.css-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='sweetalert/sweetalert.css') }}">
+
+  <!-- Importando o bootstrap static-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap-4.5.2-dist/css/bootstrap.min.css') }}">
+
+  <!--Biblioteca de icones-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--FivIcon-->
+  <link rel="shortcut icon" type="image/x-icon" href="{{ url_for('static', filename='images/favicon.ico') }}">
+
+</head>
+
+<body>
+  <div class="img">
+
+    <div class="flex-dashboard">
+
+      {% block menu %} {% endblock %}
+      <sidebar>
+        <div class="sidebar-title">
+          <img src="{{ url_for('static', filename='images/modelo/logoPastry.png') }}" alt="">
+          <h2>Pastelaria do Zé</h2>
+        </div>
+        <div class="menu">
+          <ul>
+            <li class="balcao" id="linkDashboard">
+              <i class="fa fa-bar-chart"></i>
+              <a href="{{url_for('dashboard.ComandasAbertasCliente')}}">Dashboard Comandas</a>
+            </li>
+
+            <!-- info user sidebar-->
+            {% if 'usuario' in session %}
+            <div class="sidebar-user">
+              {% if 'usuario' in session %}
+              <img class="teste" src="{{ url_for('static', filename='images/modelo/user.png') }}" alt="">
+              <br>
+              <label for=""> Usuário: </label><b>{{ session['usuario'] }}</b>
+              {% endif %}
+            </div>
+            {% endif %}
+          </ul>
+        </div>
+
+      </sidebar>
+      <main>
+        <header>
+          <a href="{{url_for('login.logout')}}"><i class="fa fa-fw fa-sign-out"></i>Logout</a>
+        </header>
+        <div class="main-content">
+          {% block content %} {% endblock %}
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='js/jquery-3.5.1.min.js') }}"></script>
+
+  <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.mask.min.js')}}"></script>
+
+  <script src="{{ url_for('static', filename='bootstrap-4.5.2-dist/js/bootstrap.min.js') }}"></script>
+
+  <script src="{{ url_for('static', filename='sweetalert/sweetalert.min.js') }}"></script>
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $("#telefone").mask("(00) 00000-0000")
+      $("#cpf").mask("000.000.000-00")
+      $("#dia_fiado").mask("00/00/0000")
+      $("#valor_unitario").mask('#.##0,00', { reverse: true });
+      $("#taxa_juro_diario").mask('#.##0,00', { reverse: true });
+      $("#multa_atraso").mask('#.##0,00', { reverse: true });
+
+    })
+  </script>
+
+  {% block js %}
+  <Script>
+    if ("{{ session['grupo'] }}" != 'Admin') {
+      $('.menu ul .admin').toggleClass('oculta')
+    }
+  </Script>
+  {% endblock %}
+
+</body>
+
+</html>

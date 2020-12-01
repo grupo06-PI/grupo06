@@ -199,6 +199,7 @@ class ProdutosComandas(object):
             return "Ocorreu um erro na busca do produto"
 
     
+    
     def selectALLSubTotal(self):
         banco = None
         c = None

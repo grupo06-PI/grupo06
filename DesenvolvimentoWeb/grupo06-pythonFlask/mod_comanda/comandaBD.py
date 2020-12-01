@@ -1,5 +1,4 @@
 from BancoBD import Banco
-
 class Comandas(object):
 
     def __init__(self, id_comanda=0, numero_comanda="", data_hora="", status_comanda=0, status_pagamento=0, funcionario_id="", cliente_id=""):
@@ -120,6 +119,56 @@ class Comandas(object):
                 c.close()
             if banco:
                 banco.conexao.close()
+
+    def selectCliente(self):
+        banco = None
+        c = None
+
+        try:
+            banco = Banco()
+
+            c = banco.conexao.cursor()
+
+            _sql = "select tbc.id_comanda, tbc.numero_comanda, tbc.data_hora, if(tbc.status_comanda =0,'Aberta','Fechada'), if(tbc.status_pagamento =0,'Em Aberto','Fechado'), tf.nome, tbc.cliente_id, tc.nome  from tb_comanda tbc left join tb_cliente tc on tbc.cliente_id = tc.id_cliente  left join tb_funcionario tf on tbc.funcionario_id = tf.id_funcionario where tbc.cliente_id = %s order by status_comanda"
+
+            _sql_data = (self.cliente_id,)
+
+            c.execute(_sql, _sql_data)
+
+            result = c.fetchall()
+
+            return result
+
+        except Exception as e:
+            return "Ocorreu um erro na busca das Comandas"
+
+        finally:
+            if c:
+                c.close()
+            if banco:
+                banco.conexao.close()
+
+    def selectALLCliente(self):
+        banco = None
+        c = None
+
+        try:
+            banco = Banco()
+
+            c = banco.conexao.cursor()
+
+            _sql = "SELECT TBCP.ID_COMANDA_PRODUTO, TBCP.COMANDA_ID, TBP.NOME, TBCP.QUANTIDADE, TBCP.VALOR_UNITARIO, CONVERT(TBP.FOTO USING utf8), TBC.CLIENTE_ID FROM TB_PRODUTO TBP INNER JOIN TB_COMANDA_PRODUTO TBCP ON TBP.ID_PRODUTO = TBCP.PRODUTO_ID INNER JOIN TB_COMANDA TBC ON TBC.ID_COMANDA = TBCP.COMANDA_ID WHERE TBCP.comanda_id = %s AND TBC.CLIENTE_ID = %s;"
+
+            _sql_data = (self.comanda_id, self.cliente_id,)
+
+            c.execute(_sql,_sql_data)
+
+            resultProd = c.fetchall()
+
+            return resultProd
+
+        except Exception as e:
+            return "Ocorreu um erro na busca do produto"
 
     def selectALLComandasAtrasadas(self):
             banco = None

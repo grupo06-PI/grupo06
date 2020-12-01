@@ -1,5 +1,8 @@
 from flask import Blueprint, render_template, request, redirect, url_for, flash, jsonify, session
 from mod_cliente.clienteBD import Clientes
+from mod_comanda.comandaBD import ComandaRecebimento
+from mod_comanda.comandaBD import Comandas
+from mod_produto.produtoBD import ProdutosComandas
 from mod_login.login import validaSessao
 from funcoes import Funcoes
 from GeraPdf import PDF
@@ -135,3 +138,16 @@ def pdfCliente():
     geraPdf = PDF()
     geraPdf.pdfClientes()
     return send_file('pdfClientes.pdf', attachment_filename='pdfClientes.pdf')
+
+
+@bp_cliente.route('/listaProdComanda', methods = ['POST'])
+@validaSessao
+def listaProdComanda():
+    comandaRecebimento = ComandaRecebimento()
+    comanda=Comandas()
+    produtosComandas = ProdutosComandas()
+    comanda.comanda_id = request.values['comanda_id']
+    comanda.cliente_id = int(session['id_cliente'])
+    listaProdComandas = comanda.selectALLCliente()
+    subTotalComandas = produtosComandas.selectALLSubTotal()
+    return render_template("formListaProdComandaCliente.html", comanda=comanda, listaProdComandas=listaProdComandas, subTotalComandas=subTotalComandas, content_type='application/json')

@@ -5,6 +5,7 @@ from functools import wraps
 
 #import funcionarios
 from mod_funcionario.funcionarioBD import Funcionarios
+from mod_cliente.clienteBD import Clientes
 
 from funcoes import Funcoes
 
@@ -49,6 +50,49 @@ def validaLogin():
 
         #abre a aplicação na tela home
         return redirect(url_for('home.formHome'))
+
+    else:
+        #log
+        log = "Tentativa de Login" + "|Usuário:" + request.form['cpf'] + "|"
+        funcoes.logWarning(log)
+
+        #retornna para a tela de login
+        return redirect(url_for('login.login', falhaLogin=1))
+
+@bp_login.route("/Cliente")
+def loginCliente():
+    return render_template("formLoginCliente.html")
+
+@bp_login.route("/loginCliente", methods=['POST'])
+def validaLoginCliente():
+    #cria objeto funcoes para armazenar log
+    funcoes = Funcoes()
+
+    #cria o objeto e armezena usuário e senha digitado
+    cliente = Clientes()
+
+    cliente.cpf = request.form['cpf']
+    cliente.senha =  funcoes.encrypt(request.form['senha']) 
+
+    #realiza a busca pelo usuário e armazena o resultado no objeto
+    cliente.selectLogin()
+
+    #verifica se o usuário foi encontrado
+    if cliente.id_cliente > 0:
+        #limpa a sessão
+        session.clear()
+
+        #registra o usuário na sessão, armazenando o login do usuário
+        session['usuario'] = cliente.nome
+        session['cpf'] = cliente.cpf
+        session['id_cliente'] = cliente.id_cliente
+
+        #log
+        log = "Login Efetuado com sucesso" + "|Usuário:" + session['usuario']+ "|"
+        funcoes.logInfo(log)
+
+        #abre a aplicação na tela home
+        return redirect(url_for('home.formHomeCliente'))
 
     else:
         #log
