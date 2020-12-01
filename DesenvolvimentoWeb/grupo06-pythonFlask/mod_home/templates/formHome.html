@@ -64,6 +64,7 @@
 {% endblock %}
 
 {% block js %}
+{{super()}}
 <script>
     $('.carousel').carousel({ interval: 3000 })
     $('.carousel').carousel({ pause: "hover" })
