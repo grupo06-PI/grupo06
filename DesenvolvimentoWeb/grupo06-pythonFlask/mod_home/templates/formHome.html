@@ -28,34 +28,34 @@
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner center-block">
         <div class="carousel-item active">
-            <img class="d-block w-100" src="../../static/images/pastelCarne.jpg" alt="Primeiro Slide">
+            <img class="d-block w-100" src="../../static/images/coca.jpg" alt="Primeiro Slide">
             <div class="carousel-caption d-none d-md-block">
-                <h4>PASTEL DE CARNE R$4,50</h4>
-                <p>carne e tomate</p>
+                <h4>COCA-COLA R$4,50</h4>
+                <p>600ml</p>
             </div>
         </div>
 
         <div class="carousel-item">
-            <img class="d-block w-100" src="../../static/images/pastelFrango.jpg" alt="Segundo Slide">
+            <img class="d-block w-100" src="../../static/images/pastelAssado.jpg" alt="Segundo Slide">
             <div class="carousel-caption d-none d-md-block">
-                <h4>PASTEL DE FRANGO R$4,50</h4>
-                <p>Frango, catupiry e palmito</p>
+                <h4>PASTEL ASSADO R$3,50</h4>
+                <p>Carne e tomate</p>
             </div>
         </div>
 
         <div class="carousel-item">
-            <img class="d-block w-100" src="../../static/images/coxinhaFrango.jpg" alt="Terceiro Slide">
+            <img class="d-block w-100" src="../../static/images/coxinha.jpg" alt="Terceiro Slide">
             <div class="carousel-caption d-none d-md-block">
-                <h4>COXINHA R$4,50</h4>
-                <p>frango e salsa</p>
+                <h4>COXINHA R$3,00</h4>
+                <p>frango e catupiry</p>
             </div>
         </div>
 
         <div class="carousel-item">
-            <img class="d-block w-100" src="../../static/images/coxinhaFrango.jpg" alt="Terceiro Slide">
+            <img class="d-block w-100" src="../../static/images/pastelFrito.jpg" alt="Terceiro Slide">
             <div class="carousel-caption d-none d-md-block">
-                <h4>COXINHA R$4,50</h4>
-                <p>frango e salsa</p>
+                <h4>PASTEL FRITO DE CARNE R$4,50</h4>
+                <p>carne, palmito e ovo</p>
             </div>
         </div>
         
@@ -64,6 +64,7 @@
 {% endblock %}
 
 {% block js %}
+{{super()}}
 <script>
     $('.carousel').carousel({ interval: 3000 })
     $('.carousel').carousel({ pause: "hover" })
