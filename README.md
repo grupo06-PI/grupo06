@@ -105,8 +105,7 @@ As comandas serão placas de acrílico com numeração individual gravada em um 
 - UML:
   - <a href="https://github.com/grupo06-PI/grupo06/blob/master/EngenhariaSoftware/UML%20-%20Diagrama%20Classe.png">Diagrama de Classes</a> 
   - <a href="https://github.com/grupo06-PI/grupo06/blob/master/EngenhariaSoftware/UML-%20Diagrama%20Caso%20de%20Uso.png">Diagrama de caso de uso</a>  
-  - Diagrama de atividades
-    - 
+  - <a href="https://github.com/grupo06-PI/grupo06/blob/master/EngenhariaSoftware/Diagrama%20de%20Atividades.pdf">Diagrama de atividades</a>
 - Modelagem de Banco de Dados:
   - <a href="https://github.com/grupo06-PI/grupo06/blob/master/EngenhariaSoftware/Modelagem%20Conceitual.doc">Conceitual</a>  
   - <a href="https://github.com/grupo06-PI/grupo06/blob/master/EngenhariaSoftware/Modelagem%20L%C3%B3gica.doc">Lógica</a> 
