@@ -153,11 +153,11 @@
 
 <body class="text-center">
 
-  <form class="form-signin" action="{{ url_for ('login.validaLogin') }}" method="post">
+  <form class="form-signin" action="{{ url_for ('login.validaLoginCliente') }}" method="post">
 
-    <label for="" class="title-login">Pastelaria do Zé</label>
+    <label for="" class="title-login">Pastelaria do Zé </label>
 
-    <label for="" class="title-login" id="labelSignIn">Funcionários</label>
+    <label for="" class="title-login" id="labelSignIn">Clientes</label>
 
     <label for="" class="sr-only">Insira seu usuário</label>
     <input type="text" class="form-control" id="campoLogin" name="cpf" id="cpf" placeholder="Insira seu Usuário"
@@ -176,8 +176,8 @@
     
     <div class="row">
       <div class="col col-12">
-        <a href="{{ url_for ('login.loginCliente') }}" role="link">
-          <span> Entrar Como Cliente </span>
+        <a href="{{ url_for ('login.login') }}" role="link">
+          <span> Entrar como Funcionário</span>
         </a>
       </div>
     </div>

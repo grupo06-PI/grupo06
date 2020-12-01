@@ -1,0 +1,134 @@
+{% extends "modeloCliente.html" %}
+
+{% block title %} Comandas Abertas {% endblock %}
+
+{% block style %}
+{{super()}}
+<style>
+    table {
+        border-top: solid 10px #98133F;
+        border-bottom: solid 4px #98133F;
+    }
+
+    .comandas {
+        padding: 30px;
+    }
+
+    .Comanda {
+        background-color: #98133F;
+        border-right: solid 5px rgb(0, 0, 0);
+        border-left: solid 5px rgb(0, 0, 0);
+    }
+
+    .texttd {
+        color: white;
+        text-align: center;
+        border: solid 1px #98133F;
+    }
+
+    .textTD {
+        border-bottom: solid 2px rgb(0, 0, 0);
+    }
+
+    td {
+        font-family: Snell Roundhand, sans-serif;
+        font-variant: small-caps;
+        border-right: solid 2px #98133F;
+    }
+
+    #linkDashboard a:visited {
+        color: #98133F;
+    }
+
+    button {
+        border: solid 1px #98133F;
+        background-color: #98133F;
+        color: white;
+        width: 170px;
+        text-align: left;
+    }
+
+    button:hover {
+        color: black;
+    }
+
+    #ButtonFin {
+        width: 110px;
+        text-align: center;
+    }
+
+    #ButtonFin:hover {
+        color: black;
+    }
+
+    #IconLista {
+        font-size: 17px;
+    }
+
+    i {
+        color: white;
+    }
+
+    .admin.oculta {
+        visibility: hidden;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+{{ super() }}
+
+{% if result %}
+{% for row in result %}
+<div class="comandas">
+    <table>
+        <tr class="Comanda">
+
+            <td class="textTD" bgcolor=white>- ID Comanda:</td>
+            <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[0] }}</th>
+            <td></td>
+        </tr>
+
+        <tr class="Comanda">
+            <td></td>
+            <td class="textTD" bgcolor=white>- Número Comanda:</td>
+            <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[1] }}</th>
+            <td></td>
+        </tr>
+
+        <tr class="Comanda">
+            <td>
+                <form action='{{ url_for('cliente.listaProdComanda') }}' method='POST' name='ListProd'>
+                    <input type='hidden' name='comanda_id' value='{{ row[0] }}'>
+                    <button type='submit' name='ListProd'><i class='fa fa-fw fa-cubes' id="IconLista"></i> Listar
+                        Produtos</button>
+                </form>
+            </td>
+
+            <td class="textTD" bgcolor=white>- Data e Hora:</td>
+            <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[2] }}</th>
+            <td></td>
+        </tr>
+
+        <tr class="Comanda">
+            <td></td>
+            <td class="textTD" bgcolor=white>- Nome Funcionário:</td>
+            <td class="texttd" scope='row' bgcolor=#0b071f> {{ row[6] }}</th>
+            <td></td>
+        </tr>
+    </table>
+</div>
+{% endfor %}
+{% endif %}
+
+{% endblock %}
+
+{% block js %}
+{{super()}}
+<Script>
+    if ("{{ session['grupo'] }}" != 'Admin') {
+        $('.menu ul .admin').toggleClass('oculta');
+        $('.admin').toggleClass('oculta')
+    }
+</Script>
+{% endblock %}

@@ -1,0 +1,122 @@
+{% extends "modeloCliente.html" %}
+
+{% block title %} Lista de Produtos {% endblock %}
+
+{% block style %}
+{{super()}}
+<style>
+  .buttonsCfg {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 4px;
+    border: 2px solid #1d1d40;
+    font-weight: bold;
+    background-color: rgb(11, 7, 31);
+    font-family: Snell Roundhand, sans-serif;
+    font-variant: small-caps;
+  }
+
+  .buttonsCfg:hover {
+    text-decoration: none;
+    color: rgb(11, 7, 31);
+    background-color: #3a9ec2;
+  }
+
+  .listaClientes {
+    padding-bottom: 10px;
+    text-align: center;
+
+    font-family: Snell Roundhand, sans-serif;
+    font-variant: small-caps;
+
+  }
+
+  .titleForm {
+    color: white;
+    font-size: 30px;
+
+    font-family: Snell Roundhand, sans-serif;
+    font-variant: small-caps;
+    font-style: italic;
+  }
+
+  tr {
+    color: rgb(255, 255, 255);
+    border-bottom: 7px solid #1d1d40;
+    border-left: solid 3px #1d1d40;
+    border-right: solid 3px #1d1d40;
+  }
+
+  td {
+    background-color: rgb(11, 7, 31);
+    color: white;
+  }
+
+  th {
+    background-color: rgb(11, 7, 31);
+  }
+
+  thead {
+    border-top: 7px solid #1d1d40;
+    color: white;
+  }
+
+  button {
+    background-color: rgb(11, 7, 31);
+    border: 1px solid rgb(11, 7, 31);
+  }
+
+  #IconLista {
+    font-size: 19px;
+  }
+
+  i {
+    color: white;
+  }
+
+  #linkDashboard a:visited {
+    color: #98133F;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+{{ super() }}
+
+<div class="listaClientes">
+  <table class="table table-striped table-primary">
+    <thead class="">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">ID Produto</th>
+        <th scope="col">Quantidade</th>
+        <th scope="col">Valor Produto(s)</th>
+        <th scope="col">Imagem</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      {% for comanda in listaProdComandas: %}
+      <tr>
+        <td scope='comanda'> {{ comanda[1] }}</td>
+        <td> {{ comanda[2] }}</td>
+        <td> {{ comanda[3] }}</td>
+        <td> {{ comanda[4] }}</td>
+        <td><img src='{{ comanda[5] }}' width='150'></td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+</div>
+
+
+{% endblock %}
+
+{% block js %}
+{{super()}}
+<script>
+</script>
+{% endblock %}
